@@ -18,8 +18,8 @@ Language
 
 Requirements
 ------------
-* XAMPP (PHP interpreter)
 * Web browser
+* XAMPP (PHP interpreter)
 
 Screenshots
 -----------
