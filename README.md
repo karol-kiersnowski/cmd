@@ -32,3 +32,4 @@ Karol Kiersnowski
 License
 -------
 [GNU General Public License v3.0](https://github.com/kargol92/cmd.sh/blob/master/LICENSE)
+
