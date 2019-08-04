@@ -1,0 +1,30 @@
+body {
+	color: #eee;
+	background-color: #000;
+	background-image: url("img/background-dark.png");
+}
+
+header, nav, section {
+	background-color: #111;
+	box-shadow: 0px 0px 5px #444;
+}
+
+nav hr {
+	border: 1px solid #222;
+}
+
+main hr {
+	border: 1px solid #aaa;
+}
+
+a {
+	color: #ddf;
+}
+
+a:hover {
+	border-bottom: 2px solid #ddf;
+}
+
+a#menu {
+	margin-right: 15px;
+}

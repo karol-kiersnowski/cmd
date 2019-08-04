@@ -1,0 +1,205 @@
+* { box-sizing: border-box; }
+
+kbd
+{
+	background-color: #f7f7f7;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.2), 0 0 0 2px #fff inset;
+	color :#333;
+	font-size: 12px;
+	padding: .1em .6em;
+}
+
+pre {
+	font-family: Consolas, monospace;
+	background-color: #000;
+	color: #fff;
+	max-width: calc(80ch + 2px);
+	padding: 2px;
+	overflow-x: auto;
+}
+
+div.textToCopy {
+	margin: 10px 0;
+	font-size: 20px;
+}
+
+input.code {
+	width: calc(100% - 51px);
+	height: 24px;
+	background-color: #000;
+	color: #fff;
+	font-family: "Ubuntu Mono", monospace;
+	font-size: 18px;
+}
+
+button.btnCopyToClipboard {
+	//float: right;
+	margin: 0;
+	//padding: 5px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	box-shadow: 0px 0px 5px #aaa;
+	font-size: 20px;
+}
+
+body {
+	margin: 0;
+	font-family: "Ubuntu Mono", monospace;
+	font-size: 16px;
+}
+
+header {
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	padding: 5px;
+	width: 100%;
+}
+
+#header-content,
+#wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+}
+
+#wrapper {
+	//position: relative;
+}
+
+nav {
+	position: fixed;
+	z-index: 1;
+	top: 37px;
+	width: 250px;
+	height: 95vh;
+	scrollbar-width: thin;
+	overflow-y: auto;
+}
+
+main {
+	margin-top: 40px;
+	margin-left: 250px;
+	padding: 20px;
+}
+
+section {
+	margin: 20px 0;
+	padding: 20px;
+	overflow: auto;
+}
+
+article {
+	padding-top: 40px;
+}
+
+footer {
+	margin-left: 250px;
+	text-align: center;
+}
+
+header ul {
+	display: inline;
+	float: right;
+	margin: 5px;
+	font-size: 16px;
+}
+
+header ul > li { display: inline; }
+
+ul {
+	
+	list-style-type: none;
+}
+
+nav ul {
+	padding-left: 0;
+}
+
+main ul {
+	padding-left: 10px;
+}
+
+nav a {
+	display: block;
+	padding: 5px;
+}
+
+a { text-decoration: none; }
+
+h1 {
+	display: inline;
+	margin: 5px;
+	font-size: 25px;
+}
+
+h2, h3, h4, h5 {
+	font-weight: normal;
+}
+
+h2 {
+	margin: 0;
+	font-size: 34px;
+}
+
+footer h2 { font-size: 16px; }
+
+h3 {
+	font-size: 28px;
+}
+h4 {
+	margin: 0;
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+table {
+	display: inline;
+	float: left;
+	padding: 10px;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+	border-top: 1px solid #ddd;
+}
+
+th {
+	background-color: #444;
+	color: white;
+}
+
+header img {
+	width: 20px;
+}
+
+input[type="text"] {
+	//width: 200px;
+}
+
+textarea {
+}
+
+.clear { clear: both; }
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+	body { margin: 0; }
+	header span { display: none; }
+	nav { display: none; }
+	main { padding: 10px; }
+	main, footer { margin-left: 0; }
+	section { padding: 10px; }
+}

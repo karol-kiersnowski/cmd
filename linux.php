@@ -1,0 +1,512 @@
+<?php
+	include "sys.php";
+	$title = $cmd . " linux";
+	include "header.php";
+?>
+
+<h2><i class="fab fa-linux"></i> gnu linux</h2>
+<section>
+	<article id="introduction">
+		<hr>
+		<h3><i class="far fa-play-circle"></i> <?=$introduction?></h3>
+		<hr>
+		<h4><?=$introduction?></h4>
+		<p>
+			Aby przejść do trybu tekstowego należy wciśnąć ctrl+alt+F1 (lub F2, F3, F4, F5, F6).
+		</p>
+		<h4>key combinations / keyboard shortcuts</h4>
+		<ul>
+			<li><kbd>ctrl</kbd> + <kbd>l</kbd> - clear the the terminal screen; same as the command <em>clear</em></li>
+			<li><kbd>ctrl</kbd> + <kbd>c</kbd> - terminate the current task</li>
+			<li><kbd>ctrl</kbd> + <kbd>z</kbd> - freeze the current task and move it to the background</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>delete</kbd> - reboot the system (only in CLI mode - not terminal emulator)</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F1</kbd> - go to the CLI mode (from GUI)</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F2</kbd> - go to the CLI mode (from GUI)</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F3</kbd> - go to the CLI mode (from GUI)</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F4</kbd> - go to the CLI mode (from GUI)</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F5</kbd> - go to the CLI mode (from GUI)</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F6</kbd> - go to the CLI mode (from GUI)</li>
+			<li><kbd>alt</kbd> + <kbd>F1</kbd> - go to the CLI mode (only in CLI)</li>
+			<li><kbd>alt</kbd> + <kbd>F2</kbd> - go to the CLI mode (only in CLI)</li>
+			<li><kbd>alt</kbd> + <kbd>F3</kbd> - go to the CLI mode (only in CLI)</li>
+			<li><kbd>alt</kbd> + <kbd>F4</kbd> - go to the CLI mode (only in CLI)</li>
+			<li><kbd>alt</kbd> + <kbd>F5</kbd> - go to the CLI mode (only in CLI)</li>
+			<li><kbd>alt</kbd> + <kbd>F6</kbd> - go to the CLI mode (only in CLI)</li>
+			<li><kbd>alt</kbd> + <kbd>right arrow</kbd> - change CLI mode (only in CLI mode)</li>
+			<li><kbd>alt</kbd> + <kbd>left arrow</kbd> - change CLI mode (only in CLI mode)</li>
+		</ul>
+		<h4><?=$disksPartitions?></h4>
+		<p>Numeracja dysków</p>
+		<ol>
+			<li>sda - dysk nr 1</li>
+			<li>sdb - dysk nr 2</li>
+			<li>sdc - dysk nr 3</li>
+		</ol>
+
+		lub
+
+		<ol>
+			<li>hda - dysk nr 1</li>
+			<li>hdb - dysk nr 2</li>
+			<li>hdc - dysk nr 3</li>
+		</ol>
+
+		<p>Numeracja partycji</p>
+		<ol>
+			<li>sda1 - dysk nr 1, partycja nr 1</li>
+			<li>sda2 - dysk nr 1, partycja nr 2</li>
+			<li>sda3 - dysk nr 1, partycja nr 3</li>
+		</ol>
+
+<pre>
+karol@aspireOne:~$ sudo fdisk -l
+Disk /dev/sda: 55,9 GiB, 60022480896 bytes, 117231408 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x31cafd91
+
+Device     Boot     Start       End   Sectors Size Id Type
+/dev/sda2            2048 113127423 113125376  54G 83 Linux
+/dev/sda3       113127424 117229567   4102144   2G 82 Linux swap / Solaris
+</pre>
+
+		<h4><?=$directoryStructure?></h4>
+
+<pre>
+karol@core2duo ~ $ cd /
+karol@core2duo / $ tree -L 1
+.
+├── bin
+├── boot
+├── cdrom
+├── dev
+├── etc
+├── home
+├── initrd.img -> boot/initrd.img-4.10.0-38-generic
+├── lib
+├── lib64
+├── lost+found
+├── media
+├── mnt
+├── opt
+├── proc
+├── root
+├── run
+├── sbin
+├── snap
+├── srv
+├── sys
+├── tmp
+├── usr
+├── var
+└── vmlinuz -> boot/vmlinuz-4.10.0-38-generic
+
+22 directories, 2 files
+</pre>
+
+		<h4><?=$accessRights?></h4>
+	</article>
+
+
+	<article id="commands">
+		<hr>
+		<h3><i class="fa fa-question"></i> <?=$commands?></h3>
+		<hr>
+		<ul>
+			<li>whatis</li>
+			<li>apropos</li>
+			<li>man</li>
+			<li>info</li>
+			<p>additional (to download)</p>
+			<li>tldr</li>
+		</ul>
+	</article>
+	<article id="browsing-directories">
+		<hr>
+		<h3><i class="far fa-folder-open"></i> <?=$browsingDirectories?></h3>
+		<hr>
+		<ul>
+			<li>pwd</li>
+			<li>ls</li>
+			<li>cd</li>
+			<li>tree</li>
+		</ul>
+		<h4>tree -d - display only directories</h4>
+
+<pre>
+karol@core2duo ~/Dokumenty $ tree -d
+.
+├── GTA3 User Files
+├── GTA San Andreas User Files
+│   ├── Gallery
+│   └── User Tracks
+├── GTA Vice City User Files
+└── THQ
+    └── MXvsATV Unleashed
+        └── Save
+
+8 directories
+</pre>
+	</article>
+	<article id="folders-files-manipulation">
+		<hr>
+		<h3><i class="far fa-copy"></i> <?=$foldersFilesManipulation?></h3>
+		<hr>
+		<ul>
+			<li>cp</li>
+			<li>mv</li>
+			<li>rm</li>
+			<li>ln</li>
+			<li>touch</li>
+			<li>mkdir</li>
+			<li>rmdir</li>
+		</ul>
+	</article>
+	<article id="reading-files">
+		<hr>
+		<h3><i class="far fa-file-alt"></i> <?=$readingFiles?></h3>
+		<hr>
+		<ul>
+			<li>head</li>
+			<li>tail</li>
+			<li>stat</li>
+			<li>cmp</li>
+		</ul>
+	</article>
+	<article id="console">
+		<hr>
+		<h3><i class="fa fa-terminal"></i> <?=$console?></h3>
+		<hr>
+		<ul>
+			<li>clear</li>
+			<li>reset</li>
+			<li>more</li>
+			<li>less</li>
+			<li>history</li>
+		</ul>
+	</article>
+	<article id="power-session">
+		<hr>
+		<h3><i class="fa fa-power-off"></i> <?=$powerSession?></h3>
+		<hr>
+		<ul>
+			<li>exit</li>
+			<li>logout</li>
+			<li>login</li>
+			<li>reboot</li>
+			<li>poweroff</li>
+			<li>shutdown</li>
+		</ul>
+	</article>
+	<article id="file-system">
+		<hr>
+		<h3><i class="far fa-hdd fa-fw"></i> <?=$fileSystem?></h3>
+		<hr>
+		<ul>
+			<li>df</li>
+			<li>du</li>
+			<li>mount</li>
+			<li>umount</li>
+			<li>fdisk</li>
+			<li>fsck</li>
+		</ul>
+	</article>
+	<article id="admin">
+		<hr>
+		<h3><i class="fa fa-shield-alt"></i> <?=$admin?></h3>
+		<hr>
+		<ul>
+			<li>su</li>
+			<li>sudo</li>
+			<li>chmod</li>
+			<li>chown</li>
+			<li>umask</li>
+			<li>update-grub</li>
+		</ul>
+	</article>
+	<article id="users">
+		<hr>
+		<h3><i class="far fa-user"></i> <?=$users?></h3>
+		<hr>
+		<ul>
+			<li>logname</li>
+			<li>whoami</li>
+			<li>who</li>
+			<li>w</li>
+			<li>last</li>
+			<li>lslogins</li>
+			<li>groups</li>
+		</ul>
+	</article>
+	<article id="users-admin">
+	<hr>
+	<h3><i class="fa fa-user-shield"></i> <?=$usersAdmin?></h3>
+	<hr>
+	<ul>
+		<li>passwd</li>
+		<li>adduser</li>
+		<li>deluser</li>
+		<li>useradd</li>
+		<li>userdel</li>
+		<li>addgroup</li>
+		<li>delgroup</li>
+		<li>groupadd</li>
+		<li>groupdel</li>
+	</ul>
+	</article>
+	<article id="statistics">
+		<hr>
+		<h3><i class="fa fa-chart-bar"></i> <?=$statistics?></h3>
+		<hr>
+		<ul>
+			<li>uptime</li>
+			<li>free</li>
+			<li>time</li>
+			<li>date</li>
+			<li>cal</li>
+		</ul>
+	</article>
+	<article id="system">
+	<hr>
+	<h3><i class="fa fa-laptop"></i> system</h3>
+	<hr>
+	<ul>
+		<li>hostname</li>
+		<li>uptime</li>
+		<li>uname</li>
+		<li>lsmod</li>
+	</ul>
+	</article>
+	<article id="hardware">
+	<hr>
+	<h3><i class="fa fa-microchip"></i> <?=$hardware?></h3>
+	<hr>
+	<ul>
+		<li>arch</li>
+		<li>lscpu</li>
+		<li>lsmem</li>
+		<li>lsusb</li>
+		<li>lspci</li>
+		<li>lshw</li>
+		<li>hdparm</li>
+	</ul>
+	</article>
+	<article id="network">
+	<hr>
+	<h3><i class="fa fa-network-wired"></i> <?=$network?></h3>
+	<hr>
+	<ul>
+		<li>ifconfig</li>
+		<li>ping</li>
+		<li>traceroute</li>
+		<li>host</li>
+		<li>whois</li>
+		<li>route</li>
+		<li>netstat</li>
+		<li>dig</li>
+		<li>wget</li>
+		<li>curl</li>
+		<li>iptables</li>
+		<li>ufw</li>
+	</ul>
+	</article>
+	<article id="wireless">
+	<hr>
+	<h3><i class="fa fa-wifi"></i> <?=$wireless?></h3>
+	<hr>
+	<ul>
+		<li>iwconfig</li>
+		<li>iwlist</li>
+		<li>rfkill</li>
+	</ul>
+	</article>
+	<article id="processes">
+	<hr>
+	<h3><i class="fa fa-list-ul"></i> <?=$processes?></h3>
+	<hr>
+	<ul>
+		<li>ps</li>
+		<li>top</li>
+		<li>htop</li>
+		<li>kill</li>
+		<li>killall</li>
+		<li>jobs</li>
+		<li>fg</li>
+		<li>bg</li>
+		<li>nice</li>
+	</ul>
+	</article>
+	<article id="package-managers">
+	<hr>
+	<h3><i class="fa fa-cube"></i> <?=$packageManagers?></h3>
+	<hr>
+	<ul>
+		<li>apt</li>
+		<ul>
+			<li>apt search</li>
+			<li>apt show</li>
+			<li>apt install</li>
+			<li>apt remove</li>
+			<li>apt purge</li>
+			<li>apt update</li>
+			<li>apt upgrade</li>
+			<li>apt add-repository</li>
+		</ul>
+		<li>aptitude</li>
+		<li>rpm</li>
+		<li>yum</li>
+		<li>pacman</li>
+		<li>flatpak</li>
+		<li>snap</li>
+	</ul>
+	</article>
+	<article id="search">
+	<hr>
+	<h3><i class="fa fa-search"></i> <?=$search?></h3>
+	<hr>
+	<ul>
+		<li>which</li>
+		<li>whereis</li>
+		<li>locate</li>
+		<li>find</li>
+		<li>grep</li>
+	</ul>
+	</article>
+	<article id="text-manipulation">
+	<hr>
+	<h3><i class="fa fa-search"></i> <?=$textManipulation?></h3>
+	<hr>
+	<ul>
+		<li>cat</li>
+		<li>tee</li>
+		<li>awk</li>
+		<li>sed</li>
+	</ul>
+	</article>
+	<article id="archive">
+	<hr>
+	<h3><i class="far fa-file-archive"></i> <?=$archive?></h3>
+	<hr>
+	<ul>
+		<li>tar</li>
+		<li>zip</li>
+		<li>unzip</li>
+		<li>gzip</li>
+		<li>bzip2</li>
+	</ul>
+	</article>
+	<article id="compilation">
+	<hr>
+	<h3><i class="far fa-file-code"></i> <?=$compilation?></h3>
+	<hr>
+	<ul>
+		<li>gcc</li>
+		<li>g&plus;&plus;</li>
+		<li>javac</li>
+		<li>java</li>
+		<li>make</li>
+		<li>cmake</li>
+	</ul>
+	</article>
+	<article id="text-editors">
+	<hr>
+	<h3><i class="fa fa-align-left"></i> <?=$textEditors?></h3>
+	<hr>
+	<ul>
+		<li>vim (vi)</li>
+		<li>nano (pico)</li>
+		<li>mcedit</li>
+	</ul>
+	</article>
+	<article id="useful-programs">
+	<hr>
+	<h3><i class="far fa-window-maximize"></i> <?=$usefulPrograms?></h3>
+	<hr>
+	<ul>
+		<li>lynx</li>
+		<li>links</li>
+		<li>elinks</li>
+		<li>moc / mocp</li>
+	</ul>
+	</article>
+	<article id="ncurses-programs">
+	<hr>
+	<h3><i class="far fa-window-maximize"></i> <?=$ncursesPrograms?></h3>
+	<hr>
+	<ul>
+		<li>mc</li>
+		<li>mcedit</li>
+		<li>alsamixer</li>
+	</ul>
+	</article>
+	<article id="x-server">
+	<hr>
+	<h3><i class="fa fa-desktop"></i> <?=$xServer?></h3>
+	<hr>
+	<ul>
+		<li>xrandr</li>
+		<li>xkill</li>
+		<li>xterm</li>
+		<li>xlogo</li>
+		<li>startx</li>
+		<li>xinit</li>
+	</ul>
+	</article>
+	<article id="wine">
+	<hr>
+	<h3><i class="fas fa-wine-glass-alt"></i> wine</h3>
+	<hr>
+	<ul>
+		<li>wine</li>
+		<li>wineconsole</li>
+		<li>winecfg</li>
+		<li>notepad</li>
+	</ul>
+	</article>
+	<article id="bash-scripts">
+	<hr>
+	<h3><i class="fa fa-code"></i> <?=$bashScripts?></h3>
+	<hr>
+	<ul>
+		<li>echo</li>
+		<li>if</li>
+		<li>case</li>
+		<li>for</li>
+		<li>while</li>
+		<li>until</li>
+	</ul>
+	</article>
+	<article id="ssh">
+	<hr>
+	<h3><i class="fas fa-tty"></i> telnet & ssh</h3>
+	<hr>
+	<ul>
+		<li>telnet</li>
+		<li>ssh</li>
+	</ul>
+	</article>
+	<article id="git">
+	<hr>
+	<h3><i class="fab fa-git-alt"></i> git</h3>
+	<hr>
+	<ul>
+		<li>git config user.name</li>
+		<li>git config user.email</li>
+		<li>git config --global user.name "Your Name"</li>
+		<li>git config --global user.email "you@example.com"</li>
+		<li>git config core.editor</li>
+		<li>git config --list</li>
+		<li>git init</li>
+		<li>git status</li>
+		<li>git add [file name]</li>
+		<li>git commit -m "your message"</li>
+		<li>git remote add origin [repo address]</li>
+		<li>git push -u origin master</li>
+		<li>git clone [repo address]</li>
+	</ul>
+	</article>
+</section>
+
+<?php include "footer.php"; ?>
