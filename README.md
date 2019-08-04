@@ -11,6 +11,13 @@ Technologies
 * JavaScript
 * PHP 7
 
+
+Features
+--------
+CSS webfonts
+* Ubuntu Mono font
+* Font Awesome icons
+
 Language
 --------
 * User interface: English / Polish

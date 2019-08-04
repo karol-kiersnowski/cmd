@@ -10,15 +10,18 @@
 		<hr>
 		<h3><i class="far fa-play-circle"></i> <?=$introduction?></h3>
 		<hr>
-		<h4><?=$introduction?></h4>
 		<p>
 			Aby przejść do trybu tekstowego należy wciśnąć ctrl+alt+F1 (lub F2, F3, F4, F5, F6).
 		</p>
-		<h4>key combinations / keyboard shortcuts</h4>
+	</article>
+	<article id="keyboard-shortcuts">
+		<hr>
+		<h3><i class="far fa-keyboard"></i> <?=$keyboardShortcuts?></h3>
+		<hr>
 		<ul>
-			<li><kbd>ctrl</kbd> + <kbd>l</kbd> - clear the the terminal screen; same as the command <em>clear</em></li>
+			<li><kbd>ctrl</kbd> + <kbd>l</kbd> - clear the terminal screen; same as the command <em>clear</em></li>
 			<li><kbd>ctrl</kbd> + <kbd>c</kbd> - terminate the current task</li>
-			<li><kbd>ctrl</kbd> + <kbd>z</kbd> - freeze the current task and move it to the background</li>
+			<li><kbd>ctrl</kbd> + <kbd>z</kbd> - freeze the current task and move it to the background (see commands: <em>jobs</em>, <em>fg</em>, <em>bg</em> and postfix <em>&</em>)</li>
 			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>delete</kbd> - reboot the system (only in CLI mode - not terminal emulator)</li>
 			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F1</kbd> - go to the CLI mode (from GUI)</li>
 			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F2</kbd> - go to the CLI mode (from GUI)</li>
@@ -35,7 +38,11 @@
 			<li><kbd>alt</kbd> + <kbd>right arrow</kbd> - change CLI mode (only in CLI mode)</li>
 			<li><kbd>alt</kbd> + <kbd>left arrow</kbd> - change CLI mode (only in CLI mode)</li>
 		</ul>
-		<h4><?=$disksPartitions?></h4>
+	</article>
+	<article id="disks-partitions">
+		<hr>
+		<h3><i class="far fa-hdd"></i> <?=$disksPartitions?></h3>
+		<hr>
 		<p>Numeracja dysków</p>
 		<ol>
 			<li>sda - dysk nr 1</li>
@@ -71,9 +78,35 @@ Device     Boot     Start       End   Sectors Size Id Type
 /dev/sda2            2048 113127423 113125376  54G 83 Linux
 /dev/sda3       113127424 117229567   4102144   2G 82 Linux swap / Solaris
 </pre>
+	</article>
+	<article id="directory-structure">
+		<hr>
+		<h3><i class="fas fa-sitemap"></i> <?=$directoryStructure?></h3>
+		<hr>
 
-		<h4><?=$directoryStructure?></h4>
-
+<pre style="background-color: inherit; color: inherit;">
+├── bin
+├── boot
+├── cdrom
+├── dev
+├── etc
+├── home
+├── lib
+├── lib64
+├── lost+found
+├── media
+├── mnt
+├── opt
+├── proc
+├── root
+├── run
+├── sbin
+├── srv
+├── sys
+├── tmp
+├── usr
+└── var
+</pre>
 <pre>
 karol@core2duo ~ $ cd /
 karol@core2duo / $ tree -L 1
@@ -105,8 +138,64 @@ karol@core2duo / $ tree -L 1
 
 22 directories, 2 files
 </pre>
+	</article>
+	<article id="access-rights">
+		<hr>
+		<h3><i class="fas fa-unlock-alt"></i> <?=$accessRights?></h3>
+		<hr>
+<pre>
+<font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~</b></font>$ ls -l
+razem 44
+drwxr-xr-x 15 karol karol 4096 sie  3 20:57 <font color="#729FCF"><b>Aplikacje</b></font>
+drwxr-xr-x  4 karol karol 4096 sie  4 10:47 <font color="#729FCF"><b>Dokumenty</b></font>
+drwxr-xr-x 22 karol karol 4096 sie  2 13:20 <font color="#729FCF"><b>ePSXe</b></font>
+drwxr-xr-x  7 karol karol 4096 sie  3 20:54 <font color="#729FCF"><b>Muzyka</b></font>
+drwxr-xr-x  2 karol karol 4096 sie  2 16:14 <font color="#729FCF"><b>Obrazy</b></font>
+drwxr-xr-x  2 karol karol 4096 sie  4 10:38 <font color="#729FCF"><b>Pobrane</b></font>
+drwxrwxr-x  2 karol karol 4096 sie  4 18:32 <font color="#729FCF"><b>Projects</b></font>
+drwxr-xr-x  2 karol karol 4096 sie  2 16:14 <font color="#729FCF"><b>Publiczny</b></font>
+drwxr-xr-x  4 karol karol 4096 sie  4 13:06 <font color="#729FCF"><b>Pulpit</b></font>
+drwxr-xr-x  2 karol karol 4096 sie  2 16:14 <font color="#729FCF"><b>Szablony</b></font>
+drwxr-xr-x  2 karol karol 4096 sie  2 16:14 <font color="#729FCF"><b>Wideo</b></font>
+</pre>
+<pre style="background-color: inherit; color: inherit;">
+drwxr-xr-x
+│└┬┘└┬┘└┬┘
+│ │  │  │
+│<b>u</b>ser│<b>o</b>ther
+│    │
+│  <b>g</b>roup
+│
+├──────────────────────┐
+type of file / directory
+</pre>
+		<h4>what means ...</h4>
+		<ul>
+			<li>r - reading right</li>
+			<li>w - writing right</li>
+			<li>x - execute right (in the case of directory it means that we can run files in this directory)</li>
+		</ul>
+		<h4>numerical value of access rights</h4>
+		<ul>
+			<li>r - 4</li>
+			<li>w - 2</li>
+			<li>x - 1</li>
+		</ul>
 
-		<h4><?=$accessRights?></h4>
+		<h4>how to change access rights?</h4>
+		<ul>
+			<li><code>chmod 777 fileName</code> - rwxrwxrwx - set all rights to all users</li>
+			<li><code>chmod 700 fileName</code> - rwx------ - only the owner has rights (all)</li>
+			<li><code>chmod 644 fileName</code> - rw-r--r-- - the owner can read and write; users from group and other users can only read</li>
+			<li><code>chmod 755 fileName</code> - rwxr-xr-x - the owner has all rights; users from group and other users can read and execute</li>
+		</ul>
+
+		<h4>Types of file / directory</h4>
+		<ul>
+			<li>d - directory</li>
+			<li>- - usual file</li>
+			<li>l - link</li>
+		</ul>
 	</article>
 
 

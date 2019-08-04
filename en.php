@@ -7,6 +7,7 @@ $guestBook = "guest book";
 $about = "about";
 
 $introduction = "introduction";
+$keyboardShortcuts = "keyboard shortcuts";
 $disksPartitions = "disks & partitions";
 $directoryStructure = "directory structure";
 $accessRights = "access rights";

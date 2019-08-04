@@ -62,6 +62,10 @@
 		<hr>
 		<ul>
 			<li><a href="linux.php<?=$suffix?>#introduction"><i class="far fa-play-circle fa-fw"></i> <?=$introduction?></a></li>
+			<li><a href="linux.php<?=$suffix?>#keyboard-shortcuts"><i class="far fa-keyboard fa-fw"></i> <?=$keyboardShortcuts?></a></li>
+			<li><a href="linux.php<?=$suffix?>#disks-partitions"><i class="far fa-hdd fa-fw"></i> <?=$disksPartitions?></a></li>
+			<li><a href="linux.php<?=$suffix?>#directory-structure"><i class="fas fa-sitemap fa-fw"></i> <?=$directoryStructure?></a></li>
+			<li><a href="linux.php<?=$suffix?>#access-rights"><i class="fas fa-unlock-alt fa-fw"></i> <?=$accessRights?></a></li>
 			<li><a href="linux.php<?=$suffix?>#commands"><i class="fa fa-question fa-fw"></i> <?=$commands?></a></li>
 			<li><a href="linux.php<?=$suffix?>#browsing-directories"><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></a></li>
 			<li><a href="linux.php<?=$suffix?>#folders-files-manipulation"><i class="far fa-copy fa-fw"></i> <?=$foldersFilesManipulation?></a></li>
