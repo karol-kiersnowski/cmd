@@ -15,7 +15,6 @@
 	<title><?=$title?></title>
 	<meta name="keywords" content="cmd.sh,cmd_site,cmd,command,command-line interface,console,terminal,linux,bash,dos,windows,wiersz polecenia,konsola"/>
 	<meta name="description" content="Learn commands from the GNU Linux and Windows"/>
-	<meta name="author" content="Karol Kiersnowski"/>
 </head>
 <body onscroll="markAnchor()">
 	<header>

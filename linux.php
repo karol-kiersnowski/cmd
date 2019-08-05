@@ -169,6 +169,18 @@ drwxr-xr-x
 ├──────────────────────┐
 type of file / directory
 </pre>
+		<h4>Types of file / directory</h4>
+		<ul>
+			<li>d - directory</li>
+			<li>- - usual file</li>
+			<li>l - link</li>
+		</ul>
+		<h4>who is who?</h4>
+		<ul>
+			<li>user - the file / directory owner</li>
+			<li>group - users who are in the same group as the owner of the file / directory</li>
+			<li>other - all other users</li>
+		</ul>
 		<h4>what means ...</h4>
 		<ul>
 			<li>r - reading right</li>
@@ -181,20 +193,27 @@ type of file / directory
 			<li>w - 2</li>
 			<li>x - 1</li>
 		</ul>
+		<ul>
+			<li>rwx = 7</li>
+			<li>rw- = 6</li>
+			<li>r-x = 5</li>
+			<li>r-- = 4</li>
+			<li>--- = 0</li>
+		</ul>
 
 		<h4>how to change access rights?</h4>
+		<h5>by numerical values</h5>
 		<ul>
 			<li><code>chmod 777 fileName</code> - rwxrwxrwx - set all rights to all users</li>
 			<li><code>chmod 700 fileName</code> - rwx------ - only the owner has rights (all)</li>
 			<li><code>chmod 644 fileName</code> - rw-r--r-- - the owner can read and write; users from group and other users can only read</li>
 			<li><code>chmod 755 fileName</code> - rwxr-xr-x - the owner has all rights; users from group and other users can read and execute</li>
 		</ul>
-
-		<h4>Types of file / directory</h4>
+		<h5>by assigning
 		<ul>
-			<li>d - directory</li>
-			<li>- - usual file</li>
-			<li>l - link</li>
+			<li><code>chmod u+x fileName</code> - add executing right for the file owner</li>
+			<li><code>chmod o-r fileName</code> - remove reading right for other users</li>
+			<li><code>chmod g=rx fileName</code> - set reading and executing right for group users (</li>
 		</ul>
 	</article>
 
@@ -587,13 +606,15 @@ karol@core2duo ~/Dokumenty $ tree -d
 		<li>git config --global user.email "you@example.com"</li>
 		<li>git config core.editor</li>
 		<li>git config --list</li>
+		<li>git clone [repo address]</li>
+		<li>git remote -v</li>
+		<li>git remote add origin [repo address]</li>
 		<li>git init</li>
 		<li>git status</li>
 		<li>git add [file name]</li>
 		<li>git commit -m "your message"</li>
-		<li>git remote add origin [repo address]</li>
 		<li>git push -u origin master</li>
-		<li>git clone [repo address]</li>
+		<li>git pull</li>
 	</ul>
 	</article>
 </section>
