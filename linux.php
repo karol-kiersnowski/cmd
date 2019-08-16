@@ -21,22 +21,22 @@
 		<ul>
 			<li><kbd>ctrl</kbd> + <kbd>l</kbd> - clear the terminal screen; same as the command <em>clear</em></li>
 			<li><kbd>ctrl</kbd> + <kbd>c</kbd> - terminate the current task</li>
-			<li><kbd>ctrl</kbd> + <kbd>z</kbd> - freeze the current task and move it to the background (see commands: <em>jobs</em>, <em>fg</em>, <em>bg</em> and postfix <em>&</em>)</li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>delete</kbd> - reboot the system (only in CLI mode - not terminal emulator)</li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F1</kbd> - go to the CLI mode (from GUI)</li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F2</kbd> - go to the CLI mode (from GUI)</li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F3</kbd> - go to the CLI mode (from GUI)</li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F4</kbd> - go to the CLI mode (from GUI)</li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F5</kbd> - go to the CLI mode (from GUI)</li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F6</kbd> - go to the CLI mode (from GUI)</li>
-			<li><kbd>alt</kbd> + <kbd>F1</kbd> - go to the CLI mode (only in CLI)</li>
-			<li><kbd>alt</kbd> + <kbd>F2</kbd> - go to the CLI mode (only in CLI)</li>
-			<li><kbd>alt</kbd> + <kbd>F3</kbd> - go to the CLI mode (only in CLI)</li>
-			<li><kbd>alt</kbd> + <kbd>F4</kbd> - go to the CLI mode (only in CLI)</li>
-			<li><kbd>alt</kbd> + <kbd>F5</kbd> - go to the CLI mode (only in CLI)</li>
-			<li><kbd>alt</kbd> + <kbd>F6</kbd> - go to the CLI mode (only in CLI)</li>
-			<li><kbd>alt</kbd> + <kbd>right arrow</kbd> - change CLI mode (only in CLI mode)</li>
-			<li><kbd>alt</kbd> + <kbd>left arrow</kbd> - change CLI mode (only in CLI mode)</li>
+			<li><kbd>ctrl</kbd> + <kbd>z</kbd> - freeze the current task and move it to the background (see commands: <em>jobs</em>, <em>fg</em>, <em>bg</em> and operator <em>&</em>)</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>del</kbd> - reboot the system (only in CLI)</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F1</kbd> - go to the TTY1 (from GUI)</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F2</kbd> - go to the TTY2 (from GUI)</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F3</kbd> - go to the TTY3 (from GUI)</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F4</kbd> - go to the TTY4 (from GUI)</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F5</kbd> - go to the TTY5 (from GUI)</li>
+			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F6</kbd> - go to the TTY6 (from GUI)</li>
+			<li><kbd>alt</kbd> + <kbd>F1</kbd> - go to the TTY1 (from other TTY)</li>
+			<li><kbd>alt</kbd> + <kbd>F2</kbd> - go to the TTY2 (from other TTY)</li>
+			<li><kbd>alt</kbd> + <kbd>F3</kbd> - go to the TTY3 (from other TTY)</li>
+			<li><kbd>alt</kbd> + <kbd>F4</kbd> - go to the TTY4 (from other TTY)</li>
+			<li><kbd>alt</kbd> + <kbd>F5</kbd> - go to the TTY5 (from other TTY)</li>
+			<li><kbd>alt</kbd> + <kbd>F6</kbd> - go to the TTY6 (from other TTY)</li>
+			<li><kbd>alt</kbd> + <kbd><i class="fas fa-arrow-right"></i></kbd> - go to the next TTY (from other TTY)</li>
+			<li><kbd>alt</kbd> + <kbd><i class="fas fa-arrow-left"></i></kbd> - go to the previous TTY (from other TTY)</li>
 		</ul>
 	</article>
 	<article id="disks-partitions">
@@ -169,7 +169,7 @@ drwxr-xr-x
 ├──────────────────────┐
 type of file / directory
 </pre>
-		<h4>Types of file / directory</h4>
+		<h4>types of files</h4>
 		<ul>
 			<li>d - directory</li>
 			<li>- - usual file</li>
@@ -177,15 +177,15 @@ type of file / directory
 		</ul>
 		<h4>who is who?</h4>
 		<ul>
-			<li>user - the file / directory owner</li>
-			<li>group - users who are in the same group as the owner of the file / directory</li>
+			<li>user - the file (directory) owner</li>
+			<li>group - users who are in the same group as the owner of the file</li>
 			<li>other - all other users</li>
 		</ul>
 		<h4>what means ...</h4>
 		<ul>
 			<li>r - reading right</li>
 			<li>w - writing right</li>
-			<li>x - execute right (in the case of directory it means that we can run files in this directory)</li>
+			<li>x - executing right</li>
 		</ul>
 		<h4>numerical value of access rights</h4>
 		<ul>
@@ -209,7 +209,7 @@ type of file / directory
 			<li><code>chmod 644 fileName</code> - rw-r--r-- - the owner can read and write; users from group and other users can only read</li>
 			<li><code>chmod 755 fileName</code> - rwxr-xr-x - the owner has all rights; users from group and other users can read and execute</li>
 		</ul>
-		<h5>by assigning
+		<h5>by assigning</h5>
 		<ul>
 			<li><code>chmod u+x fileName</code> - add executing right for the file owner</li>
 			<li><code>chmod o-r fileName</code> - remove reading right for other users</li>
@@ -217,6 +217,11 @@ type of file / directory
 		</ul>
 	</article>
 
+	<article id="pipelines-redirections">
+		<hr>
+		<h3><i class="fas fa-directions"></i> <?=$pipelinesRedirections?></h3>
+		<hr>
+	</article>
 
 	<article id="commands">
 		<hr>
@@ -227,7 +232,7 @@ type of file / directory
 			<li>apropos</li>
 			<li>man</li>
 			<li>info</li>
-			<p>additional (to download)</p>
+			<p>additional / not in the base packages (to download)</p>
 			<li>tldr</li>
 		</ul>
 	</article>
@@ -293,6 +298,8 @@ karol@core2duo ~/Dokumenty $ tree -d
 			<li>more</li>
 			<li>less</li>
 			<li>history</li>
+			<li>tty</li>
+			<li>alias</li>
 		</ul>
 	</article>
 	<article id="power-session">
@@ -411,6 +418,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 		<li>traceroute</li>
 		<li>host</li>
 		<li>whois</li>
+		<li>arp</li>
 		<li>route</li>
 		<li>netstat</li>
 		<li>dig</li>
@@ -459,9 +467,17 @@ karol@core2duo ~/Dokumenty $ tree -d
 			<li>apt remove</li>
 			<li>apt purge</li>
 			<li>apt update</li>
+			<li>apt list --upgradable</li>
 			<li>apt upgrade</li>
 			<li>apt add-repository</li>
 		</ul>
+		<li>apt-get</li>
+		<ul>
+			<li>apt-get install</li>
+			<li>apt-get remove</li>
+		</ul>
+		<li>apt-cache</li>
+		<li>apt-key</li>
 		<li>aptitude</li>
 		<li>rpm</li>
 		<li>yum</li>
@@ -593,6 +609,17 @@ karol@core2duo ~/Dokumenty $ tree -d
 	<ul>
 		<li>telnet</li>
 		<li>ssh</li>
+	</ul>
+	</article>
+	<article id="xampp">
+	<hr>
+	<h3><i class="fab fa-php"></i> xampp</h3>
+	<hr>
+	<ul>
+		<li>sudo /opt/lampp/lampp start</li>
+		<li>sudo /opt/lampp/lampp stop</li>
+		<li>sudo /opt/lampp/lampp reload</li>
+		<li>sudo /opt/lampp/lampp restart</li>
 	</ul>
 	</article>
 	<article id="git">

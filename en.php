@@ -11,6 +11,7 @@ $keyboardShortcuts = "keyboard shortcuts";
 $disksPartitions = "disks & partitions";
 $directoryStructure = "directory structure";
 $accessRights = "access rights";
+$pipelinesRedirections = "pipelines & redirections";
 
 $commands = "info about commands";
 $browsingDirectories = "browsing directories";

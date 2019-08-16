@@ -17,7 +17,7 @@
 </ul>
 
 
-<section id="startSystemInCLI">
+<article id="startSystemInCLI">
 	<h4>set the system start in console / CLI mode</h4>
 	<div class="textToCopy">
 		<input class="code" type="text" readonly id="startSystemInCLI1" value="systemctl set-default multi-user.target"/>
@@ -27,17 +27,17 @@
 	<pre>systemctl set-default multi-user.target</pre>
 	<p>To get the start back system in GUI</p>
 	<pre>systemctl set-default graphical.target</pre>
-</section>
+</article>
 
 
-<section id="changeRootPassword">
+<article id="changeRootPassword">
 	<h4>change root (superuser) password</h4>
 	<pre>sudo passwd root</pre>
-</section>
+</article>
 
 
 
-<section>
+<article>
 	<h4>change timeout to choose operations system in the GRUB</h4>
 <pre><font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~</b></font>$ cd /etc/default
 <font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>/etc/default</b></font>$ sudo nano grub
@@ -84,8 +84,8 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 <pre>
 sudo update-grub
 </pre>
-</section>
-<section>
+</article>
+<article>
 	<h4>change font size in the command-line interface</h4>
 	<h5><i class="fa fa-question"></i> Issue</h5>
 	<p>
@@ -98,13 +98,13 @@ sudo dpkg-reconfigure console-setup
 	<p>
 		In the two first steps we choose the default options. Next, we need to choose font family and font size.
 	</p>
-</section>
+</article>
 
 
 
 
 
-<section>
+<article>
 	<h4>Restore the GRUB after installing Windows</h4>
 	<h5><i class="fa fa-question"></i> Issue</h5>
 	<p>
@@ -143,9 +143,9 @@ Device     Boot     Start       End   Sectors Size Id Type
 <pre>
 karol@aspireOne:~$ sudo update-grub
 </pre>
-</section>
+</article>
 
-<section>
+<article>
 	<h4>Hide the system menu in full-screen games and change the resolution to default</h4>
 	<h5><i class="fa fa-question"></i> Issue</h5>
 	<p>
@@ -177,6 +177,6 @@ karol@core2duo ~/Aplikacje/NFS Underground $ chmod u+x script.sh
 <pre>
 karol@core2duo ~/Aplikacje/NFS Underground ./script.sh
 </pre>
-</section>
+</article>
 
 <?php include "footer.php"; ?>

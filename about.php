@@ -6,7 +6,7 @@
 
 <h2><i class="fa fa-info-circle"></i> <?php echo $about; ?></h2>
 <hr>
-<section>
+<article>
 	<!--<p>I'm sorry for my English :) I'm not native speaker of this language.</p>-->
 	<h3>thanks to:</h3>
 	<ul style="text-align: left; list-style-type: disc;">
@@ -16,6 +16,6 @@
 		<li><a href="https://www.apachefriends.org/index.html">XAMPP</a> for their great work</li>
 		<li><a href="https://www.sublimetext.com">Sublime Text</a> for their cool text editor</li>
 	</ul>
-</section>
+</article>
 
 <?php include "footer.php"; ?>

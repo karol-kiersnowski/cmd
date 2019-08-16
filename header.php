@@ -65,6 +65,7 @@
 			<li><a href="linux.php<?=$suffix?>#disks-partitions"><i class="far fa-hdd fa-fw"></i> <?=$disksPartitions?></a></li>
 			<li><a href="linux.php<?=$suffix?>#directory-structure"><i class="fas fa-sitemap fa-fw"></i> <?=$directoryStructure?></a></li>
 			<li><a href="linux.php<?=$suffix?>#access-rights"><i class="fas fa-unlock-alt fa-fw"></i> <?=$accessRights?></a></li>
+			<li><a href="linux.php<?=$suffix?>#pipelines-redirections"><i class="fas fa-directions fa-fw"></i> <?=$pipelinesRedirections?></a></li>
 			<li><a href="linux.php<?=$suffix?>#commands"><i class="fa fa-question fa-fw"></i> <?=$commands?></a></li>
 			<li><a href="linux.php<?=$suffix?>#browsing-directories"><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></a></li>
 			<li><a href="linux.php<?=$suffix?>#folders-files-manipulation"><i class="far fa-copy fa-fw"></i> <?=$foldersFilesManipulation?></a></li>
@@ -93,6 +94,7 @@
 			<li><a href="linux.php<?=$suffix?>#wine"><i class="fas fa-wine-glass-alt fa-fw"></i> wine</a></li>
 			<li><a href="linux.php<?=$suffix?>#bash-scripts"><i class="fa fa-code fa-fw"></i> <?=$bashScripts?></a></li>
 			<li><a href="linux.php<?=$suffix?>#ssh"><i class="fas fa-tty fa-fw"></i> telnet & ssh</a></li>
+			<li><a href="linux.php<?=$suffix?>#xampp"><i class="fab fa-php fa-fw"></i> xampp</a></li>
 			<li><a href="linux.php<?=$suffix?>#git"><i class="fab fa-git-alt fa-fw"></i> git</a></li>
 		</ul>
 
