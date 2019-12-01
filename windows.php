@@ -6,7 +6,7 @@
 
 <h2><i class="fab fa-windows"></i> windows cmd / DOS</h2>
 <hr>
-<section>
+<article>
 	<hr>
 	<h3><i class="fa fa-question fa-fw"></i> <?=$commands?></h3>
 	<hr>
@@ -90,6 +90,6 @@ imgmount d "..\WORMS.DAT" -t iso
 		<li>chkdsk</li>
 		<li>format</li>
 	</ul>
-</section>
+</article>
 
 <?php include "footer.php"; ?>

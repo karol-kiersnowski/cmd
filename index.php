@@ -35,7 +35,11 @@
 			Jeśli właśnie korzystamy ze środowiska graficznego, możemy użyć emulatora terminala (pseudoterminala) lub przejść do wiersza poleceń.
 		</p>
 		<p>
+<<<<<<< HEAD
 			Aby przejść do wiersza poleceń (nie emulatora terminala), wciśnij np. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Zamiast <kbd>F2</kbd> może być <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> lub <kbd>F1</kbd>.
+=======
+			Aby przejść do wiersza poleceń (nie emulatora terminala), wciśnij np. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Zamiast <kbd>F2</kbd> może być <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> or <kbd>F1</kbd>.
+>>>>>>> effdb95cbf5e4690d2bb6c5edb7716cd118c20d8
 		</p>
 		<p>
 			Jeśli chcesz z powrotem wrócić do środowiska graficznego, wciśnij np. <kbd>Alt</kbd> + <kbd>F1</kbd>. Zamiast <kbd>F1</kbd> może być <kbd>F6</kbd>, <kbd>F7</kbd> lub inny klawisz funkcyjny. Możemy również szybko przełączać się pomiędzy kolejnymi instancjami wiersza poleceń za pomocą <kbd>Alt</kbd> + <kbd><i class="fas fa-arrow-right"></i></kbd> lub <kbd>Alt</kbd> + <kbd><i class="fas fa-arrow-left"></i></kbd>.
@@ -115,7 +119,11 @@ drwxr-xr-x  2 karol karol 4096 Dec  5 21:39 <font color="#729FCF"><b>Videos</b><
 			Aby uruchomić wiersz poleceń cmd.exe, wciśnij start i zacznij wpisywać <em>cmd.exe</em>.
 		</p>
 		<p>
+<<<<<<< HEAD
 			DOS (Disk Operating system) był popularnym systemem operacyjnym w latach 80-tych i na początku lat 90-tych. Nie posiadał interfejsu graficznego (GUI). Więc, mogliśmy korzystać z niego jedynie w trybie tekstowym. W dzisiejszych czasach DOS nie jest praktycznie używany jako podstawowy system operacyjny. Poza tym na współczesnych komputerach nie uruchomimy oryginalnych wersji DOS'a (MS-DOS / PC-DOS). Możemy jednak uruchomić DOS w emulatorze, np. <a target="_blank" href="https://www.dosbox.com">DOSBox</a>. W taki sposób możemy uruchomić większość starszych gier i programów.
+=======
+			DOS (Disk Operating system) był popularnym systemem operacyjnym w latach 80-tych i na początku lat 90-tych. Nie posiadał interfejsu graficznego (GUI). Więc, mogliśmy korzystać z niego jedynie w trybie tekstowym. W dzisiejszych czasach DOS nie jest praktycznie używany.
+>>>>>>> effdb95cbf5e4690d2bb6c5edb7716cd118c20d8
 <?php } ?>
 
 

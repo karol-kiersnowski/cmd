@@ -606,6 +606,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 		<li>ssh</li>
 	</ul>
 	</article>
+<<<<<<< HEAD
 	<article id="wine">
 	<hr>
 	<h3><i class="fas fa-wine-glass-alt"></i> wine</h3>
@@ -617,6 +618,8 @@ karol@core2duo ~/Dokumenty $ tree -d
 		<li>notepad</li>
 	</ul>
 	</article>
+=======
+>>>>>>> effdb95cbf5e4690d2bb6c5edb7716cd118c20d8
 	<article id="xampp">
 	<hr>
 	<h3><i class="fab fa-php"></i> xampp</h3>
