@@ -4,7 +4,7 @@
 	include "header.php";
 ?>
 
-<h2><i class="fab fa-windows"></i> windows cmd / DOS</h2>
+<h2><i class="fab fa-windows"></i> windows cmd / dos</h2>
 <hr>
 <article>
 	<hr>
@@ -13,7 +13,7 @@
 	<ul>
 		<li>help</li>
 		<li>/h , /help</li>
-		<li>version</li>
+		<li>ver</li>
 	</ul>
 	<hr>
 	<h3><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></h3>

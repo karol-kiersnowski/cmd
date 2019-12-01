@@ -93,16 +93,13 @@
 			<li><a href="linux.php<?=$suffix?>#x-server"><i class="fa fa-desktop fa-fw"></i> <?=$xServer?></a></li>
 			<li><a href="linux.php<?=$suffix?>#bash-scripts"><i class="fa fa-code fa-fw"></i> <?=$bashScripts?></a></li>
 			<li><a href="linux.php<?=$suffix?>#ssh"><i class="fas fa-tty fa-fw"></i> telnet & ssh</a></li>
-<<<<<<< HEAD
 			<li><a href="linux.php<?=$suffix?>#wine"><i class="fas fa-wine-glass-alt fa-fw"></i> wine</a></li>
-=======
->>>>>>> effdb95cbf5e4690d2bb6c5edb7716cd118c20d8
 			<li><a href="linux.php<?=$suffix?>#xampp"><i class="fab fa-php fa-fw"></i> xampp</a></li>
 			<li><a href="linux.php<?=$suffix?>#git"><i class="fab fa-git-alt fa-fw"></i> git</a></li>
 		</ul>
 
 		<hr>
-		<h2><a href="windows.php<?=$suffix?>"><i class="fab fa-windows fa-fw"></i> windows cmd</a></h2>
+		<h2><a href="windows.php<?=$suffix?>"><i class="fab fa-windows fa-fw"></i> win cmd / dos</a></h2>
 		<hr>
 		<ul>
 			<li><a href="windows.php<?=$suffix?>"><i class="fa fa-question fa-fw"></i> <?=$commands?></a></li>
