@@ -21,7 +21,7 @@
 		<div id="header-content">
 			<h1>
 				<a id="menu" href="javascript:void(0);" title="Menu" onclick="changeMenu()">
-				<i class="fa fa-list-ul"></i></a>
+				<i class="fa fa-list-ul fa-fw"></i></a>
 			</h1>
 			<h1><a href="index.php"><i class="fa fa-terminal"></i>cmd.sh</a></h1>
 			<ul>
@@ -46,7 +46,7 @@
 		</div>
 	</header>
 	<div id="wrapper">
-	<nav id="nav">
+	<nav>
 		<hr style="margin-top: 0">
 		<h2><a href="index.php<?=$suffix?>"><i class="fa fa-home fa-fw"></i> <?=$home?></a></h2>
 		<hr>
@@ -65,6 +65,7 @@
 			<li><a href="linux.php<?=$suffix?>#disks-partitions"><i class="far fa-hdd fa-fw"></i> <?=$disksPartitions?></a></li>
 			<li><a href="linux.php<?=$suffix?>#directory-structure"><i class="fas fa-sitemap fa-fw"></i> <?=$directoryStructure?></a></li>
 			<li><a href="linux.php<?=$suffix?>#access-rights"><i class="fas fa-unlock-alt fa-fw"></i> <?=$accessRights?></a></li>
+			<li><a href="linux.php<?=$suffix?>#pipelines-redirections"><i class="fas fa-directions fa-fw"></i> <?=$pipelinesRedirections?></a></li>
 			<li><a href="linux.php<?=$suffix?>#commands"><i class="fa fa-question fa-fw"></i> <?=$commands?></a></li>
 			<li><a href="linux.php<?=$suffix?>#browsing-directories"><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></a></li>
 			<li><a href="linux.php<?=$suffix?>#folders-files-manipulation"><i class="far fa-copy fa-fw"></i> <?=$foldersFilesManipulation?></a></li>
@@ -90,14 +91,15 @@
 			<li><a href="linux.php<?=$suffix?>#useful-programs"><i class="far fa-window-maximize fa-fw"></i> <?=$usefulPrograms?></a></li>
 			<li><a href="linux.php<?=$suffix?>#ncurses-programs"><i class="far fa-window-maximize fa-fw"></i> <?=$ncursesPrograms?></a></li>
 			<li><a href="linux.php<?=$suffix?>#x-server"><i class="fa fa-desktop fa-fw"></i> <?=$xServer?></a></li>
-			<li><a href="linux.php<?=$suffix?>#wine"><i class="fas fa-wine-glass-alt fa-fw"></i> wine</a></li>
 			<li><a href="linux.php<?=$suffix?>#bash-scripts"><i class="fa fa-code fa-fw"></i> <?=$bashScripts?></a></li>
 			<li><a href="linux.php<?=$suffix?>#ssh"><i class="fas fa-tty fa-fw"></i> telnet & ssh</a></li>
+			<li><a href="linux.php<?=$suffix?>#wine"><i class="fas fa-wine-glass-alt fa-fw"></i> wine</a></li>
+			<li><a href="linux.php<?=$suffix?>#xampp"><i class="fab fa-php fa-fw"></i> xampp</a></li>
 			<li><a href="linux.php<?=$suffix?>#git"><i class="fab fa-git-alt fa-fw"></i> git</a></li>
 		</ul>
 
 		<hr>
-		<h2><a href="windows.php<?=$suffix?>"><i class="fab fa-windows fa-fw"></i> win cmd</a></h2>
+		<h2><a href="windows.php<?=$suffix?>"><i class="fab fa-windows fa-fw"></i> windows cmd</a></h2>
 		<hr>
 		<ul>
 			<li><a href="windows.php<?=$suffix?>"><i class="fa fa-question fa-fw"></i> <?=$commands?></a></li>
@@ -107,6 +109,7 @@
 			<li><a href="windows.php<?=$suffix?>"><i class="fa fa-globe fa-fw"></i> <?=$network?></a></li>
 			<li><a href="windows.php<?=$suffix?>"><i class="fa fa-align-left fa-fw"></i> <?=$textEditors?></a>
 			<li><a href="windows.php<?=$suffix?>"><i class="fa fa-save fa-fw"></i> <?=$batchFiles?></a></li>
+			<li><a href="windows.php<?=$suffix?>"><i class="fa fa-save fa-fw"></i> dosbox></a></li>
 		</ul>
 	</nav>
 	<main onclick="hideMenuByClickOutsideIt()">

@@ -16,20 +16,29 @@
 		<h4><i class="fab fa-linux"></i> GNU Linux (BASH)</h4>
 <?php if ($lang == "en") { ?>
 		<p>
-			GNU Linux is an operating system. In most of the distribution, we can use it with CLI (Command-Line Interface) or / and GUI (Graphical User Interface).
+			GNU Linux is an operating system. In most of the distributions, we can use it with CLI (Command-Line Interface) and GUI (Graphical User Interface).
 		</p>
 		<p>
-			If you work in GUI, you can use the terminal emulator or go to the CLI.
+			If we are just using a GUI, we can use a terminal emulator (pseudoterminal) or go to the CLI.
 		</p>
 		<p>
 			To enter to the CLI (not terminal emulator), press e.g. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Instead of <kbd>F2</kbd> can be <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> or <kbd>F1</kbd>.
 		</p>
 		<p>
-			If you want to go back to the GUI, press e.g. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F1</kbd>. Instead of <kbd>F1</kbd> can be <kbd>F6</kbd>.
+			If you want to go back to the GUI, press e.g. <kbd>Alt</kbd> + <kbd>F1</kbd>. Instead of <kbd>F1</kbd> can be <kbd>F6</kbd>, <kbd>F7</kbd> or other function key. You can also quickly switch between instances of the command line with <kbd>Alt</kbd> + <kbd><i class="fas fa-arrow-right"></i></kbd> or <kbd>Alt</kbd> + <kbd><i class="fas fa-arrow-left"></i></kbd>.
 		</p>
 <?php } else { ?>
 		<p>
-			GNU Linux jest systemem operacyjnym. Możemy korzystać z niego za pomocą wiersza poleceń (CLI) jak i środowiska graficznego (GUI).
+			GNU Linux jest systemem operacyjnym. W większości dystrybucji, możemy korzystać z niego za pomocą wiersza poleceń (CLI - Command-Line Interface) jak i środowiska graficznego (GUI - Graphical User Interface).
+		</p>
+		<p>
+			Jeśli właśnie korzystamy ze środowiska graficznego, możemy użyć emulatora terminala (pseudoterminala) lub przejść do wiersza poleceń.
+		</p>
+		<p>
+			Aby przejść do wiersza poleceń (nie emulatora terminala), wciśnij np. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Zamiast <kbd>F2</kbd> może być <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> lub <kbd>F1</kbd>.
+		</p>
+		<p>
+			Jeśli chcesz z powrotem wrócić do środowiska graficznego, wciśnij np. <kbd>Alt</kbd> + <kbd>F1</kbd>. Zamiast <kbd>F1</kbd> może być <kbd>F6</kbd>, <kbd>F7</kbd> lub inny klawisz funkcyjny. Możemy również szybko przełączać się pomiędzy kolejnymi instancjami wiersza poleceń za pomocą <kbd>Alt</kbd> + <kbd><i class="fas fa-arrow-right"></i></kbd> lub <kbd>Alt</kbd> + <kbd><i class="fas fa-arrow-left"></i></kbd>.
 		</p>
 <?php } ?>
 
@@ -80,7 +89,7 @@ drwxr-xr-x  2 karol karol 4096 Dec  5 21:39 <font color="#729FCF"><b>Videos</b><
 
 	</section>
 	<section>
-		<h4><i class="fab fa-windows"></i> Windows cmd</h4>
+		<h4><i class="fab fa-windows"></i> Windows cmd / DOS</h4>
 <?php if ($lang == "en") { ?>
 		<p>
 			Windows is an operating system. Unlike GNU Linux, Windows does not have a CLI mode that works without a GUI. But we can use the command interpreter in the GUI.
@@ -92,15 +101,21 @@ drwxr-xr-x  2 karol karol 4096 Dec  5 21:39 <font color="#729FCF"><b>Videos</b><
 			To run cmd.exe, click the Start Menu and start typing cmd.exe.
 		</p>
 		<p>
-			DOS (Disk Operating System) was popular in the 80s and early 90s. It doesn't have GUI. So we can use DOS only in Command-Line Interface. Today DOS is not actually using.
+			DOS (Disk Operating System) was popular in the 80s and early 90s. It doesn't have GUI. So we can use DOS only in Command-Line Interface. Nowadays, DOS is practically not used as the primary operating system. Anyway, we won't run the original DOS versions (MS-DOS / PC-DOS) on modern computers. However, we can run DOS in an emulator, e.g. <a target="_blank" href="https://www.dosbox.com">DOSBox</a>. That's how we can run most of the older games and programs.
 		</p>
 <?php } else { ?>
 		<p>
-			DOS (Disk Operating System) był popularny w latach 80. i na początku lat 90. DOS nie posiada środowiska graficznego. Możemy się z nim komunikować jedynie za pomocą wiersza poleceń. W dzisiejszyc czasach DOS nie jest praktycznie wykorzystywany.
+			<p>
+			Windows jest systemem operacyjnym. W przeciwieństwie do Linux'a, Windows nie posiada interfejsu wiersza poleceń, który działa bez interfejsu graficznego. Możemy natomiast korzystać z interpretera poleceń w środowisku graficznym.
 		</p>
 		<p>
-			W systemie Windows istnieje <em>cmd.exe</em>, który wywodzi się z interpretera DOS'a - command.com. Z tego powodu wiele poleceń cmd.exe jest tożsama z poleceniamia DOS'a.
+			Cmd.exe jest interpreterem poleceń w systemie Windows. Cmd.exe wywodzi się z command.com - interpretera DOS'a. Z tego powodu wiele poleceń cmd.exe jest podobnych do poleceń DOS'owych.
 		</p>
+		<p>
+			Aby uruchomić wiersz poleceń cmd.exe, wciśnij start i zacznij wpisywać <em>cmd.exe</em>.
+		</p>
+		<p>
+			DOS (Disk Operating system) był popularnym systemem operacyjnym w latach 80-tych i na początku lat 90-tych. Nie posiadał interfejsu graficznego (GUI). Więc, mogliśmy korzystać z niego jedynie w trybie tekstowym. W dzisiejszych czasach DOS nie jest praktycznie używany jako podstawowy system operacyjny. Poza tym na współczesnych komputerach nie uruchomimy oryginalnych wersji DOS'a (MS-DOS / PC-DOS). Możemy jednak uruchomić DOS w emulatorze, np. <a target="_blank" href="https://www.dosbox.com">DOSBox</a>. W taki sposób możemy uruchomić większość starszych gier i programów.
 <?php } ?>
 
 

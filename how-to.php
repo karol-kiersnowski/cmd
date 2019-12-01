@@ -79,7 +79,7 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 
 	<p>
 		Now we need to change <code>GRUB_TIMEOUT=10</code>. 10 means seconds.
-		After this we save file and exit from nano. In th end we need to update grub.
+		After this, save file and exit from nano. In the end, update grub.
 	</p>
 <pre>
 sudo update-grub
@@ -96,7 +96,7 @@ sudo update-grub
 sudo dpkg-reconfigure console-setup
 </pre>
 	<p>
-		In the two first steps we choose the default options. Next, we need to choose font family and font size.
+		In the two first steps choose the default options. Next, choose font family and font size.
 	</p>
 </section>
 
@@ -112,7 +112,7 @@ sudo dpkg-reconfigure console-setup
 	</p>
 	<h5><i class="far fa-lightbulb"></i> Solution</h5>
 	<p>
-		We need an ISO (CD, DVD or USB) of Linux distribution. We run Linux as "Live CD" (without installation). The we run a terminal.
+		Need an ISO (CD, DVD or USB) of Linux distribution. Run Linux as "Live CD" (without installation). Then run a terminal.
 	</p>
 <pre>
 karol@aspireOne:~$ sudo fdisk -l
@@ -138,7 +138,7 @@ Device     Boot     Start       End   Sectors Size Id Type
 </pre>
 
 	<p>
-		In the end, we need to update GRUB.
+		In the end, update GRUB.
 	</p>
 <pre>
 karol@aspireOne:~$ sudo update-grub
@@ -153,7 +153,7 @@ karol@aspireOne:~$ sudo update-grub
 	</p>
 	<h5><i class="far fa-lightbulb"></i> Solution</h5>
 	<p>
-		We can make a BASH script. It will automate hiding system menu moments before start the game and set visible menu moments after leave the game.
+		Make a BASH script. It will automate hiding system menu moments before start the game and set visible menu moments after leave the game.
 	</p>
 	<p>
 		Example for Cinnamon desktop environment (Linux Mint).
@@ -166,13 +166,13 @@ xrandr -s 1024x768
 gsettings set org.cinnamon panels-autohide "['1:false']"
 </pre>
 	<p>
-		Now we are saving the file - script.sh. Then we have to add execute right to this file.
+		Save the file - script.sh. Then, have to add execute right to this file.
 	</p>
 <pre>
 karol@core2duo ~/Aplikacje/NFS Underground $ chmod u+x script.sh
 </pre>
 	<p>
-		Now we can run the script and play the game :)
+		Run the script and play the game :)
 	</p>
 <pre>
 karol@core2duo ~/Aplikacje/NFS Underground ./script.sh

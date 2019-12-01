@@ -68,6 +68,22 @@
 	<ul>
 		<li>.bat</li>
 	</ul>
+	<hr>
+	<h3><i class="fa fa-save fa-fw"></i> dosbox</h3>
+	<hr>
+	<ul>
+		<li>mount</li>
+		<li>imgmount</li>
+	</ul>
+	<h4>Mount disks / directories</h4>
+		<pre>
+mount c c:/Apps   /   mount c ~/Apps
+c:
+
+mount d d: -t cdrom   /   mount d ~/ -t cdrom
+
+imgmount d "..\WORMS.DAT" -t iso
+	</pre>
 	<h3><i class="fa fa-exclamation-triangle fa-fw"></i> danger zone</h3>
 	<hr>
 	<ul>
