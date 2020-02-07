@@ -8,12 +8,12 @@
 	if( isset($_GET['theme']) ) 
 		$theme = $_GET['theme'];
 	else
-		$theme = "bright";
+		$theme = "light";
 
-	if ($theme =="bright")
-		$notTheme = "dark";
+	if ($theme =="light")
+		$notTheme = "blue";
 	else
-		$notTheme = "bright";
+		$notTheme = "light";
 
 	$cmd = "cmd:/> ";
 	$suffix = "?lang=$lang&theme=$theme";

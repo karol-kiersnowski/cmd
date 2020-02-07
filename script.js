@@ -5,24 +5,24 @@ var footer = document.getElementsByTagName("footer")[0];
 function changeMenu() {
   if (nav.offsetWidth == "250")
     hideMenu();
-  else if (nav.offsetWidth == "0")
+  else if (nav.offsetWidth == "50")
   	showMenu();
 }
 
 function hideMenuByClickOutsideIt() {
-  if (window.innerWidth <= "800")
+  if (window.innerWidth <= "1000")
     hideMenu();
 }
 
 function hideMenu() {
-  nav.style.display = "none";
-  main.style.marginLeft = "0";
-  footer.style.marginLeft = "0";
+  nav.style.width = "50px";
+  main.style.marginLeft = "50px";
+  footer.style.marginLeft = "50px";
 }
 
 function showMenu() {
-  nav.style.display = "block";
-  if (window.innerWidth > "800") {
+  nav.style.width = "250px";
+  if (window.innerWidth > "1000") {
     main.style.marginLeft = "250px";
     footer.style.marginLeft = "250px";
   }
@@ -39,7 +39,7 @@ function markAnchor() {
 		articlesBottom[i] = articles[i].getBoundingClientRect().bottom;
 		anchors[i] = document.querySelector("a[href*='#" + articles[i].id + "']");
 		anchors[i].style.borderLeft = "none";
-		if (articlesTop[i] <= 0 && articlesBottom[i] > 0)
+		if (articlesTop[i] <= 5 && articlesBottom[i] > 5)
 			anchors[i].style.borderLeft = "3px solid rgb(26, 54, 101)";
 	}
 	//document.getElementById("demo").innerHTML = anchors[2];

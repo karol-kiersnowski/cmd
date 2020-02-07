@@ -3,12 +3,17 @@
 // nav-index
 $home = "home";
 $howTo = "how to ...";
+$screenshots = "screenshots";
+$textScreenshots = "screenshots (txt)";
+$imageScreenshots = "screenshots (img)";
+$links = "links";
 $guestBook = "guest book";
 $about = "about";
 
 $introduction = "introduction";
 $keyboardShortcuts = "keyboard shortcuts";
 $disksPartitions = "disks & partitions";
+$partitionsDrives = "partitions & drives";
 $directoryStructure = "directory structure";
 $accessRights = "access rights";
 $pipelinesRedirections = "pipelines & redirections";
@@ -34,10 +39,13 @@ $textManipulation = "text manipulation";
 $archive = "archives";
 $compilation = "compilation";
 $textEditors = "text editors";
+$fileManagers = "file managers";
 $usefulPrograms = "useful programs";
 $ncursesPrograms = "ncurses programs";
 $xServer = "x server";
 $bashScripts = "bash scripts";
 $batchFiles = "batch files";
+$mounting = "mounting";
+$mountingPartitionsDrives = "mounting partitions & drives";
 
 ?>

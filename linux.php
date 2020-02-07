@@ -2,6 +2,7 @@
 	include "sys.php";
 	$title = $cmd . " linux";
 	include "header.php";
+	include "nav-linux.php";
 ?>
 
 <h2><i class="fab fa-linux"></i> gnu linux</h2>
@@ -10,9 +11,15 @@
 		<hr>
 		<h3><i class="far fa-play-circle"></i> <?=$introduction?></h3>
 		<hr>
-		<p>
-			Aby przejść do trybu tekstowego należy wciśnąć ctrl+alt+F1 (lub F2, F3, F4, F5, F6).
-		</p>
+		<?php if ($lang == "en") { ?>
+			<p>
+				To enter to the CLI (not terminal emulator), press e.g. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Instead of <kbd>F2</kbd> can be <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> or <kbd>F1</kbd>.
+			</p>
+		<?php } else { ?>
+			<p>
+				Aby przejść do wiersza poleceń (nie emulatora terminala), wciśnij np. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Zamiast <kbd>F2</kbd> może być <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> lub <kbd>F1</kbd>.
+			</p>
+		<?php } ?>
 	</article>
 	<article id="keyboard-shortcuts">
 		<hr>
@@ -43,27 +50,99 @@
 		<hr>
 		<h3><i class="far fa-hdd"></i> <?=$disksPartitions?></h3>
 		<hr>
-		<p>Numeracja dysków</p>
-		<ol>
-			<li>sda - dysk nr 1</li>
-			<li>sdb - dysk nr 2</li>
-			<li>sdc - dysk nr 3</li>
-		</ol>
+		<?php if ($lang == "en") { ?>
+			<h4>Disks numbering</h4>
+<pre style="background-color: inherit; color: inherit;">
+sda
+│ └─ disk number
+└─── type of disk controller
+</pre>
+			<h5>types of disks controllers</h5>
+			<ul>
+				<li>h - IDE controller</li>
+				<li>s - SATA / SCSI controller</li>
+			</ul>
+			<h5>disk number (as a letter)</h5>
+			<ul>
+				<li>a - 1st disk</li>
+				<li>b - 2nd disk</li>
+				<li>c - 3rd disk</li>
+			</ul>
+			<h5>examples</h5>
+			<ul>
+				<li>sda - disk no. 1 in SATA / SCSI controller</li>
+				<li>sdb - disk no. 2 in SATA / SCSI controller</li>
+				<li>hda - disk no. 1 in IDE controller</li>
+			</ul>
 
-		lub
+			<h4>Partitions numbering</h4>
+<pre style="background-color: inherit; color: inherit;">
+sda1
+│ │└─ partition number
+│ └── disk number
+└──── type of disk controller
+</pre>
+			<h5>partition number</h5>
+			<ul>
+				<li>1 - 1st partition</li>
+				<li>2 - 2nd partition</li>
+				<li>3 - 3rd partition</li>
+			</ul>
+			<h5>examples</h5>
+			<ul>
+				<li>sda1 - disk no. 1, partition no. 1</li>
+				<li>sda2 - disk no. 1, partition no. 2</li>
+				<li>sdb1 - disk no. 2, partition no. 1</li>
+			</ul>
 
-		<ol>
-			<li>hda - dysk nr 1</li>
-			<li>hdb - dysk nr 2</li>
-			<li>hdc - dysk nr 3</li>
-		</ol>
 
-		<p>Numeracja partycji</p>
-		<ol>
-			<li>sda1 - dysk nr 1, partycja nr 1</li>
-			<li>sda2 - dysk nr 1, partycja nr 2</li>
-			<li>sda3 - dysk nr 1, partycja nr 3</li>
-		</ol>
+		<?php } else { ?>
+
+
+			<h4>Numeracja dysków</h4>
+<pre style="background-color: inherit; color: inherit;">
+sda
+│ └─ numer dysku
+└─── rodzaj kontrolera dysku
+</pre>
+			<h5>rodzaje kontrolerów dysków</h5>
+			<ul>
+				<li>h - kontroler IDE</li>
+				<li>s - kontroler SATA / SCSI</li>
+			</ul>
+			<h5>numer dysku (jako litera)</h5>
+			<ul>
+				<li>a - 1-szy dysk</li>
+				<li>b - 2-gi dysk</li>
+				<li>c - 3-ci dysk</li>
+			</ul>
+			<h5>przykłady</h5>
+			<ul>
+				<li>sda - dysk nr 1 w kontrolerze SATA / SCSI</li>
+				<li>sdb - dysk nr 2 w kontrolerze SATA / SCSI</li>
+				<li>hda - dysk nr 1 w kontrolerze IDE</li>
+			</ul>
+
+			<h4>Numeracja partycji</h4>
+<pre style="background-color: inherit; color: inherit;">
+sda1
+│ │└─ numer partycji
+│ └── numer dysku
+└──── rodzaj kontrolera dysku
+</pre>
+			<h5>numer partycji</h5>
+			<ul>
+				<li>1 - 1-sza partycja</li>
+				<li>2 - 2-ga partycja</li>
+				<li>3 - 3-cia partycja</li>
+			</ul>
+			<h5>przykłady</h5>
+			<ul>
+				<li>sda1 - dysk nr 1, partycja nr 1</li>
+				<li>sda2 - dysk nr 1, partycja nr 2</li>
+				<li>sdb1 - dysk nr 2, partycja nr 1</li>
+			</ul>
+		<?php } ?>
 
 <pre>
 karol@aspireOne:~$ sudo fdisk -l
@@ -158,16 +237,15 @@ drwxr-xr-x  4 karol karol 4096 sie  4 13:06 <font color="#729FCF"><b>Pulpit</b><
 drwxr-xr-x  2 karol karol 4096 sie  2 16:14 <font color="#729FCF"><b>Szablony</b></font>
 drwxr-xr-x  2 karol karol 4096 sie  2 16:14 <font color="#729FCF"><b>Wideo</b></font>
 </pre>
+		<?php if ($lang == "en") { ?>
+		
 <pre style="background-color: inherit; color: inherit;">
 drwxr-xr-x
 │└┬┘└┬┘└┬┘
-│ │  │  │
-│<b>u</b>ser│<b>o</b>ther
-│    │
-│  <b>g</b>roup
-│
-├──────────────────────┐
-type of file / directory
+│ │  │  └─ <b>o</b>ther
+│ │  └─ <b>g</b>roup
+│ └─ <b>u</b>ser
+└─ type of file / directory
 </pre>
 		<h4>types of files</h4>
 		<ul>
@@ -215,6 +293,71 @@ type of file / directory
 			<li><code>chmod o-r fileName</code> - remove reading right for other users</li>
 			<li><code>chmod g=rx fileName</code> - set reading and executing right for group users (</li>
 		</ul>
+
+
+
+		<?php } else { ?>
+			
+
+
+<pre style="background-color: inherit; color: inherit;">
+drwxr-xr-x
+│└┬┘└┬┘└┬┘
+│ │  │  └─ inni
+│ │  └─ grupa
+│ └─ użytkownik
+└─ rodzaj pliku / katalog
+</pre>
+		<h4>rodzaje plików</h4>
+		<ul>
+			<li>d - katalog</li>
+			<li>- - zwykły plik</li>
+			<li>l - dowiązanie (skrót) do pliku</li>
+		</ul>
+		<h4>kto jest kim?</h4>
+		<ul>
+			<li>użytkownik - właściciel pliku (katalogu)</li>
+			<li>grupa - użytkownicy, którzy są w tej samej grupie, co użytkownik pliku</li>
+			<li>inni - wszyscy pozostali użytkownicy</li>
+		</ul>
+		<h4>co oznacza?</h4>
+		<ul>
+			<li>r - prawo odczytu</li>
+			<li>w - prawo zapisu</li>
+			<li>x - prawo wykonywania</li>
+		</ul>
+		<h4>wartości numeryczne praw dostępu</h4>
+		<ul>
+			<li>r - 4</li>
+			<li>w - 2</li>
+			<li>x - 1</li>
+		</ul>
+		<ul>
+			<li>rwx = 7</li>
+			<li>rw- = 6</li>
+			<li>r-x = 5</li>
+			<li>r-- = 4</li>
+			<li>--- = 0</li>
+		</ul>
+
+		<h4>jak zmienić prawa dostępu?</h4>
+		<h5>poprzez wartości numeryczne</h5>
+		<ul>
+			<li><code>chmod 777 fileName</code> - rwxrwxrwx - set all rights to all users</li>
+			<li><code>chmod 700 fileName</code> - rwx------ - only the owner has rights (all)</li>
+			<li><code>chmod 644 fileName</code> - rw-r--r-- - the owner can read and write; users from group and other users can only read</li>
+			<li><code>chmod 755 fileName</code> - rwxr-xr-x - the owner has all rights; users from group and other users can read and execute</li>
+		</ul>
+		<h5>poprzez przypisanie</h5>
+		<ul>
+			<li><code>chmod u+x fileName</code> - add executing right for the file owner</li>
+			<li><code>chmod o-r fileName</code> - remove reading right for other users</li>
+			<li><code>chmod g=rx fileName</code> - set reading and executing right for group users (</li>
+		</ul>
+
+
+
+		<?php } ?>
 	</article>
 
 	<article id="pipelines-redirections">
@@ -275,6 +418,8 @@ karol@core2duo ~/Dokumenty $ tree -d
 			<li>touch</li>
 			<li>mkdir</li>
 			<li>rmdir</li>
+			<li>stat</li>
+			<li>cmp</li>
 		</ul>
 	</article>
 	<article id="reading-files">
@@ -282,10 +427,10 @@ karol@core2duo ~/Dokumenty $ tree -d
 		<h3><i class="far fa-file-alt"></i> <?=$readingFiles?></h3>
 		<hr>
 		<ul>
+			<li>more</li>
+			<li>less</li>
 			<li>head</li>
 			<li>tail</li>
-			<li>stat</li>
-			<li>cmp</li>
 		</ul>
 	</article>
 	<article id="console">
@@ -293,12 +438,10 @@ karol@core2duo ~/Dokumenty $ tree -d
 		<h3><i class="fa fa-terminal"></i> <?=$console?></h3>
 		<hr>
 		<ul>
+			<li>tty</li>
 			<li>clear</li>
 			<li>reset</li>
-			<li>more</li>
-			<li>less</li>
 			<li>history</li>
-			<li>tty</li>
 			<li>alias</li>
 		</ul>
 	</article>
@@ -578,17 +721,6 @@ karol@core2duo ~/Dokumenty $ tree -d
 		<li>xinit</li>
 	</ul>
 	</article>
-	<article id="wine">
-	<hr>
-	<h3><i class="fas fa-wine-glass-alt"></i> wine</h3>
-	<hr>
-	<ul>
-		<li>wine</li>
-		<li>wineconsole</li>
-		<li>winecfg</li>
-		<li>notepad</li>
-	</ul>
-	</article>
 	<article id="bash-scripts">
 	<hr>
 	<h3><i class="fa fa-code"></i> <?=$bashScripts?></h3>
@@ -609,6 +741,17 @@ karol@core2duo ~/Dokumenty $ tree -d
 	<ul>
 		<li>telnet</li>
 		<li>ssh</li>
+	</ul>
+	</article>
+	<article id="wine">
+	<hr>
+	<h3><i class="fas fa-wine-glass-alt"></i> wine</h3>
+	<hr>
+	<ul>
+		<li>wine</li>
+		<li>wineconsole</li>
+		<li>winecfg</li>
+		<li>notepad</li>
 	</ul>
 	</article>
 	<article id="xampp">
