@@ -4,7 +4,7 @@
 	include "header.php";
 ?>
 
-<h2><i class="fab fa-windows"></i> windows cmd / DOS</h2>
+<h2><i class="fab fa-windows"></i> windows cmd / dos</h2>
 <hr>
 <article>
 	<hr>
@@ -13,7 +13,7 @@
 	<ul>
 		<li>help</li>
 		<li>/h , /help</li>
-		<li>version</li>
+		<li>ver</li>
 	</ul>
 	<hr>
 	<h3><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></h3>
@@ -68,6 +68,22 @@
 	<ul>
 		<li>.bat</li>
 	</ul>
+	<hr>
+	<h3><i class="fa fa-save fa-fw"></i> dosbox</h3>
+	<hr>
+	<ul>
+		<li>mount</li>
+		<li>imgmount</li>
+	</ul>
+	<h4>Mount disks / directories</h4>
+		<pre>
+mount c c:/Apps   /   mount c ~/Apps
+c:
+
+mount d d: -t cdrom   /   mount d ~/ -t cdrom
+
+imgmount d "..\WORMS.DAT" -t iso
+	</pre>
 	<h3><i class="fa fa-exclamation-triangle fa-fw"></i> danger zone</h3>
 	<hr>
 	<ul>

@@ -11,6 +11,7 @@
 		<hr>
 		<h3><i class="far fa-play-circle"></i> <?=$introduction?></h3>
 		<hr>
+<<<<<<< HEAD
 		<?php if ($lang == "en") { ?>
 			<p>
 				To enter to the CLI (not terminal emulator), press e.g. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Instead of <kbd>F2</kbd> can be <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> or <kbd>F1</kbd>.
@@ -20,6 +21,17 @@
 				Aby przejść do wiersza poleceń (nie emulatora terminala), wciśnij np. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Zamiast <kbd>F2</kbd> może być <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> lub <kbd>F1</kbd>.
 			</p>
 		<?php } ?>
+=======
+<?php if ($lang == "en") { ?>
+	<p>
+		To enter to the CLI (not terminal emulator), press e.g. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Instead of <kbd>F2</kbd> can be <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> or <kbd>F1</kbd>.
+	</p>
+<?php } else { ?>
+	<p>
+		Aby przejść do wiersza poleceń (nie emulatora terminala), wciśnij np. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Zamiast <kbd>F2</kbd> może być <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> lub <kbd>F1</kbd>.
+	</p>
+<?php } ?>
+>>>>>>> 60db6f553fcc2a694704cfd394b4c75285c75011
 	</article>
 	<article id="keyboard-shortcuts">
 		<hr>
@@ -743,6 +755,10 @@ karol@core2duo ~/Dokumenty $ tree -d
 		<li>ssh</li>
 	</ul>
 	</article>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 60db6f553fcc2a694704cfd394b4c75285c75011
 	<article id="wine">
 	<hr>
 	<h3><i class="fas fa-wine-glass-alt"></i> wine</h3>
@@ -754,6 +770,11 @@ karol@core2duo ~/Dokumenty $ tree -d
 		<li>notepad</li>
 	</ul>
 	</article>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> effdb95cbf5e4690d2bb6c5edb7716cd118c20d8
+>>>>>>> 60db6f553fcc2a694704cfd394b4c75285c75011
 	<article id="xampp">
 	<hr>
 	<h3><i class="fab fa-php"></i> xampp</h3>

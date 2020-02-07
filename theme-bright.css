@@ -1,16 +1,25 @@
 body {
 	color: #000;
-	//background-color: #fff;
-	background-image: url("img/background-bright.png");
+	background-color: #eee;
+	//background-image: url("img/background-bright.png");
 }
 
-header, nav, section {
+header {
 	background-color: #eee;
-	box-shadow: 0px 0px 5px #aaa;
+	box-shadow: 0px 0px 10px #777;
+}
+
+nav {
+	background-color: #eee;
+}
+
+main {
+	background-color: #fff;
+	box-shadow: 0px 0px 10px #777;
 }
 
 nav hr {
-	border: 1px solid #ccc;
+	border: 1px solid #bbb;
 }
 
 main hr {
@@ -27,8 +36,4 @@ a:hover {
 
 nav a:hover {
 	background-color: #ddd;
-}
-
-a#menu {
-	margin-right: 15px;
 }
