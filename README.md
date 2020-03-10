@@ -2,7 +2,7 @@ cmd.sh
 ======
 cmd.sh is a website to learn the Command-Line Interface
 
-Project site - [cmd.sh](http://karol-kiersnowski.prv.pl/projects/cmd)
+Project site - [cmd.sh](http://karol-kiersnowski.prv.pl/#cmd)
 
 Technologies
 ------------
