@@ -1,0 +1,41 @@
+body {
+	font-family: monospace;
+	//font-weight: bold;
+	color: #000;
+	background-color: #eee;
+}
+
+header {
+	background-color: #eee;
+	box-shadow: 10px 10px 0px #000;
+}
+
+nav {
+	background-color: #00a;
+	color: #fff7e4;
+}
+
+main {
+	background-color: #fff;
+	box-shadow: 10px 10px 0px #000;
+}
+
+nav hr {
+	border: 10px dashed #fff7e4#bbb;
+}
+
+main hr {
+	border: 1px solid #aaa;
+}
+
+a {
+	color: #fff7e4;
+}
+
+a:hover {
+	//border-bottom: 2px solid #1a3665;
+}
+
+nav a:hover {
+	background-color: #55f;
+}

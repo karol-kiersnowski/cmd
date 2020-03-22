@@ -1,29 +1,109 @@
-<?php
-	include "sys.php";
-	$title = $cmd . " linux";
-	include "header.php";
-	include "nav-linux.php";
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png"/>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="theme-light.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono"/>
+	<script src="https://kit.fontawesome.com/63535dd4e0.js"></script>
+	<script defer src="script.js"></script>
+
+	<title>cmd:/>  linux</title>
+	<meta name="keywords" content="cmd.sh,cmd_site,cmd,command-line interface,command prompt,console,terminal,shell,interpreter,gnu linux,linux,bash,windows,dos,ms-dos,pc-dos,freedos,dosbox,wiersz poleceń,konsola,powłoka"/>
+	<meta name="description" content="Learn commands from the GNU Linux, Windows and DOS"/>
+</head>
+<body onscroll="markAnchor()">
+	<header>
+		<div id="header-content">
+			<h1>
+				<a id="menu" href="javascript:void(0);" title="Menu" onclick="changeMenu()">
+				<i class="fa fa-list-ul fa-fw"></i></a>
+			</h1>
+			<h1><a href="index.html"><i class="fa fa-terminal"></i>cmd.sh</a></h1>
+			<ul>
+				<li><a href="linux.html?lang=en&theme=light"><i class="fab fa-linux"></i> <span>linux</span></a></li>
+				<li><a href="win-dos.html?lang=en&theme=light"><i class="fab fa-windows"></i> <span>windows cmd</span></a></li>
+				<li>
+					<a href="?lang=en&theme=blue" title="Motyw"><i class="fa fa-adjust"></i></a>
+				</li>
+				<li>
+											<a href="?lang=pl&theme=light" title="wersja polska">
+							<img src="img/polska.png" alt="Polska"/>
+						</a>
+									</li>
+			</ul>
+			<div style="clear: both"></div>
+		</div>
+	</header>
+	<div id="wrapper">
+<nav>
+	<hr>
+	<h2><a href="index.html?lang=en&theme=light"><i class="fa fa-home fa-fw"></i> home</a></h2>
+	<hr>
+	<h2><a href="linux.html?lang=en&theme=light"><i class="fab fa-linux fa-fw"></i> linux</a></h2>
+	<hr>
+	<ul>
+		<li><a href="linux.html?lang=en&theme=light#introduction"><i class="far fa-play-circle fa-fw"></i> introduction</a></li>
+		<li><a href="linux.html?lang=en&theme=light#keyboard-shortcuts"><i class="far fa-keyboard fa-fw"></i> keyboard shortcuts</a></li>
+		<li><a href="linux.html?lang=en&theme=light#disks-partitions"><i class="far fa-hdd fa-fw"></i> disks & partitions</a></li>
+		<li><a href="linux.html?lang=en&theme=light#directory-structure"><i class="fas fa-sitemap fa-fw"></i> directory structure</a></li>
+		<li><a href="linux.html?lang=en&theme=light#access-rights"><i class="fas fa-unlock-alt fa-fw"></i> access rights</a></li>
+		<li><a href="linux.html?lang=en&theme=light#pipelines-redirections"><i class="fas fa-directions fa-fw"></i> pipelines & redirections</a></li>
+		<li><a href="linux.html?lang=en&theme=light#commands"><i class="fa fa-question fa-fw"></i> info about commands</a></li>
+		<li><a href="linux.html?lang=en&theme=light#browsing-directories"><i class="far fa-folder-open fa-fw"></i> browsing directories</a></li>
+		<li><a href="linux.html?lang=en&theme=light#folders-files-manipulation"><i class="far fa-copy fa-fw"></i> files manipulation</a></li>
+		<li><a href="linux.html?lang=en&theme=light#files-information"><i class="far fa-file-alt fa-fw"></i> files information</a></li>
+		<li><a href="linux.html?lang=en&theme=light#reading-files"><i class="far fa-file-alt fa-fw"></i> reading files</a></li>
+		<li><a href="linux.html?lang=en&theme=light#console"><i class="fa fa-terminal fa-fw"></i> console</a></li>
+		<li><a href="linux.html?lang=en&theme=light#power-session"><i class="fa fa-power-off fa-fw"></i> power & session</a></li>
+		<li><a href="linux.html?lang=en&theme=light#file-system"><i class="far fa-hdd fa-fw"></i> file system</a></li>
+		<li><a href="linux.html?lang=en&theme=light#admin"><i class="fa fa-shield-alt fa-fw"></i> administration</a></li>
+		<li><a href="linux.html?lang=en&theme=light#users"><i class="far fa-user fa-fw"></i> users</a></li>
+		<li><a href="linux.html?lang=en&theme=light#users-admin"><i class="fa fa-user-shield fa-fw"></i> users administration</a></li>
+		<li><a href="linux.html?lang=en&theme=light#statistics"><i class="fa fa-chart-bar fa-fw"></i> statistics</a></li>
+		<li><a href="linux.html?lang=en&theme=light#system"><i class="fa fa-laptop fa-fw"></i> system</a></li>
+		<li><a href="linux.html?lang=en&theme=light#hardware"><i class="fa fa-microchip fa-fw"></i> hardware</a></li>
+		<li><a href="linux.html?lang=en&theme=light#network"><i class="fa fa-network-wired fa-fw"></i> network</a></li>
+		<li><a href="linux.html?lang=en&theme=light#wireless"><i class="fa fa-wifi fa-fw"></i> wireless</a></li>
+		<li><a href="linux.html?lang=en&theme=light#processes"><i class="fa fa-list-ol fa-fw"></i> processes</a></li>
+		<li><a href="linux.html?lang=en&theme=light#package-managers"><i class="fa fa-cube fa-fw"></i> package managers</a></li>
+		<li><a href="linux.html?lang=en&theme=light#search"><i class="fa fa-search fa-fw"></i> search</a></li>
+		<li><a href="linux.html?lang=en&theme=light#text-manipulation"><i class="fa fa-edit fa-fw"></i> text manipulation</a></li>
+		<li><a href="linux.html?lang=en&theme=light#archive"><i class="far fa-file-archive fa-fw"></i> archives</a></li>
+		<li><a href="linux.html?lang=en&theme=light#compilation"><i class="far fa-file-code fa-fw"></i> compilation</a></li>
+		<li><a href="linux.html?lang=en&theme=light#text-editors"><i class="fa fa-align-left fa-fw"></i> text editors</a></li>
+		<li><a href="linux.html?lang=en&theme=light#useful-programs"><i class="far fa-window-maximize fa-fw"></i> useful programs</a></li>
+		<li><a href="linux.html?lang=en&theme=light#ncurses-programs"><i class="far fa-window-maximize fa-fw"></i> ncurses programs</a></li>
+		<li><a href="linux.html?lang=en&theme=light#x-server"><i class="fa fa-desktop fa-fw"></i> x server</a></li>
+		<li><a href="linux.html?lang=en&theme=light#bash-scripts"><i class="fa fa-code fa-fw"></i> bash scripts</a></li>
+		<li><a href="linux.html?lang=en&theme=light#ssh"><i class="fas fa-tty fa-fw"></i> telnet & ssh</a></li>
+		<li><a href="linux.html?lang=en&theme=light#wine"><i class="fas fa-wine-glass-alt fa-fw"></i> wine</a></li>
+		<li><a href="linux.html?lang=en&theme=light#xampp"><i class="fab fa.html fa-fw"></i> xampp</a></li>
+		<li><a href="linux.html?lang=en&theme=light#git"><i class="fab fa-git-alt fa-fw"></i> git</a></li>
+	</ul>
+	<hr>
+	<h2><a href="win-dos.html?lang=en&theme=light"><i class="fab fa-windows fa-fw"></i> win cmd / dos</a></h2>
+	<hr>
+</nav>
+<main onclick="hideMenuByClickOutsideIt()">
 
 <h2><i class="fab fa-linux"></i> gnu linux</h2>
 <section>
 	<article id="introduction">
 		<hr>
-		<h3><i class="far fa-play-circle"></i> <?=$introduction?></h3>
+		<h3><i class="far fa-play-circle"></i> introduction</h3>
 		<hr>
-		<?php if ($lang == "en") { ?>
-			<p>
+					<p>
 				To enter to the CLI (not terminal emulator), press e.g. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Instead of <kbd>F2</kbd> can be <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> or <kbd>F1</kbd>.
 			</p>
-		<?php } else { ?>
-			<p>
-				Aby przejść do wiersza poleceń (nie emulatora terminala), wciśnij np. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Zamiast <kbd>F2</kbd> może być <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> lub <kbd>F1</kbd>.
-			</p>
-		<?php } ?>
-	</article>
+			</article>
 	<article id="keyboard-shortcuts">
 		<hr>
-		<h3><i class="far fa-keyboard"></i> <?=$keyboardShortcuts?></h3>
+		<h3><i class="far fa-keyboard"></i> keyboard shortcuts</h3>
 		<hr>
 		<ul>
 			<li><kbd>ctrl</kbd> + <kbd>l</kbd> - clear the terminal screen; same as the command <em>clear</em></li>
@@ -48,10 +128,9 @@
 	</article>
 	<article id="disks-partitions">
 		<hr>
-		<h3><i class="far fa-hdd"></i> <?=$disksPartitions?></h3>
+		<h3><i class="far fa-hdd"></i> disks & partitions</h3>
 		<hr>
-		<?php if ($lang == "en") { ?>
-			<h4>Disks numbering</h4>
+					<h4>Disks numbering</h4>
 <pre style="background-color: inherit; color: inherit;">
 sda
 │ └─ disk number
@@ -96,54 +175,7 @@ sda1
 			</ul>
 
 
-		<?php } else { ?>
-
-
-			<h4>Numeracja dysków</h4>
-<pre style="background-color: inherit; color: inherit;">
-sda
-│ └─ numer dysku
-└─── rodzaj kontrolera dysku
-</pre>
-			<h5>rodzaje kontrolerów dysków</h5>
-			<ul>
-				<li>h - kontroler IDE</li>
-				<li>s - kontroler SATA / SCSI</li>
-			</ul>
-			<h5>numer dysku (jako litera)</h5>
-			<ul>
-				<li>a - 1-szy dysk</li>
-				<li>b - 2-gi dysk</li>
-				<li>c - 3-ci dysk</li>
-			</ul>
-			<h5>przykłady</h5>
-			<ul>
-				<li>sda - dysk nr 1 w kontrolerze SATA / SCSI</li>
-				<li>sdb - dysk nr 2 w kontrolerze SATA / SCSI</li>
-				<li>hda - dysk nr 1 w kontrolerze IDE</li>
-			</ul>
-
-			<h4>Numeracja partycji</h4>
-<pre style="background-color: inherit; color: inherit;">
-sda1
-│ │└─ numer partycji
-│ └── numer dysku
-└──── rodzaj kontrolera dysku
-</pre>
-			<h5>numer partycji</h5>
-			<ul>
-				<li>1 - 1-sza partycja</li>
-				<li>2 - 2-ga partycja</li>
-				<li>3 - 3-cia partycja</li>
-			</ul>
-			<h5>przykłady</h5>
-			<ul>
-				<li>sda1 - dysk nr 1, partycja nr 1</li>
-				<li>sda2 - dysk nr 1, partycja nr 2</li>
-				<li>sdb1 - dysk nr 2, partycja nr 1</li>
-			</ul>
-		<?php } ?>
-
+		
 <pre>
 karol@aspireOne:~$ sudo fdisk -l
 Disk /dev/sda: 55,9 GiB, 60022480896 bytes, 117231408 sectors
@@ -160,7 +192,7 @@ Device     Boot     Start       End   Sectors Size Id Type
 	</article>
 	<article id="directory-structure">
 		<hr>
-		<h3><i class="fas fa-sitemap"></i> <?=$directoryStructure?></h3>
+		<h3><i class="fas fa-sitemap"></i> directory structure</h3>
 		<hr>
 
 <pre style="background-color: inherit; color: inherit;">
@@ -220,7 +252,7 @@ karol@core2duo / $ tree -L 1
 	</article>
 	<article id="access-rights">
 		<hr>
-		<h3><i class="fas fa-unlock-alt"></i> <?=$accessRights?></h3>
+		<h3><i class="fas fa-unlock-alt"></i> access rights</h3>
 		<hr>
 <pre>
 <font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~</b></font>$ ls -l
@@ -237,8 +269,7 @@ drwxr-xr-x  4 karol karol 4096 sie  4 13:06 <font color="#729FCF"><b>Pulpit</b><
 drwxr-xr-x  2 karol karol 4096 sie  2 16:14 <font color="#729FCF"><b>Szablony</b></font>
 drwxr-xr-x  2 karol karol 4096 sie  2 16:14 <font color="#729FCF"><b>Wideo</b></font>
 </pre>
-		<?php if ($lang == "en") { ?>
-		
+				
 <pre style="background-color: inherit; color: inherit;">
 drwxr-xr-x
 │└┬┘└┬┘└┬┘
@@ -296,79 +327,17 @@ drwxr-xr-x
 
 
 
-		<?php } else { ?>
-			
-
-
-<pre style="background-color: inherit; color: inherit;">
-drwxr-xr-x
-│└┬┘└┬┘└┬┘
-│ │  │  └─ inni
-│ │  └─ grupa
-│ └─ użytkownik
-└─ rodzaj pliku / katalog
-</pre>
-		<h4>rodzaje plików</h4>
-		<ul>
-			<li>d - katalog</li>
-			<li>- - zwykły plik</li>
-			<li>l - dowiązanie (skrót) do pliku</li>
-		</ul>
-		<h4>kto jest kim?</h4>
-		<ul>
-			<li>użytkownik - właściciel pliku (katalogu)</li>
-			<li>grupa - użytkownicy, którzy są w tej samej grupie, co użytkownik pliku</li>
-			<li>inni - wszyscy pozostali użytkownicy</li>
-		</ul>
-		<h4>co oznacza ...?</h4>
-		<ul>
-			<li>r - prawo odczytu</li>
-			<li>w - prawo zapisu</li>
-			<li>x - prawo wykonywania</li>
-		</ul>
-		<h4>wartości numeryczne praw dostępu</h4>
-		<ul>
-			<li>r - 4</li>
-			<li>w - 2</li>
-			<li>x - 1</li>
-		</ul>
-		<ul>
-			<li>rwx = 7</li>
-			<li>rw- = 6</li>
-			<li>r-x = 5</li>
-			<li>r-- = 4</li>
-			<li>--- = 0</li>
-		</ul>
-
-		<h4>jak zmienić prawa dostępu?</h4>
-		<h5>poprzez wartości numeryczne</h5>
-		<ul>
-			<li><code>chmod 777 fileName</code> - rwxrwxrwx - set all rights to all users</li>
-			<li><code>chmod 700 fileName</code> - rwx------ - only the owner has rights (all)</li>
-			<li><code>chmod 644 fileName</code> - rw-r--r-- - the owner can read and write; users from group and other users can only read</li>
-			<li><code>chmod 755 fileName</code> - rwxr-xr-x - the owner has all rights; users from group and other users can read and execute</li>
-		</ul>
-		<h5>poprzez przypisanie</h5>
-		<ul>
-			<li><code>chmod u+x fileName</code> - add executing right for the file owner</li>
-			<li><code>chmod o-r fileName</code> - remove reading right for other users</li>
-			<li><code>chmod g=rx fileName</code> - set reading and executing right for group users (</li>
-		</ul>
-
-
-
-		<?php } ?>
-	</article>
+			</article>
 
 	<article id="pipelines-redirections">
 		<hr>
-		<h3><i class="fas fa-directions"></i> <?=$pipelinesRedirections?></h3>
+		<h3><i class="fas fa-directions"></i> pipelines & redirections</h3>
 		<hr>
 	</article>
 
 	<article id="commands">
 		<hr>
-		<h3><i class="fa fa-question"></i> <?=$commands?></h3>
+		<h3><i class="fa fa-question"></i> info about commands</h3>
 		<hr>
 		<ul>
 			<li>whatis</li>
@@ -381,7 +350,7 @@ drwxr-xr-x
 	</article>
 	<article id="browsing-directories">
 		<hr>
-		<h3><i class="far fa-folder-open"></i> <?=$browsingDirectories?></h3>
+		<h3><i class="far fa-folder-open"></i> browsing directories</h3>
 		<hr>
 		<ul>
 			<li>pwd</li>
@@ -408,7 +377,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="folders-files-manipulation">
 		<hr>
-		<h3><i class="far fa-copy"></i> <?=$foldersFilesManipulation?></h3>
+		<h3><i class="far fa-copy"></i> files manipulation</h3>
 		<hr>
 		<ul>
 			<li>cp</li>
@@ -422,7 +391,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="files-information">
 		<hr>
-		<h3><i class="far fa-file-alt"></i> <?=$filesInformation?></h3>
+		<h3><i class="far fa-file-alt"></i> files information</h3>
 		<hr>
 		<ul>
 			<li>stat</li>
@@ -433,7 +402,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="reading-files">
 		<hr>
-		<h3><i class="far fa-file-alt"></i> <?=$readingFiles?></h3>
+		<h3><i class="far fa-file-alt"></i> reading files</h3>
 		<hr>
 		<ul>
 			<li>more</li>
@@ -444,7 +413,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="console">
 		<hr>
-		<h3><i class="fa fa-terminal"></i> <?=$console?></h3>
+		<h3><i class="fa fa-terminal"></i> console</h3>
 		<hr>
 		<ul>
 			<li>tty</li>
@@ -456,7 +425,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="power-session">
 		<hr>
-		<h3><i class="fa fa-power-off"></i> <?=$powerSession?></h3>
+		<h3><i class="fa fa-power-off"></i> power & session</h3>
 		<hr>
 		<ul>
 			<li>exit</li>
@@ -469,7 +438,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="file-system">
 		<hr>
-		<h3><i class="far fa-hdd fa-fw"></i> <?=$fileSystem?></h3>
+		<h3><i class="far fa-hdd fa-fw"></i> file system</h3>
 		<hr>
 		<ul>
 			<li>df</li>
@@ -482,7 +451,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="admin">
 		<hr>
-		<h3><i class="fa fa-shield-alt"></i> <?=$admin?></h3>
+		<h3><i class="fa fa-shield-alt"></i> administration</h3>
 		<hr>
 		<ul>
 			<li>su</li>
@@ -495,7 +464,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="users">
 		<hr>
-		<h3><i class="far fa-user"></i> <?=$users?></h3>
+		<h3><i class="far fa-user"></i> users</h3>
 		<hr>
 		<ul>
 			<li>logname</li>
@@ -509,7 +478,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="users-admin">
 	<hr>
-	<h3><i class="fa fa-user-shield"></i> <?=$usersAdmin?></h3>
+	<h3><i class="fa fa-user-shield"></i> users administration</h3>
 	<hr>
 	<ul>
 		<li>passwd</li>
@@ -525,7 +494,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="statistics">
 		<hr>
-		<h3><i class="fa fa-chart-bar"></i> <?=$statistics?></h3>
+		<h3><i class="fa fa-chart-bar"></i> statistics</h3>
 		<hr>
 		<ul>
 			<li>uptime</li>
@@ -548,7 +517,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="hardware">
 	<hr>
-	<h3><i class="fa fa-microchip"></i> <?=$hardware?></h3>
+	<h3><i class="fa fa-microchip"></i> hardware</h3>
 	<hr>
 	<ul>
 		<li>arch</li>
@@ -562,7 +531,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="network">
 	<hr>
-	<h3><i class="fa fa-network-wired"></i> <?=$network?></h3>
+	<h3><i class="fa fa-network-wired"></i> network</h3>
 	<hr>
 	<ul>
 		<li>ifconfig</li>
@@ -582,7 +551,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="wireless">
 	<hr>
-	<h3><i class="fa fa-wifi"></i> <?=$wireless?></h3>
+	<h3><i class="fa fa-wifi"></i> wireless</h3>
 	<hr>
 	<ul>
 		<li>iwconfig</li>
@@ -592,7 +561,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="processes">
 	<hr>
-	<h3><i class="fa fa-list-ul"></i> <?=$processes?></h3>
+	<h3><i class="fa fa-list-ul"></i> processes</h3>
 	<hr>
 	<ul>
 		<li>ps</li>
@@ -610,7 +579,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="package-managers">
 	<hr>
-	<h3><i class="fa fa-cube"></i> <?=$packageManagers?></h3>
+	<h3><i class="fa fa-cube"></i> package managers</h3>
 	<hr>
 	<ul>
 		<li>apt</li>
@@ -651,7 +620,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="search">
 	<hr>
-	<h3><i class="fa fa-search"></i> <?=$search?></h3>
+	<h3><i class="fa fa-search"></i> search</h3>
 	<hr>
 	<ul>
 		<li>which</li>
@@ -663,7 +632,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="text-manipulation">
 	<hr>
-	<h3><i class="fa fa-edit"></i> <?=$textManipulation?></h3>
+	<h3><i class="fa fa-edit"></i> text manipulation</h3>
 	<hr>
 	<ul>
 		<li>cat</li>
@@ -674,7 +643,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="archive">
 	<hr>
-	<h3><i class="far fa-file-archive"></i> <?=$archive?></h3>
+	<h3><i class="far fa-file-archive"></i> archives</h3>
 	<hr>
 	<ul>
 		<li>tar</li>
@@ -686,7 +655,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="compilation">
 	<hr>
-	<h3><i class="far fa-file-code"></i> <?=$compilation?></h3>
+	<h3><i class="far fa-file-code"></i> compilation</h3>
 	<hr>
 	<ul>
 		<li>gcc</li>
@@ -699,7 +668,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="text-editors">
 	<hr>
-	<h3><i class="fa fa-align-left"></i> <?=$textEditors?></h3>
+	<h3><i class="fa fa-align-left"></i> text editors</h3>
 	<hr>
 	<ul>
 		<li>vim (vi)</li>
@@ -709,7 +678,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="useful-programs">
 	<hr>
-	<h3><i class="far fa-window-maximize"></i> <?=$usefulPrograms?></h3>
+	<h3><i class="far fa-window-maximize"></i> useful programs</h3>
 	<hr>
 	<ul>
 		<li>lynx</li>
@@ -720,7 +689,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="ncurses-programs">
 	<hr>
-	<h3><i class="far fa-window-maximize"></i> <?=$ncursesPrograms?></h3>
+	<h3><i class="far fa-window-maximize"></i> ncurses programs</h3>
 	<hr>
 	<ul>
 		<li>mc</li>
@@ -730,7 +699,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="x-server">
 	<hr>
-	<h3><i class="fa fa-desktop"></i> <?=$xServer?></h3>
+	<h3><i class="fa fa-desktop"></i> x server</h3>
 	<hr>
 	<ul>
 		<li>xrandr</li>
@@ -743,7 +712,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="bash-scripts">
 	<hr>
-	<h3><i class="fa fa-code"></i> <?=$bashScripts?></h3>
+	<h3><i class="fa fa-code"></i> bash scripts</h3>
 	<hr>
 	<ul>
 		<li>echo</li>
@@ -776,7 +745,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 	<article id="xampp">
 	<hr>
-	<h3><i class="fab fa-php"></i> xampp</h3>
+	<h3><i class="fab fa.html"></i> xampp</h3>
 	<hr>
 	<ul>
 		<li>sudo /opt/lampp/lampp start</li>
@@ -809,4 +778,11 @@ karol@core2duo ~/Dokumenty $ tree -d
 	</article>
 </section>
 
-<?php include "footer.php"; ?>
+		</main>
+	</div><!--WRAPPER-->
+	<footer>
+		<h2>&copy; copyright 2019</h2>
+	</footer>
+	<div id="prv-billboard"></div>
+</body>
+</html>

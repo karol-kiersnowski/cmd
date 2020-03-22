@@ -83,14 +83,14 @@ header {
 nav {
 	position: fixed;
 	z-index: 0;
-	top: 38px;
+	top: 0;
+	padding-top: 38px;
 	width: 250px;
-	height: 95vh;
+	height: 100%;
 	white-space: nowrap;
 	scrollbar-width: thin;
 	overflow-y: auto;
 	overflow-x: hidden;
-
 }
 
 nav h2 {
@@ -103,7 +103,7 @@ nav ul i {
 
 nav a {
 	display: block;
-	padding: 8px;
+	padding: 7px 10px;
 }
 
 nav a i {
@@ -131,7 +131,8 @@ article {
 }
 
 footer {
-	margin-left: 40px;
+	margin: 20px;
+	margin-left: 250px;
 	text-align: center;
 }
 
@@ -159,6 +160,10 @@ main ul {
 
 a { text-decoration: none; }
 
+main a:hover {
+	text-decoration: underline;
+}
+
 h1 {
 	display: inline;
 	margin: 5px;
@@ -171,39 +176,68 @@ h2, h3, h4, h5 {
 
 h2 {
 	margin: 0;
-	font-size: 40px;
+	font-size: 42px;
 }
 
-footer h2 { font-size: 16px; }
+footer h2 { font-size: 18px; }
 
 h3 {
-	font-size: 28px;
+	font-size: 30px;
 }
+
 h4 {
-	margin: 0;
-	font-size: 24px;
+	font-size: 28px;
 }
 
 h5 {
-	font-size: 18px;
+	margin: 0;
+	font-size: 22px;
 }
 
 table {
-	display: inline;
-	float: left;
-	padding: 10px;
+	width: 100%;
 	border-collapse: collapse;
 }
 
-th, td {
-	padding: 10px;
+/*th, td {
+	padding: 5px;
+	text-align: center;
+}
+
+td:first-child {
 	text-align: left;
-	border-top: 1px solid #ddd;
+}*/
+
+
+
+th, td {
+	padding: 5px;
+	border: 1px solid #bbb;
+	text-align: center;
 }
 
 th {
 	background-color: #444;
 	color: white;
+}
+
+.screenshot {
+	margin: 70px 0;
+}
+
+.screenshot a {
+	display: block;
+	margin: 10px;
+	box-shadow: 0px 0px 10px #000;
+	transition: all 0.2s ease-in-out;
+}
+
+.screenshot a:hover {
+	opacity: 0.8;
+}
+
+main img {
+	width: 100%;
 }
 
 header img {
@@ -217,13 +251,59 @@ input[type="text"] {
 textarea {
 }
 
+.float-left { float: left; }
+.float-right { float: right; }
 .clear { clear: both; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+.col-50 { width: 50%; }
+.col-33 { width: 33.3%; }
+.col-25 { width: 25%; }
+.col-16 { width: 16.6%; }
+
+.card-container {
+	display: inline-block;
+	padding: 5px;
+	//background-color: blue;
+}
+.padding-5 img  {
+	padding: 5px;
+}
+
+.card-content {
+	box-shadow: 0px 0px 3px #aaa;
+}
+
+.card-content:hover {
+	box-shadow: 0px 0px 7px #aaa;
+}
+
+.card-caption {
+	padding: 5px;
+	text-align: center;
+	background-color: #eee;
+}
+
+.card-content img {
+	display: block;
+}
+
+.card-container a:hover {
+	text-decoration: none;
+}
+
+.card-container h3 {
+	font-size: 22px;
+}
+
+.card-container p {
+	font-size: 14px;
+}
 
 
 
-
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 	body { margin: 0; }
 	header span { display: none; }
 	nav {
@@ -237,4 +317,9 @@ textarea {
 	}
 	main, footer { margin-left: 50px; }
 	section { padding: 10px; }
+
+	.col-50 { width: 100%; }
+	.col-33 { width: 100%; }
+	.col-25 { width: 50%; }
+	.col-16 { width: 33.3%; }
 }
