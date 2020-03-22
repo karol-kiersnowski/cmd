@@ -1,6 +1,10 @@
 <?php
 	include "sys.php";
+<<<<<<< HEAD
 	$title = $cmd . $textScreenshots;
+=======
+	$title = $cmd . $links;
+>>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 	include "header.php";
 	include "nav-main.php";
 ?>

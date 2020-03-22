@@ -83,14 +83,34 @@ header {
 nav {
 	position: fixed;
 	z-index: 0;
+<<<<<<< HEAD
 	top: 0;
 	padding-top: 38px;
 	width: 250px;
 	height: 100%;
+=======
+<<<<<<< HEAD
+	top: 0;
+	padding-top: 38px;
+	width: 250px;
+	height: 100%;
+=======
+	top: 38px;
+	width: 250px;
+	height: 95vh;
+>>>>>>> 60db6f553fcc2a694704cfd394b4c75285c75011
+>>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 	white-space: nowrap;
 	scrollbar-width: thin;
 	overflow-y: auto;
 	overflow-x: hidden;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 60db6f553fcc2a694704cfd394b4c75285c75011
+>>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 }
 
 nav h2 {
@@ -103,7 +123,15 @@ nav ul i {
 
 nav a {
 	display: block;
+<<<<<<< HEAD
 	padding: 7px 10px;
+=======
+<<<<<<< HEAD
+	padding: 7px 10px;
+=======
+	padding: 8px;
+>>>>>>> 60db6f553fcc2a694704cfd394b4c75285c75011
+>>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 }
 
 nav a i {
@@ -131,8 +159,17 @@ article {
 }
 
 footer {
+<<<<<<< HEAD
 	margin: 20px;
 	margin-left: 250px;
+=======
+<<<<<<< HEAD
+	margin: 20px;
+	margin-left: 250px;
+=======
+	margin-left: 40px;
+>>>>>>> 60db6f553fcc2a694704cfd394b4c75285c75011
+>>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 	text-align: center;
 }
 
@@ -176,7 +213,15 @@ h2, h3, h4, h5 {
 
 h2 {
 	margin: 0;
+<<<<<<< HEAD
 	font-size: 42px;
+=======
+<<<<<<< HEAD
+	font-size: 42px;
+=======
+	font-size: 40px;
+>>>>>>> 60db6f553fcc2a694704cfd394b4c75285c75011
+>>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 }
 
 footer h2 { font-size: 18px; }
