@@ -12,31 +12,21 @@
 		<h3><i class="far fa-play-circle"></i> <?=$introduction?></h3>
 		<hr>
 		<h4>How to run command prompt in Windows?</h4>
-<<<<<<< HEAD
 		<ol>
 			<li>Start > Programs > Accessories > Command prompt</li>
 			<li>Start > write <em>command prompt</em> or <em>cmd.exe</em></li>
 		</ol>
-=======
-		<ul>
-			<li>click the Start Menu and start typing <em>cmd.exe</em></li>
-			<li>Start > Programs > System tools > Command prompt</li>
-		</ul>
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 		<h4>How to run DOS on modern computer?</h4>
 		<ol>
 			<li>emulator, e.g. <a target="_blank" href="https://www.dosbox.com">DOSBox</a></li>
 			<li>virtual machine, e.g. <a target="_blank" href="https://www.virtualbox.org/">VirtualBox</a></li>
 			<li>"modern DOS" - <a target="_blank" href="http://freedos.org/">FreeDOS</a></li>
 		</ol>
-<<<<<<< HEAD
 	</article>
 	<article id="dos-based-windows-vs-windows-nt">
 		<hr>
 		<h3><i class="fas fa-not-equal"></i> DOS-based Windows vs Windows NT</h3>
 		<hr>
-=======
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 		<h4>DOS vs DOS-based Windows vs Windows NT</h4>
 		<table class="normal">
 			<tr>
@@ -78,11 +68,7 @@
 			<tr>
 				<th>DOS programs run</th>
 				<td colspan="3">natively</td>
-<<<<<<< HEAD
 				<td>in virtual machine - <a target="_blank" href="https://en.wikipedia.org/wiki/Virtual_DOS_machine#Windows_NTVDM">NTVDM</a></td>
-=======
-				<td>in virtual machine</td>
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 				<td>-</td>
 			</tr>
 			<tr>
@@ -116,11 +102,7 @@
 			</p>
 		</div>
 		<div class="clear"></div>
-<<<<<<< HEAD
 		<h4>cmd.exe vs COMMAND.COM vs FREECOM.COM</h4>
-=======
-		<h4>cmd.exe vc COMMAND.COM vs FREECOM.COM</h4>
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 		<table class="normal">
 			<tr>
 				<th>command interpreter</th>
@@ -136,11 +118,7 @@
 			</tr>
 			<tr>
 				<th>autocomplete</th>
-<<<<<<< HEAD
 				<td><i class="fa fa-check fa-fw"></i></td>
-=======
-				<td><i class="fa fa-question fa-fw"></i></td>
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 			</tr>
@@ -185,7 +163,6 @@
 				<td><i class="fa fa-check fa-fw"></i></td>
 			</tr>
 			<tr>
-<<<<<<< HEAD
 				<th>advanced power managment</th>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -194,16 +171,6 @@
 				<th>release year</th>
 				<td>1994</td>
 				<td>2016</td>
-=======
-				<th>cd-rom support</th>
-				<td><i class="fa fa-question fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<th>advanced power managment</th>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 			</tr>
 			<tr>
 				<th>source model</th>
@@ -211,7 +178,6 @@
 				<td>open source (GNU GPL)</td>
 			</tr>
 		</table>
-<<<<<<< HEAD
 
 		<h4>MS-DOS versions</h4>
 		<table class="normal">
@@ -397,8 +363,6 @@
 				<td>2015<br>2016<br>2018</td>
 			</tr>
 		</table>
-=======
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 	</article>
 	<article id="keyboard-shortcuts">
 		<hr>
@@ -456,11 +420,7 @@
 		<hr>
 		<h3><i class="fas fa-sitemap"></i> <?=$directoryStructure?></h3>
 		<hr>
-<<<<<<< HEAD
 		<h4>Windows 10 64-bit (NT 10.0)</h4>
-=======
-		<h4>Windows NT 64-bit</h4>
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 <pre style="background-color: inherit; color: inherit;">
 C:
 ├── Program Files
@@ -469,34 +429,17 @@ C:
 ├── Users
 └── Windows
 </pre>
-<<<<<<< HEAD
 		<h4>Windows XP 32-bit (NT 5.1)</h4>
 <pre style="background-color: inherit; color: inherit;">
 C:
-├── Documents and settings
+├── Documents and Settings
 ├── Program Files
-└── Windows
+└── WINDOWS
 </pre>
-=======
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 		<h4>FreeDOS 1.2</h4>
 <pre style="background-color: inherit; color: inherit;">
 C:
 ├── FDOS
-<<<<<<< HEAD
-=======
-│   ├── APPINFO
-│   ├── BIN
-│   ├── CPI
-│   ├── DOC
-│   ├── HELP
-│   ├── NLS
-│   ├── PACKAGES
-│   ├── TEMP
-│   ├── BOOT.BSS
-│   ├── BOOT.MBR
-│   └── VERSION.FDI
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 ├── AUTOEXEC.BAT
 ├── COMMAND.COM
 ├── CONFIG.SYS
