@@ -1,6 +1,5 @@
 <nav>
 	<hr>
-<<<<<<< HEAD
 	<h2><a href="index.php<?=$suffix?>"><i class="fa fa-home fa-fw"></i> <?=$home?></a></h2>
 	<hr>
 	<h2><a href="linux.php<?=$suffix?>"><i class="fab fa-linux fa-fw"></i> linux</a></h2>
@@ -10,16 +9,6 @@
 	<ul>
 		<li><a href="win-dos.php<?=$suffix?>#introduction"><i class="far fa-play-circle fa-fw"></i> <?=$introduction?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#dos-based-windows-vs-windows-nt"><i class="fas fa-not-equal fa-fw"></i> DOS Windows vs Win NT</a></li>
-=======
-	<h2><a href="index.php<?=$suffix?>" onclick="changeMainMenu()"><i class="fa fa-home fa-fw"></i> <?=$home?></a></h2>
-	<hr>
-	<h2><a href="linux.php<?=$suffix?>" onclick="changeLinuxMenu()"><i class="fab fa-linux fa-fw"></i> linux</a></h2>
-	<hr>
-	<h2><a href="win-dos.php<?=$suffix?>" onclick="changeWinDosMenu()"><i class="fab fa-windows fa-fw"></i> win cmd / dos</a></h2>
-	<hr>
-	<ul>
-		<li><a href="win-dos.php<?=$suffix?>#introduction"><i class="far fa-play-circle fa-fw"></i> <?=$introduction?></a></li>
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 		<li><a href="win-dos.php<?=$suffix?>#keyboard-shortcuts"><i class="far fa-keyboard fa-fw"></i> <?=$keyboardShortcuts?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#partitions-drives"><i class="far fa-hdd fa-fw"></i> <?=$partitionsDrives?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#mounting-partitions-drives"><i class="fa fa-eject fa-fw"></i> DOSBox - <?=$mounting?></a></li>

@@ -1,14 +1,8 @@
 <nav>
 	<hr>
-<<<<<<< HEAD
 	<h2><a href="index.php<?=$suffix?>"><i class="fa fa-home fa-fw"></i> <?=$home?></a></h2>
 	<hr>
 	<h2><a href="linux.php<?=$suffix?>"><i class="fab fa-linux fa-fw"></i> linux</a></h2>
-=======
-	<h2><a href="index.php<?=$suffix?>" onclick="changeMainMenu()"><i class="fa fa-home fa-fw"></i> <?=$home?></a></h2>
-	<hr>
-	<h2><a href="linux.php<?=$suffix?>" onclick="changeLinuxMenu()"><i class="fab fa-linux fa-fw"></i> linux</a></h2>
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 	<hr>
 	<ul>
 		<li><a href="linux.php<?=$suffix?>#introduction"><i class="far fa-play-circle fa-fw"></i> <?=$introduction?></a></li>
@@ -20,10 +14,7 @@
 		<li><a href="linux.php<?=$suffix?>#commands"><i class="fa fa-question fa-fw"></i> <?=$commands?></a></li>
 		<li><a href="linux.php<?=$suffix?>#browsing-directories"><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></a></li>
 		<li><a href="linux.php<?=$suffix?>#folders-files-manipulation"><i class="far fa-copy fa-fw"></i> <?=$foldersFilesManipulation?></a></li>
-<<<<<<< HEAD
 		<li><a href="linux.php<?=$suffix?>#files-information"><i class="far fa-file-alt fa-fw"></i> <?=$filesInformation?></a></li>
-=======
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 		<li><a href="linux.php<?=$suffix?>#reading-files"><i class="far fa-file-alt fa-fw"></i> <?=$readingFiles?></a></li>
 		<li><a href="linux.php<?=$suffix?>#console"><i class="fa fa-terminal fa-fw"></i> <?=$console?></a></li>
 		<li><a href="linux.php<?=$suffix?>#power-session"><i class="fa fa-power-off fa-fw"></i> <?=$powerSession?></a></li>
@@ -39,11 +30,7 @@
 		<li><a href="linux.php<?=$suffix?>#processes"><i class="fa fa-list-ol fa-fw"></i> <?=$processes?></a></li>
 		<li><a href="linux.php<?=$suffix?>#package-managers"><i class="fa fa-cube fa-fw"></i> <?=$packageManagers?></a></li>
 		<li><a href="linux.php<?=$suffix?>#search"><i class="fa fa-search fa-fw"></i> <?=$search?></a></li>
-<<<<<<< HEAD
 		<li><a href="linux.php<?=$suffix?>#text-manipulation"><i class="fa fa-edit fa-fw"></i> <?=$textManipulation?></a></li>
-=======
-		<li><a href="linux.php<?=$suffix?>#text-manipulation"><i class="fa fa-search fa-fw"></i> <?=$textManipulation?></a></li>
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 		<li><a href="linux.php<?=$suffix?>#archive"><i class="far fa-file-archive fa-fw"></i> <?=$archive?></a></li>
 		<li><a href="linux.php<?=$suffix?>#compilation"><i class="far fa-file-code fa-fw"></i> <?=$compilation?></a></li>
 		<li><a href="linux.php<?=$suffix?>#text-editors"><i class="fa fa-align-left fa-fw"></i> <?=$textEditors?></a></li>
@@ -57,11 +44,7 @@
 		<li><a href="linux.php<?=$suffix?>#git"><i class="fab fa-git-alt fa-fw"></i> git</a></li>
 	</ul>
 	<hr>
-<<<<<<< HEAD
 	<h2><a href="win-dos.php<?=$suffix?>"><i class="fab fa-windows fa-fw"></i> win cmd / dos</a></h2>
-=======
-	<h2><a href="win-dos.php<?=$suffix?>" onclick="changeWinDosMenu()"><i class="fab fa-windows fa-fw"></i> win cmd / dos</a></h2>
->>>>>>> 2ff6a09712c7ee4bff906a78ef522297b1fde0a3
 	<hr>
 </nav>
 <main onclick="hideMenuByClickOutsideIt()">
