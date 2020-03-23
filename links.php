@@ -64,7 +64,7 @@
 					<img alt="FreeDOS" src="img/logo/freedos.png"/>
 					<div class="card-caption">
 						<h3>FreeDOS</h3>
-						<p>an open-source operating system compatible with MS-DOS</p>
+						<p>an open-source OS compatible with MS-DOS</p>
 					</div>
 				</div>
 			</a>
@@ -76,7 +76,7 @@
 					<img alt="MS-DOS" src="img/logo/msdos.png"/>
 					<div class="card-caption">
 						<h3>MS-DOS 1.25 & 2.0</h3>
-						<p>classic PC operating system</p>
+						<p>classic PC OS</p>
 					</div>
 				</div>
 			</a>
