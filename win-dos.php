@@ -495,6 +495,12 @@ C:
 				<th>DOSBox</th>
 			</tr>
 			<tr>
+				<td>&lt;letter&gt;:</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
 				<td>dir</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -562,13 +568,13 @@ C:
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
-				<td>ren</td>
+				<td>ren / rename</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 			</tr>
 			<tr>
-				<td>del</td>
+				<td>del / erase</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -861,6 +867,12 @@ C:
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 			</tr>
+			<tr>
+				<td>lh / loadhigh</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
 		</table>
 	</article>
 	<article id="network">
@@ -906,7 +918,7 @@ C:
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
-				<td>ipconfig</td>
+				<td>netstat</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-question fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
@@ -957,8 +969,8 @@ C:
 		<h3><i class="far fa-window-maximize"></i> <?=$usefulPrograms?></h3>
 		<hr>
 		<ul>
-			<li>Arachne</li>
 			<li>MPXPlayer</li>
+			<li>Arachne</li>
 		</ul>
 	</article>
 	<article id="batch-files">
