@@ -12,6 +12,7 @@ $about = "o stronie";
 
 $introduction = "wprowadzenie";
 $keyboardShortcuts = "skróty klawiszowe";
+$wildcardCharacters = "znaki wieloznaczne";
 $disksPartitions = "dyski & partycje";
 $partitionsDrives = "partycje & napędy";
 $directoryStructure = "struktura katalogów";

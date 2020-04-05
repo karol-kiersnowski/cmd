@@ -374,6 +374,19 @@
 			<li><kbd>ctrl</kbd> + <kbd>s</kbd> - stop the text</li>
 		</ul>
 	</article>
+	<article id="wildcard-characters">
+		<hr>
+		<h3><i class="fa fa-asterisk fa-fw"></i> <?=$wildcardCharacters?></h3>
+		<hr>
+		<ul>
+			<li>? - replace one character</li>
+			<li>* - replace many characters or none</li>
+			<h4>examples</h4>
+			<p>
+				<code>del *.*</code> - delete all files in current directory
+			</p>
+		</ul>
+	</article>
 	<article id="partitions-drives">
 		<hr>
 		<h3><i class="far fa-hdd"></i> <?=$partitionsDrives?></h3>

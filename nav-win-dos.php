@@ -10,6 +10,7 @@
 		<li><a href="win-dos.php<?=$suffix?>#introduction"><i class="far fa-play-circle fa-fw"></i> <?=$introduction?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#dos-based-windows-vs-windows-nt"><i class="fas fa-not-equal fa-fw"></i> DOS Windows vs Win NT</a></li>
 		<li><a href="win-dos.php<?=$suffix?>#keyboard-shortcuts"><i class="far fa-keyboard fa-fw"></i> <?=$keyboardShortcuts?></a></li>
+		<li><a href="win-dos.php<?=$suffix?>#wildcard-characters"><i class="fa fa-asterisk fa-fw"></i> <?=$wildcardCharacters?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#partitions-drives"><i class="far fa-hdd fa-fw"></i> <?=$partitionsDrives?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#mounting-partitions-drives"><i class="fa fa-eject fa-fw"></i> DOSBox - <?=$mounting?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#directory-structure"><i class="fas fa-sitemap fa-fw"></i> <?=$directoryStructure?></a></li>
@@ -24,6 +25,7 @@
 		<li><a href="win-dos.php<?=$suffix?>#network"><i class="fa fa-globe fa-fw"></i> <?=$network?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#text-editors"><i class="fa fa-align-left fa-fw"></i> <?=$textEditors?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#file-managers"><i class="far fa-copy fa-fw"></i> <?=$fileManagers?></a></li>
+		<li><a href="win-dos.php<?=$suffix?>#useful-programs"><i class="far fa-window-maximize fa-fw"></i> <?=$usefulPrograms?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#batch-files"><i class="fa fa-code fa-fw"></i> <?=$batchFiles?></a></li>
 	</ul>
 </nav>
