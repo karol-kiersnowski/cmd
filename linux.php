@@ -414,8 +414,6 @@ karol@core2duo ~/Dokumenty $ tree -d
 			<li>touch</li>
 			<li>mkdir</li>
 			<li>rmdir</li>
-			<li>stat</li>
-			<li>cmp</li>
 		</ul>
 	</article>
 	<article id="files-information">
