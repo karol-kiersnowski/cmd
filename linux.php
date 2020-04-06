@@ -798,15 +798,16 @@ karol@core2duo ~/Dokumenty $ tree -d
 		<li>git config --list</li>
 		<li>git clone [URL]</li>
 		<li>git init</li>
-		<li>git remote -v</li>
-		<li>git remote add origin [URL]</li>
 		<li>git status</li>
 		<li>git status -s</li>
 		<li>git diff</li>
 		<li>git add [file name]</li>
 		<li>git commit -m "your message"</li>
-		<li>git push -u origin master</li>
+		<li>git remote -v</li>
+		<li>git remote add origin [URL]</li>
 		<li>git pull</li>
+		<li>git push -u origin master</li>
+		<li>git fetch origin</li>
 	</ul>
 	</article>
 </section>
