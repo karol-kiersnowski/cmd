@@ -2,11 +2,7 @@ cmd.sh
 ======
 cmd.sh is a website to learn the Command-Line Interface
 
-Project site - [karol-kiersnowski.prv.pl/#cmd](http://karol-kiersnowski.prv.pl/#cmd)
-
-Site (with PHP interpreter) - [karol-kiersnowski.prv.pl/projects/cmd](http://karol-kiersnowski.prv.pl/projects/cmd)
-
-Site - [kargol92.github.io/cmd](https://kargol92.github.io/cmd)
+Projects site - [kargol92.github.io/cmd](https://kargol92.github.io/cmd)
 
 Technologies
 ------------
@@ -38,7 +34,7 @@ Screenshots
 
 Author
 ------
-Karol Kiersnowski
+kargol92
 
 License
 -------
