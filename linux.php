@@ -788,6 +788,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 	<hr>
 	<h3><i class="fab fa-git-alt"></i> git</h3>
 	<hr>
+	<h4>configuration</h4>
 	<ul>
 		<li>git config user.name</li>
 		<li>git config user.email</li>
@@ -796,17 +797,30 @@ karol@core2duo ~/Dokumenty $ tree -d
 		<li>git config --global user.email [you@example.com]</li>
 		<li>git config --global core.editor [editor name]</li>
 		<li>git config --list</li>
+	</ul>
+	<h4>getting started with the repository</h4>
+	<ul>
 		<li>git clone [URL]</li>
 		<li>git init</li>
+	</ul>
+	<h4>checking changes</h4>
+	<ul>
 		<li>git status</li>
 		<li>git status -s</li>
 		<li>git diff</li>
+	</ul>
+	<h4>commit changes</h4>
+	<ul>
 		<li>git add [file name]</li>
+		<li>git rm [file name]</li>
 		<li>git commit -m "your message"</li>
+	</ul>
+	<h4>work with remote repositories</h4>
+	<ul>
 		<li>git remote -v</li>
 		<li>git remote add origin [URL]</li>
+		<li>git push origin master</li>
 		<li>git pull</li>
-		<li>git push -u origin master</li>
 		<li>git fetch origin</li>
 	</ul>
 	</article>
