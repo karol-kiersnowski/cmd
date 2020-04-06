@@ -93,6 +93,8 @@
 
 	<?php include "screenshots-txt/windows-dir.html"; ?>
 
+	<?php include "screenshots-txt/dos-freedos-start-ver.html"; ?>
+
 </section>
 
 
