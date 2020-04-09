@@ -753,6 +753,57 @@ C:
 			</tr>	
 		</table>
 	</article>
+	<article id="system">
+		<hr>
+		<h3><i class="fa fa-laptop"></i> system</h3>
+		<hr>
+		<!--<ul>
+			<li>ver</li>
+			<li>date</li>
+			<li>time</li>
+			<li>mem</li>
+			<li>path</li>
+			<li>set</li>
+		</ul>-->
+		<table>
+			<tr>
+				<th></th>
+				<th>Win CMD</th>
+				<th>DOS</th>
+				<th>DOSBox</th>
+			</tr>
+			<tr>
+				<td>ver</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>date</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>time</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>path</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>set</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+		</table>
+	</article>
 	<article id="file-system">
 		<hr>
 		<h3><i class="far fa-hdd fa-fw"></i> <?=$fileSystem?></h3>
@@ -824,17 +875,12 @@ C:
 			</tr>
 		</table>
 	</article>
-	<article id="system">
+	<article id="memory">
 		<hr>
-		<h3><i class="fa fa-laptop"></i> system</h3>
+		<h3><i class="fa fa-memory fa-fw"></i> <?=$memory?></h3>
 		<hr>
 		<!--<ul>
-			<li>ver</li>
-			<li>date</li>
-			<li>time</li>
 			<li>mem</li>
-			<li>path</li>
-			<li>set</li>
 		</ul>-->
 		<table>
 			<tr>
@@ -844,38 +890,8 @@ C:
 				<th>DOSBox</th>
 			</tr>
 			<tr>
-				<td>ver</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>date</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>time</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
 				<td>mem</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>path</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>set</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 			</tr>
@@ -886,6 +902,22 @@ C:
 				<td><i class="fa fa-check fa-fw"></i></td>
 			</tr>
 		</table>
+		<h4>types of memory</h4>
+		<ul>
+			<li>conventional</li>
+			<li>upper</li>
+			<li>extended (XMS)</li>
+			<li>expanded (EMS)</li>
+		</ul>
+		<h4>miscellaneous</h4>
+		<h4>extenders</h4>
+		<ul>
+			<li>DOS/4G</li>
+			<li>DOS/4GW</li>
+		</ul>
+		<h4>TSR (Terminate and Stay Resident) programs</h4>
+		<h4>Protected mode</h4>
+		<h4>DPMI - DOS Protected Mode Interface</h4>
 	</article>
 	<article id="network">
 		<hr>
@@ -1005,27 +1037,6 @@ C:
 				<td>.BAT</td>
 			</tr>
 		</table>
-	</article>
-	<article id="memory">
-		<hr>
-		<h3><i class="fa fa-memory fa-fw"></i> memory</h3>
-		<hr>
-		<h4>types of memory</h4>
-		<ul>
-			<li>conventional</li>
-			<li>upper</li>
-			<li>extended (XMS)</li>
-			<li>expanded (EMS)</li>
-		</ul>
-		<h4>miscellaneous</h4>
-		<h4>extenders</h4>
-		<ul>
-			<li>DOS/4G</li>
-			<li>DOS/4GW</li>
-		</ul>
-		<h4>TSR (Terminate and Stay Resident) programs</h4>
-		<h4>Protected mode</h4>
-		<h4>DPMI - DOS Protected Mode Interface</h4>
 	</article>
 </section>
 

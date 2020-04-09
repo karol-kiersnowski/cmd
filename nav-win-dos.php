@@ -20,8 +20,9 @@
 		<li><a href="win-dos.php<?=$suffix?>#reading-files"><i class="far fa-file-alt fa-fw"></i> <?=$readingFiles?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#console"><i class="fa fa-terminal fa-fw"></i> <?=$console?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#powerSession"><i class="fa fa-power-off fa-fw"></i> <?=$powerSession?></a></li>
-		<li><a href="win-dos.php<?=$suffix?>#file-system"><i class="far fa-hdd fa-fw"></i> <?=$fileSystem?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#system"><i class="fa fa-laptop fa-fw"></i> system</a></li>
+		<li><a href="win-dos.php<?=$suffix?>#file-system"><i class="far fa-hdd fa-fw"></i> <?=$fileSystem?></a></li>
+		<li><a href="win-dos.php<?=$suffix?>#memory"><i class="fa fa-memory fa-fw"></i> <?=$memory?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#network"><i class="fa fa-globe fa-fw"></i> <?=$network?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#text-editors"><i class="fa fa-align-left fa-fw"></i> <?=$textEditors?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#file-managers"><i class="far fa-copy fa-fw"></i> <?=$fileManagers?></a></li>

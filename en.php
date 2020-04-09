@@ -31,6 +31,7 @@ $users = "users";
 $usersAdmin = "users administration";
 $statistics = "statistics";
 $fileSystem = "file system";
+$memory = "memory";
 $hardware = "hardware";
 $processes = "processes";
 $network = "network";

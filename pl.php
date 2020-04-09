@@ -31,6 +31,7 @@ $users = "użytkownicy";
 $usersAdmin = "administracja użytkownikami";
 $statistics = "statystyki";
 $fileSystem = "system plików";
+$memory = "pamięć";
 $hardware = "sprzęt";
 $network = "sieć";
 $wireless = "sieć bezprzewodowa";
