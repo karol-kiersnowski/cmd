@@ -214,6 +214,14 @@
 				<td>1984</td>
 			</tr>
 			<tr>
+				<td>4.0 (multitasking - abandoned)</td>
+				<td>FAT12 FAT16</td>
+				<td>2GB</td>
+				<td>360KB 1.2MB</td>
+				<td>?</td>
+				<td>1986</td>
+			</tr>
+			<tr>
 				<td>3.2</td>
 				<td>FAT12</td>
 				<td>32MB</td>
