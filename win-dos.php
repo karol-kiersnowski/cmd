@@ -216,9 +216,9 @@
 			<tr>
 				<td>4.0 (multitasking - abandoned)</td>
 				<td>FAT12 FAT16</td>
-				<td>2GB</td>
+				<td><i class="fa fa-question fa-fw"></i></td>
 				<td>360KB 1.2MB</td>
-				<td>?</td>
+				<td><i class="fa fa-question fa-fw"></i></td>
 				<td>1986</td>
 			</tr>
 			<tr>
