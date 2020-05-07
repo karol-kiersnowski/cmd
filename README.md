@@ -30,7 +30,12 @@ Requirements
 
 Screenshots
 -----------
-![cmd.sh](http://karol-kiersnowski.prv.pl/projects/cmd.png)
+![cmd.sh](http://karol-kiersnowski.prv.pl/img/projects/cmd.png)
+
+To do
+-----
+* guestbook
+* three motives (light - current, black - terminal style, blue - ms-dos programs style)
 
 Author
 ------
