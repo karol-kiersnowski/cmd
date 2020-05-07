@@ -456,6 +456,15 @@ C:
 ├── Program Files
 └── WINDOWS
 </pre>
+		<h4>MS-DOS 6.22</h4>
+<pre style="background-color: inherit; color: inherit;">
+C:
+├── DOS
+├── COMMAND.COM
+├── WINA20.386
+├── CONFIG.SYS
+└── AUTOEXEC.BAT
+</pre>
 		<h4>FreeDOS 1.2</h4>
 <pre style="background-color: inherit; color: inherit;">
 C:
@@ -608,7 +617,7 @@ C:
 			<tr>
 				<td>undelete</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-question fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
@@ -667,11 +676,13 @@ C:
 			<tr>
 				<th></th>
 				<th>Win CMD</th>
-				<th>DOS</th>
+				<th>MS-DOS</th>
+				<th>FreeDOS</th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
 				<td>cls</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -680,22 +691,33 @@ C:
 				<td>prompt</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
 				<td>mode</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
 				<td>alias</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 		</table>
-		<pre>mode con lines=40</pre>
+<pre>
+<code>mode 80</code>
+<code>mode 40</code>
+<code>mode con cols=80</code>
+<code>mode con cols=40</code>
+<code>mode con lines=25</code>
+<code>mode con lines=28</code>
+<code>mode con lines=43</code>
+<code>mode con lines=50</code></pre>
 	</article>
 	<article id="powerSession">
 		<hr>
@@ -727,35 +749,28 @@ C:
 			<tr>
 				<td>shutdown</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-question fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>poweroff</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-question fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
 				<td>halt</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-question fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
 				<td>reboot</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-question fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
 				<td>reset</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-question fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>	
@@ -948,31 +963,31 @@ C:
 			<tr>
 				<td>ipconfig</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-question fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
 				<td>ping</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-question fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
 				<td>tracert</td>
-				<td><i class="fa fa-question fa-fw"></i></td>
-				<td><i class="fa fa-question fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
 				<td>route</td>
 				<td><i class="fa fa-question fa-fw"></i></td>
-				<td><i class="fa fa-question fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
 				<td>netstat</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-question fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 		</table>
