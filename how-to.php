@@ -134,17 +134,19 @@ Device     Boot     Start       End   Sectors Size Id Type
 		My system in installed on /dev/sda2.
 	</p>
 <pre>
-.
-.
-.
+sudo mount /dev/sda2 /mnt
+
+sudo mount --bind /dev /mnt/dev
+
+sudo mount --bind /proc /mnt/proc
+
+sudo chroot /mnt
+
+sudo grub-install /dev/sda
+
+sudo update-grub
 </pre>
 
-	<p>
-		In the end, update GRUB.
-	</p>
-<pre>
-karol@aspireOne:~$ sudo update-grub
-</pre>
 </article>
 
 <article>
