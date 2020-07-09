@@ -11,16 +11,20 @@
 		<hr>
 		<h3><i class="far fa-play-circle"></i> <?=$introduction?></h3>
 		<hr>
-		<h4>How to run command prompt in Windows?</h4>
-		<ol>
-			<li>Start > Programs > Accessories > Command prompt</li>
-			<li>Start > write <em>command prompt</em> or <em>cmd.exe</em></li>
-		</ol>
 		<h4>How to run DOS on modern computer?</h4>
 		<ol>
 			<li>emulator, e.g. <a target="_blank" href="https://www.dosbox.com">DOSBox</a></li>
 			<li>virtual machine, e.g. <a target="_blank" href="https://www.virtualbox.org/">VirtualBox</a></li>
 			<li>"modern DOS" - <a target="_blank" href="http://freedos.org/">FreeDOS</a></li>
+		</ol>
+		<h4>How to run command prompt in Windows NT?</h4>
+		<ol>
+			<li>Start > Programs > Accessories > Command prompt</li>
+			<li>Start > write <em>command prompt</em> or <em>cmd.exe</em></li>
+		</ol>
+		<h4>How to run MS-DOS prompt in Windows 9x?</h4>
+		<ol>
+			<li>Start > Programs > MS-DOS prompt</li>
 		</ol>
 	</article>
 	<article id="dos-based-windows-vs-windows-nt">
