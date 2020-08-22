@@ -19,17 +19,20 @@
 		</ol>
 		<h4>How to run command prompt in Windows NT?</h4>
 		<ol>
-			<li>Start > Programs > Accessories > Command prompt</li>
 			<li>Start > write <em>command prompt</em> or <em>cmd.exe</em></li>
+			<li>Start > Programs > Accessories > Command prompt</li>
+			<li>Start > Run > <em>cmd.exe</em></li>
 		</ol>
 		<h4>How to run MS-DOS prompt in Windows NT (only 32-bit)?</h4>
 		<ol>
 			<li>Start > write <em>command.com</em></li>
+			<li>Start > Run > <em>command.com</em></li>
 		</ol>
 		<h4>How to run MS-DOS prompt in Windows 9x?</h4>
-		<ul>
+		<ol>
 			<li>Start > Programs > MS-DOS prompt</li>
-		</ul>
+			<li>Start > Run > <em>command.com</em></li>
+		</ol>
 	</article>
 	<article id="dos-based-windows-vs-windows-nt">
 		<hr>
