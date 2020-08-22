@@ -22,10 +22,14 @@
 			<li>Start > Programs > Accessories > Command prompt</li>
 			<li>Start > write <em>command prompt</em> or <em>cmd.exe</em></li>
 		</ol>
-		<h4>How to run MS-DOS prompt in Windows 9x?</h4>
+		<h4>How to run MS-DOS prompt in Windows NT (only 32-bit)?</h4>
 		<ol>
-			<li>Start > Programs > MS-DOS prompt</li>
+			<li>Start > write <em>command.com</em></li>
 		</ol>
+		<h4>How to run MS-DOS prompt in Windows 9x?</h4>
+		<ul>
+			<li>Start > Programs > MS-DOS prompt</li>
+		</ul>
 	</article>
 	<article id="dos-based-windows-vs-windows-nt">
 		<hr>
@@ -393,6 +397,9 @@
 			<li>? - replace one character</li>
 			<li>* - replace many characters or none</li>
 			<h4>examples</h4>
+			<p>
+				<code>dir *.exe</code> - display all files with the extension <em>exe</em> 
+			</p>
 			<p>
 				<code>del *.*</code> - delete all files in current directory
 			</p>
