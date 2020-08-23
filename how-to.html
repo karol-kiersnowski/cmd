@@ -63,6 +63,7 @@
 <h2><i class="far fa-lightbulb"></i> how to ...</h2>
 <hr>
 <ul>
+	<li><a href="#changeRootPassword">mass renaming of files</a></li>
 	<li><a href="#changeRootPassword">sort photos by date - phockup</a></li>
 	<li><a href="#changeRootPassword">resize images - imgp</a></li>
     <li><a href="#changeRootPassword">set the system start in console / CLI mode</a></li>
@@ -72,6 +73,23 @@
 	<li><a href="#changeRootPassword">restore the GRUB after installing Windows</a></li>
 	<li><a href="#changeRootPassword">hide the system menu in full-screen games and change the resolution to default</a></li>
 </ul>
+
+
+<article id="renamingOfFiles">
+	<h4>mass renaming of files</h4>
+	<h5><i class="far fa-lightbulb"></i> Solution</h5>
+	<p>
+		Install <em>rename</em> program.
+	</p>
+	<pre>
+sudo apt install rename
+</pre>
+	<h5>Example</h5>
+	<pre>rename 's/abc/xyz/' *</pre>
+	<pre>rename -n 's/abc/xyz/' *</pre>
+</article>
+
+
 
 
 <article id="startSystemInCLI">
@@ -142,6 +160,11 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 sudo update-grub
 </pre>
 </article>
+
+
+
+
+
 <article>
 	<h4>change font size in the command-line interface</h4>
 	<h5><i class="fa fa-question"></i> Issue</h5>
@@ -204,6 +227,11 @@ sudo update-grub
 
 </article>
 
+
+
+
+
+
 <article>
 	<h4>Hide the system menu in full-screen games and change the resolution to default</h4>
 	<h5><i class="fa fa-question"></i> Issue</h5>
@@ -237,6 +265,9 @@ karol@core2duo ~/Aplikacje/NFS Underground $ chmod u+x script.sh
 karol@core2duo ~/Aplikacje/NFS Underground ./script.sh
 </pre>
 </article>
+
+
+
 
 		</main>
 	</div><!--WRAPPER-->
