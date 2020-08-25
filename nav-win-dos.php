@@ -29,5 +29,8 @@
 		<li><a href="win-dos.php<?=$suffix?>#useful-programs"><i class="far fa-window-maximize fa-fw"></i> <?=$usefulPrograms?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#batch-files"><i class="fa fa-code fa-fw"></i> <?=$batchFiles?></a></li>
 	</ul>
+	<hr>
+	<h2><a href="powershell.php<?=$suffix?>"><i class="fa fa-terminal fa-fw"></i> PowerShell</a></h2>
+	<hr>
 </nav>
 <main onclick="hideMenuByClickOutsideIt()">

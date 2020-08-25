@@ -27,6 +27,7 @@
 			<ul>
 				<li><a href="linux.php<?=$suffix?>"><i class="fab fa-linux"></i> <span>linux</span></a></li>
 				<li><a href="win-dos.php<?=$suffix?>"><i class="fab fa-windows"></i> <span>windows cmd</span></a></li>
+				<li><a href="powershell.php<?=$suffix?>"><i class="fa fa-terminal"></i> <span>PowerShell</span></a></li>
 				<li>
 					<a href="?lang=<?=$lang?>&theme=<?=$notTheme?>" title="Motyw"><i class="fa fa-adjust"></i></a>
 				</li>
