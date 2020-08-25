@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png"/>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="theme-light.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono"/>
+	<script src="https://kit.fontawesome.com/63535dd4e0.js"></script>
+	<script defer src="script.js"></script>
+
+	<title>cmd:/>  PowerShell</title>
+	<meta name="keywords" content="cmd.sh,cmd_site,cmd,command-line interface,command prompt,console,terminal,shell,interpreter,gnu linux,linux,bash,windows,dos,ms-dos,pc-dos,freedos,dosbox,wiersz poleceń,konsola,powłoka"/>
+	<meta name="description" content="Learn commands from the GNU Linux, Windows and DOS"/>
+</head>
+<body onscroll="markAnchor()">
+	<header>
+		<div id="header-content">
+			<h1>
+				<a id="menu" href="javascript:void(0);" title="Menu" onclick="changeMenu()">
+				<i class="fa fa-list-ul fa-fw"></i></a>
+			</h1>
+			<h1><a href="index.html"><i class="fa fa-terminal"></i>cmd.sh</a></h1>
+			<ul>
+				<li><a href="linux.html?lang=en&theme=light"><i class="fab fa-linux"></i> <span>linux</span></a></li>
+				<li><a href="win-dos.html?lang=en&theme=light"><i class="fab fa-windows"></i> <span>windows cmd</span></a></li>
+				<li><a href="powershell.html?lang=en&theme=light"><i class="fa fa-terminal"></i> <span>PowerShell</span></a></li>
+				<li>
+					<a href="?lang=en&theme=blue" title="Motyw"><i class="fa fa-adjust"></i></a>
+				</li>
+				<li>
+											<a href="?lang=pl&theme=light" title="wersja polska">
+							<img src="img/polska.png" alt="Polska"/>
+						</a>
+									</li>
+			</ul>
+			<div style="clear: both"></div>
+		</div>
+	</header>
+	<div id="wrapper">
+<nav>
+	<hr>
+	<h2><a href="index.html?lang=en&theme=light"><i class="fa fa-home fa-fw"></i> home</a></h2>
+	<hr>
+	<h2><a href="linux.html?lang=en&theme=light"><i class="fab fa-linux fa-fw"></i> linux</a></h2>
+	<hr>
+	<h2><a href="win-dos.html?lang=en&theme=light"><i class="fab fa-windows fa-fw"></i> win cmd / dos</a></h2>
+	<hr>
+	<h2><a href="powershell.html?lang=en&theme=light"><i class="fa fa-terminal fa-fw"></i> PowerShell</a></h2>
+	<hr>
+	<ul>
+		<li><a href="powershell.html?lang=en&theme=light#introduction"><i class="far fa-play-circle fa-fw"></i> introduction</a></li>
+		<li><a href="powershell.html?lang=en&theme=light#commands"><i class="fa fa-question fa-fw"></i> info about commands</a></li>
+		<li><a href="powershell.html?lang=en&theme=light#browsing-directories"><i class="far fa-folder-open fa-fw"></i> browsing directories</a></li>
+		<li><a href="powershell.html?lang=en&theme=light#folders-files-manipulation"><i class="far fa-copy fa-fw"></i> files manipulation</a></li>
+		<li><a href="powershell.html?lang=en&theme=light#reading-files"><i class="far fa-file-alt fa-fw"></i> reading files</a></li>
+		<li><a href="powershell.html?lang=en&theme=light#console"><i class="fa fa-terminal fa-fw"></i> console</a></li>
+		<li><a href="powershell.html?lang=en&theme=light#system"><i class="fa fa-laptop fa-fw"></i> system</a></li>
+		<li><a href="powershell.html?lang=en&theme=light#network"><i class="fa fa-globe fa-fw"></i> network</a></li>
+		<li><a href="powershell.html?lang=en&theme=light#processes"><i class="fa fa-list-ol fa-fw"></i> processes</a></li>
+	</ul>
+</nav>
+<main onclick="hideMenuByClickOutsideIt()">
+
+<h2><i class="fa fa-terminal"></i> PowerShell</h2>
+<section>
+	<article id="introduction">
+		<hr>
+		<h3><i class="far fa-play-circle"></i> introduction</h3>
+		<hr>
+		<h4>How to run PowerShell in Windows 7, 8, 10?</h4>
+			<li>Start > write <em>powershell</em></li>
+			<li>Start > PowerShell</li>
+		</ol>
+	</article>
+	<article id="commands">
+		<hr>
+		<h3><i class="fa fa-question fa-fw"></i> info about commands</h3>
+		<hr>
+		<table>
+			<tr>
+				<th>PowerShell (cmdlet)</th>
+				<th>PowerShell (alias)</th>
+				<th>win cmd / DOS</th>
+				<th>linux (bash)</th>
+				<th>description</th>
+			</tr>
+			<tr>
+				<td>Get-Help</td>
+				<td>help, man</td>
+				<td>help</td>
+				<td>man</td>
+				<td>display command help</td>
+			</tr>
+			<tr>
+				<td>Get-Command</td>
+				<td>gcm</td>
+				<td>help</td>
+				<td>which</td>
+				<td>lists the available commands</td>
+			</tr>
+		</table>
+	</article>
+	<article id="browsing-directories">
+		<hr>
+		<h3><i class="far fa-folder-open fa-fw"></i> browsing directories</h3>
+		<hr>
+		<table>
+			<tr>
+				<th>PowerShell (cmdlet)</th>
+				<th>PowerShell (alias)</th>
+				<th>win cmd / DOS</th>
+				<th>linux (bash)</th>
+				<th>description</th>
+			</tr>
+			<tr>
+				<td>Get-Location</td>
+				<td>gl, cd, pwd</td>
+				<td>cd</td>
+				<td>pwd</td>
+				<td>display path to current directory</td>
+			</tr>
+			<tr>
+				<td>Get-ChildItem</td>
+				<td>gci, dir, ls</td>
+				<td>dir</td>
+				<td>ls</td>
+				<td>returns all objects in the current location (e.g. files in the current directory)</td>
+			</tr>
+			<tr>
+				<td>Set-Location</td>
+				<td>sl, cd, chdir</td>
+				<td>cd, chdir</td>
+				<td>cd</td>
+				<td>changes the current location (directory, registry hive, certificate repository)</td>
+			</tr>
+		</table>
+	</article>
+	<article id="folders-files-manipulation">
+		<hr>
+		<h3><i class="far fa-copy fa-fw"></i> files manipulation</h3>
+		<hr>
+		<table>
+			<tr>
+				<th>PowerShell (cmdlet)</th>
+				<th>PowerShell (alias)</th>
+				<th>win cmd / DOS</th>
+				<th>linux (bash)</th>
+				<th>description</th>
+			</tr>
+			<tr>
+				<td>Copy-Item</td>
+				<td>cpi, copy, cp</td>
+				<td>copy</td>
+				<td>cp</td>
+				<td>copies objects (e.g. files) or a structure fragment (e.g. directory tree)</td>
+			</tr>
+			<tr>
+				<td>Move-Item</td>
+				<td>mvi, move, mv</td>
+				<td>move</td>
+				<td>mv</td>
+				<td>moves file / directory to new location</td>
+			</tr>
+			<tr>
+				<td>Rename-Item</td>
+				<td>rni, ren</td>
+				<td>ren, rename</td>
+				<td>mv</td>
+				<td>renames an object (file, directory, etc.)</td>
+			</tr>
+			<tr>
+				<td>Remove-Item</td>
+				<td>ri, del, rd, rmdir, rm</td>
+				<td>del, erase, rd, rmdir</td>
+				<td>rm, rmdir</td>
+				<td>deletes an object (file, directory, etc.)</td>
+			</tr>
+		</table>
+	</article>
+	<article id="reading-files">
+		<hr>
+		<h3><i class="far fa-file-alt"></i> reading files</h3>
+		<hr>
+		<table>
+			<tr>
+				<th>PowerShell (cmdlet)</th>
+				<th>PowerShell (alias)</th>
+				<th>win cmd / DOS</th>
+				<th>linux (bash)</th>
+				<th>description</th>
+			</tr>
+			<tr>
+				<td>Get-Content</td>
+				<td>gc, type, cat</td>
+				<td>type</td>
+				<td>cat</td>
+				<td>display the content of an object (e.g. a file)</td>
+			</tr>
+		</table>
+	</article>
+	<article id="console">
+		<hr>
+		<h3><i class="fa fa-terminal fa-fw"></i> console</h3>
+		<table>
+			<tr>
+				<th>PowerShell (cmdlet)</th>
+				<th>PowerShell (alias)</th>
+				<th>win cmd / DOS</th>
+				<th>linux (bash)</th>
+				<th>description</th>
+			</tr>
+			<tr>
+				<td>Clear-Host</td>
+				<td>cls, clear</td>
+				<td>cls</td>
+				<td>clear</td>
+				<td>clears the screen</td>
+			</tr>
+		</table>
+	</article>
+	<article id="system">
+		<hr>
+		<h3><i class="fa fa-laptop"></i> system</h3>
+		<hr>
+		<table>
+			<tr>
+				<th>PowerShell (cmdlet)</th>
+				<th>PowerShell (alias)</th>
+				<th>win cmd / DOS</th>
+				<th>linux (bash)</th>
+				<th>description</th>
+			</tr>
+			<tr>
+				<td>Set-Variable</td>
+				<td>sv, set</td>
+				<td>set</td>
+				<td>set</td>
+				<td>creates or alters the contents of an environment variable</td>
+			</tr>
+		</table>
+	</article>
+	<article id="network">
+		<hr>
+		<h3><i class="fa fa-globe fa-fw"></i> network</h3>
+		<hr>
+		<!--<ul>
+			<li>ipconfig</li>
+			<li>ping</li>
+			<li>tracert</li>
+			<li>route</li>
+			<li>netstat</li>
+		</ul>-->
+		<table>
+			<tr>
+				<th>PowerShell (cmdlet)</th>
+				<th>PowerShell (alias)</th>
+				<th>win cmd / DOS</th>
+				<th>linux (bash)</th>
+				<th>description</th>
+			</tr>
+			<tr>
+				<td>Test-Connection</td>
+				<td>ping</td>
+				<td>ping</td>
+				<td>ping</td>
+				<td>sends a ping request (ICMP Echo Request) from the user's computer to a specific device, or issues a command to another device to perform this operation</td>
+			</tr>
+			<tr>
+				<td>Invoke-WebRequest</td>
+				<td>iwr, curl, wget</td>
+				<td>ping</td>
+				<td>curl, wget</td>
+				<td>downloads the content of the website</td>
+			</tr>
+		</table>
+	</article>
+	<article id="processes">
+		<hr>
+		<h3><i class="fa fa-list-ul"></i> processes</h3>
+		<hr>
+		<ul>
+		<table>
+			<tr>
+				<th>PowerShell (cmdlet)</th>
+				<th>PowerShell (alias)</th>
+				<th>win cmd / DOS</th>
+				<th>linux (bash)</th>
+				<th>description</th>
+			</tr>
+			<tr>
+				<td>Get-Process</td>
+				<td>gps, ps</td>
+				<td>tlist, tasklist</td>
+				<td>ps</td>
+				<td>lists the currently running processes</td>
+			</tr>
+			<tr>
+				<td>Stop-Process</td>
+				<td>sps, kill</td>
+				<td>kill, taskkill</td>
+				<td>kill</td>
+				<td>stops the running process</td>
+			</tr>
+		</table>
+</section>
+
+		</main>
+	</div><!--WRAPPER-->
+	<footer>
+		<h2>Copyleft &#127279; 2019 - 2020 All rights reversed</h2>
+	</footer>
+	<div id="prv-billboard"></div>
+</body>
+</html>
