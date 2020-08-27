@@ -233,7 +233,7 @@
 			<tr>
 				<td>Invoke-WebRequest</td>
 				<td>iwr, curl, wget</td>
-				<td>ping</td>
+				<td></td>
 				<td>curl, wget</td>
 				<td>downloads the content of the website</td>
 			</tr>
