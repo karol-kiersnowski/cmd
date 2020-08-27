@@ -270,6 +270,7 @@
 				<td>stops the running process</td>
 			</tr>
 		</table>
+	</article>
 </section>
 
 <?php include "footer.php"; ?>
