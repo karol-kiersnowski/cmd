@@ -243,7 +243,6 @@
 		<hr>
 		<h3><i class="fa fa-list-ul"></i> <?=$processes?></h3>
 		<hr>
-		<ul>
 		<table>
 			<tr>
 				<th colspan="2">PowerShell</th>
