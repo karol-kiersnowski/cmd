@@ -22,11 +22,14 @@
 		<hr>
 		<table>
 			<tr>
-				<th>PowerShell (cmdlet)</th>
-				<th>PowerShell (alias)</th>
-				<th>win cmd / DOS</th>
-				<th>linux (bash)</th>
-				<th>description</th>
+				<th colspan="2">PowerShell</th>
+				<th rowspan="2">cmd.exe /<br>COMMAND.COM</th>
+				<th rowspan="2">linux<br>(bash)</th>
+				<th rowspan="2">description</th>
+			</tr>
+			<tr>
+				<th>cmdlet</th>
+				<th>alias</th>
 			</tr>
 			<tr>
 				<td>Get-Help</td>
@@ -50,11 +53,14 @@
 		<hr>
 		<table>
 			<tr>
-				<th>PowerShell (cmdlet)</th>
-				<th>PowerShell (alias)</th>
-				<th>win cmd / DOS</th>
-				<th>linux (bash)</th>
-				<th>description</th>
+				<th colspan="2">PowerShell</th>
+				<th rowspan="2">cmd.exe /<br>COMMAND.COM</th>
+				<th rowspan="2">linux<br>(bash)</th>
+				<th rowspan="2">description</th>
+			</tr>
+			<tr>
+				<th>cmdlet</th>
+				<th>alias</th>
 			</tr>
 			<tr>
 				<td>Get-Location</td>
@@ -85,11 +91,14 @@
 		<hr>
 		<table>
 			<tr>
-				<th>PowerShell (cmdlet)</th>
-				<th>PowerShell (alias)</th>
-				<th>win cmd / DOS</th>
-				<th>linux (bash)</th>
-				<th>description</th>
+				<th colspan="2">PowerShell</th>
+				<th rowspan="2">cmd.exe /<br>COMMAND.COM</th>
+				<th rowspan="2">linux<br>(bash)</th>
+				<th rowspan="2">description</th>
+			</tr>
+			<tr>
+				<th>cmdlet</th>
+				<th>alias</th>
 			</tr>
 			<tr>
 				<td>Copy-Item</td>
@@ -127,11 +136,14 @@
 		<hr>
 		<table>
 			<tr>
-				<th>PowerShell (cmdlet)</th>
-				<th>PowerShell (alias)</th>
-				<th>win cmd / DOS</th>
-				<th>linux (bash)</th>
-				<th>description</th>
+				<th colspan="2">PowerShell</th>
+				<th rowspan="2">cmd.exe /<br>COMMAND.COM</th>
+				<th rowspan="2">linux<br>(bash)</th>
+				<th rowspan="2">description</th>
+			</tr>
+			<tr>
+				<th>cmdlet</th>
+				<th>alias</th>
 			</tr>
 			<tr>
 				<td>Get-Content</td>
@@ -147,11 +159,14 @@
 		<h3><i class="fa fa-terminal fa-fw"></i> <?=$console?></h3>
 		<table>
 			<tr>
-				<th>PowerShell (cmdlet)</th>
-				<th>PowerShell (alias)</th>
-				<th>win cmd / DOS</th>
-				<th>linux (bash)</th>
-				<th>description</th>
+				<th colspan="2">PowerShell</th>
+				<th rowspan="2">cmd.exe /<br>COMMAND.COM</th>
+				<th rowspan="2">linux<br>(bash)</th>
+				<th rowspan="2">description</th>
+			</tr>
+			<tr>
+				<th>cmdlet</th>
+				<th>alias</th>
 			</tr>
 			<tr>
 				<td>Clear-Host</td>
@@ -168,11 +183,14 @@
 		<hr>
 		<table>
 			<tr>
-				<th>PowerShell (cmdlet)</th>
-				<th>PowerShell (alias)</th>
-				<th>win cmd / DOS</th>
-				<th>linux (bash)</th>
-				<th>description</th>
+				<th colspan="2">PowerShell</th>
+				<th rowspan="2">cmd.exe /<br>COMMAND.COM</th>
+				<th rowspan="2">linux<br>(bash)</th>
+				<th rowspan="2">description</th>
+			</tr>
+			<tr>
+				<th>cmdlet</th>
+				<th>alias</th>
 			</tr>
 			<tr>
 				<td>Set-Variable</td>
@@ -196,11 +214,14 @@
 		</ul>-->
 		<table>
 			<tr>
-				<th>PowerShell (cmdlet)</th>
-				<th>PowerShell (alias)</th>
-				<th>win cmd / DOS</th>
-				<th>linux (bash)</th>
-				<th>description</th>
+				<th colspan="2">PowerShell</th>
+				<th rowspan="2">cmd.exe /<br>COMMAND.COM</th>
+				<th rowspan="2">linux<br>(bash)</th>
+				<th rowspan="2">description</th>
+			</tr>
+			<tr>
+				<th>cmdlet</th>
+				<th>alias</th>
 			</tr>
 			<tr>
 				<td>Test-Connection</td>
@@ -225,11 +246,14 @@
 		<ul>
 		<table>
 			<tr>
-				<th>PowerShell (cmdlet)</th>
-				<th>PowerShell (alias)</th>
-				<th>win cmd / DOS</th>
-				<th>linux (bash)</th>
-				<th>description</th>
+				<th colspan="2">PowerShell</th>
+				<th rowspan="2">cmd.exe /<br>COMMAND.COM</th>
+				<th rowspan="2">linux<br>(bash)</th>
+				<th rowspan="2">description</th>
+			</tr>
+			<tr>
+				<th>cmdlet</th>
+				<th>alias</th>
 			</tr>
 			<tr>
 				<td>Get-Process</td>

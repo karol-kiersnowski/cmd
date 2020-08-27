@@ -502,8 +502,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD (NT 5.1)</th>
-				<th>DOS</th>
+				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -532,8 +532,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD (NT 5.1)</th>
-				<th>DOS</th>
+				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -581,8 +581,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD (NT 5.1)</th>
-				<th>DOS</th>
+				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -658,8 +658,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD (NT 5.1)</th>
-				<th>DOS</th>
+				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -688,9 +688,9 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD (NT 5.1)</th>
-				<th>MS-DOS</th>
-				<th>FreeDOS</th>
+				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>FreeDOS<br><em>[FREECOM.COM]</em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -747,9 +747,9 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD (NT 5.1)</th>
-				<th>MS-DOS</th>
-				<th>FreeDOS</th>
+				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>FreeDOS<br><em>[FREECOM.COM]</em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -804,8 +804,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD (NT 5.1)</th>
-				<th>DOS</th>
+				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -857,8 +857,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD (NT 5.1)</th>
-				<th>DOS</th>
+				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -898,6 +898,12 @@ C:
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
+				<td>bootrec</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+			</tr>
+			<tr>
 				<td>mount</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
@@ -921,8 +927,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD (NT 5.1)</th>
-				<th>DOS</th>
+				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -954,6 +960,31 @@ C:
 		<h4>TSR (Terminate and Stay Resident) programs</h4>
 		<h4>DPMI - DOS Protected Mode Interface</h4>
 	</article>
+	<article id="processes">
+		<hr>
+		<h3><i class="fa fa-list-ul"></i> <?=$processes?></h3>
+		<hr>
+		<table>
+			<tr>
+				<th></th>
+				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>DOSBox</th>
+			</tr>
+			<tr>
+				<td>tasklist</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>taskkill</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+			</tr>
+		</table>
+	</article>
 	<article id="network">
 		<hr>
 		<h3><i class="fa fa-globe fa-fw"></i> <?=$network?></h3>
@@ -968,8 +999,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD (NT 5.1)</th>
-				<th>DOS</th>
+				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -1015,8 +1046,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD (NT 5.1)</th>
-				<th>DOS</th>
+				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -1062,8 +1093,8 @@ C:
 		</ul>-->
 		<table>
 			<tr>
-				<th>Win CMD</th>
-				<th>DOS</th>
+				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
