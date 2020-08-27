@@ -502,7 +502,7 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD</th>
+				<th>Win CMD (NT 5.1)</th>
 				<th>DOS</th>
 				<th>DOSBox</th>
 			</tr>
@@ -532,7 +532,7 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD</th>
+				<th>Win CMD (NT 5.1)</th>
 				<th>DOS</th>
 				<th>DOSBox</th>
 			</tr>
@@ -556,7 +556,7 @@ C:
 			</tr>
 			<tr>
 				<td>tree</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
@@ -581,7 +581,7 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD</th>
+				<th>Win CMD (NT 5.1)</th>
 				<th>DOS</th>
 				<th>DOSBox</th>
 			</tr>
@@ -593,7 +593,7 @@ C:
 			</tr>
 			<tr>
 				<td>diskcopy</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
@@ -658,7 +658,7 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD</th>
+				<th>Win CMD (NT 5.1)</th>
 				<th>DOS</th>
 				<th>DOSBox</th>
 			</tr>
@@ -688,7 +688,7 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD</th>
+				<th>Win CMD (NT 5.1)</th>
 				<th>MS-DOS</th>
 				<th>FreeDOS</th>
 				<th>DOSBox</th>
@@ -709,7 +709,7 @@ C:
 			</tr>
 			<tr>
 				<td>mode</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
@@ -747,7 +747,7 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD</th>
+				<th>Win CMD (NT 5.1)</th>
 				<th>MS-DOS</th>
 				<th>FreeDOS</th>
 				<th>DOSBox</th>
@@ -804,7 +804,7 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD</th>
+				<th>Win CMD (NT 5.1)</th>
 				<th>DOS</th>
 				<th>DOSBox</th>
 			</tr>
@@ -857,7 +857,7 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD</th>
+				<th>Win CMD (NT 5.1)</th>
 				<th>DOS</th>
 				<th>DOSBox</th>
 			</tr>
@@ -881,7 +881,7 @@ C:
 			</tr>
 			<tr>
 				<td>chkdsk</td>
-				<td><i class="fa fa-question fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
@@ -893,7 +893,7 @@ C:
 			</tr>
 			<tr>
 				<td>format</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
@@ -921,13 +921,13 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD</th>
+				<th>Win CMD (NT 5.1)</th>
 				<th>DOS</th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
 				<td>mem</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 			</tr>
@@ -968,7 +968,7 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD</th>
+				<th>Win CMD (NT 5.1)</th>
 				<th>DOS</th>
 				<th>DOSBox</th>
 			</tr>
@@ -992,7 +992,7 @@ C:
 			</tr>
 			<tr>
 				<td>route</td>
-				<td><i class="fa fa-question fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
@@ -1015,19 +1015,19 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Win CMD</th>
+				<th>Win CMD (NT 5.1)</th>
 				<th>DOS</th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
 				<td>edlin</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 			<tr>
 				<td>edit</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
