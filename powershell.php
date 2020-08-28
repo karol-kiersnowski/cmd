@@ -257,14 +257,14 @@
 			<tr>
 				<td>Get-Process</td>
 				<td>gps, ps</td>
-				<td>tlist, tasklist</td>
+				<td>tasklist</td>
 				<td>ps</td>
 				<td>lists the currently running processes</td>
 			</tr>
 			<tr>
 				<td>Stop-Process</td>
 				<td>sps, kill</td>
-				<td>kill, taskkill</td>
+				<td>taskkill</td>
 				<td>kill</td>
 				<td>stops the running process</td>
 			</tr>
