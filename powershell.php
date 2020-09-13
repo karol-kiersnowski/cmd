@@ -15,6 +15,88 @@
 			<li>Start > write <em>powershell</em></li>
 			<li>Start > PowerShell</li>
 		</ol>
+
+		<h4>PowerShell versions</h4>
+		<table>
+			<tr>
+				<th>version</th>
+				<th>cmdlets</th>
+				<th>included in OS versions</th>
+				<th>available OS versions</th>
+				<th>year</th>
+			</tr>
+			<tr>
+				<td>1.0</td>
+				<td>129</td>
+				<td>Windows Server 2008</td>
+				<td>Windows XP<br>
+					Windows Server 2003<br>
+					Windows Vista</td>
+				<td>2006</td>
+			</tr>
+			<tr>
+				<td>2.0</td>
+				<td>632</td>
+				<td>Windows 7<br>
+					Windows Server 2008 R2</td>
+				<td>Windows XP<br>
+					Windows Server 2003<br>
+					Windows Vista<br>
+					Windows Server 2008</td>
+				<td>2009</td>
+			</tr>
+			<tr>
+				<td>3.0</td>
+				<td>about 1000</td>
+				<td>Windows 8<br>
+					Windows Server 2012</td>
+				<td>Windows 7<br>
+					Windows Server 2008<br>
+					Windows Server 2008 R2</td>
+				<td>2012</td>
+			</tr>
+			<tr>
+				<td>4.0</td>
+				<td>?</td>
+				<td>Windows 8.1<br>
+					WIndows Server 2012 R2</td>
+				<td>Windows 7<br>
+					Windows Server 2008 R2<br>
+					Windows Server 2012</td>
+				<td>2013</td>
+			</tr>
+			<tr>
+				<td>5.0</td>
+				<td>about 1300</td>
+				<td>Windows 10</td>
+				<td>Windows 7<br>
+					Windows 8.1<br>
+					Windows Server 2012<br>
+					Windows Server 2012 R2</td>
+				<td>2016</td>
+			</tr>
+			<tr>
+				<td>5.1</td>
+				<td>1386</td>
+				<td>Windows 10</td>
+				<td>Windows 7<br>
+					Windows 8.1<br>
+					Windows Server 2008 R2<br>
+					Windows Server 2012<br>
+					Windows Server 2012 R2</td>
+				<td>2017</td>
+			</tr>
+			<tr>
+				<td>Core 6.0</td>
+				<td>1386</td>
+				<td>Windows 10</td>
+				<td>Windows<br>
+					macOS<br>
+					Linux</td>
+				<td>2018</td>
+			</tr>
+		</table>
+
 	</article>
 	<article id="commands">
 		<hr>
