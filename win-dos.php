@@ -368,7 +368,7 @@
 			</tr>
 			<tr>
 				<td>3.1</td>
-				<td>3.1</td>
+				<td>3.3</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -376,7 +376,7 @@
 			</tr>
 			<tr>
 				<td>3.1 (fW)</td>
-				<td>3.1</td>
+				<td>3.3</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -384,7 +384,7 @@
 			</tr>
 			<tr>
 				<td>3.11</td>
-				<td>3.1</td>
+				<td>3.3</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -392,7 +392,7 @@
 			</tr>
 			<tr>
 				<td>3.11 (fW)</td>
-				<td>3.1</td>
+				<td>3.3</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
