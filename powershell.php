@@ -77,7 +77,7 @@
 			</tr>
 			<tr>
 				<td>5.1</td>
-				<td>1386</td>
+				<td>1586</td>
 				<td>Windows 10</td>
 				<td>Windows 7<br>
 					Windows 8.1<br>
@@ -88,7 +88,7 @@
 			</tr>
 			<tr>
 				<td>Core 6.0</td>
-				<td>1386</td>
+				<td>?</td>
 				<td>Windows 10</td>
 				<td>Windows<br>
 					macOS<br>
