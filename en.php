@@ -16,6 +16,7 @@ $wildcardCharacters = "wildcard characters";
 $disksPartitions = "disks & partitions";
 $partitionsDrives = "partitions & drives";
 $directoryStructure = "directory structure";
+$fileExtensions = "file extensions";
 $accessRights = "access rights";
 $pipelinesRedirections = "pipelines & redirections";
 

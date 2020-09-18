@@ -16,6 +16,7 @@ $wildcardCharacters = "znaki wieloznaczne";
 $disksPartitions = "dyski & partycje";
 $partitionsDrives = "partycje & napędy";
 $directoryStructure = "struktura katalogów";
+$fileExtensions = "rozszerzenia plików";
 $accessRights = "prawa dostępu";
 $pipelinesRedirections = "potoki & przekierowania";
 

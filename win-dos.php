@@ -609,6 +609,24 @@ C:
 └── KERNEL.SYS
 </pre>
 	</article>
+
+	<article id="file-extensions">
+		<hr>
+		<h3><i class="far fa-file-excel"></i> <?=$fileExtensions?></h3>
+		<hr>
+		<ul>
+			<li>EXE (executive) - executable file</li>
+			<li>COM (command) - executable file; precursor of exe extension</li>
+			<li>BAT (batch) - file with DOS commands</li>
+			<li>TXT (text) - simple text file</li>
+			<li>HLP (help)</li>
+			<li>DOC (document)</li>
+			<li>DAT (data)</li>
+			<li>LIB (library)</li>
+			<li>SYS (system)</li>
+		</ul>
+	</article>
+
 	<article id="commands">
 		<hr>
 		<h3><i class="fa fa-question fa-fw"></i> <?=$commands?></h3>
@@ -1213,14 +1231,58 @@ C:
 		</ul>-->
 		<table>
 			<tr>
-				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
+				<th></th>
+				<th>Windows<br><em>[cmd.exe]</em></th>
 				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
+				<td>batch files extension</td>
 				<td>.bat .cmd</td>
 				<td>.BAT</td>
 				<td>.BAT</td>
+			</tr>
+			<tr>
+				<td>echo</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>pause</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>call</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>choice</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>goto</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>:&lt;textlabel&gt;</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>if</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 			</tr>
 		</table>
 	</article>
