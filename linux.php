@@ -414,6 +414,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 			<li>touch</li>
 			<li>mkdir</li>
 			<li>rmdir</li>
+			<li>install</li>
 		</ul>
 	</article>
 	<article id="files-information">
@@ -600,6 +601,7 @@ karol@core2duo ~/Dokumenty $ tree -d
 		<li>killall</li>
 		<li>kill -KILL</li>
 		<li>killall -KILL</li>
+		<li>pidof</li>
 		<li>pstree</li>
 		<li>jobs</li>
 		<li>fg</li>
@@ -753,11 +755,24 @@ karol@core2duo ~/Dokumenty $ tree -d
 	<hr>
 	<ul>
 		<li>echo</li>
+		<li>read</li>
+		<li>sleep</li>
+		<li>let</li>
+		<li>test</li>
 		<li>if</li>
+		<li>elif</li>
+		<li>else</li>
+		<li>then</li>
+		<li>fi</li>
 		<li>case</li>
+		<li>esac</li>
 		<li>for</li>
+		<li>select</li>
 		<li>while</li>
 		<li>until</li>
+		<li>do</li>
+		<li>done</li>
+		<li>function</li>
 	</ul>
 	</article>
 	<article id="ssh">
