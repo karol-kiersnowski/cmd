@@ -16,6 +16,7 @@ $wildcardCharacters = "znaki wieloznaczne";
 $disksPartitions = "dyski & partycje";
 $partitionsDrives = "partycje & napędy";
 $directoryStructure = "struktura katalogów";
+$systemFiles = "pliki systemowe";
 $fileExtensions = "rozszerzenia plików";
 $accessRights = "prawa dostępu";
 $pipelinesRedirections = "potoki & przekierowania";
@@ -51,5 +52,7 @@ $bashScripts = "skrypty bash'a";
 $batchFiles = "pliki wsadowe";
 $mounting = "montowanie";
 $mountingPartitionsDrives = "montowanie partycji i dysków";
+
+$notes = "Przypisy";
 
 ?>

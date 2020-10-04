@@ -14,6 +14,7 @@
 		<li><a href="win-dos.php<?=$suffix?>#partitions-drives"><i class="far fa-hdd fa-fw"></i> <?=$partitionsDrives?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#mounting-partitions-drives"><i class="fa fa-eject fa-fw"></i> DOSBox - <?=$mounting?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#directory-structure"><i class="fas fa-sitemap fa-fw"></i> <?=$directoryStructure?></a></li>
+		<li><a href="win-dos.php<?=$suffix?>#system-files"><i class="fas fa-tools fa-fw"></i> <?=$systemFiles?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#file-extensions"><i class="far fa-file-excel fa-fw"></i> <?=$fileExtensions?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#commands"><i class="fa fa-question fa-fw"></i> <?=$commands?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#browsing-directories"><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></a></li>

@@ -303,6 +303,23 @@ textarea {
 }
 
 
+dl {
+  display: grid;
+  grid-template-columns: max-content auto;
+}
+
+dt {
+  grid-column-start: 1;
+  padding: 5px;
+  font-size: large;
+}
+
+dd {
+  grid-column-start: 2;
+  padding: 5px;
+}
+
+
 
 @media only screen and (max-width: 1000px) {
 	body { margin: 0; }

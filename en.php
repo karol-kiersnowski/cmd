@@ -16,6 +16,7 @@ $wildcardCharacters = "wildcard characters";
 $disksPartitions = "disks & partitions";
 $partitionsDrives = "partitions & drives";
 $directoryStructure = "directory structure";
+$systemFiles = "system files";
 $fileExtensions = "file extensions";
 $accessRights = "access rights";
 $pipelinesRedirections = "pipelines & redirections";
@@ -51,5 +52,7 @@ $bashScripts = "bash scripts";
 $batchFiles = "batch files";
 $mounting = "mounting";
 $mountingPartitionsDrives = "mounting partitions & drives";
+
+$notes = "Notes";
 
 ?>

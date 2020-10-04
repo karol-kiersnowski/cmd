@@ -57,14 +57,16 @@
 			</tr>
 			<tr>
 				<th>x-bit OS</th>
-				<td colspan="2">16</td>
+				<td>16</td>
+				<td>16</td>
 				<td>16/32</td>
 				<td>32</td>
 				<td>64</td>
 			</tr>
 			<tr>
 				<th>x-bit programs run</th>
-				<td colspan="2">16</td>
+				<td>16</td>
+				<td>16<sup>[1]</sup></td>
 				<td>16/32</td>
 				<td>16/32</td>
 				<td>32/64</td>
@@ -72,8 +74,8 @@
 			<tr>
 				<th>command interpreter</th>
 				<td colspan="3">COMMAND.COM</td>
-				<td>COMMAND.COM<br>cmd.exe<br>PowerShell</td>
-				<td>cmd.exe<br>PowerShell</td>
+				<td>COMMAND.COM<br>cmd.exe<br>PowerShell<sup>[2]</sup></td>
+				<td>cmd.exe<br>PowerShell<sup>[2]</sup></td>
 			</tr>
 			<tr>
 				<th>DOS programs run</th>
@@ -91,7 +93,7 @@
 			<tr>
 				<th>file system</th>
 				<td colspan="2">FAT12<br>FAT16</td>
-				<td>FAT16<br>VFAT<br>FAT32</td>
+				<td>FAT16<br>VFAT<br>FAT32<sup>[3]</sup></td>
 				<td colspan="2">NTFS</td>
 			</tr>
 			<tr>
@@ -101,17 +103,18 @@
 				<td colspan="2">255</td>
 			</tr>
 		</table>
-		<div class="float-right">
-			<p>
-				* Windows 1-3: 1.x, 2.x, 3.x<br>
-				* Windows 9x: 95, 98, Me<br>
-				* DOS-based Windows: 1.x, 2.x, 3.x, 95, 98, Me<br>
-				* Windows NT family: NT, 2000, XP, Vista, 7, 8, 10, Server<br>
-				* PowerShell: in Windows 7 and later<br>
-				* FAT32: supported in Windows 95 OSR2 and later Win9x
-			</p>
-		</div>
-		<div class="clear"></div>
+		<p>
+			* Windows 1-3: 1.x, 2.x, 3.x<br>
+			* Windows 9x: 95, 98, Me<br>
+			* DOS-based Windows: 1.x, 2.x, 3.x, 95, 98, Me<br>
+			* Windows NT family: NT, 2000, XP, Vista, 7, 8, 10, Server
+		</p>
+		<ol>
+			<li>Windows 3.1 / 3.11: there is an additional Win32s API which allows to run some 32-bit programs</li>
+			<li>PowerShell: in Windows 7 and later</li>
+			<li>FAT32: supported in Windows 95 OSR2 and later Win9x</li>
+		</ol>
+
 		<h4>cmd.exe vs COMMAND.COM vs FREECOM.COM</h4>
 		<table class="normal">
 			<tr>
@@ -313,125 +316,185 @@
 			</tr>
 		</table>
 
-		<h4>Windows 1.x - 3.x versions</h4>
+		<h4>DOS-based Windows versions</h4>
 		<table class="normal">
 			<tr rowspan="2">
 				<th rowspan="2">version</th>
-				<th rowspan="2">minimal<br>MS-DOS</th>
-				<th colspan="3">processor mode</th>
+				<th rowspan="2">name</th>
+				<th rowspan="2">minimal<br>MS-DOS<sup>[1]</sup></th>
+				<th colspan="3">mode<sup>[3]</sup></th>
+				<th rowspan="2">registry</th>
 				<th rowspan="2">year</th>
 			</tr>
 			<tr>
 				<th>real</th>
-				<th>protected</th>
-				<th>virtual</th>
+				<th>standard</th>
+				<th>enhanced</th>
 			</tr>
 			<tr>
 				<td>1.01</td>
+				<td>Windows 1.01</td>
 				<td>2.0</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td>1985</td>
 			</tr>
 			<tr>
 				<td>2.03</td>
+				<td>Windows 2.03</td>
 				<td>2.0</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td>1987</td>
 			</tr>
 			<tr>
-				<td>2.1 /286</td>
+				<td>2.1</td>
+				<td>Windows/286 2.1</td>
 				<td>2.0</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td>1988</td>
 			</tr>
 			<tr>
-				<td>2.1 /386</td>
+				<td>2.1</td>
+				<td>Windows/386 2.1</td>
 				<td>2.0</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td>1988</td>
 			</tr>
 			<tr>
 				<td>3.0</td>
+				<td>Windows 3.0</td>
 				<td>3.1</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td>1990</td>
 			</tr>
 			<tr>
 				<td>3.1</td>
+				<td>Windows 3.1</td>
 				<td>3.3</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td>1992</td>
 			</tr>
 			<tr>
-				<td>3.1 (fW)</td>
+				<td>3.1</td>
+				<td>Windows for Workgroups 3.1</td>
 				<td>3.3</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td>1992</td>
 			</tr>
 			<tr>
 				<td>3.11</td>
+				<td>Windows 3.11</td>
 				<td>3.3</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td>1993</td>
 			</tr>
 			<tr>
-				<td>3.11 (fW)</td>
+				<td>3.11</td>
+				<td>Windows for Workgroups 3.11</td>
 				<td>3.3</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td>1993</td>
 			</tr>
-		</table>
-		<h4>Windows 9x versions</h4>
-		<table>
+			<tr rowspan="2">
+				<th rowspan="2">version</th>
+				<th rowspan="2">name</th>
+				<th rowspan="2">included<br>MS-DOS<sup>[2]</sup></th>
+				<th colspan="3">mode<sup>[3]</sup></th>
+				<th rowspan="2">registry</th>
+				<th rowspan="2">year</th>
+			</tr>
 			<tr>
-				<th>version</th>
-				<th>name</th>
-				<th>included<br>MS-DOS</th>
-				<th>year</th>
+				<th>real</th>
+				<th>standard</th>
+				<th>enhanced</th>
 			</tr>
 			<tr>
 				<td>4.0</td>
 				<td>Windows 95</td>
 				<td>7.0</td>
+				<td><i class="fa fa-times fa-fw"></i><sup>[4]</sup></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td>1995</td>
 			</tr>
 			<tr>
 				<td>4.1</td>
 				<td>Windows 98</td>
 				<td>7.1</td>
+				<td><i class="fa fa-times fa-fw"></i><sup>[4]</sup></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td>1998</td>
 			</tr>
 			<tr>
 				<td>4.1</td>
 				<td>Windows 98 SE</td>
 				<td>7.1</td>
+				<td><i class="fa fa-times fa-fw"></i><sup>[4]</sup></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td>1999</td>
 			</tr>
 			<tr>
 				<td>4.9</td>
 				<td>Windows Me</td>
 				<td>8.0</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 				<td>2000</td>
 			</tr>
 		</table>
+
+		<ol>
+			<li>
+				Windows 1.x - 3.x are only programs that run in DOS. They need DOS in version written above.
+			</li>
+			<li>
+				Windows 9x are installed with DOS. They are complete operating systems.
+			</li>
+			<li>
+				Windows real mode works in processor real mode (need 8086 CPU)<br>
+				Windows standard mode can work in processor protected and real mode (need 80286 CPU)<br>
+				Windows enhanced 386 mode can work in protected, virtual and real mode (need 80386 CPU)<br>
+				Real / Standard mode: possible run DOS program in fullscreen, but programs in background are stopped<br>
+				Enhanced mode: possible run mulitple DOS programs, in window, programs in background can work
+			</li>
+			<li>
+				Windows 95, 98, 98SE can boot in DOS real mode without Windows system extenders (GUI, etc)
+			</li>
+		</ol>
+		<div class="clear"></div>
 
 		<h4>Windows NT versions</h4>
 		<table class="normal">
@@ -610,6 +673,27 @@ C:
 </pre>
 	</article>
 
+	<article id="system-files">
+		<hr>
+		<h3><i class="fas fa-tools"></i> <?=$systemFiles?></h3>
+		<hr>
+		<h4>MS-DOS</h4>
+		<dl>
+			<dt>IO.SYS</dt>
+				<dd>hidden system file on the startup disk; contains the default devices drivers</dd>
+			<dt>MSDOS.SYS</dt>
+				<dd>hidden system file on the startup disk; contains system kernel; in Windows 95 and later DOS-based Windows, the entire kernel was moved to IO.SYS and the MS-DOS.SYS is a text configuration file</dd>
+			<dt>CONFIG.SYS</dt>
+				<dd>primary configuration file, the syntax is similar to that used Windows <em>.ini</em> files</dd>
+			<dt>COMMAND.COM</dt>
+				<dd>default command intepreter and interface for DOS; it's first program run after system boot; includes some internal commands</dd>
+			<dt>AUTOEXEC.BAT</dt>
+				<dd>batch file automatically executed after loading COMMAND.COM</dd>
+		</dl>
+		<h5>boot order</h5>
+		<p>IO.SYS &gt; MSDOS.SYS &gt; CONFIG.SYS &gt; COMMAND.COM &gt; AUTOEXEC.BAT</p>
+	</article>
+
 	<article id="file-extensions">
 		<hr>
 		<h3><i class="far fa-file-excel"></i> <?=$fileExtensions?></h3>
@@ -617,13 +701,13 @@ C:
 		<ul>
 			<li>EXE (executive) - executable file</li>
 			<li>COM (command) - executable file; precursor of exe extension</li>
-			<li>BAT (batch) - file with DOS commands</li>
-			<li>TXT (text) - simple text file</li>
+			<li>BAT (batch) - plain text file with DOS commands</li>
+			<li>SYS (system) - system file</li>
+			<li>TXT (text) - plain text file</li>
 			<li>HLP (help)</li>
-			<li>DOC (document)</li>
+			<li>DOC (document) - rich text file</li>
 			<li>DAT (data)</li>
 			<li>LIB (library)</li>
-			<li>SYS (system)</li>
 		</ul>
 	</article>
 
@@ -640,8 +724,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
-				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -670,8 +754,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
-				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -719,8 +803,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
-				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -796,8 +880,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
-				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -826,9 +910,9 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
-				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
-				<th>FreeDOS<br><em>[FREECOM.COM]</em></th>
+				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
+				<th>FreeDOS<br><em><small>FREECOM.COM</small></em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -885,9 +969,9 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
-				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
-				<th>FreeDOS<br><em>[FREECOM.COM]</em></th>
+				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
+				<th>FreeDOS<br><em><small>FREECOM.COM</small></em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -942,8 +1026,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
-				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -995,8 +1079,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
-				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -1037,7 +1121,7 @@ C:
 			</tr>
 			<tr>
 				<td>bootrec</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
@@ -1065,8 +1149,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
-				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -1105,8 +1189,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
-				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -1137,8 +1221,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
-				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -1184,8 +1268,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Windows NT (5.1)<br><em>[cmd.exe]</em></th>
-				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -1232,8 +1316,8 @@ C:
 		<table>
 			<tr>
 				<th></th>
-				<th>Windows<br><em>[cmd.exe]</em></th>
-				<th>MS-DOS<br><em>[COMMAND.COM]</em></th>
+				<th>Windows<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
 				<th>DOSBox</th>
 			</tr>
 			<tr>
@@ -1250,6 +1334,12 @@ C:
 			</tr>
 			<tr>
 				<td>pause</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>rem</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -1273,13 +1363,19 @@ C:
 				<td><i class="fa fa-check fa-fw"></i></td>
 			</tr>
 			<tr>
-				<td>:&lt;textlabel&gt;</td>
+				<td>:&lt;label&gt;</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 			</tr>
 			<tr>
 				<td>if</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>for</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
