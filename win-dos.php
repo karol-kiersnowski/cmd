@@ -316,7 +316,7 @@
 			</tr>
 		</table>
 
-		<h4>DOS-based Windows versions</h4>
+		<h4>Windows 1.x - 3.x versions</h4>
 		<table class="normal">
 			<tr rowspan="2">
 				<th rowspan="2">version</th>
@@ -421,57 +421,98 @@
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td>1993</td>
 			</tr>
-			<tr rowspan="2">
-				<th rowspan="2">version</th>
-				<th rowspan="2">name</th>
-				<th rowspan="2">included<br>MS-DOS<sup>[2]</sup></th>
-				<th colspan="3">mode<sup>[3]</sup></th>
-				<th rowspan="2">registry</th>
-				<th rowspan="2">year</th>
+		</table>
+
+		<h4>Windows 9x versions</h4>
+		<table>
+			<tr>
+				<th>version</th>
+				<th>name</th>
+				<th>included<br>MS-DOS<sup>[2]</sup></th>
+				<th>FAT32</th>
+				<th>Internet Explorer</th>
+				<th>DirectX</th>
+				<th>year</th>
 			</tr>
 			<tr>
-				<th>real</th>
-				<th>standard</th>
-				<th>enhanced</th>
-			</tr>
-			<tr>
-				<td>4.0</td>
+				<td>4.00.950</td>
 				<td>Windows 95</td>
 				<td>7.0</td>
-				<td><i class="fa fa-times fa-fw"></i><sup>[4]</sup></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
 				<td>1995</td>
 			</tr>
 			<tr>
-				<td>4.1</td>
+				<td>4.00.950a</td>
+				<td>Windows 95 SP1</td>
+				<td>7.0</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td>2.0</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td>1996</td>
+			</tr>
+			<tr>
+				<td>4.00.950A</td>
+				<td>Windows 95 OSR1</td>
+				<td>7.0</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td>2.0</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td>1996</td>
+			</tr>
+			<tr>
+				<td>4.00.950B</td>
+				<td>Windows 95 OSR2</td>
+				<td>7.1</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td>3.0</td>
+				<td>2.0a</td>
+				<td>1996</td>
+			</tr>
+			<tr>
+				<td>4.00.950B</td>
+				<td>Windows 95 OSR2.1</td>
+				<td>7.1</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td>3.0</td>
+				<td>2.0a</td>
+				<td>1997</td>
+			</tr>
+			<tr>
+				<td>4.00.950C</td>
+				<td>Windows 95 OSR2.5</td>
+				<td>7.1</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td>4.0</td>
+				<td>5.0</td>
+				<td>1997</td>
+			</tr>
+			<tr>
+				<td>4.10.1998</td>
 				<td>Windows 98</td>
 				<td>7.1</td>
-				<td><i class="fa fa-times fa-fw"></i><sup>[4]</sup></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
+				<td>4.01</td>
+				<td>5.2</td>
 				<td>1998</td>
 			</tr>
 			<tr>
-				<td>4.1</td>
+				<td>4.10.2222A</td>
 				<td>Windows 98 SE</td>
 				<td>7.1</td>
-				<td><i class="fa fa-times fa-fw"></i><sup>[4]</sup></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
+				<td>5.0</td>
+				<td>6.1a</td>
 				<td>1999</td>
 			</tr>
 			<tr>
-				<td>4.9</td>
+				<td>4.90.3000</td>
 				<td>Windows Me</td>
 				<td>8.0</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
+				<td>5.5</td>
+				<td>7.1</td>
 				<td>2000</td>
 			</tr>
 		</table>
