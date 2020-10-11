@@ -21,6 +21,7 @@ nav hr {
 	color: var(--black);
 }
 
+main a:hover,
 nav a:hover {
 	background-color: var(--dark-gray);
 	color: var(--white);
