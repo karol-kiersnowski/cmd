@@ -39,8 +39,10 @@ function markAnchor() {
 		articlesBottom[i] = articles[i].getBoundingClientRect().bottom;
 		anchors[i] = document.querySelector("a[href*='#" + articles[i].id + "']");
 		anchors[i].style.borderLeft = "none";
-		if (articlesTop[i] <= 5 && articlesBottom[i] > 5)
-			anchors[i].style.borderLeft = "3px solid rgb(26, 54, 101)";
+		if (articlesTop[i] <= 5 && articlesBottom[i] > 5) {
+			anchors[i].style.borderLeftWidth = "3px";
+			anchors[i].style.borderLeftStyle = "solid";
+		}
 	}
 	//document.getElementById("demo").innerHTML = anchors[2];
 }

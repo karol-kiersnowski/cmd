@@ -659,6 +659,7 @@
 		</ul>
 <?php } ?>
 	</article>
+	
 	<article id="mounting-partitions-drives">
 		<hr>
 		<h3><i class="fa fa-eject fa-fw"></i> DOSBox - <?=$mountingPartitionsDrives?></h3>
@@ -673,6 +674,7 @@
 		<p><code>imgmount d ~/DOS/WORMS.DAT -t iso</code> - Linux</p>
 		<p><code>imgmount d c:/DOS/WORMS.DAT -t iso</code> - Windows</p>
 	</article>
+
 	<article id="directory-structure">
 		<hr>
 		<h3><i class="fas fa-sitemap"></i> <?=$directoryStructure?></h3>

@@ -11,16 +11,16 @@
 	<h3>where to get ...?</h3>
 	<div class="card-container col-25">
 		<div class="card-content padding-5">
-		<a target="_blank" href="https://ubuntu.com/download/desktop">
-			<div>
-				<img alt="Ubuntu" src="img/logo/ubuntu.png"/>
-				<div class="card-caption">
-					<h3>Ubuntu</h3>
-					<p>distro of GNU Linux</p>
+			<a target="_blank" href="https://ubuntu.com/download/desktop">
+				<div>
+					<img alt="Ubuntu" src="img/logo/ubuntu.png"/>
+					<div class="card-caption">
+						<h3>Ubuntu</h3>
+						<p>distro of GNU Linux</p>
+					</div>
 				</div>
-			</div>
-		</a>
-	</div>
+			</a>
+		</div>
 	</div><div class="card-container col-25">
 		<div class="card-content padding-5">
 			<a target="_blank" href="https://www.linuxmint.com/download.php">

@@ -5,16 +5,16 @@
 		$lang = "en";
 	include $lang . '.php';
 
-	if( isset($_GET['theme']) ) 
-		$theme = $_GET['theme'];
+	if( isset($_GET['th']) ) 
+		$th = $_GET['th'];
 	else
-		$theme = "light";
+		$th = "light";
 
-	if ($theme =="light")
+	if ($th =="light")
 		$notTheme = "blue";
 	else
 		$notTheme = "light";
 
 	$cmd = "cmd:/> ";
-	$suffix = "?lang=$lang&theme=$theme";
+	$suffix = "?lang=$lang&th=$th";
 ?>

@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
 	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png"/>
 	<link rel="stylesheet" href="style.css"/>
-	<link rel="stylesheet" href="theme-<?=$theme?>.css"/>
+	<link rel="stylesheet" href="theme-<?=$th?>.css"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu+Mono"/>
 	<script src="https://kit.fontawesome.com/63535dd4e0.js"></script>
 	<script defer src="script.js"></script>
@@ -33,15 +33,12 @@
 				<li><a href="win-dos.php<?=$suffix?>"><i class="fab fa-windows"></i> <span>windows cmd</span></a></li>
 				<li><a href="powershell.php<?=$suffix?>"><i class="fa fa-terminal"></i> <span>PowerShell</span></a></li>
 				<li>
-					<a href="?lang=<?=$lang?>&theme=<?=$notTheme?>" title="Motyw"><i class="fa fa-adjust"></i></a>
-				</li>
-				<li>
 					<?php if ($lang == "pl") { ?>
-						<a href="?lang=en&theme=<?=$theme?>" title="English version">
+						<a href="?lang=en&th=<?=$th?>" title="English version">
 							<img src="img/uk.png" alt="UK"/>
 						</a>
 					<?php } else { ?>
-						<a href="?lang=pl&theme=<?=$theme?>" title="wersja polska">
+						<a href="?lang=pl&th=<?=$th?>" title="wersja polska">
 							<img src="img/polska.png" alt="Polska"/>
 						</a>
 					<?php } ?>

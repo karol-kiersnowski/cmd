@@ -8,6 +8,7 @@ $textScreenshots = "screenshot'y (tekst)";
 $imageScreenshots = "screenshot'y (obraz)";
 $links = "linki";
 $guestBook = "księga gości";
+$theme = "motyw";
 $about = "o stronie";
 
 $introduction = "wprowadzenie";
