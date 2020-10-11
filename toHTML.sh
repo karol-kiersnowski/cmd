@@ -17,6 +17,7 @@ sed -i 's/\.php/\.html/g' screenshots-txt.html
 sed -i 's/\.php/\.html/g' screenshots-img.html
 sed -i 's/\.php/\.html/g' links.html
 sed -i 's/\.php/\.html/g' guest-book.html
+sed -i 's/\.php/\.html/g' theme.html
 sed -i 's/\.php/\.html/g' about.html
 sed -i 's/\.php/\.html/g' linux.html
 sed -i 's/\.php/\.html/g' win-dos.html

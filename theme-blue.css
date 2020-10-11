@@ -52,7 +52,6 @@ header {
 
 nav {
 	scrollbar-color: #000 var(--light-gray);
-	box-shadow: 5px 5px 0px var(--dark-gray);
 }
 
 main {

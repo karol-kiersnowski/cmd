@@ -25,26 +25,51 @@
 		<div id="header-content">
 			<h1>
 				<a id="menu" href="javascript:void(0);" title="Menu" onclick="changeMenu()">
-				<i class="fa fa-list-ul fa-fw"></i></a>
+					<i class="fa fa-list-ul fa-fw"></i>
+				</a>
 			</h1>
 			<h1><a href="index.php"><i class="fa fa-terminal"></i>cmd.sh</a></h1>
 			<ul>
-				<li><a href="linux.php<?=$suffix?>"><i class="fab fa-linux"></i> <span>linux</span></a></li>
-				<li><a href="win-dos.php<?=$suffix?>"><i class="fab fa-windows"></i> <span>windows cmd</span></a></li>
-				<li><a href="powershell.php<?=$suffix?>"><i class="fa fa-terminal"></i> <span>PowerShell</span></a></li>
+				<li>
+					<a href="linux.php<?=$suffix?>">
+						<i class="fab fa-linux"></i>
+						<span>linux</span>
+					</a>
+				</li>
+				<li>
+					<a href="win-dos.php<?=$suffix?>">
+						<i class="fab fa-windows"></i>
+						<span>windows cmd</span>
+					</a>
+				</li>
+				<li>
+					<a href="powershell.php<?=$suffix?>">
+						<i class="fa fa-terminal"></i>
+						<span>PowerShell</span>
+					</a>
+				</li>
+				<li>
+					<a href="theme.php<?=$suffix?>">
+						<i class="fa fa-adjust"></i>
+						<span>theme</span>
+					</a>
+				</li>
 				<li>
 					<?php if ($lang == "pl") { ?>
 						<a href="?lang=en&th=<?=$th?>" title="English version">
 							<img src="img/uk.png" alt="UK"/>
+							<span>English version</span>
 						</a>
 					<?php } else { ?>
 						<a href="?lang=pl&th=<?=$th?>" title="wersja polska">
 							<img src="img/polska.png" alt="Polska"/>
+							<span>wersja polska</span>
 						</a>
 					<?php } ?>
 				</li>
+				<div class="clear"></div>
 			</ul>
-			<div style="clear: both"></div>
+			<div class="clear"></div>
 		</div>
 	</header>
 	<div id="wrapper">

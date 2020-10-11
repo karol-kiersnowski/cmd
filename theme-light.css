@@ -35,6 +35,7 @@ a {
 	color: #1a3665;
 }
 
+header a:hover,
 nav a:hover {
 	background-color: #ddd;
 }

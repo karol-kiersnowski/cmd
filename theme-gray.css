@@ -7,10 +7,6 @@
 	--white: #fff;
 }
 
-body {
-	//font-family: monospace;
-}
-
 body,
 header,
 header a,
@@ -21,6 +17,7 @@ nav hr {
 	color: var(--black);
 }
 
+header a:hover,
 nav a:hover {
 	background-color: var(--dark-gray);
 	color: var(--white);
@@ -52,7 +49,6 @@ header {
 
 nav {
 	scrollbar-color: #000 var(--light-gray);
-	box-shadow: 5px 5px 0px var(--dark-gray);
 }
 
 main {

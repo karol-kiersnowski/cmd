@@ -21,7 +21,7 @@
 		<li><a href="win-dos.php<?=$suffix?>#folders-files-manipulation"><i class="far fa-copy fa-fw"></i> <?=$foldersFilesManipulation?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#reading-files"><i class="far fa-file-alt fa-fw"></i> <?=$readingFiles?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#console"><i class="fa fa-terminal fa-fw"></i> <?=$console?></a></li>
-		<li><a href="win-dos.php<?=$suffix?>#powerSession"><i class="fa fa-power-off fa-fw"></i> <?=$powerSession?></a></li>
+		<li><a href="win-dos.php<?=$suffix?>#power-session"><i class="fa fa-power-off fa-fw"></i> <?=$powerSession?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#system"><i class="fa fa-laptop fa-fw"></i> system</a></li>
 		<li><a href="win-dos.php<?=$suffix?>#file-system"><i class="far fa-hdd fa-fw"></i> <?=$fileSystem?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#memory"><i class="fa fa-memory fa-fw"></i> <?=$memory?></a></li>

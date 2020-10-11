@@ -7,6 +7,7 @@
 
 <h2><i class="fab fa-windows"></i> windows cmd / dos</h2>
 <section>
+
 	<article id="introduction">
 		<hr>
 		<h3><i class="far fa-play-circle"></i> <?=$introduction?></h3>
@@ -34,6 +35,7 @@
 			<li>Start > Run > <em>command.com</em></li>
 		</ol>
 	</article>
+
 	<article id="dos-based-windows-vs-windows-nt">
 		<hr>
 		<h3><i class="fas fa-not-equal"></i> DOS-based Windows vs Windows NT</h3>
@@ -606,6 +608,7 @@
 			</tr>
 		</table>
 	</article>
+
 	<article id="keyboard-shortcuts">
 		<hr>
 		<h3><i class="far fa-keyboard"></i> <?=$keyboardShortcuts?></h3>
@@ -616,6 +619,7 @@
 			<li><kbd>ctrl</kbd> + <kbd>s</kbd> - stop the text</li>
 		</ul>
 	</article>
+
 	<article id="wildcard-characters">
 		<hr>
 		<h3><i class="fa fa-asterisk fa-fw"></i> <?=$wildcardCharacters?></h3>
@@ -632,6 +636,7 @@
 			</p>
 		</ul>
 	</article>
+
 	<article id="partitions-drives">
 		<hr>
 		<h3><i class="far fa-hdd"></i> <?=$partitionsDrives?></h3>
@@ -826,6 +831,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="browsing-directories">
 		<hr>
 		<h3><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></h3>
@@ -868,6 +874,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="folders-files-manipulation">
 		<hr>
 		<h3><i class="far fa-copy fa-fw"></i> <?=$foldersFilesManipulation?></h3>
@@ -953,6 +960,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="reading-files">
 		<hr>
 		<h3><i class="far fa-file-alt"></i> <?=$readingFiles?></h3>
@@ -982,6 +990,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="console">
 		<hr>
 		<h3><i class="fa fa-terminal fa-fw"></i> <?=$console?></h3>
@@ -1038,7 +1047,8 @@ C:
 <code>mode con lines=43</code>
 <code>mode con lines=50</code></pre>
 	</article>
-	<article id="powerSession">
+
+	<article id="power-session">
 		<hr>
 		<h3><i class="fa fa-power-off"></i> <?=$powerSession?></h3>
 		<hr>
@@ -1095,6 +1105,7 @@ C:
 			</tr>	
 		</table>
 	</article>
+
 	<article id="system">
 		<hr>
 		<h3><i class="fa fa-laptop"></i> system</h3>
@@ -1146,6 +1157,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="file-system">
 		<hr>
 		<h3><i class="far fa-hdd fa-fw"></i> <?=$fileSystem?></h3>
@@ -1223,6 +1235,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="memory">
 		<hr>
 		<h3><i class="fa fa-memory fa-fw"></i> <?=$memory?></h3>
@@ -1291,6 +1304,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="network">
 		<hr>
 		<h3><i class="fa fa-globe fa-fw"></i> <?=$network?></h3>
@@ -1341,6 +1355,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="text-editors">
 		<hr>
 		<h3><i class="fa fa-align-left fa-fw"></i> <?=$textEditors?></h3>
@@ -1370,6 +1385,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="file-managers">
 		<hr>
 		<h3><i class="far fa-copy fa-fw"></i> <?=$fileManagers?></h3>
@@ -1380,6 +1396,7 @@ C:
 			<li>DOS Navigator</li>
 		</ul>
 	</article>
+
 	<article id="useful-programs">
 		<hr>
 		<h3><i class="far fa-window-maximize"></i> <?=$usefulPrograms?></h3>
@@ -1389,6 +1406,7 @@ C:
 			<li>Arachne</li>
 		</ul>
 	</article>
+
 	<article id="batch-files">
 		<hr>
 		<h3><i class="fa fa-save fa-fw"></i> <?=$batchFiles?></h3>
@@ -1466,6 +1484,7 @@ C:
 			</tr>
 		</table>
 	</article>
+	
 </section>
 
 <?php include "footer.php"; ?>

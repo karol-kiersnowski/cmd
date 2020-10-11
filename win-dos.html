@@ -25,20 +25,44 @@
 		<div id="header-content">
 			<h1>
 				<a id="menu" href="javascript:void(0);" title="Menu" onclick="changeMenu()">
-				<i class="fa fa-list-ul fa-fw"></i></a>
+					<i class="fa fa-list-ul fa-fw"></i>
+				</a>
 			</h1>
 			<h1><a href="index.html"><i class="fa fa-terminal"></i>cmd.sh</a></h1>
 			<ul>
-				<li><a href="linux.html?lang=en&th=light"><i class="fab fa-linux"></i> <span>linux</span></a></li>
-				<li><a href="win-dos.html?lang=en&th=light"><i class="fab fa-windows"></i> <span>windows cmd</span></a></li>
-				<li><a href="powershell.html?lang=en&th=light"><i class="fa fa-terminal"></i> <span>PowerShell</span></a></li>
+				<li>
+					<a href="linux.html?lang=en&th=light">
+						<i class="fab fa-linux"></i>
+						<span>linux</span>
+					</a>
+				</li>
+				<li>
+					<a href="win-dos.html?lang=en&th=light">
+						<i class="fab fa-windows"></i>
+						<span>windows cmd</span>
+					</a>
+				</li>
+				<li>
+					<a href="powershell.html?lang=en&th=light">
+						<i class="fa fa-terminal"></i>
+						<span>PowerShell</span>
+					</a>
+				</li>
+				<li>
+					<a href="theme.html?lang=en&th=light">
+						<i class="fa fa-adjust"></i>
+						<span>theme</span>
+					</a>
+				</li>
 				<li>
 											<a href="?lang=pl&th=light" title="wersja polska">
 							<img src="img/polska.png" alt="Polska"/>
+							<span>wersja polska</span>
 						</a>
 									</li>
+				<div class="clear"></div>
 			</ul>
-			<div style="clear: both"></div>
+			<div class="clear"></div>
 		</div>
 	</header>
 	<div id="wrapper">
@@ -65,7 +89,7 @@
 		<li><a href="win-dos.html?lang=en&th=light#folders-files-manipulation"><i class="far fa-copy fa-fw"></i> files manipulation</a></li>
 		<li><a href="win-dos.html?lang=en&th=light#reading-files"><i class="far fa-file-alt fa-fw"></i> reading files</a></li>
 		<li><a href="win-dos.html?lang=en&th=light#console"><i class="fa fa-terminal fa-fw"></i> console</a></li>
-		<li><a href="win-dos.html?lang=en&th=light#powerSession"><i class="fa fa-power-off fa-fw"></i> power & session</a></li>
+		<li><a href="win-dos.html?lang=en&th=light#power-session"><i class="fa fa-power-off fa-fw"></i> power & session</a></li>
 		<li><a href="win-dos.html?lang=en&th=light#system"><i class="fa fa-laptop fa-fw"></i> system</a></li>
 		<li><a href="win-dos.html?lang=en&th=light#file-system"><i class="far fa-hdd fa-fw"></i> file system</a></li>
 		<li><a href="win-dos.html?lang=en&th=light#memory"><i class="fa fa-memory fa-fw"></i> memory</a></li>
@@ -84,6 +108,7 @@
 
 <h2><i class="fab fa-windows"></i> windows cmd / dos</h2>
 <section>
+
 	<article id="introduction">
 		<hr>
 		<h3><i class="far fa-play-circle"></i> introduction</h3>
@@ -111,6 +136,7 @@
 			<li>Start > Run > <em>command.com</em></li>
 		</ol>
 	</article>
+
 	<article id="dos-based-windows-vs-windows-nt">
 		<hr>
 		<h3><i class="fas fa-not-equal"></i> DOS-based Windows vs Windows NT</h3>
@@ -683,6 +709,7 @@
 			</tr>
 		</table>
 	</article>
+
 	<article id="keyboard-shortcuts">
 		<hr>
 		<h3><i class="far fa-keyboard"></i> keyboard shortcuts</h3>
@@ -693,6 +720,7 @@
 			<li><kbd>ctrl</kbd> + <kbd>s</kbd> - stop the text</li>
 		</ul>
 	</article>
+
 	<article id="wildcard-characters">
 		<hr>
 		<h3><i class="fa fa-asterisk fa-fw"></i> wildcard characters</h3>
@@ -709,6 +737,7 @@
 			</p>
 		</ul>
 	</article>
+
 	<article id="partitions-drives">
 		<hr>
 		<h3><i class="far fa-hdd"></i> partitions & drives</h3>
@@ -890,6 +919,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="browsing-directories">
 		<hr>
 		<h3><i class="far fa-folder-open fa-fw"></i> browsing directories</h3>
@@ -932,6 +962,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="folders-files-manipulation">
 		<hr>
 		<h3><i class="far fa-copy fa-fw"></i> files manipulation</h3>
@@ -1017,6 +1048,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="reading-files">
 		<hr>
 		<h3><i class="far fa-file-alt"></i> reading files</h3>
@@ -1046,6 +1078,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="console">
 		<hr>
 		<h3><i class="fa fa-terminal fa-fw"></i> console</h3>
@@ -1102,7 +1135,8 @@ C:
 <code>mode con lines=43</code>
 <code>mode con lines=50</code></pre>
 	</article>
-	<article id="powerSession">
+
+	<article id="power-session">
 		<hr>
 		<h3><i class="fa fa-power-off"></i> power & session</h3>
 		<hr>
@@ -1159,6 +1193,7 @@ C:
 			</tr>	
 		</table>
 	</article>
+
 	<article id="system">
 		<hr>
 		<h3><i class="fa fa-laptop"></i> system</h3>
@@ -1210,6 +1245,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="file-system">
 		<hr>
 		<h3><i class="far fa-hdd fa-fw"></i> file system</h3>
@@ -1287,6 +1323,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="memory">
 		<hr>
 		<h3><i class="fa fa-memory fa-fw"></i> memory</h3>
@@ -1355,6 +1392,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="network">
 		<hr>
 		<h3><i class="fa fa-globe fa-fw"></i> network</h3>
@@ -1405,6 +1443,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="text-editors">
 		<hr>
 		<h3><i class="fa fa-align-left fa-fw"></i> text editors</h3>
@@ -1434,6 +1473,7 @@ C:
 			</tr>
 		</table>
 	</article>
+
 	<article id="file-managers">
 		<hr>
 		<h3><i class="far fa-copy fa-fw"></i> file managers</h3>
@@ -1444,6 +1484,7 @@ C:
 			<li>DOS Navigator</li>
 		</ul>
 	</article>
+
 	<article id="useful-programs">
 		<hr>
 		<h3><i class="far fa-window-maximize"></i> useful programs</h3>
@@ -1453,6 +1494,7 @@ C:
 			<li>Arachne</li>
 		</ul>
 	</article>
+
 	<article id="batch-files">
 		<hr>
 		<h3><i class="fa fa-save fa-fw"></i> batch files</h3>
@@ -1530,12 +1572,13 @@ C:
 			</tr>
 		</table>
 	</article>
+	
 </section>
 
 		</main>
 	</div><!--WRAPPER-->
 	<footer>
-		<h2>Copyleft &#127279; 2019 - 2020 All rights reversed</h2>
+		<h2>copyleft &#127279; 2019 - 2020 all rights reversed</h2>
 	</footer>
 	<div id="prv-billboard"></div>
 </body>
