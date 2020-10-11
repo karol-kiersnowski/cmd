@@ -5,6 +5,7 @@ php7.4 screenshots-txt.php > screenshots-txt.html
 php7.4 screenshots-img.php > screenshots-img.html
 php7.4 links.php > links.html
 php7.4 guest-book.php > guest-book.html
+php7.4 theme.php > theme.html
 php7.4 about.php > about.html
 php7.4 linux.php > linux.html
 php7.4 win-dos.php > win-dos.html
