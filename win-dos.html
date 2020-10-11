@@ -786,20 +786,61 @@ C:
 		<h3><i class="fas fa-tools"></i> system files</h3>
 		<hr>
 		<h4>MS-DOS</h4>
+		<h5>Hidden system files on the startup disk</h5>
 		<dl>
 			<dt>IO.SYS</dt>
-				<dd>hidden system file on the startup disk; contains the default devices drivers</dd>
+			<dd>
+				system initialization code and builtin device drivers
+			</dd>
 			<dt>MSDOS.SYS</dt>
-				<dd>hidden system file on the startup disk; contains system kernel; in Windows 95 and later DOS-based Windows, the entire kernel was moved to IO.SYS and the MS-DOS.SYS is a text configuration file</dd>
-			<dt>CONFIG.SYS</dt>
-				<dd>primary configuration file, the syntax is similar to that used Windows <em>.ini</em> files</dd>
-			<dt>COMMAND.COM</dt>
-				<dd>default command intepreter and interface for DOS; it's first program run after system boot; includes some internal commands</dd>
-			<dt>AUTOEXEC.BAT</dt>
-				<dd>batch file automatically executed after loading COMMAND.COM</dd>
+			<dd>
+				contains system kernel; in Windows 95 and later DOS-based Windows, the entire kernel was moved to IO.SYS and the MS-DOS.SYS is a text configuration file
+			</dd>
 		</dl>
-		<h5>boot order</h5>
+		<h5>Command-line interpreter</h5>
+		<dl>
+			<dt>COMMAND.COM</dt>
+			<dd>
+				default command intepreter and interface for DOS; it's first program run after system boot; includes some internal commands
+			</dd>
+		</dl>
+		<h5>User configuration files</h5>
+		<dl>
+			<dt>CONFIG.SYS</dt>
+			<dd>
+				contains statements to configure DOS and load device drivers; the syntax is similar to that used Windows <em>.ini</em> files
+			</dd>
+			<dt>AUTOEXEC.BAT</dt>
+			<dd>
+				batch file run by the COMMAND.COM to execute commands at startup
+			</dd>
+		</dl>
+
+		<h5>Boot order</h5>
 		<p>IO.SYS &gt; MSDOS.SYS &gt; CONFIG.SYS &gt; COMMAND.COM &gt; AUTOEXEC.BAT</p>
+
+		<h5>Standard DOS device drivers</h5>
+		<dl>
+			<dt>ANSI.SYS</dt>
+			<dd>
+				ANSI console driver
+			</dd>
+			<dt>EMM386.EXE</dt>
+			<dd>
+				Expanded Memory Manager
+			</dd>
+			<dt>HIMEM.SYS</dt>
+			<dd>
+				Extended Memory Manager
+			</dd>
+			<dt>RAMDRIVE.SYS</dt>
+			<dd>
+				RAM disk
+			</dd>
+		</dl>
+
+		<h5>Standard DOS utility programs</h5>
+
 	</article>
 
 	<article id="file-extensions">
