@@ -7,6 +7,11 @@
 	--white: #fff;
 }
 
+body {
+	font-family: "Perfect DOS VGA 437", Consolas, monospace;
+	/*font-variant: small-caps;*/
+}
+
 body,
 header,
 header a,

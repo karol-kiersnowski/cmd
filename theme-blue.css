@@ -8,7 +8,8 @@
 }
 
 body {
-	//font-family: monospace;
+	font-family: "Perfect DOS VGA 437", Consolas, monospace;
+	/*font-variant: small-caps;*/
 }
 
 body,
