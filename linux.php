@@ -744,9 +744,14 @@ karol@core2duo ~/Dokumenty $ tree -d
 		<li>xrandr</li>
 		<li>xkill</li>
 		<li>xterm</li>
-		<li>xlogo</li>
 		<li>startx</li>
 		<li>xinit</li>
+		<li>xlogo</li>
+		<li>xcalc</li>
+		<li>xeyes</li>
+		<li>xman</li>
+		<li>xclock</li>
+		<li>xbiff</li>
 	</ul>
 	</article>
 	<article id="bash-scripts">
