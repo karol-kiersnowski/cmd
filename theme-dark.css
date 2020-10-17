@@ -1,4 +1,89 @@
+:root {
+	--black: #fff;
+	--blue: #aaa;
+	--light-gray: #00a;
+	--dark-gray: #55f;
+	--bright-blue: #555;
+	--white: #000;
+}
+
+body {
+	font-family: "Perfect DOS VGA 437", Consolas, monospace;
+	/*font-variant: small-caps;*/
+}
+
 body,
+header,
+a {
+	background-color: #000;
+	color: #fff;
+}
+
+main a {
+	background-color: #000;
+	color: #a8a8a8;
+}
+
+header a:hover,
+main a:hover,
+nav a:hover {
+	background-color: #a8a8a8;
+	color: #000;
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+header {
+	box-shadow: 0px 2px 0px #a8a8a8;
+}
+
+nav {
+	scrollbar-color: #a8a8a8 #000;
+}
+
+main {
+	//border: 3px double #a8a8a8;
+}
+
+
+
+
+pre {
+	background-color: #555;
+	//border: 3px double #a8a8a8;
+}
+
+
+th {
+	background-color: #555;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+	nav {
+		box-shadow: none;
+		border-right: 1px solid #a8a8a8;
+	}
+}
+
+
+
+
+
+
+
+
+/*body,
 header,
 nav,
 section {
@@ -32,4 +117,4 @@ a:hover {
 
 a#menu {
 	margin-right: 15px;
-}
+}*/
