@@ -58,18 +58,17 @@ hr {
 input,
 textarea,
 button,
-.button, {
+.button {
+	padding: 10px;
 	background-color: var(--blue);
 	color: var(--white);
 	border-style: outset;
 	box-shadow: 5px 5px 0px rgba(85, 85, 85, 0.75);
-
 }
 
 button,
 .button,
 .button:hover {
-	padding: 5px;
 	background-color: #0a0;
 	color: var(--white);
 	text-decoration: none;

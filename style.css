@@ -273,7 +273,7 @@ header img {
 
 
 form {
-	max-width: 600px;
+	
 }
 
 	label {
@@ -286,7 +286,7 @@ form {
 
 	input[type="text"],
 	textarea {
-		width: calc(100% - 160px);
+		width: calc(100% - 170px);
 		font-size: inherit;
 	}
 
@@ -296,8 +296,9 @@ form {
 	}
 
 	button {
+		margin-left: 160px;
 		padding: 5px;
-		width: 100%;
+		width: calc(100% - 170px);
 		font-size: 16px;
 	}
 
@@ -422,18 +423,12 @@ dd {
 	nav { display: none; }
 	main { padding: 10px; }
 	main, footer { margin-left: 0; }
-	
-	form {
-		width: 100%;
-	}
-
-	label {
-		display: block;
-	}
 
 	input[type="text"],
-	textarea {
-		width: 100%;
+	textarea,
+	button {
+		margin-left: auto;
+		width: calc(100% - 10px);
 	}
 
 
