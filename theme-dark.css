@@ -1,120 +1,60 @@
 :root {
-	--black: #fff;
-	--blue: #aaa;
-	--light-gray: #00a;
-	--dark-gray: #55f;
-	--bright-blue: #555;
-	--white: #000;
+	--black: #000;
+	--blue: #00a;
+	--light-gray: #aaa;
+	--dark-gray: #555;
+	--bright-blue: #55f;
+	--white: #fff;
 }
 
 body {
 	font-family: "Perfect DOS VGA 437", Consolas, monospace;
-	/*font-variant: small-caps;*/
+	font-variant: small-caps;
+}
+
+header,
+nav {
+	border-width: 5px;
+	border-style: double;
+}
+
+nav {
+	border-top: none;
+}
+
+nav hr,
+main hr {
+	border: none;
+	border-top-width: 5px;
+	border-top-style: double;
 }
 
 body,
 header,
-a {
+header a,
+nav,
+nav a,
+nav hr,
+main,
+main hr {
 	background-color: #000;
-	color: #fff;
+	color: #aaa;
 }
 
 main a {
-	background-color: #000;
-	color: #a8a8a8;
+	color: #fff;
 }
 
 header a:hover,
 main a:hover,
 nav a:hover {
-	background-color: #a8a8a8;
+	background-color: #aaa;
 	color: #000;
 	text-decoration: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-header {
-	box-shadow: 0px 2px 0px #a8a8a8;
-}
-
 nav {
-	scrollbar-color: #a8a8a8 #000;
+	scrollbar-color: #aaa #000;
 }
 
-main {
-	//border: 3px double #a8a8a8;
-}
-
-
-
-
-pre {
-	background-color: #555;
-	//border: 3px double #a8a8a8;
-}
-
-
-th {
-	background-color: #555;
-}
-
-
-
-@media only screen and (max-width: 1000px) {
-	nav {
-		box-shadow: none;
-		border-right: 1px solid #a8a8a8;
-	}
-}
-
-
-
-
-
-
-
-
-/*body,
-header,
-nav,
-section {
-	background-color: #111;
-	color: #fff;
-}
-
-header, main {
-	box-shadow: 0px 0px 5px #444;
-}
-
-nav {
-	scrollbar-color: #aaa #111;
-}
-
-nav hr {
-	border: 1px solid #222;
-}
-
-main hr {
-	border: 1px solid #aaa;
-}
-
-a {
-	color: #ddf;
-}
-
-a:hover {
-	background-color: #222;
-}
-
-a#menu {
-	margin-right: 15px;
-}*/
+th { background-color: var(--dark-gray); }

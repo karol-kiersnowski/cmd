@@ -1,78 +1,86 @@
 :root {
-	--black: #fff;
-	--blue: #aaa;
-	--light-gray: #00a;
-	--dark-gray: #55f;
-	--bright-blue: #555;
-	--white: #000;
+	--black: #000;
+	--blue: #00a;
+	--light-gray: #aaa;
+	--dark-gray: #555;
+	--bright-blue: #55f;
+	--white: #fff;
 }
 
 body {
 	font-family: "Perfect DOS VGA 437", Consolas, monospace;
-	/*font-variant: small-caps;*/
+	font-variant: small-caps;
 }
 
-body,
 header,
 header a,
 nav,
 nav a,
 nav hr {
-	background-color: var(--light-gray);
-	color: var(--black);
-}
-
-main a:hover,
-nav a:hover {
-	background-color: var(--dark-gray);
-	color: var(--white);
-}
-
-main,
-main hr {
 	background-color: var(--blue);
 	color: var(--white);
 }
 
-nav hr,
-main hr {
-	border-width: 2px;
-	border-style: dashed;
-}
-
-
-
-
-
-
-
-
-
-header {
-	box-shadow: 0px 2px 0px var(--dark-gray);
+header,
+nav {
+	border-width: 5px;
+	border-style: double;
 }
 
 nav {
-	scrollbar-color: #000 var(--light-gray);
+	border-top: none;
 }
 
-main {
-	box-shadow: 10px 10px 0px var(--dark-gray);
-}
-
-
-
-
-
-
-th {
-	background-color: var(--dark-gray);
+header a:hover,
+main a:hover,
+nav a:hover {
+	background-color: var(--bright-blue);
 	color: var(--white);
-	border-color: var(--black);
 }
 
-td {
+body,
+main,
+main hr {
 	background-color: var(--light-gray);
 	color: var(--black);
-	border-color: var(--black);
 }
+
+nav hr,
+main hr {
+	border: none;
+	border-top-width: 5px;
+	border-top-style: double;
+}
+
+
+
+
+
+
+
+
+
+
+nav {
+	scrollbar-color: var(--white) var(--blue);
+}
+
+
+header,
+nav,
+table,
+pre {
+	box-shadow: 10px 10px 0px rgba(85, 85, 85, 0.75);
+}
+
+
+
+
+th,
+td {
+	color: var(--white);
+	border-color: var(--white);
+}
+
+th { background-color: var(--bright-blue); }
+td { background-color: var(--blue); }

@@ -3,32 +3,32 @@ var main = document.getElementsByTagName("main")[0];
 var footer = document.getElementsByTagName("footer")[0];
 
 function changeMenu() {
-  if (nav.offsetWidth == "250")
-    hideMenu();
-  else if (nav.offsetWidth == "50")
-  	showMenu();
+	if (nav.offsetWidth == "250")
+		hideMenu();
+	else if (nav.offsetWidth == "0")
+		showMenu();
 }
 
 function hideMenuByClickOutsideIt() {
-  if (window.innerWidth <= "1000")
-    hideMenu();
+	if (window.innerWidth <= "1000")
+		hideMenu();
 }
 
 function hideMenu() {
-  nav.style.width = "50px";
-  main.style.marginLeft = "50px";
-  footer.style.marginLeft = "50px";
+	nav.style.display = "none";
+	main.style.marginLeft = "0px";
+	footer.style.marginLeft = "0px";
 }
 
 function showMenu() {
-  nav.style.width = "250px";
-  if (window.innerWidth > "1000") {
-    main.style.marginLeft = "250px";
-    footer.style.marginLeft = "250px";
-  }
+	nav.style.display = "block";
+	if (window.innerWidth > "1000") {
+		main.style.marginLeft = "250px";
+		footer.style.marginLeft = "250px";
+	}
 }
 
-function markAnchor() {	
+function markAnchor() { 
 	var articles = document.getElementsByTagName("article");
 	var articlesTop = new Array(articles.length);
 	var articlesBottom = new Array(articles.length);

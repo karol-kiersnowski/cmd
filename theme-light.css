@@ -1,10 +1,23 @@
-body,
+body {
+	font-family: "Ubuntu Mono", monospace;
+}
+
+header {
+	z-index: 2;
+}
+
+nav {
+	margin-top: 42px;
+	height: calc(100% - 42px);
+}
+
 header,
 nav {
 	background-color: #eee;
 	color: #000;
 }
 
+body,
 main {
 	background-color: #fff;
 	color: #000;
@@ -15,7 +28,9 @@ main {
 
 
 header,
-main {
+nav,
+table,
+pre {
 	box-shadow: 0px 0px 10px #777;
 }
 

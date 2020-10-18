@@ -59,19 +59,35 @@ button.btnCopyToClipboard {
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+
 body {
 	margin: 0;
-	font-family: "Ubuntu Mono", monospace;
 	font-size: 16px;
 }
 
 header {
 	position: fixed;
-	z-index: 2;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	width: 100%;
 }
+
+	header ul {
+		float: right;
+		margin: 0;
+		padding: 0;
+		font-size: 16px;
+	}
+
+		header ul li {
+			display: inline;
+		}
+
+			header ul li a {
+				float: left;
+				padding: 12px 6px;
+			}
 
 #header-content,
 #wrapper {
@@ -86,51 +102,64 @@ header {
 
 nav {
 	position: fixed;
-	z-index: 0;
+	z-index: 1;
 	top: 0;
-	padding-top: 38px;
+	margin-top: 53px;
+	padding: 10px 0;
 	width: 250px;
-	height: 100%;
+	height: calc(100% - 53px);
 	white-space: nowrap;
 	scrollbar-width: thin;
 	overflow-y: auto;
 	overflow-x: hidden;
 }
 
-nav h2 {
-	font-size: 26px;
-}
+	nav h2 {
+		font-size: 26px;
+	}
 
-nav ul i {
-	vertical-align: sub;
-}
+	nav ul {
+		padding-left: 0;
+	}
 
-nav a {
-	display: block;
-	padding: 7px 10px;
-}
+		nav ul i {
+			vertical-align: sub;
+		}
 
-nav a i {
-	margin-right: 5px;
-	font-size: 24px;
-}
+	nav a {
+		display: block;
+		padding: 7px 10px;
+	}
+
+		nav a i {
+			margin-right: 5px;
+			font-size: 24px;
+		}
 
 main {
 	position: relative;
-	z-index: 1;
-	margin-top: 40px;
+	z-index: 0;
+	margin-top: 50px;
 	margin-left: 250px;
 	padding: 20px;
 }
 
-section {
-	margin: 20px 0;
-	overflow: auto;
-}
+	main ul {
+		padding-left: 10px;
+	}
 
-article {
-	padding-top: 40px;
-}
+	main a:hover {
+		text-decoration: underline;
+	}
+
+	section {
+		margin: 20px 0;
+		overflow: auto;
+	}
+
+		article {
+			padding-top: 40px;
+		}
 
 footer {
 	margin: 20px;
@@ -138,40 +167,14 @@ footer {
 	text-align: center;
 }
 
-header ul {
-	float: right;
-	margin: 0;
-	padding: 0;
-	font-size: 16px;
-}
-
-header ul li {
-	display: inline;
-}
-
-header ul li a {
-	float: left;
-	padding: 12px 6px;
-}
-
 ul {
 	
 	list-style-type: none;
 }
 
-nav ul {
-	padding-left: 0;
-}
 
-main ul {
-	padding-left: 10px;
-}
 
 a { text-decoration: none; }
-
-main a:hover {
-	text-decoration: underline;
-}
 
 h1 {
 	float: left;
@@ -210,7 +213,9 @@ h5 {
 }
 
 table {
-	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	width: calc(100% - 20px);
 	border-collapse: collapse;
 }
 
@@ -343,16 +348,9 @@ dd {
 @media only screen and (max-width: 1000px) {
 	body { margin: 0; }
 	header span { display: none; }
-	nav {
-		z-index: 1;
-		width: 50px;
-		box-shadow: 0px 0px 10px #777;
-	}
-	main {
-		z-index: 0;
-		padding: 10px;
-	}
-	main, footer { margin-left: 50px; }
+	nav { display: none; }
+	main { padding: 10px; }
+	main, footer { margin-left: 0; }
 	section { padding: 10px; }
 
 	.col-50 { width: 100%; }
