@@ -1,6 +1,6 @@
 <?php
 
-// nav-index
+// NAV-INDEX
 $home = "strona główna";
 $howTo = "jak ...";
 $screenshots = "zrzuty ekranu";
@@ -11,6 +11,14 @@ $guestBook = "księga gości";
 $theme = "motyw";
 $about = "o stronie";
 
+// GUEST BOOK
+$form = "Formularz";
+$name = "Twoje imię";
+$comment = "Twój komentarz";
+$submit = "Wyślij";
+$guestEntries = "Wpisy gości";
+
+// NAV
 $introduction = "wprowadzenie";
 $keyboardShortcuts = "skróty klawiszowe";
 $wildcardCharacters = "znaki wieloznaczne";

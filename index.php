@@ -13,6 +13,7 @@
 <?php } else { ?>
 <h3>Zacznijmy naukę wiersza poleceń!</h3>
 <?php } ?>
+
 <section>
 	<h4><i class="fab fa-linux"></i> GNU Linux (BASH)</h4>
 <?php if ($lang == "en") { ?>
@@ -88,12 +89,13 @@
 		Na współczesnych komputerach nie uruchomimy oryginalnych wersji DOS'a (MS-DOS / PC-DOS). Możemy jednak uruchomić <a target="_blank" href="http://freedos.org/">FreeDOS</a> - system operacyjny kompatybilny z DOS'em. Poza tym istnieją emulatory DOS-a. Najpopularniejszym z nich jest <a target="_blank" href="https://www.dosbox.com">DOSBox</a>.
 	</p>
 
-
 <?php } ?>
 
 	<?php include "screenshots-txt/windows-dir.html"; ?>
 
 	<?php include "screenshots-txt/dos-freedos-start-ver.html"; ?>
+
+	<a class="button" target="_blank" href="js-dos.html">Run js-dos (DOSBox)</a>
 
 </section>
 

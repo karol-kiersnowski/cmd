@@ -1,6 +1,6 @@
 <?php
 
-// nav-index
+// NAV-INDEX
 $home = "home";
 $howTo = "how to ...";
 $screenshots = "screenshots";
@@ -11,6 +11,14 @@ $guestBook = "guest book";
 $theme = "theme";
 $about = "about";
 
+// GUEST BOOK
+$form = "Form";
+$name = "Your name";
+$comment = "Your comment";
+$submit = "Submit";
+$guestEntries = "Guest entries";
+
+// NAV
 $introduction = "introduction";
 $keyboardShortcuts = "keyboard shortcuts";
 $wildcardCharacters = "wildcard characters";

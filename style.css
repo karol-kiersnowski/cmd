@@ -266,12 +266,51 @@ header img {
 	width: 20px;
 }
 
-input[type="text"] {
-	//width: 200px;
+
+
+
+
+
+
+form {
+	max-width: 600px;
 }
 
-textarea {
+	label {
+		display: inline-block;
+		padding: 5px;
+		width: 160px;
+		vertical-align: top;
+		font-size: 20px;
+	}
+
+	input[type="text"],
+	textarea {
+		width: calc(100% - 160px);
+		font-size: inherit;
+	}
+
+	textarea {
+		height: 100px;
+		resize: vertical;
+	}
+
+	button {
+		padding: 5px;
+		width: 100%;
+		font-size: 16px;
+	}
+
+.author {
+	float: left;
 }
+
+.date {
+	float: right;
+}
+
+
+
 
 .float-left { float: left; }
 .float-right { float: right; }
@@ -345,13 +384,59 @@ dd {
 
 
 
+
+
+.dosbox-container {
+	width: 640px;
+	height: 400px;
+}
+
+.dosbox-container > .dosbox-overlay {
+	background: url(screenshots-img/dosbox-start.png);
+}
+
+.dosbox-start {
+	box-sizing: border-box;
+	position: absolute !important;
+	top: 0;
+	padding: 170px 0;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	color: #fff !important;
+	text-shadow: 1px 1px 3px #000;
+	font-size: 35px !important;
+	font-variant: small-caps;
+	text-decoration: none !important;
+}
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1000px) {
 	body { margin: 0; }
 	header span { display: none; }
 	nav { display: none; }
 	main { padding: 10px; }
 	main, footer { margin-left: 0; }
-	section { padding: 10px; }
+	
+	form {
+		width: 100%;
+	}
+
+	label {
+		display: block;
+	}
+
+	input[type="text"],
+	textarea {
+		width: 100%;
+	}
+
+
 
 	.col-50 { width: 100%; }
 	.col-33 { width: 100%; }
