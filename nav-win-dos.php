@@ -33,6 +33,5 @@
 	</ul>
 	<hr>
 	<h2><a href="powershell.php<?=$suffix?>"><i class="fa fa-terminal fa-fw"></i> PowerShell</a></h2>
-	<hr>
 </nav>
 <main onclick="hideMenuByClickOutsideIt()">

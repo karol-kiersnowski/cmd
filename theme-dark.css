@@ -1,31 +1,26 @@
-:root {
-	--black: #000;
-	--blue: #00a;
-	--light-gray: #aaa;
-	--dark-gray: #555;
-	--bright-blue: #55f;
-	--white: #fff;
-}
-
 body {
 	font-family: "Perfect DOS VGA 437", Consolas, monospace;
 	font-variant: small-caps;
 }
 
-header,
 nav {
-	border-width: 5px;
-	border-style: double;
+	margin-top: 45px;
+	height: calc(100% - 45px);
+}
+
+header {
+	border-bottom-width: 1px;
+	border-bottom-style: double;
 }
 
 nav {
-	border-top: none;
+	border-right-width: 1px;
+	border-right-style: double;
 }
 
-nav hr,
-main hr {
+hr {
 	border: none;
-	border-top-width: 5px;
+	border-top-width: 1px;
 	border-top-style: double;
 }
 
@@ -36,9 +31,9 @@ nav,
 nav a,
 nav hr,
 main,
-main hr {
+hr {
 	background-color: #000;
-	color: #aaa;
+	color: #fff;
 }
 
 main a {
@@ -57,4 +52,4 @@ nav {
 	scrollbar-color: #aaa #000;
 }
 
-th { background-color: var(--dark-gray); }
+th { background-color: #555; }
