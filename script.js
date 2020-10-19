@@ -3,10 +3,10 @@ var main = document.getElementsByTagName("main")[0];
 var footer = document.getElementsByTagName("footer")[0];
 
 function changeMenu() {
-	if (nav.offsetWidth == "250")
-		hideMenu();
-	else if (nav.offsetWidth == "0")
+	if (nav.offsetWidth == "0")
 		showMenu();
+	else
+		hideMenu();
 }
 
 function hideMenuByClickOutsideIt() {
@@ -23,8 +23,8 @@ function hideMenu() {
 function showMenu() {
 	nav.style.display = "block";
 	if (window.innerWidth > "1000") {
-		main.style.marginLeft = "250px";
-		footer.style.marginLeft = "250px";
+		main.style.marginLeft = "300px";
+		footer.style.marginLeft = "300px";
 	}
 }
 

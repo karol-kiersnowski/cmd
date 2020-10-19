@@ -11,10 +11,6 @@
 	font-family: "Perfect DOS VGA 437", Consolas, monospace;
 }
 
-body {
-	font-variant: small-caps;
-}
-
 header,
 header a,
 nav,
@@ -113,3 +109,17 @@ td {
 
 th { background-color: var(--bright-blue); }
 td { background-color: var(--blue); }
+
+
+.card-content {
+	box-shadow: 5px 5px 0px rgba(85, 85, 85, 0.75);
+}
+
+.card-content:hover {
+	box-shadow: 10px 10px 0px rgba(85, 85, 85, 0.75);
+}
+
+	.card-caption {
+		background-color: var(--blue);
+		color: var(--white);
+	}

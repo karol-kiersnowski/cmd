@@ -7,9 +7,8 @@
 	--white: #000;
 }
 
-body {
+* {
 	font-family: "Perfect DOS VGA 437", Consolas, monospace;
-	font-variant: small-caps;
 }
 
 header,
@@ -40,19 +39,45 @@ nav a:hover {
 
 body,
 main,
-main hr {
+main hr,
+footer hr {
 	background-color: var(--light-gray);
 	color: var(--black);
 }
 
-nav hr,
-main hr {
+hr {
 	border: none;
 	border-top-width: 5px;
 	border-top-style: double;
 }
 
+input,
+textarea,
+button,
+.button {
+	padding: 10px;
+	background-color: var(--blue);
+	color: var(--white);
+	border-style: outset;
+	box-shadow: 5px 5px 0px rgba(85, 85, 85, 0.75);
+}
 
+button,
+.button,
+.button:hover {
+	background-color: #0a0;
+	color: var(--white);
+	text-decoration: none;
+}
+
+.button {
+	display: inline-block;
+}
+
+button:active,
+.button {
+	border-style: inset;
+}
 
 
 
@@ -84,3 +109,19 @@ td {
 
 th { background-color: var(--bright-blue); }
 td { background-color: var(--blue); }
+
+
+.card-content {
+	box-shadow: 5px 5px 0px rgba(85, 85, 85, 0.75);
+}
+
+	.card-content:hover {
+		box-shadow: 10px 10px 0px rgba(85, 85, 85, 0.75);
+	}
+
+		.card-caption {
+			padding: 5px;
+			text-align: center;
+			background-color: var(--blue);
+			color: var(--white);
+		}

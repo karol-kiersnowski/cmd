@@ -28,9 +28,7 @@ main {
 
 
 header,
-nav,
-table,
-pre {
+nav {
 	box-shadow: 0px 0px 10px #777;
 }
 
@@ -53,3 +51,16 @@ header a:hover,
 nav a:hover {
 	background-color: #ddd;
 }
+
+
+.card-content {
+	box-shadow: 0px 0px 3px #aaa;
+}
+
+.card-content:hover {
+	box-shadow: 0px 0px 7px #aaa;
+}
+
+	.card-caption {
+		background-color: #eee;
+	}

@@ -3,6 +3,17 @@
  	src: url("webfonts/Perfect DOS VGA 437.ttf");
 }
 
+@font-face {
+	font-family: "Perfect DOS VGA 437 Win";
+ 	src: url("webfonts/Perfect DOS VGA 437 Win.ttf");
+}
+
+@font-face {
+	font-family: "Windows command prompt";
+ 	src: url("webfonts/windows_command_prompt.ttf");
+}
+
+
 kbd
 {
 	background-color: #f7f7f7;
@@ -106,7 +117,7 @@ nav {
 	top: 0;
 	margin-top: 53px;
 	padding: 10px 0;
-	width: 250px;
+	width: 300px;
 	height: calc(100% - 53px);
 	white-space: nowrap;
 	scrollbar-width: thin;
@@ -140,7 +151,7 @@ main {
 	position: relative;
 	z-index: 0;
 	margin-top: 50px;
-	margin-left: 250px;
+	margin-left: 300px;
 	padding: 20px;
 }
 
@@ -154,7 +165,6 @@ main {
 
 	section {
 		margin: 20px 0;
-		overflow: auto;
 	}
 
 		article {
@@ -212,34 +222,34 @@ h5 {
 	font-size: 20px;
 }
 
+
+
 table {
-	margin-left: auto;
-	margin-right: auto;
-	width: calc(100% - 20px);
+	width: 100%;
 	border-collapse: collapse;
 }
 
-/*th, td {
-	padding: 5px;
-	text-align: center;
-}
+	/*th, td {
+		padding: 5px;
+		text-align: center;
+	}
 
-td:first-child {
-	text-align: left;
-}*/
+	td:first-child {
+		text-align: left;
+	}*/
 
 
 
-th, td {
-	padding: 5px;
-	border: 1px solid #bbb;
-	text-align: center;
-}
+	th, td {
+		padding: 5px;
+		border: 1px solid #bbb;
+		text-align: center;
+	}
 
-th {
-	background-color: #444;
-	color: white;
-}
+	th {
+		background-color: #444;
+		color: white;
+	}
 
 .screenshot {
 	margin: 70px 0;
@@ -324,44 +334,39 @@ form {
 .col-25 { width: 25%; }
 .col-16 { width: 16.6%; }
 
+
+
+
 .card-container {
 	display: inline-block;
 	padding: 5px;
-	//background-color: blue;
 }
+
 .padding-5 img  {
 	padding: 5px;
 }
 
-.card-content {
-	box-shadow: 0px 0px 3px #aaa;
-}
+	.card-container a:hover {
+		text-decoration: none;
+	}
 
-.card-content:hover {
-	box-shadow: 0px 0px 7px #aaa;
-}
+		.card-content img {
+			display: block;
+			background-color: #fff;
+		}
 
-.card-caption {
-	padding: 5px;
-	text-align: center;
-	background-color: #eee;
-}
+		.card-caption {
+			padding: 5px;
+			text-align: center;
+		}
 
-.card-content img {
-	display: block;
-}
+			.card-caption h3 {
+				font-size: 22px;
+			}
 
-.card-container a:hover {
-	text-decoration: none;
-}
-
-.card-container h3 {
-	font-size: 22px;
-}
-
-.card-container p {
-	font-size: 14px;
-}
+			.card-caption p {
+				font-size: 14px;
+			}
 
 
 dl {

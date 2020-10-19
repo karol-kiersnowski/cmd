@@ -37,7 +37,7 @@ hr {
 }
 
 main a {
-	color: #fff;
+	color: #aaa;
 }
 
 header a:hover,
@@ -53,3 +53,12 @@ nav {
 }
 
 th { background-color: #555; }
+
+
+.card-content {
+	border: 1px solid #aaa;
+}
+
+.card-content:hover {
+	background-color: #aaa
+}
