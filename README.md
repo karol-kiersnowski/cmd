@@ -2,10 +2,10 @@ cmd.sh
 ======
 cmd.sh is a website for learning the command line interface
 
-Projects site
+Project sites
 -------------
-1. [kargol92.github.io/cmd](https://kargol92.github.io/cmd)
-2. [karol-kiersnowski.prv.pl/projects/cmd](https://karol-kiersnowski.prv.pl/projects/cmd/index.php)
+1. [https://kargol92.github.io/cmd](https://kargol92.github.io/cmd) (static website - without PHP preprocessor)
+2. [http://karol-kiersnowski.prv.pl/projects/cmd/index.php](http://karol-kiersnowski.prv.pl/projects/cmd/index.php) (server-side - PHP)
 
 Technologies
 ------------
@@ -19,15 +19,15 @@ Features
 ### CSS webfonts
 * Font Awesome icons
 * Ubuntu Mono font
-* Perfect DOS VGA 437
+* Perfect DOS VGA 437 font
 
-### Themes (server-side) - only for server-side version (not github.io) - [karol-kiersnowski.prv.pl/projects/cmd](https://karol-kiersnowski.prv.pl/projects/cmd/index.php)
+### Themes (server-side) - only for server-side version (not github.io)
 * modern (light)
 * DOS (blue - gray)
 * DOS (gray - blue)
 * terminal
 
-### Multilingual user interface (server-side) - only for server-side version (not guthub.io) - [karol-kiersnowski.prv.pl/projects/cmd](https://karol-kiersnowski.prv.pl/projects/cmd/index.php)
+### Multilingual user interface (server-side) - only for server-side version (not guthub.io)
 * English
 * Polish
 
