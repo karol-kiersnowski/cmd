@@ -21,13 +21,13 @@ Features
 * Ubuntu Mono font
 * Perfect DOS VGA 437 font
 
-### Themes (server-side) - only for server-side version (not github.io)
+### Themes (server-side) - only for server-side version
 * modern (light)
 * DOS (blue - gray)
 * DOS (gray - blue)
-* terminal
+* terminal (dark)
 
-### Multilingual user interface (server-side) - only for server-side version (not guthub.io)
+### Multilingual user interface (server-side) - only for server-side version
 * English
 * Polish
 
