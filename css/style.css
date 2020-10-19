@@ -1,16 +1,21 @@
 @font-face {
+	font-family: "Ubuntu Mono";
+ 	src: url("../webfonts/UbuntuMono-Regular.ttf");
+}
+
+@font-face {
 	font-family: "Perfect DOS VGA 437";
- 	src: url("webfonts/Perfect DOS VGA 437.ttf");
+ 	src: url("../webfonts/Perfect DOS VGA 437.ttf");
 }
 
 @font-face {
 	font-family: "Perfect DOS VGA 437 Win";
- 	src: url("webfonts/Perfect DOS VGA 437 Win.ttf");
+ 	src: url("../webfonts/Perfect DOS VGA 437 Win.ttf");
 }
 
 @font-face {
 	font-family: "Windows command prompt";
- 	src: url("webfonts/windows_command_prompt.ttf");
+ 	src: url("../webfonts/windows_command_prompt.ttf");
 }
 
 
