@@ -56,9 +56,20 @@ th { background-color: #555; }
 
 
 .card-content {
-	border: 1px solid #aaa;
+	
 }
 
 .card-content:hover {
+	
+}
+
+.card-content {
+	border: 5px double #aaa;
+}
+
+.card-content:hover {
+	border-style: solid;
 	background-color: #aaa
 }
+
+	

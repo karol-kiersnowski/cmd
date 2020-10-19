@@ -11,7 +11,7 @@
 	<div class="card-container col-25">
 		<div class="card-content padding-5">
 			<a href="?lang=<?=$lang?>&th=light">
-				<div class="card-caption" style="background-color: #eee;">
+				<div class="card-caption" style="background-color: #eee; color: #000">
 					<h3>modern<br>(light)</h3>
 				</div>
 			</a>

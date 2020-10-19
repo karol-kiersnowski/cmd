@@ -112,11 +112,12 @@ td { background-color: var(--blue); }
 
 
 .card-content {
-	box-shadow: 5px 5px 0px rgba(85, 85, 85, 0.75);
+	border: 5px double var(--white);
+	box-shadow: 10px 10px 0px rgba(85, 85, 85, 0.75);
 }
 
 .card-content:hover {
-	box-shadow: 10px 10px 0px rgba(85, 85, 85, 0.75);
+	border-style: solid;
 }
 
 	.card-caption {
