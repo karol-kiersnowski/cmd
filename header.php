@@ -51,7 +51,7 @@
 				<li>
 					<a href="theme.php<?=$suffix?>">
 						<i class="fa fa-adjust"></i>
-						<span>theme</span>
+						<span><?=$theme?></span>
 					</a>
 				</li>
 				<li>
