@@ -33,13 +33,13 @@
 				<li>
 					<a href="linux.php<?=$suffix?>">
 						<i class="fab fa-linux"></i>
-						<span>linux</span>
+						<span>Linux</span>
 					</a>
 				</li>
 				<li>
 					<a href="win-dos.php<?=$suffix?>">
 						<i class="fab fa-windows"></i>
-						<span>windows cmd</span>
+						<span>Win cmd / DOS</span>
 					</a>
 				</li>
 				<li>

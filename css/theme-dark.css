@@ -1,21 +1,19 @@
 body {
 	font-family: "Perfect DOS VGA 437", Consolas, monospace;
-	font-variant: small-caps;
-}
-
-nav {
-	margin-top: 45px;
-	height: calc(100% - 45px);
 }
 
 header {
 	border-bottom-width: 1px;
 	border-bottom-style: double;
+	text-transform: lowercase;
 }
 
 nav {
+	margin-top: 45px;
+	height: calc(100% - 45px);
 	border-right-width: 1px;
 	border-right-style: double;
+	text-transform: lowercase;
 }
 
 hr {

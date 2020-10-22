@@ -98,9 +98,9 @@
 		</table>
 
 	</article>
-	<article id="commands">
+	<article id="command-information">
 		<hr>
-		<h3><i class="fa fa-question fa-fw"></i> <?=$commands?></h3>
+		<h3><i class="fa fa-question fa-fw"></i> <?=$commandInformation?></h3>
 		<hr>
 		<table>
 			<tr>
@@ -167,9 +167,9 @@
 			</tr>
 		</table>
 	</article>
-	<article id="folders-files-manipulation">
+	<article id="file-manipulation">
 		<hr>
-		<h3><i class="far fa-copy fa-fw"></i> <?=$foldersFilesManipulation?></h3>
+		<h3><i class="far fa-copy fa-fw"></i> <?=$fileManipulation?></h3>
 		<hr>
 		<table>
 			<tr>

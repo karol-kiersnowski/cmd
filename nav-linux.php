@@ -1,7 +1,7 @@
 <nav>
 	<h2><a href="index.php<?=$suffix?>"><i class="fa fa-home fa-fw"></i> <?=$home?></a></h2>
 	<hr>
-	<h2><a href="linux.php<?=$suffix?>"><i class="fab fa-linux fa-fw"></i> linux</a></h2>
+	<h2><a href="linux.php<?=$suffix?>"><i class="fab fa-linux fa-fw"></i> Linux</a></h2>
 	<hr>
 	<ul>
 		<li><a href="linux.php<?=$suffix?>#introduction"><i class="far fa-play-circle fa-fw"></i> <?=$introduction?></a></li>
@@ -10,17 +10,17 @@
 		<li><a href="linux.php<?=$suffix?>#directory-structure"><i class="fas fa-sitemap fa-fw"></i> <?=$directoryStructure?></a></li>
 		<li><a href="linux.php<?=$suffix?>#access-rights"><i class="fas fa-unlock-alt fa-fw"></i> <?=$accessRights?></a></li>
 		<li><a href="linux.php<?=$suffix?>#pipelines-redirections"><i class="fas fa-directions fa-fw"></i> <?=$pipelinesRedirections?></a></li>
-		<li><a href="linux.php<?=$suffix?>#commands"><i class="fa fa-question fa-fw"></i> <?=$commands?></a></li>
+		<li><a href="linux.php<?=$suffix?>#command-information"><i class="fa fa-question fa-fw"></i> <?=$commandInformation?></a></li>
 		<li><a href="linux.php<?=$suffix?>#browsing-directories"><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></a></li>
-		<li><a href="linux.php<?=$suffix?>#folders-files-manipulation"><i class="far fa-copy fa-fw"></i> <?=$foldersFilesManipulation?></a></li>
-		<li><a href="linux.php<?=$suffix?>#files-information"><i class="far fa-file-alt fa-fw"></i> <?=$filesInformation?></a></li>
+		<li><a href="linux.php<?=$suffix?>#file-manipulation"><i class="far fa-copy fa-fw"></i> <?=$fileManipulation?></a></li>
+		<li><a href="linux.php<?=$suffix?>#file-information"><i class="far fa-file-alt fa-fw"></i> <?=$fileInformation?></a></li>
 		<li><a href="linux.php<?=$suffix?>#reading-files"><i class="far fa-file-alt fa-fw"></i> <?=$readingFiles?></a></li>
 		<li><a href="linux.php<?=$suffix?>#console"><i class="fa fa-terminal fa-fw"></i> <?=$console?></a></li>
 		<li><a href="linux.php<?=$suffix?>#power-session"><i class="fa fa-power-off fa-fw"></i> <?=$powerSession?></a></li>
 		<li><a href="linux.php<?=$suffix?>#file-system"><i class="far fa-hdd fa-fw"></i> <?=$fileSystem?></a></li>
-		<li><a href="linux.php<?=$suffix?>#admin"><i class="fa fa-shield-alt fa-fw"></i> <?=$admin?></a></li>
+		<li><a href="linux.php<?=$suffix?>#administration"><i class="fa fa-shield-alt fa-fw"></i> <?=$administration?></a></li>
 		<li><a href="linux.php<?=$suffix?>#users"><i class="far fa-user fa-fw"></i> <?=$users?></a></li>
-		<li><a href="linux.php<?=$suffix?>#users-admin"><i class="fa fa-user-shield fa-fw"></i> <?=$usersAdmin?></a></li>
+		<li><a href="linux.php<?=$suffix?>#user-administration"><i class="fa fa-user-shield fa-fw"></i> <?=$userAdministration?></a></li>
 		<li><a href="linux.php<?=$suffix?>#statistics"><i class="fa fa-chart-bar fa-fw"></i> <?=$statistics?></a></li>
 		<li><a href="linux.php<?=$suffix?>#system"><i class="fa fa-laptop fa-fw"></i> system</a></li>
 		<li><a href="linux.php<?=$suffix?>#hardware"><i class="fa fa-microchip fa-fw"></i> <?=$hardware?></a></li>
@@ -43,7 +43,7 @@
 		<li><a href="linux.php<?=$suffix?>#git"><i class="fab fa-git-alt fa-fw"></i> git</a></li>
 	</ul>
 	<hr>
-	<h2><a href="win-dos.php<?=$suffix?>"><i class="fab fa-windows fa-fw"></i> win cmd / dos</a></h2>
+	<h2><a href="win-dos.php<?=$suffix?>"><i class="fab fa-windows fa-fw"></i> Win cmd / DOS</a></h2>
 	<hr>
 	<h2><a href="powershell.php<?=$suffix?>"><i class="fa fa-terminal fa-fw"></i> PowerShell</a></h2>
 </nav>

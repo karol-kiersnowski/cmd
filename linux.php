@@ -5,7 +5,7 @@
 	include "nav-linux.php";
 ?>
 
-<h2><i class="fab fa-linux"></i> gnu linux</h2>
+<h2><i class="fab fa-linux"></i> GNU Linux (BASH) [Debian-based distros]</h2>
 <section>
 	<article id="introduction">
 		<hr>
@@ -362,9 +362,9 @@ drwxr-xr-x
 		<hr>
 	</article>
 
-	<article id="commands">
+	<article id="command-information">
 		<hr>
-		<h3><i class="fa fa-question"></i> <?=$commands?></h3>
+		<h3><i class="fa fa-question"></i> <?=$commandInformation?></h3>
 		<hr>
 		<ul>
 			<li>whatis</li>
@@ -402,9 +402,9 @@ karol@core2duo ~/Dokumenty $ tree -d
 8 directories
 </pre>
 	</article>
-	<article id="folders-files-manipulation">
+	<article id="file-manipulation">
 		<hr>
-		<h3><i class="far fa-copy"></i> <?=$foldersFilesManipulation?></h3>
+		<h3><i class="far fa-copy"></i> <?=$fileManipulation?></h3>
 		<hr>
 		<ul>
 			<li>cp</li>
@@ -417,9 +417,9 @@ karol@core2duo ~/Dokumenty $ tree -d
 			<li>install</li>
 		</ul>
 	</article>
-	<article id="files-information">
+	<article id="file-information">
 		<hr>
-		<h3><i class="far fa-file-alt"></i> <?=$filesInformation?></h3>
+		<h3><i class="far fa-file-alt"></i> <?=$fileInformation?></h3>
 		<hr>
 		<ul>
 			<li>stat</li>
@@ -479,9 +479,9 @@ karol@core2duo ~/Dokumenty $ tree -d
 			<li>fsck</li>
 		</ul>
 	</article>
-	<article id="admin">
+	<article id="administration">
 		<hr>
-		<h3><i class="fa fa-shield-alt"></i> <?=$admin?></h3>
+		<h3><i class="fa fa-shield-alt"></i> <?=$administration?></h3>
 		<hr>
 		<ul>
 			<li>su</li>
@@ -506,9 +506,9 @@ karol@core2duo ~/Dokumenty $ tree -d
 			<li>groups</li>
 		</ul>
 	</article>
-	<article id="users-admin">
+	<article id="user-administration">
 	<hr>
-	<h3><i class="fa fa-user-shield"></i> <?=$usersAdmin?></h3>
+	<h3><i class="fa fa-user-shield"></i> <?=$userAdministration?></h3>
 	<hr>
 	<ul>
 		<li>passwd</li>

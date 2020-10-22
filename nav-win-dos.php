@@ -1,9 +1,9 @@
 <nav>
 	<h2><a href="index.php<?=$suffix?>"><i class="fa fa-home fa-fw"></i> <?=$home?></a></h2>
 	<hr>
-	<h2><a href="linux.php<?=$suffix?>"><i class="fab fa-linux fa-fw"></i> linux</a></h2>
+	<h2><a href="linux.php<?=$suffix?>"><i class="fab fa-linux fa-fw"></i> Linux</a></h2>
 	<hr>
-	<h2><a href="win-dos.php<?=$suffix?>"><i class="fab fa-windows fa-fw"></i> win cmd / dos</a></h2>
+	<h2><a href="win-dos.php<?=$suffix?>"><i class="fab fa-windows fa-fw"></i> Win cmd / DOS</a></h2>
 	<hr>
 	<ul>
 		<li><a href="win-dos.php<?=$suffix?>#introduction"><i class="far fa-play-circle fa-fw"></i> <?=$introduction?></a></li>
@@ -15,9 +15,9 @@
 		<li><a href="win-dos.php<?=$suffix?>#directory-structure"><i class="fas fa-sitemap fa-fw"></i> <?=$directoryStructure?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#system-files"><i class="fas fa-tools fa-fw"></i> <?=$systemFiles?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#file-extensions"><i class="far fa-file-excel fa-fw"></i> <?=$fileExtensions?></a></li>
-		<li><a href="win-dos.php<?=$suffix?>#commands"><i class="fa fa-question fa-fw"></i> <?=$commands?></a></li>
+		<li><a href="win-dos.php<?=$suffix?>#command-information"><i class="fa fa-question fa-fw"></i> <?=$commandInformation?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#browsing-directories"><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></a></li>
-		<li><a href="win-dos.php<?=$suffix?>#folders-files-manipulation"><i class="far fa-copy fa-fw"></i> <?=$foldersFilesManipulation?></a></li>
+		<li><a href="win-dos.php<?=$suffix?>#file-manipulation"><i class="far fa-copy fa-fw"></i> <?=$fileManipulation?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#reading-files"><i class="far fa-file-alt fa-fw"></i> <?=$readingFiles?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#console"><i class="fa fa-terminal fa-fw"></i> <?=$console?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#power-session"><i class="fa fa-power-off fa-fw"></i> <?=$powerSession?></a></li>

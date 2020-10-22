@@ -40,11 +40,11 @@ function markAnchor() {
 		anchors[i] = document.querySelector("a[href*='#" + articles[i].id + "']");
 		anchors[i].style.borderLeft = "none";
 		if (articlesTop[i] <= 5 && articlesBottom[i] > 5) {
+			//console.log(anchors[i].href);
 			anchors[i].style.borderLeftWidth = "3px";
 			anchors[i].style.borderLeftStyle = "solid";
 		}
 	}
-	//document.getElementById("demo").innerHTML = anchors[2];
 }
 
 function copyToClipboard(textId) {

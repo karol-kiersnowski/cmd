@@ -24,6 +24,7 @@ header,
 nav {
 	border-width: 5px;
 	border-style: double;
+	text-transform: uppercase;
 }
 
 nav {
