@@ -10,11 +10,6 @@
 	else
 		$th = "light";
 
-	if ($th =="light")
-		$notTheme = "blue";
-	else
-		$notTheme = "light";
-
 	$cmd = "cmd:/> ";
 	$suffix = "?lang=$lang&th=$th";
 ?>
