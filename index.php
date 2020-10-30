@@ -91,11 +91,22 @@
 
 <?php } ?>
 
-	<?php include "screenshots-txt/windows-dir.html"; ?>
+	<?php include "screenshots-txt/windows-cmd-dir.html"; ?>
 
 	<?php include "screenshots-txt/dos-freedos-start-ver.html"; ?>
 
+	<iframe src="https://kargol92.github.io/webdos"></iframe>
+
 	<a class="button" target="_blank" href="js-dos.html">Run js-dos (DOSBox)</a>
+
+</section>
+
+<hr>
+
+<section>
+	<h4><i class="fa fa-terminal"></i> PowerShell</h4>
+
+	<?php include "screenshots-txt/powershell-get-childitem.html"; ?>
 
 </section>
 

@@ -387,17 +387,24 @@ dd {
 
 
 
-
+code {
+	display: inline-block;
+	margin: 2px 0;
+	padding: 2px;
+	border: 1px dashed #000;
+	background-color: #000;
+	color: #fff;
+}
 
 samp {
 	display: block;
-	margin: 20px 0;
+	margin: 20px auto;
 	width: calc(80ch + 4px);
 	border: 1px solid #000;
 	overflow-x: auto;
 }
 
-	samp div {
+	samp div.caption {
 		padding: 5px;
 		text-align: center;
 	}
@@ -412,11 +419,25 @@ samp {
 	samp.linux pre {
 		background-color: #2E3436;
 		color: #D3D7CF;
+		font-family: "Monospace Regular", monospace;
+	}
+
+	samp.dos pre {
+		background-color: #000;
+		color: #a8a8a8;
+		font-family: "Perfect DOS VGA 437", monospace;
+	}
+
+	samp.windows-cmd pre {
+		background-color: #0c0c0c;
+		color: #ccc;
+		font-family: Consolas, monospace;
 	}
 
 	samp.powershell pre {
-		background-color: #052653;
-		color: #def3ff;
+		background-color: #012456;
+		color: #eeedf0;
+		font-family: Consolas, monospace;
 	}
 
 
@@ -454,9 +475,18 @@ samp {
 	text-decoration: none !important;
 }
 
+a.button {
+	width: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
 
-
-
+iframe {
+	width: 100%;
+	height: 400px;
+}
 
 
 

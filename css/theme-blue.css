@@ -72,10 +72,6 @@ button,
 	text-decoration: none;
 }
 
-.button {
-	display: inline-block;
-}
-
 button:active,
 .button {
 	border-style: inset;
