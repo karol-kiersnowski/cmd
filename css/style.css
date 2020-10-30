@@ -21,22 +21,13 @@
 
 kbd
 {
-	background-color: #f7f7f7;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	box-shadow: 0 1px 0 rgba(0,0,0,0.2), 0 0 0 2px #fff inset;
-	color :#333;
-	font-size: 12px;
 	padding: .1em .6em;
-}
-
-pre {
-	font-family: Consolas, monospace;
-	background-color: #000;
-	color: #fff;
-	max-width: calc(80ch + 2px);
-	padding: 2px;
-	overflow-x: auto;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background-color: #f7f7f7;
+	color :#333;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.2), 0 0 0 2px #fff inset;
+	font-size: 12px;
 }
 
 div.textToCopy {
@@ -162,6 +153,7 @@ main {
 
 	main ul {
 		padding-left: 10px;
+		line-height: 1.5em;
 	}
 
 	main a:hover {
@@ -183,7 +175,6 @@ footer {
 }
 
 ul {
-	
 	list-style-type: none;
 }
 
@@ -389,6 +380,49 @@ dd {
   grid-column-start: 2;
   padding: 5px;
 }
+
+
+
+
+
+
+
+
+
+samp {
+	display: block;
+	margin: 20px 0;
+	width: calc(80ch + 4px);
+	border: 1px solid #000;
+	overflow-x: auto;
+}
+
+	samp div {
+		padding: 5px;
+		text-align: center;
+	}
+
+	samp pre {
+		margin: 0;
+		padding: 2px;
+		background-color: #000;
+		color: #fff;
+	}
+
+	samp.linux pre {
+		background-color: #2E3436;
+		color: #D3D7CF;
+	}
+
+	samp.powershell pre {
+		background-color: #052653;
+		color: #def3ff;
+	}
+
+
+
+
+
 
 
 

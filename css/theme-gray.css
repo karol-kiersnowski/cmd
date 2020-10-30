@@ -15,7 +15,8 @@ header,
 header a,
 nav,
 nav a,
-nav hr {
+nav hr,
+samp div {
 	background-color: var(--blue);
 	color: var(--white);
 }
@@ -94,7 +95,7 @@ nav {
 header,
 nav,
 table,
-pre {
+samp {
 	box-shadow: 10px 10px 0px rgba(85, 85, 85, 0.75);
 }
 

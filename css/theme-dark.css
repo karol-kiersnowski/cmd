@@ -34,13 +34,18 @@ hr {
 	color: #fff;
 }
 
+samp {
+	border-color: #aaa;
+}
+
 main a {
 	color: #aaa;
 }
 
 header a:hover,
 main a:hover,
-nav a:hover {
+nav a:hover,
+samp div {
 	background-color: #aaa;
 	color: #000;
 	text-decoration: none;
@@ -69,5 +74,3 @@ th { background-color: #555; }
 	border-style: solid;
 	background-color: #aaa
 }
-
-	

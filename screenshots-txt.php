@@ -16,7 +16,7 @@
 	<?php include "screenshots-txt/dos-dn.html"; ?>
 	<?php include "screenshots-txt/dos-dir.html"; ?>
 	<?php include "screenshots-txt/dos-mem.html"; ?>
-	<?php include "screenshots-txt/dos-freedos-start-dn.html"; ?>
+	<?php include "screenshots-txt/dos-freedos-start-ver.html"; ?>
 </section>
 
 <?php include "footer.php"; ?>

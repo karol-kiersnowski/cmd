@@ -12,9 +12,14 @@ nav {
 }
 
 header,
-nav {
+nav,
+samp {
 	background-color: #eee;
 	color: #000;
+}
+
+samp {
+	border-color: #aaa;
 }
 
 body,
