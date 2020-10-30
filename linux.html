@@ -200,6 +200,8 @@ sda1
 				<li>sdb1 - disk no. 2, partition no. 1</li>
 			</ul>
 		
+<samp class="linux">
+<div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
 <pre>
 karol@aspireOne:~$ sudo fdisk -l
 Disk /dev/sda: 55,9 GiB, 60022480896 bytes, 117231408 sectors
@@ -213,13 +215,45 @@ Device     Boot     Start       End   Sectors Size Id Type
 /dev/sda2            2048 113127423 113125376  54G 83 Linux
 /dev/sda3       113127424 117229567   4102144   2G 82 Linux swap / Solaris
 </pre>
+</samp>
+
 	</article>
+
 	<article id="directory-structure">
 		<hr>
 		<h3><i class="fas fa-sitemap"></i> directory structure</h3>
 		<hr>
 
-<pre style="background-color: inherit; color: inherit;">
+<samp class="linux">
+<div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
+<pre><font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>/</b></font>$ tree -L 1
+<font color="#729FCF"><b>.</b></font>
+├── <font color="#729FCF"><b>bin</b></font>
+├── <font color="#729FCF"><b>boot</b></font>
+├── <font color="#729FCF"><b>cdrom</b></font>
+├── <font color="#729FCF"><b>dev</b></font>
+├── <font color="#729FCF"><b>etc</b></font>
+├── <font color="#729FCF"><b>home</b></font>
+├── <font color="#729FCF"><b>lib</b></font>
+├── <font color="#729FCF"><b>lib32</b></font>
+├── <font color="#729FCF"><b>lib64</b></font>
+├── <font color="#729FCF"><b>lost+found</b></font>
+├── <font color="#729FCF"><b>media</b></font>
+├── <font color="#729FCF"><b>mnt</b></font>
+├── <font color="#729FCF"><b>opt</b></font>
+├── <font color="#729FCF"><b>proc</b></font>
+├── <font color="#729FCF"><b>root</b></font>
+├── <font color="#729FCF"><b>run</b></font>
+├── <font color="#729FCF"><b>sbin</b></font>
+├── <font color="#729FCF"><b>srv</b></font>
+├── <font color="#729FCF"><b>sys</b></font>
+├── <span style="background-color:#4E9A06"><font color="#2E3436">tmp</font></span>
+├── <font color="#729FCF"><b>usr</b></font>
+└── <font color="#729FCF"><b>var</b></font>
+</pre>
+</samp>
+
+<pre>
 ├── bin
 ├── boot
 ├── cdrom
@@ -242,38 +276,9 @@ Device     Boot     Start       End   Sectors Size Id Type
 ├── usr
 └── var
 </pre>
-<pre>
-karol@core2duo ~ $ cd /
-karol@core2duo / $ tree -L 1
-.
-├── bin
-├── boot
-├── cdrom
-├── dev
-├── etc
-├── home
-├── initrd.img -> boot/initrd.img-4.10.0-38-generic
-├── lib
-├── lib64
-├── lost+found
-├── media
-├── mnt
-├── opt
-├── proc
-├── root
-├── run
-├── sbin
-├── snap
-├── srv
-├── sys
-├── tmp
-├── usr
-├── var
-└── vmlinuz -> boot/vmlinuz-4.10.0-38-generic
 
-22 directories, 2 files
-</pre>
 	</article>
+
 	<article id="access-rights">
 		<hr>
 		<h3><i class="fas fa-unlock-alt"></i> access rights</h3>
@@ -385,23 +390,43 @@ drwxr-xr-x
 			<li>cd</li>
 			<li>tree</li>
 		</ul>
-		<h4>tree -d - display only directories</h4>
 
-<pre>
-karol@core2duo ~/Dokumenty $ tree -d
-.
-├── GTA3 User Files
-├── GTA San Andreas User Files
-│   ├── Gallery
-│   └── User Tracks
-├── GTA Vice City User Files
-└── THQ
-    └── MXvsATV Unleashed
-        └── Save
 
-8 directories
+		<code>tree -L 1</code> - display one-level struct
+
+		<code>tree -d</code> - display only directories
+
+<samp class="linux">
+<div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
+<pre><font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~/Dokumenty/DOStutorial</b></font>$ tree -L 2
+<font color="#729FCF"><b>.</b></font>
+├── <font color="#729FCF"><b>dos</b></font>
+│   ├── <font color="#729FCF"><b>batch</b></font>
+│   ├── batch.htm
+│   ├── dysk.htm
+│   ├── menu.htm
+│   ├── msdos.htm
+│   ├── start.htm
+│   ├── strukt.htm
+│   └── wstep.htm
+├── <font color="#729FCF"><b>gui</b></font>
+│   ├── <font color="#AD7FA8"><b>dos.gif</b></font>
+│   ├── <font color="#AD7FA8"><b>flarup.gif</b></font>
+│   ├── link.css
+│   ├── <font color="#AD7FA8"><b>logo.gif</b></font>
+│   ├── logo.htm
+│   ├── napis.htm
+│   ├── okno.htm
+│   └── start.htm
+└── index.htm
+
+3 directories, 16 files
+<font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~/Dokumenty/DOStutorial</b></font>$ 
 </pre>
+</samp>
+
 	</article>
+
 	<article id="file-manipulation">
 		<hr>
 		<h3><i class="far fa-copy"></i> file manipulation</h3>
