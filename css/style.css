@@ -385,15 +385,18 @@ dd {
 
 
 
-
+pre {
+	margin: 0;
+}
 
 code {
 	display: inline-block;
-	margin: 2px 0;
-	padding: 2px;
+	margin: 1px 0;
+	padding: 1px;
 	border: 1px dashed #000;
 	background-color: #000;
 	color: #fff;
+	font-size: 14px;
 }
 
 samp {

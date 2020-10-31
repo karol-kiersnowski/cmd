@@ -24,14 +24,12 @@
 	<h4>mass renaming of files</h4>
 	<h5><i class="far fa-lightbulb"></i> Solution</h5>
 	<p>
-		Install <em>rename</em> program.
+		Install <var>rename</var> program.
 	</p>
-	<pre>
-sudo apt install rename
-</pre>
+	<code>sudo apt install rename</code>
 	<h5>Example</h5>
-	<pre>rename 's/abc/xyz/' *</pre>
-	<pre>rename -n 's/abc/xyz/' *</pre>
+	<code>rename 's/abc/xyz/' *</code><br>
+	<code>rename -n 's/abc/xyz/' *</code>
 </article>
 
 
@@ -44,31 +42,36 @@ sudo apt install rename
 		<button class="btnCopyToClipboard" onclick="copyToClipboard('startSystemInCLI1')"><i class="far fa-copy"></i></button>
 		<span class="clear"></span>
 	</div>
-	<pre>systemctl set-default multi-user.target</pre>
+	<code>systemctl set-default multi-user.target</code>
 	<p>To get the start back system in GUI</p>
-	<pre>systemctl set-default graphical.target</pre>
+	<code>systemctl set-default graphical.target</code>
 </article>
 
 
 <article id="changeRootPassword">
 	<h4>change root (superuser) password</h4>
-	<pre>sudo passwd root</pre>
+	<code>sudo passwd root</code>
 </article>
 
 
 
 <article>
 	<h4>change timeout to choose operations system in the GRUB</h4>
+
+<samp class="linux">
+<div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
 <pre><font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~</b></font>$ cd /etc/default
 <font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>/etc/default</b></font>$ sudo nano grub
 </pre>
+</samp>
 
 
 
 
 
 
-
+<samp class="linux">
+<div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
 <pre><span style="background-color:#FFFFFF"><font color="#3F3F3F">  GNU nano 2.9.3                      grub                                      </font></span>
 
 <font color="#06989A"># If you change this file, run &apos;update-grub&apos; afterwards to update</font>
@@ -93,16 +96,18 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 
 <span style="background-color:#FFFFFF"><font color="#3F3F3F">^G</font></span> Pomoc     <span style="background-color:#FFFFFF"><font color="#3F3F3F">^O</font></span> Zapisz    <span style="background-color:#FFFFFF"><font color="#3F3F3F">^W</font></span> Wyszukaj  <span style="background-color:#FFFFFF"><font color="#3F3F3F">^K</font></span> Wytnij    <span style="background-color:#FFFFFF"><font color="#3F3F3F">^J</font></span> Wyjustuj  <span style="background-color:#FFFFFF"><font color="#3F3F3F">^C</font></span> Bież.poz.
 <span style="background-color:#FFFFFF"><font color="#3F3F3F">^X</font></span> Wyjdź     <span style="background-color:#FFFFFF"><font color="#3F3F3F">^R</font></span> Wczyt.plik<span style="background-color:#FFFFFF"><font color="#3F3F3F">^\</font></span> Zastąp    <span style="background-color:#FFFFFF"><font color="#3F3F3F">^U</font></span> Odnów Teks<span style="background-color:#FFFFFF"><font color="#3F3F3F">^T</font></span> Pisownia  <span style="background-color:#FFFFFF"><font color="#3F3F3F">^_</font></span> Przejdź do l</pre>
+</samp>
 
 
 
 
-	<p>
-		Now we need to change <code>GRUB_TIMEOUT=10</code>. 10 means seconds.
-		After this, save file and exit from nano. In the end, update grub.
-	</p>
+	<ol>
+		<li>Change to <code>GRUB_TIMEOUT=10</code> - 10 means seconds.</li>
+		<li>Save the file - <kbd>Ctrl</kbd> + <kbd>o</kbd>; exit from nano - <kbd>Ctrl</kbd> + <kbd>x</kbd></li>
+		<li>Update grub <code>sudo update-grub</code></li>
+	</ol>
 <pre>
-sudo update-grub
+
 </pre>
 </article>
 
@@ -117,9 +122,7 @@ sudo update-grub
 		In the CLI sometimes font size maybe to small or to big.
 	</p>
 	<h5><i class="far fa-lightbulb"></i> Solution</h5>
-<pre>
-sudo dpkg-reconfigure console-setup
-</pre>
+	<code>sudo dpkg-reconfigure console-setup</code>
 	<p>
 		In the two first steps choose the default options. Next, choose font family and font size.
 	</p>
@@ -137,8 +140,10 @@ sudo dpkg-reconfigure console-setup
 	</p>
 	<h5><i class="far fa-lightbulb"></i> Solution</h5>
 	<p>
-		Need an ISO (CD, DVD or USB) of Linux distribution. Run Linux as "Live CD" (without installation). Then run a terminal.
+		Get an ISO (CD, DVD or USB) of Linux distribution. Run Linux as "Live CD" (without installation). Then run a terminal.
 	</p>
+<samp class="linux">
+<div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
 <pre>
 karol@aspireOne:~$ sudo fdisk -l
 [sudo] password for karol: 
@@ -153,22 +158,18 @@ Device     Boot     Start       End   Sectors Size Id Type
 /dev/sda2            2048 113127423 113125376  54G 83 Linux
 /dev/sda3       113127424 117229567   4102144   2G 82 Linux swap / Solaris
 </pre>
+</samp>
 	<p>
-		My system in installed on /dev/sda2.
+		My system in installed on <var>/dev/sda2</var>.
 	</p>
-<pre>
-sudo mount /dev/sda2 /mnt
 
-sudo mount --bind /dev /mnt/dev
+<code>sudo mount /dev/sda2 /mnt</code><br>
+<code>sudo mount --bind /dev /mnt/dev</code><br>
+<code>sudo mount --bind /proc /mnt/proc</code><br>
+<code>sudo chroot /mnt</code><br>
+<code>sudo grub-install /dev/sda</code><br>
+<code>sudo update-grub</code>
 
-sudo mount --bind /proc /mnt/proc
-
-sudo chroot /mnt
-
-sudo grub-install /dev/sda
-
-sudo update-grub
-</pre>
 
 </article>
 
@@ -190,6 +191,11 @@ sudo update-grub
 	<p>
 		Example for Cinnamon desktop environment (Linux Mint).
 	</p>
+
+	<ol>
+		<li>
+			Make a file<br><code>nano script.sh</code><br>
+<code>
 <pre>
 #!/bin/bash
 gsettings set org.cinnamon panels-autohide "['1:true']"
@@ -197,18 +203,22 @@ wine nfs.exe
 xrandr -s 1024x768
 gsettings set org.cinnamon panels-autohide "['1:false']"
 </pre>
-	<p>
-		Save the file - script.sh. Then, have to add execute right to this file.
-	</p>
+</code>
+		</li>
+		<li>Save the file <kbd>Ctrl</kbd> + <kbd>o</kbd> & exit from nano - <kbd>Ctrl</kbd> + <kbd>x</kbd></li>
+		<li>Add execute right to this file<br><code>chmod u+x script.sh</code></li>
+		<li>Run the script and play the game :)<br><code>./script.sh</code></li>
+	</ol>
+	
+<samp class="linux">
+<div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
 <pre>
+karol@core2duo ~/Aplikacje/NFS Underground $ nano script.sh
 karol@core2duo ~/Aplikacje/NFS Underground $ chmod u+x script.sh
+karol@core2duo ~/Aplikacje/NFS Underground $ ./script.sh
 </pre>
-	<p>
-		Run the script and play the game :)
-	</p>
-<pre>
-karol@core2duo ~/Aplikacje/NFS Underground ./script.sh
-</pre>
+</samp>
+
 </article>
 
 

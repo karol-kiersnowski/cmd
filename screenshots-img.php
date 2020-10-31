@@ -184,6 +184,15 @@
 				</div>
 			</a>
 		</div>
+	</div><div class="card-container col-50">
+		<div class="card-content">
+			<a target="_blank" href="screenshots-img/powershell.png">
+				<img alt="Windows 3.1" src="screenshots-img/powershell.png"/>
+				<div class="card-caption">
+					<h3>PowerShell</h3>
+				</div>
+			</a>
+		</div>
 	</div>
 </section>
 
