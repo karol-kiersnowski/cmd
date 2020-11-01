@@ -6,7 +6,7 @@
 		<li><a href="screenshots-txt.php<?=$suffix?>"><i class="fa fa-terminal fa-fw"></i> <?=$textScreenshots?></a></li>
 		<li><a href="screenshots-img.php<?=$suffix?>"><i class="far fa-image fa-fw"></i> <?=$imageScreenshots?></a></li>
 		<li><a href="links.php<?=$suffix?>"><i class="fa fa-link fa-fw"></i> <?=$links?></a></li>
-		<li><a href="guest-book.php<?=$suffix?>"><i class="fa fa-address-book fa-fw"></i> <?=$guestBook?></a></li>
+		<li><a href="guestbook.php<?=$suffix?>"><i class="fa fa-address-book fa-fw"></i> <?=$guestbook?></a></li>
 		<li><a href="theme.php<?=$suffix?>"><i class="fa fa-adjust fa-fw"></i> <?=$theme?></a></li>
 		<li><a href="about.php<?=$suffix?>"><i class="fa fa-info-circle fa-fw"></i> <?=$about?></a></li>
 	</ul>

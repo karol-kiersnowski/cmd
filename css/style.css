@@ -285,14 +285,15 @@ form {
 	label {
 		display: inline-block;
 		padding: 5px;
-		width: 160px;
+		width: 290px;
 		vertical-align: top;
 		font-size: 20px;
 	}
 
 	input[type="text"],
+	input[type="url"],
 	textarea {
-		width: calc(100% - 170px);
+		width: calc(100% - 300px);
 		font-size: inherit;
 	}
 
@@ -302,9 +303,9 @@ form {
 	}
 
 	button {
-		margin-left: 160px;
+		margin-left: 290px;
 		padding: 5px;
-		width: calc(100% - 170px);
+		width: calc(100% - 300px);
 		font-size: 16px;
 	}
 
@@ -318,10 +319,11 @@ form {
 
 
 
-
+.inline-block { display: inline-block; }
 .float-left { float: left; }
 .float-right { float: right; }
 .clear { clear: both; }
+.center { margin-left: auto; margin-right: auto; }
 .text-right { text-align: right; }
 .text-center { text-align: center; }
 
@@ -402,9 +404,9 @@ code {
 samp {
 	display: block;
 	margin: 20px auto;
-	width: calc(80ch + 4px);
+	max-width: calc(80ch + 4px);
 	border: 1px solid #000;
-	overflow-x: auto;
+	
 }
 
 	samp div.caption {
@@ -415,6 +417,8 @@ samp {
 	samp pre {
 		margin: 0;
 		padding: 2px;
+		width: 100%;
+		overflow-x: auto;
 		background-color: #000;
 		color: #fff;
 	}
@@ -478,12 +482,22 @@ samp {
 	text-decoration: none !important;
 }
 
-a.button {
+/*a.button {
 	width: 250px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+}*/
+
+.button {
+	display: inline-block;
+	margin: 10px;
+	padding: 10px;
+}
+
+.button:hover {
+	text-decoration: none;
 }
 
 iframe {

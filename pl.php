@@ -7,16 +7,21 @@ $screenshots = "zrzuty ekranu";
 $textScreenshots = "screenshot'y (tekst)";
 $imageScreenshots = "screenshot'y (obraz)";
 $links = "linki";
-$guestBook = "księga gości";
+$guestbook = "księga gości";
 $theme = "motyw";
 $about = "o stronie";
 
-// GUEST BOOK
+// GUESTBOOK
+$guestEntries = "Wpisy gości";
+
+// GUESTBOOK-NEW-ENTRY
+$addEntry = "dodaj wpis";
+$back = "powrót";
 $form = "Formularz";
 $name = "Twoje imię";
 $comment = "Twój komentarz";
+$website = "Twoja strona internetowa";
 $submit = "Wyślij";
-$guestEntries = "Wpisy gości";
 
 // NAV
 $introduction = "wprowadzenie";
