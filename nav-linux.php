@@ -33,6 +33,7 @@
 		<li><a href="linux.php<?=$suffix?>#archive"><i class="far fa-file-archive fa-fw"></i> <?=$archive?></a></li>
 		<li><a href="linux.php<?=$suffix?>#compilation"><i class="far fa-file-code fa-fw"></i> <?=$compilation?></a></li>
 		<li><a href="linux.php<?=$suffix?>#text-editors"><i class="fa fa-align-left fa-fw"></i> <?=$textEditors?></a></li>
+		<li><a href="linux.php<?=$suffix?>#file-managers"><i class="far fa-copy fa-fw"></i> <?=$fileManagers?></a></li>
 		<li><a href="linux.php<?=$suffix?>#useful-programs"><i class="far fa-window-maximize fa-fw"></i> <?=$usefulPrograms?></a></li>
 		<li><a href="linux.php<?=$suffix?>#ncurses-programs"><i class="far fa-window-maximize fa-fw"></i> <?=$ncursesPrograms?></a></li>
 		<li><a href="linux.php<?=$suffix?>#x-server"><i class="fa fa-desktop fa-fw"></i> <?=$xServer?></a></li>

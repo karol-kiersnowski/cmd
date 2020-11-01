@@ -5,7 +5,7 @@
 	include "nav-win-dos.php";
 ?>
 
-<h2><i class="fab fa-windows"></i> Windows cmd / DOS<br>cmd.exe / COMMAND.COM</h2>
+<h2><i class="fab fa-windows"></i> Windows cmd / DOS</h2>
 <section>
 
 	<article id="introduction">
@@ -685,7 +685,7 @@
 		<h3><i class="fas fa-sitemap"></i> <?=$directoryStructure?></h3>
 		<hr>
 		<h4>Windows 10 64-bit (NT 10.0)</h4>
-<pre style="background-color: inherit; color: inherit;">
+<pre>
 C:
 ├── Program Files
 ├── Program Files (x86)
@@ -694,14 +694,14 @@ C:
 └── Windows
 </pre>
 		<h4>Windows XP 32-bit (NT 5.1)</h4>
-<pre style="background-color: inherit; color: inherit;">
+<pre>
 C:
 ├── Documents and Settings
 ├── Program Files
 └── WINDOWS
 </pre>
 		<h4>MS-DOS 6.22</h4>
-<pre style="background-color: inherit; color: inherit;">
+<pre>
 C:
 ├── DOS
 ├── COMMAND.COM
@@ -710,7 +710,7 @@ C:
 └── AUTOEXEC.BAT
 </pre>
 		<h4>FreeDOS 1.2</h4>
-<pre style="background-color: inherit; color: inherit;">
+<pre>
 C:
 ├── FDOS
 ├── AUTOEXEC.BAT

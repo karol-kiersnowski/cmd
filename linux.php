@@ -7,6 +7,7 @@
 
 <h2><i class="fab fa-linux"></i> GNU Linux (BASH) [Debian-based distros]</h2>
 <section>
+
 	<article id="introduction">
 		<hr>
 		<h3><i class="far fa-play-circle"></i> <?=$introduction?></h3>
@@ -21,6 +22,7 @@
 			</p>
 		<?php } ?>
 	</article>
+
 	<article id="keyboard-shortcuts">
 		<hr>
 		<h3><i class="far fa-keyboard"></i> <?=$keyboardShortcuts?></h3>
@@ -46,13 +48,14 @@
 			<li><kbd>alt</kbd> + <kbd><i class="fas fa-arrow-left"></i></kbd> - previous TTY (from other TTY)</li>
 		</ul>
 	</article>
+
 	<article id="disks-partitions">
 		<hr>
 		<h3><i class="far fa-hdd"></i> <?=$disksPartitions?></h3>
 		<hr>
 		<?php if ($lang == "en") { ?>
 			<h4>Disks numbering</h4>
-<pre style="background-color: inherit; color: inherit;">
+<pre>
 sda
 │ └─ disk number
 └─── type of disk controller
@@ -70,13 +73,13 @@ sda
 			</ul>
 			<h5>examples</h5>
 			<ul>
-				<li>sda - disk no. 1 in SATA / SCSI controller</li>
-				<li>sdb - disk no. 2 in SATA / SCSI controller</li>
-				<li>hda - disk no. 1 in IDE controller</li>
+				<li>sda - disk #1 in SATA / SCSI controller</li>
+				<li>sdb - disk #2 in SATA / SCSI controller</li>
+				<li>hda - disk #1 in IDE controller</li>
 			</ul>
 
 			<h4>Partitions numbering</h4>
-<pre style="background-color: inherit; color: inherit;">
+<pre>
 sda1
 │ │└─ partition number
 │ └── disk number
@@ -90,13 +93,13 @@ sda1
 			</ul>
 			<h5>examples</h5>
 			<ul>
-				<li>sda1 - disk no. 1, partition no. 1</li>
-				<li>sda2 - disk no. 1, partition no. 2</li>
-				<li>sdb1 - disk no. 2, partition no. 1</li>
+				<li>sda1 - disk #1, partition #1</li>
+				<li>sda2 - disk #1, partition #2</li>
+				<li>sdb1 - disk #2, partition #1</li>
 			</ul>
 		<?php } else { ?>
 			<h4>Numeracja dysków</h4>
-<pre style="background-color: inherit; color: inherit;">
+<pre>
 sda
 │ └─ numer dysku
 └─── rodzaj kontrolera dysku
@@ -114,13 +117,13 @@ sda
 			</ul>
 			<h5>przykłady</h5>
 			<ul>
-				<li>sda - dysk nr 1 w kontrolerze SATA / SCSI</li>
-				<li>sdb - dysk nr 2 w kontrolerze SATA / SCSI</li>
-				<li>hda - dysk nr 1 w kontrolerze IDE</li>
+				<li>sda - dysk #1 w kontrolerze SATA / SCSI</li>
+				<li>sdb - dysk #2 w kontrolerze SATA / SCSI</li>
+				<li>hda - dysk #1 w kontrolerze IDE</li>
 			</ul>
 
 			<h4>Numeracja partycji</h4>
-<pre style="background-color: inherit; color: inherit;">
+<pre>
 sda1
 │ │└─ numer partycji
 │ └── numer dysku
@@ -134,9 +137,9 @@ sda1
 			</ul>
 			<h5>przykłady</h5>
 			<ul>
-				<li>sda1 - dysk nr 1, partycja nr 1</li>
-				<li>sda2 - dysk nr 1, partycja nr 2</li>
-				<li>sdb1 - dysk nr 2, partycja nr 1</li>
+				<li>sda1 - dysk #1, partycja #1</li>
+				<li>sda2 - dysk #1, partycja #2</li>
+				<li>sdb1 - dysk #2, partycja #1</li>
 			</ul>
 		<?php } ?>
 
@@ -243,7 +246,7 @@ drwxr-xr-x  2 karol karol 4096 sie  2 16:14 <font color="#729FCF"><b>Wideo</b></
 </samp>
 		<?php if ($lang == "en") { ?>
 		
-<pre style="background-color: inherit; color: inherit;">
+<pre>
 drwxr-xr-x
 │└┬┘└┬┘└┬┘
 │ │  │  └─ <b>o</b>ther
@@ -304,7 +307,7 @@ drwxr-xr-x
 			
 
 
-<pre style="background-color: inherit; color: inherit;">
+<pre>
 drwxr-xr-x
 │└┬┘└┬┘└┬┘
 │ │  │  └─ inni
@@ -383,6 +386,7 @@ drwxr-xr-x
 			<li>tldr</li>
 		</ul>
 	</article>
+
 	<article id="browsing-directories">
 		<hr>
 		<h3><i class="far fa-folder-open"></i> <?=$browsingDirectories?></h3>
@@ -445,6 +449,7 @@ drwxr-xr-x
 			<li>install</li>
 		</ul>
 	</article>
+
 	<article id="file-information">
 		<hr>
 		<h3><i class="far fa-file-alt"></i> <?=$fileInformation?></h3>
@@ -456,6 +461,7 @@ drwxr-xr-x
 			<li>diff</li>
 		</ul>
 	</article>
+
 	<article id="reading-files">
 		<hr>
 		<h3><i class="far fa-file-alt"></i> <?=$readingFiles?></h3>
@@ -467,6 +473,7 @@ drwxr-xr-x
 			<li>tail</li>
 		</ul>
 	</article>
+
 	<article id="console">
 		<hr>
 		<h3><i class="fa fa-terminal"></i> <?=$console?></h3>
@@ -479,6 +486,7 @@ drwxr-xr-x
 			<li>alias</li>
 		</ul>
 	</article>
+
 	<article id="power-session">
 		<hr>
 		<h3><i class="fa fa-power-off"></i> <?=$powerSession?></h3>
@@ -492,6 +500,7 @@ drwxr-xr-x
 			<li>shutdown</li>
 		</ul>
 	</article>
+
 	<article id="file-system">
 		<hr>
 		<h3><i class="far fa-hdd fa-fw"></i> <?=$fileSystem?></h3>
@@ -507,6 +516,7 @@ drwxr-xr-x
 			<li>fsck</li>
 		</ul>
 	</article>
+
 	<article id="administration">
 		<hr>
 		<h3><i class="fa fa-shield-alt"></i> <?=$administration?></h3>
@@ -520,6 +530,7 @@ drwxr-xr-x
 			<li>update-grub</li>
 		</ul>
 	</article>
+
 	<article id="users">
 		<hr>
 		<h3><i class="far fa-user"></i> <?=$users?></h3>
@@ -534,6 +545,7 @@ drwxr-xr-x
 			<li>groups</li>
 		</ul>
 	</article>
+
 	<article id="user-administration">
 	<hr>
 	<h3><i class="fa fa-user-shield"></i> <?=$userAdministration?></h3>
@@ -550,6 +562,7 @@ drwxr-xr-x
 		<li>groupdel</li>
 	</ul>
 	</article>
+
 	<article id="statistics">
 		<hr>
 		<h3><i class="fa fa-chart-bar"></i> <?=$statistics?></h3>
@@ -562,6 +575,7 @@ drwxr-xr-x
 			<li>cal</li>
 		</ul>
 	</article>
+
 	<article id="system">
 	<hr>
 	<h3><i class="fa fa-laptop"></i> system</h3>
@@ -573,6 +587,7 @@ drwxr-xr-x
 		<li>lsmod</li>
 	</ul>
 	</article>
+
 	<article id="hardware">
 	<hr>
 	<h3><i class="fa fa-microchip"></i> <?=$hardware?></h3>
@@ -587,6 +602,7 @@ drwxr-xr-x
 		<li>hdparm</li>
 	</ul>
 	</article>
+
 	<article id="network">
 	<hr>
 	<h3><i class="fa fa-network-wired"></i> <?=$network?></h3>
@@ -607,6 +623,7 @@ drwxr-xr-x
 		<li>ufw</li>
 	</ul>
 	</article>
+
 	<article id="wireless">
 	<hr>
 	<h3><i class="fa fa-wifi"></i> <?=$wireless?></h3>
@@ -617,6 +634,7 @@ drwxr-xr-x
 		<li>rfkill</li>
 	</ul>
 	</article>
+
 	<article id="processes">
 	<hr>
 	<h3><i class="fa fa-list-ul"></i> <?=$processes?></h3>
@@ -638,6 +656,7 @@ drwxr-xr-x
 		<li>renice</li>
 	</ul>
 	</article>
+
 	<article id="package-managers">
 	<hr>
 	<h3><i class="fa fa-cube"></i> <?=$packageManagers?></h3>
@@ -685,6 +704,7 @@ drwxr-xr-x
 		<li>snap</li>
 	</ul>
 	</article>
+
 	<article id="search">
 	<hr>
 	<h3><i class="fa fa-search"></i> <?=$search?></h3>
@@ -697,6 +717,7 @@ drwxr-xr-x
 		<li>grep</li>
 	</ul>
 	</article>
+
 	<article id="text-manipulation">
 	<hr>
 	<h3><i class="fa fa-edit"></i> <?=$textManipulation?></h3>
@@ -708,6 +729,7 @@ drwxr-xr-x
 		<li>sed</li>
 	</ul>
 	</article>
+
 	<article id="archive">
 	<hr>
 	<h3><i class="far fa-file-archive"></i> <?=$archive?></h3>
@@ -720,6 +742,7 @@ drwxr-xr-x
 		<li>bzip2</li>
 	</ul>
 	</article>
+
 	<article id="compilation">
 	<hr>
 	<h3><i class="far fa-file-code"></i> <?=$compilation?></h3>
@@ -733,6 +756,7 @@ drwxr-xr-x
 		<li>cmake</li>
 	</ul>
 	</article>
+
 	<article id="text-editors">
 	<hr>
 	<h3><i class="fa fa-align-left"></i> <?=$textEditors?></h3>
@@ -743,6 +767,17 @@ drwxr-xr-x
 		<li>mcedit</li>
 	</ul>
 	</article>
+
+	<article id="file-managers">
+		<hr>
+		<h3><i class="far fa-copy fa-fw"></i> <?=$fileManagers?></h3>
+		<hr>
+		<ul>
+			<li>mc (midnight commander)</li>
+			<li>ranger</li>
+		</ul>
+	</article>
+
 	<article id="useful-programs">
 	<hr>
 	<h3><i class="far fa-window-maximize"></i> <?=$usefulPrograms?></h3>
@@ -754,6 +789,7 @@ drwxr-xr-x
 		<li>moc / mocp</li>
 	</ul>
 	</article>
+
 	<article id="ncurses-programs">
 	<hr>
 	<h3><i class="far fa-window-maximize"></i> <?=$ncursesPrograms?></h3>
@@ -764,6 +800,7 @@ drwxr-xr-x
 		<li>alsamixer</li>
 	</ul>
 	</article>
+
 	<article id="x-server">
 	<hr>
 	<h3><i class="fa fa-desktop"></i> <?=$xServer?></h3>
@@ -782,6 +819,7 @@ drwxr-xr-x
 		<li>xbiff</li>
 	</ul>
 	</article>
+
 	<article id="bash-scripts">
 	<hr>
 	<h3><i class="fa fa-code"></i> <?=$bashScripts?></h3>
@@ -808,6 +846,7 @@ drwxr-xr-x
 		<li>function</li>
 	</ul>
 	</article>
+
 	<article id="ssh">
 	<hr>
 	<h3><i class="fas fa-tty"></i> telnet & ssh</h3>
@@ -817,6 +856,7 @@ drwxr-xr-x
 		<li>ssh</li>
 	</ul>
 	</article>
+
 	<article id="wine">
 	<hr>
 	<h3><i class="fas fa-wine-glass-alt"></i> wine</h3>
@@ -828,6 +868,7 @@ drwxr-xr-x
 		<li>notepad</li>
 	</ul>
 	</article>
+
 	<article id="xampp">
 	<hr>
 	<h3><i class="fab fa-php"></i> xampp</h3>
@@ -839,6 +880,7 @@ drwxr-xr-x
 		<li>sudo /opt/lampp/lampp restart</li>
 	</ul>
 	</article>
+
 	<article id="git">
 	<hr>
 	<h3><i class="fab fa-git-alt"></i> git</h3>
@@ -879,6 +921,7 @@ drwxr-xr-x
 		<li>git fetch origin</li>
 	</ul>
 	</article>
+
 </section>
 
 <?php include "footer.php"; ?>
