@@ -392,10 +392,11 @@ dd {
 code {
 	display: inline-block;
 	margin: 1px 0;
-	padding: 1px;
-	border: 1px dashed #000;
-	background-color: #000;
-	color: #fff;
+	padding: 3px 7px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background-color: #eaeaea;
+	//color: #fff;
 	font-size: 14px;
 }
 
