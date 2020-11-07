@@ -103,10 +103,6 @@ header {
 	max-width: 1250px;
 }
 
-#wrapper {
-	//position: relative;
-}
-
 nav {
 	position: fixed;
 	z-index: 1;
@@ -387,17 +383,18 @@ dd {
 
 
 
-
+pre {
+	margin: 0;
+}
 
 code {
 	display: inline-block;
-	margin: 1px 0;
-	padding: 3px 7px;
+	margin: 2px 0;
+	padding: 3px 5px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	background-color: #eaeaea;
 	//color: #fff;
-	font-size: 14px;
 }
 
 samp {
@@ -422,25 +419,29 @@ samp {
 		color: #fff;
 	}
 
-	samp.linux pre {
+	samp.linux pre,
+	code.linux {
 		background-color: #2E3436;
 		color: #D3D7CF;
 		font-family: "Monospace Regular", monospace;
 	}
 
-	samp.dos pre {
+	samp.dos pre,
+	code.dos {
 		background-color: #000;
 		color: #a8a8a8;
 		font-family: "Perfect DOS VGA 437", monospace;
 	}
 
-	samp.windows-cmd pre {
+	samp.windows-cmd pre,
+	code.windows-cmd {
 		background-color: #0c0c0c;
 		color: #ccc;
 		font-family: Consolas, monospace;
 	}
 
-	samp.powershell pre {
+	samp.powershell pre,
+	code.powershell {
 		background-color: #012456;
 		color: #eeedf0;
 		font-family: Consolas, monospace;

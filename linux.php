@@ -289,16 +289,16 @@ drwxr-xr-x
 		<h4>how to change access rights?</h4>
 		<h5>by numerical values</h5>
 		<ul>
-			<li><code>chmod 777 fileName</code> - rwxrwxrwx - set all rights to all users</li>
-			<li><code>chmod 700 fileName</code> - rwx------ - only the owner has rights (all)</li>
-			<li><code>chmod 644 fileName</code> - rw-r--r-- - the owner can read and write; users from group and other users can only read</li>
-			<li><code>chmod 755 fileName</code> - rwxr-xr-x - the owner has all rights; users from group and other users can read and execute</li>
+			<li><code class="linux">chmod 777 fileName</code> - rwxrwxrwx - set all rights to all users</li>
+			<li><code class="linux">chmod 700 fileName</code> - rwx------ - only the owner has rights (all)</li>
+			<li><code class="linux">chmod 644 fileName</code> - rw-r--r-- - the owner can read and write; users from group and other users can only read</li>
+			<li><code class="linux">chmod 755 fileName</code> - rwxr-xr-x - the owner has all rights; users from group and other users can read and execute</li>
 		</ul>
 		<h5>by assigning</h5>
 		<ul>
-			<li><code>chmod u+x fileName</code> - add executing right for the file owner</li>
-			<li><code>chmod o-r fileName</code> - remove reading right for other users</li>
-			<li><code>chmod g=rx fileName</code> - set reading and executing right for group users (</li>
+			<li><code class="linux">chmod u+x fileName</code> - add executing right for the file owner</li>
+			<li><code class="linux">chmod o-r fileName</code> - remove reading right for other users</li>
+			<li><code class="linux">chmod g=rx fileName</code> - set reading and executing right for group users (</li>
 		</ul>
 
 
@@ -350,16 +350,16 @@ drwxr-xr-x
 		<h4>jak zmienić prawa dostępu?</h4>
 		<h5>poprzez wartości numeryczne</h5>
 		<ul>
-			<li><code>chmod 777 fileName</code> - rwxrwxrwx - set all rights to all users</li>
-			<li><code>chmod 700 fileName</code> - rwx------ - only the owner has rights (all)</li>
-			<li><code>chmod 644 fileName</code> - rw-r--r-- - the owner can read and write; users from group and other users can only read</li>
-			<li><code>chmod 755 fileName</code> - rwxr-xr-x - the owner has all rights; users from group and other users can read and execute</li>
+			<li><code class="linux">chmod 777 fileName</code> - rwxrwxrwx - set all rights to all users</li>
+			<li><code class="linux">chmod 700 fileName</code> - rwx------ - only the owner has rights (all)</li>
+			<li><code class="linux">chmod 644 fileName</code> - rw-r--r-- - the owner can read and write; users from group and other users can only read</li>
+			<li><code class="linux">chmod 755 fileName</code> - rwxr-xr-x - the owner has all rights; users from group and other users can read and execute</li>
 		</ul>
 		<h5>poprzez przypisanie</h5>
 		<ul>
-			<li><code>chmod u+x fileName</code> - add executing right for the file owner</li>
-			<li><code>chmod o-r fileName</code> - remove reading right for other users</li>
-			<li><code>chmod g=rx fileName</code> - set reading and executing right for group users (</li>
+			<li><code class="linux">chmod u+x fileName</code> - add executing right for the file owner</li>
+			<li><code class="linux">chmod o-r fileName</code> - remove reading right for other users</li>
+			<li><code class="linux">chmod g=rx fileName</code> - set reading and executing right for group users (</li>
 		</ul>
 
 
@@ -399,9 +399,8 @@ drwxr-xr-x
 		</ul>
 
 
-		<code>tree -L 1</code> - display one-level struct
-
-		<code>tree -d</code> - display only directories
+		<code class="linux">tree -L 1</code> - display one-level struct<br>
+		<code class="linux">tree -d</code> - display only directories
 
 <samp class="linux">
 <div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>

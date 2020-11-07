@@ -629,10 +629,10 @@
 			<li>* - replace many characters or none</li>
 			<h4>examples</h4>
 			<p>
-				<code>dir *.exe</code> - display all files with the extension <em>exe</em> 
+				<code class="dos">dir *.exe</code> - display all files with the extension <em>exe</em> 
 			</p>
 			<p>
-				<code>del *.*</code> - delete all files in current directory
+				<code class="dos">del *.*</code> - delete all files in current directory
 			</p>
 		</ul>
 	</article>
@@ -670,14 +670,14 @@
 		<h3><i class="fa fa-eject fa-fw"></i> DOSBox - <?=$mountingPartitionsDrives?></h3>
 		<hr>
 		<h4>Mount directories</h4>
-		<p><code>mount c ~/Apps</code> - Linux</p>
-		<p><code>mount c c:/Apps</code> - Windows</p>
+		<p><code class="dos">mount c ~/Apps</code> - Linux</p>
+		<p><code class="dos">mount c c:/Apps</code> - Windows</p>
 		<h4>Mount CD-ROM drive</h4>
-		<p><code>mount d /media -t cdrom</code> - Linux</p>
-		<p><code>mount d d: -t cdrom</code> - Windows</p>
+		<p><code class="dos">mount d /media -t cdrom</code> - Linux</p>
+		<p><code class="dos">mount d d: -t cdrom</code> - Windows</p>
 		<h4>Mount virtual drive - iso file</h4>
-		<p><code>imgmount d ~/DOS/WORMS.DAT -t iso</code> - Linux</p>
-		<p><code>imgmount d c:/DOS/WORMS.DAT -t iso</code> - Windows</p>
+		<p><code class="dos">imgmount d ~/DOS/WORMS.DAT -t iso</code> - Linux</p>
+		<p><code class="dos">imgmount d c:/DOS/WORMS.DAT -t iso</code> - Windows</p>
 	</article>
 
 	<article id="directory-structure">
@@ -1037,15 +1037,16 @@ C:
 				<td><i class="fa fa-times fa-fw"></i></td>
 			</tr>
 		</table>
-<pre>
-<code>mode 80</code>
-<code>mode 40</code>
-<code>mode con cols=80</code>
-<code>mode con cols=40</code>
-<code>mode con lines=25</code>
-<code>mode con lines=28</code>
-<code>mode con lines=43</code>
-<code>mode con lines=50</code></pre>
+
+		<code class="dos">mode 80</code><br>
+		<code class="dos">mode 40</code><br>
+		<code class="dos">mode con cols=80</code><br>
+		<code class="dos">mode con cols=40</code><br>
+		<code class="dos">mode con lines=25</code><br>
+		<code class="dos">mode con lines=28</code><br>
+		<code class="dos">mode con lines=43</code><br>
+		<code class="dos">mode con lines=50</code>
+
 	</article>
 
 	<article id="power-session">

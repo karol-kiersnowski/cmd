@@ -109,10 +109,10 @@
 	<p>
 		Install <var>rename</var> program.
 	</p>
-	<code>sudo apt install rename</code>
+	<code class="linux">sudo apt install rename</code>
 	<h5>Example</h5>
-	<code>rename 's/abc/xyz/' *</code><br>
-	<code>rename -n 's/abc/xyz/' *</code>
+	<code class="linux">rename 's/abc/xyz/' *</code><br>
+	<code class="linux">rename -n 's/abc/xyz/' *</code>
 </article>
 
 
@@ -125,15 +125,15 @@
 		<button class="btnCopyToClipboard" onclick="copyToClipboard('startSystemInCLI1')"><i class="far fa-copy"></i></button>
 		<span class="clear"></span>
 	</div>
-	<code>systemctl set-default multi-user.target</code>
+	<code class="linux">systemctl set-default multi-user.target</code>
 	<p>To get the start back system in GUI</p>
-	<code>systemctl set-default graphical.target</code>
+	<code class="linux">systemctl set-default graphical.target</code>
 </article>
 
 
 <article id="changeRootPassword">
 	<h4>change root (superuser) password</h4>
-	<code>sudo passwd root</code>
+	<code class="linux">sudo passwd root</code>
 </article>
 
 
@@ -185,9 +185,9 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 
 
 	<ol>
-		<li>Change to <code>GRUB_TIMEOUT=10</code> - 10 means seconds.</li>
+		<li>Change to <code class="linux">GRUB_TIMEOUT=10</code> - 10 means seconds.</li>
 		<li>Save the file - <kbd>Ctrl</kbd> + <kbd>o</kbd>; exit from nano - <kbd>Ctrl</kbd> + <kbd>x</kbd></li>
-		<li>Update grub <code>sudo update-grub</code></li>
+		<li>Update grub <code class="linux">sudo update-grub</code></li>
 	</ol>
 <pre>
 
@@ -205,7 +205,7 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 		In the CLI sometimes font size maybe to small or to big.
 	</p>
 	<h5><i class="far fa-lightbulb"></i> Solution</h5>
-	<code>sudo dpkg-reconfigure console-setup</code>
+	<code class="linux">sudo dpkg-reconfigure console-setup</code>
 	<p>
 		In the two first steps choose the default options. Next, choose font family and font size.
 	</p>
@@ -246,12 +246,12 @@ Device     Boot     Start       End   Sectors Size Id Type
 		My system in installed on <var>/dev/sda2</var>.
 	</p>
 
-<code>sudo mount /dev/sda2 /mnt</code><br>
-<code>sudo mount --bind /dev /mnt/dev</code><br>
-<code>sudo mount --bind /proc /mnt/proc</code><br>
-<code>sudo chroot /mnt</code><br>
-<code>sudo grub-install /dev/sda</code><br>
-<code>sudo update-grub</code>
+<code class="linux">sudo mount /dev/sda2 /mnt</code><br>
+<code class="linux">sudo mount --bind /dev /mnt/dev</code><br>
+<code class="linux">sudo mount --bind /proc /mnt/proc</code><br>
+<code class="linux">sudo chroot /mnt</code><br>
+<code class="linux">sudo grub-install /dev/sda</code><br>
+<code class="linux">sudo update-grub</code>
 
 
 </article>
@@ -277,8 +277,8 @@ Device     Boot     Start       End   Sectors Size Id Type
 
 	<ol>
 		<li>
-			Make a file<br><code>nano script.sh</code><br>
-<code>
+			Make a file<br><code class="linux">nano script.sh</code><br>
+<code class="linux">
 <pre>
 #!/bin/bash
 gsettings set org.cinnamon panels-autohide "['1:true']"
@@ -289,8 +289,8 @@ gsettings set org.cinnamon panels-autohide "['1:false']"
 </code>
 		</li>
 		<li>Save the file <kbd>Ctrl</kbd> + <kbd>o</kbd> & exit from nano - <kbd>Ctrl</kbd> + <kbd>x</kbd></li>
-		<li>Add execute right to this file<br><code>chmod u+x script.sh</code></li>
-		<li>Run the script and play the game :)<br><code>./script.sh</code></li>
+		<li>Add execute right to this file<br><code class="linux">chmod u+x script.sh</code></li>
+		<li>Run the script and play the game :)<br><code class="linux">./script.sh</code></li>
 	</ol>
 	
 <samp class="linux">

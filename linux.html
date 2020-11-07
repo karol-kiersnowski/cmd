@@ -101,6 +101,7 @@
 		<li><a href="linux.html?lang=en&th=light#archive"><i class="far fa-file-archive fa-fw"></i> archives</a></li>
 		<li><a href="linux.html?lang=en&th=light#compilation"><i class="far fa-file-code fa-fw"></i> compilation</a></li>
 		<li><a href="linux.html?lang=en&th=light#text-editors"><i class="fa fa-align-left fa-fw"></i> text editors</a></li>
+		<li><a href="linux.html?lang=en&th=light#file-managers"><i class="far fa-copy fa-fw"></i> file managers</a></li>
 		<li><a href="linux.html?lang=en&th=light#useful-programs"><i class="far fa-window-maximize fa-fw"></i> useful programs</a></li>
 		<li><a href="linux.html?lang=en&th=light#ncurses-programs"><i class="far fa-window-maximize fa-fw"></i> ncurses programs</a></li>
 		<li><a href="linux.html?lang=en&th=light#x-server"><i class="fa fa-desktop fa-fw"></i> x server</a></li>
@@ -119,6 +120,7 @@
 
 <h2><i class="fab fa-linux"></i> GNU Linux (BASH) [Debian-based distros]</h2>
 <section>
+
 	<article id="introduction">
 		<hr>
 		<h3><i class="far fa-play-circle"></i> introduction</h3>
@@ -127,6 +129,7 @@
 				To enter to the CLI (not terminal emulator), press e.g. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Instead of <kbd>F2</kbd> can be <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> or <kbd>F1</kbd>.
 			</p>
 			</article>
+
 	<article id="keyboard-shortcuts">
 		<hr>
 		<h3><i class="far fa-keyboard"></i> keyboard shortcuts</h3>
@@ -152,12 +155,13 @@
 			<li><kbd>alt</kbd> + <kbd><i class="fas fa-arrow-left"></i></kbd> - previous TTY (from other TTY)</li>
 		</ul>
 	</article>
+
 	<article id="disks-partitions">
 		<hr>
 		<h3><i class="far fa-hdd"></i> disks & partitions</h3>
 		<hr>
 					<h4>Disks numbering</h4>
-<pre style="background-color: inherit; color: inherit;">
+<pre>
 sda
 │ └─ disk number
 └─── type of disk controller
@@ -175,13 +179,13 @@ sda
 			</ul>
 			<h5>examples</h5>
 			<ul>
-				<li>sda - disk no. 1 in SATA / SCSI controller</li>
-				<li>sdb - disk no. 2 in SATA / SCSI controller</li>
-				<li>hda - disk no. 1 in IDE controller</li>
+				<li>sda - disk #1 in SATA / SCSI controller</li>
+				<li>sdb - disk #2 in SATA / SCSI controller</li>
+				<li>hda - disk #1 in IDE controller</li>
 			</ul>
 
 			<h4>Partitions numbering</h4>
-<pre style="background-color: inherit; color: inherit;">
+<pre>
 sda1
 │ │└─ partition number
 │ └── disk number
@@ -195,9 +199,9 @@ sda1
 			</ul>
 			<h5>examples</h5>
 			<ul>
-				<li>sda1 - disk no. 1, partition no. 1</li>
-				<li>sda2 - disk no. 1, partition no. 2</li>
-				<li>sdb1 - disk no. 2, partition no. 1</li>
+				<li>sda1 - disk #1, partition #1</li>
+				<li>sda2 - disk #1, partition #2</li>
+				<li>sdb1 - disk #2, partition #1</li>
 			</ul>
 		
 <samp class="linux">
@@ -302,7 +306,7 @@ drwxr-xr-x  2 karol karol 4096 sie  2 16:14 <font color="#729FCF"><b>Wideo</b></
 </pre>
 </samp>
 				
-<pre style="background-color: inherit; color: inherit;">
+<pre>
 drwxr-xr-x
 │└┬┘└┬┘└┬┘
 │ │  │  └─ <b>o</b>ther
@@ -345,16 +349,16 @@ drwxr-xr-x
 		<h4>how to change access rights?</h4>
 		<h5>by numerical values</h5>
 		<ul>
-			<li><code>chmod 777 fileName</code> - rwxrwxrwx - set all rights to all users</li>
-			<li><code>chmod 700 fileName</code> - rwx------ - only the owner has rights (all)</li>
-			<li><code>chmod 644 fileName</code> - rw-r--r-- - the owner can read and write; users from group and other users can only read</li>
-			<li><code>chmod 755 fileName</code> - rwxr-xr-x - the owner has all rights; users from group and other users can read and execute</li>
+			<li><code class="linux">chmod 777 fileName</code> - rwxrwxrwx - set all rights to all users</li>
+			<li><code class="linux">chmod 700 fileName</code> - rwx------ - only the owner has rights (all)</li>
+			<li><code class="linux">chmod 644 fileName</code> - rw-r--r-- - the owner can read and write; users from group and other users can only read</li>
+			<li><code class="linux">chmod 755 fileName</code> - rwxr-xr-x - the owner has all rights; users from group and other users can read and execute</li>
 		</ul>
 		<h5>by assigning</h5>
 		<ul>
-			<li><code>chmod u+x fileName</code> - add executing right for the file owner</li>
-			<li><code>chmod o-r fileName</code> - remove reading right for other users</li>
-			<li><code>chmod g=rx fileName</code> - set reading and executing right for group users (</li>
+			<li><code class="linux">chmod u+x fileName</code> - add executing right for the file owner</li>
+			<li><code class="linux">chmod o-r fileName</code> - remove reading right for other users</li>
+			<li><code class="linux">chmod g=rx fileName</code> - set reading and executing right for group users (</li>
 		</ul>
 
 
@@ -380,6 +384,7 @@ drwxr-xr-x
 			<li>tldr</li>
 		</ul>
 	</article>
+
 	<article id="browsing-directories">
 		<hr>
 		<h3><i class="far fa-folder-open"></i> browsing directories</h3>
@@ -392,9 +397,8 @@ drwxr-xr-x
 		</ul>
 
 
-		<code>tree -L 1</code> - display one-level struct
-
-		<code>tree -d</code> - display only directories
+		<code class="linux">tree -L 1</code> - display one-level struct<br>
+		<code class="linux">tree -d</code> - display only directories
 
 <samp class="linux">
 <div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
@@ -442,6 +446,7 @@ drwxr-xr-x
 			<li>install</li>
 		</ul>
 	</article>
+
 	<article id="file-information">
 		<hr>
 		<h3><i class="far fa-file-alt"></i> file information</h3>
@@ -453,6 +458,7 @@ drwxr-xr-x
 			<li>diff</li>
 		</ul>
 	</article>
+
 	<article id="reading-files">
 		<hr>
 		<h3><i class="far fa-file-alt"></i> reading files</h3>
@@ -464,6 +470,7 @@ drwxr-xr-x
 			<li>tail</li>
 		</ul>
 	</article>
+
 	<article id="console">
 		<hr>
 		<h3><i class="fa fa-terminal"></i> console</h3>
@@ -476,6 +483,7 @@ drwxr-xr-x
 			<li>alias</li>
 		</ul>
 	</article>
+
 	<article id="power-session">
 		<hr>
 		<h3><i class="fa fa-power-off"></i> power & session</h3>
@@ -489,6 +497,7 @@ drwxr-xr-x
 			<li>shutdown</li>
 		</ul>
 	</article>
+
 	<article id="file-system">
 		<hr>
 		<h3><i class="far fa-hdd fa-fw"></i> file system</h3>
@@ -504,6 +513,7 @@ drwxr-xr-x
 			<li>fsck</li>
 		</ul>
 	</article>
+
 	<article id="administration">
 		<hr>
 		<h3><i class="fa fa-shield-alt"></i> administration</h3>
@@ -517,6 +527,7 @@ drwxr-xr-x
 			<li>update-grub</li>
 		</ul>
 	</article>
+
 	<article id="users">
 		<hr>
 		<h3><i class="far fa-user"></i> users</h3>
@@ -531,6 +542,7 @@ drwxr-xr-x
 			<li>groups</li>
 		</ul>
 	</article>
+
 	<article id="user-administration">
 	<hr>
 	<h3><i class="fa fa-user-shield"></i> user administration</h3>
@@ -547,6 +559,7 @@ drwxr-xr-x
 		<li>groupdel</li>
 	</ul>
 	</article>
+
 	<article id="statistics">
 		<hr>
 		<h3><i class="fa fa-chart-bar"></i> statistics</h3>
@@ -559,6 +572,7 @@ drwxr-xr-x
 			<li>cal</li>
 		</ul>
 	</article>
+
 	<article id="system">
 	<hr>
 	<h3><i class="fa fa-laptop"></i> system</h3>
@@ -570,6 +584,7 @@ drwxr-xr-x
 		<li>lsmod</li>
 	</ul>
 	</article>
+
 	<article id="hardware">
 	<hr>
 	<h3><i class="fa fa-microchip"></i> hardware</h3>
@@ -584,6 +599,7 @@ drwxr-xr-x
 		<li>hdparm</li>
 	</ul>
 	</article>
+
 	<article id="network">
 	<hr>
 	<h3><i class="fa fa-network-wired"></i> network</h3>
@@ -604,6 +620,7 @@ drwxr-xr-x
 		<li>ufw</li>
 	</ul>
 	</article>
+
 	<article id="wireless">
 	<hr>
 	<h3><i class="fa fa-wifi"></i> wireless</h3>
@@ -614,6 +631,7 @@ drwxr-xr-x
 		<li>rfkill</li>
 	</ul>
 	</article>
+
 	<article id="processes">
 	<hr>
 	<h3><i class="fa fa-list-ul"></i> processes</h3>
@@ -635,6 +653,7 @@ drwxr-xr-x
 		<li>renice</li>
 	</ul>
 	</article>
+
 	<article id="package-managers">
 	<hr>
 	<h3><i class="fa fa-cube"></i> package managers</h3>
@@ -682,6 +701,7 @@ drwxr-xr-x
 		<li>snap</li>
 	</ul>
 	</article>
+
 	<article id="search">
 	<hr>
 	<h3><i class="fa fa-search"></i> search</h3>
@@ -694,6 +714,7 @@ drwxr-xr-x
 		<li>grep</li>
 	</ul>
 	</article>
+
 	<article id="text-manipulation">
 	<hr>
 	<h3><i class="fa fa-edit"></i> text manipulation</h3>
@@ -705,6 +726,7 @@ drwxr-xr-x
 		<li>sed</li>
 	</ul>
 	</article>
+
 	<article id="archive">
 	<hr>
 	<h3><i class="far fa-file-archive"></i> archives</h3>
@@ -717,6 +739,7 @@ drwxr-xr-x
 		<li>bzip2</li>
 	</ul>
 	</article>
+
 	<article id="compilation">
 	<hr>
 	<h3><i class="far fa-file-code"></i> compilation</h3>
@@ -730,6 +753,7 @@ drwxr-xr-x
 		<li>cmake</li>
 	</ul>
 	</article>
+
 	<article id="text-editors">
 	<hr>
 	<h3><i class="fa fa-align-left"></i> text editors</h3>
@@ -740,6 +764,17 @@ drwxr-xr-x
 		<li>mcedit</li>
 	</ul>
 	</article>
+
+	<article id="file-managers">
+		<hr>
+		<h3><i class="far fa-copy fa-fw"></i> file managers</h3>
+		<hr>
+		<ul>
+			<li>mc (midnight commander)</li>
+			<li>ranger</li>
+		</ul>
+	</article>
+
 	<article id="useful-programs">
 	<hr>
 	<h3><i class="far fa-window-maximize"></i> useful programs</h3>
@@ -751,6 +786,7 @@ drwxr-xr-x
 		<li>moc / mocp</li>
 	</ul>
 	</article>
+
 	<article id="ncurses-programs">
 	<hr>
 	<h3><i class="far fa-window-maximize"></i> ncurses programs</h3>
@@ -761,6 +797,7 @@ drwxr-xr-x
 		<li>alsamixer</li>
 	</ul>
 	</article>
+
 	<article id="x-server">
 	<hr>
 	<h3><i class="fa fa-desktop"></i> x server</h3>
@@ -779,6 +816,7 @@ drwxr-xr-x
 		<li>xbiff</li>
 	</ul>
 	</article>
+
 	<article id="bash-scripts">
 	<hr>
 	<h3><i class="fa fa-code"></i> bash scripts</h3>
@@ -805,6 +843,7 @@ drwxr-xr-x
 		<li>function</li>
 	</ul>
 	</article>
+
 	<article id="ssh">
 	<hr>
 	<h3><i class="fas fa-tty"></i> telnet & ssh</h3>
@@ -814,6 +853,7 @@ drwxr-xr-x
 		<li>ssh</li>
 	</ul>
 	</article>
+
 	<article id="wine">
 	<hr>
 	<h3><i class="fas fa-wine-glass-alt"></i> wine</h3>
@@ -825,6 +865,7 @@ drwxr-xr-x
 		<li>notepad</li>
 	</ul>
 	</article>
+
 	<article id="xampp">
 	<hr>
 	<h3><i class="fab fa-php"></i> xampp</h3>
@@ -836,6 +877,7 @@ drwxr-xr-x
 		<li>sudo /opt/lampp/lampp restart</li>
 	</ul>
 	</article>
+
 	<article id="git">
 	<hr>
 	<h3><i class="fab fa-git-alt"></i> git</h3>
@@ -876,6 +918,7 @@ drwxr-xr-x
 		<li>git fetch origin</li>
 	</ul>
 	</article>
+
 </section>
 
 		</main>
