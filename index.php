@@ -54,50 +54,51 @@
 <section>
 	<h4><i class="fab fa-windows"></i> Windows CMD / DOS</h4>
 <?php if ($lang == "en") { ?>
-	
-	</p>
 	<p>
 		Windows is an operating system. Unlike GNU Linux, Windows does not have a CLI mode that works without a GUI. But we can use the command interpreter in the GUI.
 	</p>
 	<p>
-		Cmd.exe is a command interpreter in Windows. Cmd.exe is derived from command.com - a DOS interpreter. Because of this, many cmd.exe commands are compatible with DOS commands.
+		Cmd.exe is a command interpreter in Windows. Cmd.exe is derived from COMMAND.COM - a MS-DOS interpreter. Because of this, many cmd.exe commands are compatible with MS-DOS commands.
 	</p>
 	<p>
 		To run cmd.exe, click the Start Menu and start typing <em>cmd.exe</em> or go: Start > Programs > System tools > Command prompt.
 	</p>
+<?php } else { ?>
 	<p>
-		DOS (Disk Operating System) was popular in the 80s and early 90s. It doesn't have GUI, so we can use DOS only in Command-Line Interface. Nowadays, DOS is practically not used as the primary operating system.
+		Windows jest systemem operacyjnym. W przeciwieństwie do Linux'a, Windows nie posiada interfejsu wiersza poleceń, który działa bez interfejsu graficznego. Możemy natomiast korzystać z interpretera poleceń w środowisku graficznym.
+	</p>
+	<p>
+		Cmd.exe jest interpreterem poleceń w systemie Windows. Cmd.exe wywodzi się z COMMAND.COM - interpretera MS-DOS. Z tego powodu, wiele poleceń cmd.exe jest kompatybilnych z komendami MS-DOS.
+	</p>
+	<p>
+		Aby uruchomić wiersz poleceń cmd.exe, wciśnij start i zacznij wpisywać <em>cmd.exe</em> lub wybierz: Start > Programy > Narzędzia systemowe > Wiersz polecenia.
+	</p>
+<?php } ?>
+
+	<?php include "screenshots-txt/windows-cmd-dir.html"; ?>
+
+<?php if ($lang == "en") { ?>
+	<p>
+		MS-DOS / PC-DOS (Disk Operating System) was popular in the 80s and early 90s. It doesn't have GUI, so we can use DOS only in Command-Line Interface. Nowadays, DOS is practically not used as the primary operating system.
 	</p>
 	<p>
 		On modern computers, we will not run the original DOS versions (MS-DOS / PC-DOS). However, we can run <a target="_blank" href="http://freedos.org/">FreeDOS</a> - a DOS compatible operating system. There are also DOS emulators. The most popular of them is <a target="_blank" href="https://www.dosbox.com">DOSBox</a>.
 	</p>
 <?php } else { ?>
 	<p>
-		<p>
-		Windows jest systemem operacyjnym. W przeciwieństwie do Linux'a, Windows nie posiada interfejsu wiersza poleceń, który działa bez interfejsu graficznego. Możemy natomiast korzystać z interpretera poleceń w środowisku graficznym.
-	</p>
-	<p>
-		Cmd.exe jest interpreterem poleceń w systemie Windows. Cmd.exe wywodzi się z command.com - interpretera DOS'a. Z tego powodu, wiele poleceń cmd.exe jest kompatybilnych z komendami DOS'a.
-	</p>
-	<p>
-		Aby uruchomić wiersz poleceń cmd.exe, wciśnij start i zacznij wpisywać <em>cmd.exe</em> lub wybierz: Start > Programy > Narzędzia systemowe > Wiersz polecenia.
-	</p>
-	<p>
-		DOS (Disk Operating system) był popularnym systemem operacyjnym w latach 80-tych i na początku lat 90-tych. Nie posiadał interfejsu graficznego (GUI), więc mogliśmy korzystać z niego jedynie w trybie tekstowym. W dzisiejszych czasach DOS nie jest praktycznie używany jako podstawowy system operacyjny.
+		MS-DOS / PC-DOS (Disk Operating System) był popularnym systemem operacyjnym w latach 80-tych i na początku lat 90-tych. Nie posiadał interfejsu graficznego (GUI), więc mogliśmy korzystać z niego jedynie w trybie tekstowym. W dzisiejszych czasach DOS nie jest praktycznie używany jako podstawowy system operacyjny.
 	</p>
 	<p>
 		Na współczesnych komputerach nie uruchomimy oryginalnych wersji DOS'a (MS-DOS / PC-DOS). Możemy jednak uruchomić <a target="_blank" href="http://freedos.org/">FreeDOS</a> - system operacyjny kompatybilny z DOS'em. Poza tym istnieją emulatory DOS-a. Najpopularniejszym z nich jest <a target="_blank" href="https://www.dosbox.com">DOSBox</a>.
 	</p>
-
 <?php } ?>
-
-	<?php include "screenshots-txt/windows-cmd-dir.html"; ?>
 
 	<?php include "screenshots-txt/dos-freedos-start-ver.html"; ?>
 
-	<iframe src="https://kargol92.github.io/webdos"></iframe>
-
-	<a class="button" target="_blank" href="js-dos.html">Run js-dos (DOSBox)</a>
+	<div class="text-center">
+		<a class="button" target="_blank" href="js-dos.html">Run js-dos (DOSBox)</a>
+		<a class="button" target="_blank" href="https://kargol92.github.io/webdos">Run WebDOS (it's just a toy)</a>
+	</div>
 
 </section>
 
