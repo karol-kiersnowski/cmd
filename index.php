@@ -14,6 +14,11 @@
 <h3>Zacznijmy naukę wiersza poleceń!</h3>
 <?php } ?>
 
+<!-- the open source operating system with clear command-line interface
+classic command prompt for the most popular operating system
+simple & ancient operating system only with command-line interface
+modern & advanced command-line interpreter -->
+
 <section>
 	<h4><i class="fab fa-linux"></i> GNU Linux (BASH)</h4>
 <?php if ($lang == "en") { ?>
@@ -52,7 +57,7 @@
 </section>
 <hr>
 <section>
-	<h4><i class="fab fa-windows"></i> Windows CMD / DOS</h4>
+	<h4><i class="fab fa-windows"></i> Windows cmd / DOS</h4>
 <?php if ($lang == "en") { ?>
 	<p>
 		Windows is an operating system. Unlike GNU Linux, Windows does not have a CLI mode that works without a GUI. But we can use the command interpreter in the GUI.

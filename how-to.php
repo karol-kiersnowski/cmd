@@ -38,8 +38,8 @@
 <article id="startSystemInCLI">
 	<h4>set the system start in console / CLI mode</h4>
 	<div class="textToCopy">
-		<input class="code" type="text" readonly id="startSystemInCLI1" value="systemctl set-default multi-user.target"/>
-		<button class="btnCopyToClipboard" onclick="copyToClipboard('startSystemInCLI1')"><i class="far fa-copy"></i></button>
+		<input class="code" type="text" readonly value="systemctl set-default multi-user.target"/>
+		<button class="btnCopyToClipboard" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
 		<span class="clear"></span>
 	</div>
 	<code class="linux">systemctl set-default multi-user.target</code>

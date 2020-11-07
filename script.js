@@ -47,9 +47,9 @@ function markAnchor() {
 	}
 }
 
-function copyToClipboard(textId) {
-	var textToCopy = document.getElementById(textId);
-	textToCopy.focus();
-	textToCopy.select();
+function copyToClipboard(thisElement) {
+	var text = thisElement.parentElement.children[0];
+	text.focus();
+	text.select();
 	document.execCommand("copy");
 }
