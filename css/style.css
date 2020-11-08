@@ -380,21 +380,21 @@ kbd
 	display: inline-block;
 	margin: 2px 0;
 	padding: 0 7px;
-	border: 1px solid #777;
+	border: 1px solid #aaa;
 	border-radius: 3px;
-	background-color: #eaeaea;
+	background-color: #fff;
 	color :#333;
-	box-shadow: 0 2px 0 rgba(0,0,0,0.4), 0 0 10px 2px #fff inset;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.3), 0 0 10px 2px #eaeaea inset;
 	font-size: 14px;
 }
 
 var {
 	margin: 1px 0;
 	padding: 3px 5px;
-	border: 1px solid #ddd;
+	border: 1px dashed #777;
 	border-radius: 3px;
 	background-color: #fafafa;
-	font-size: 14px;
+	//font-size: 14px;
 	font-style: normal;
 }
 
