@@ -152,6 +152,23 @@ main {
 			padding-top: 40px;
 		}
 
+		section#index article {
+			padding-top: 0;
+			padding: 10px 0;
+		}
+
+			section#index h2 {
+				font-size: 30px;
+			}
+
+			section#index h3 {
+				font-size: 40px;
+			}
+
+			section#index h4 {
+				font-size: 20px;
+			}
+
 footer {
 	margin: 20px;
 	margin-left: 250px;
@@ -405,7 +422,6 @@ code {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	background-color: #eaeaea;
-	//color: #fff;
 }
 
 samp {
@@ -413,7 +429,7 @@ samp {
 	margin: 20px auto;
 	max-width: calc(80ch + 4px);
 	border: 1px solid #000;
-	
+	text-align: left;
 }
 
 	samp div.caption {

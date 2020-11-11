@@ -13,14 +13,76 @@
 		<h3><i class="far fa-play-circle"></i> <?=$introduction?></h3>
 		<hr>
 		<?php if ($lang == "en") { ?>
+			<h4>What is GNU Linux?</h4>
 			<p>
-				To enter to the CLI (not terminal emulator), press e.g. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Instead of <kbd>F2</kbd> can be <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> or <kbd>F1</kbd>.
+				GNU Linux is an open source operating system.
+			</p>
+
+			<h4>What is BASH?</h4>
+			<p>
+				BASH (Bourne Again SHell) is the most popular shell for Linux terminal.
+			</p>
+
+			<h4>What is Debian?</h4>
+			<p>
+				Debian is an important GNU Linux distribution. Many other distros are derived from Debian, such as <a target="_blank" href="https://ubuntu.com">Ubuntu</a> or <a target="_blank" href="https://www.linuxmint.com">Linux Mint</a>.
+			</p>
+
+			<h4>How can we use GNU Linux?</h4>
+			<p>
+				On most distributions (e.g. <a target="_blank" href="https://ubuntu.com">Ubuntu (Desktop)</a>, <a target="_blank" href="https://www.linuxmint.com">Linux Mint</a>), we can use it with CLI (Command-Line Interface) and GUI (Graphical User Interface).
+			</p>
+			<p>
+				There are distributions that do not have a GUI installed by default. Typically, these are versions used as server operating systems, such as Ubuntu Server.
+			</p>
+			<p>
+				If we are just using a GUI, we can start a terminal emulator (pseudoterminal) or go to the CLI.
+			</p>
+
+			<h4>How to run the terminal in GUI (Graphical User Interface)?</h4>
+			<p>
+				On most distributions, click the menu button or press <kbd><i class="fab fa-windows"></i></kbd> and type <em>terminal</em>.
+			</p>
+
+			<h4>How to go to the CLI (Command-Line Interface)?</h4>
+			<p>
+				Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Instead of <kbd>F2</kbd> can be <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> or <kbd>F1</kbd>.
+			</p>
+
+			<h4>How to back to the GUI (Graphical User Interface)?</h4>
+			<p>
+				Press <kbd>Alt</kbd> + <kbd>F1</kbd>. Instead of <kbd>F1</kbd> can be <kbd>F6</kbd>, <kbd>F7</kbd> or other function key. You can also quickly switch between instances of the command line with <kbd>Alt</kbd> + <kbd><i class="fas fa-arrow-right"></i></kbd> or <kbd>Alt</kbd> + <kbd><i class="fas fa-arrow-left"></i></kbd>.
 			</p>
 		<?php } else { ?>
+			<h4>Co to jest GNU Linux?</h4>
 			<p>
-				Aby przejść do wiersza poleceń (nie emulatora terminala), wciśnij np. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Zamiast <kbd>F2</kbd> może być <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> lub <kbd>F1</kbd>.
+				GNU Linux jest systemem operacyjnym o otwartym kodzie źródłowym.
+			</p>
+
+			<h4>Jak możemy używać systemu GNU Linux?</h4>
+			<p>
+				W większości dystrybucji (np. <a target="_blank" href="https://ubuntu.com">Ubuntu</a>, <a target="_blank" href="https://www.linuxmint.com">Linux Mint</a>), możemy używać go za pomocą interfejsu wiersza poleceń (CLI) oraz w trybie interfejsu graficznego (GUI).
+			</p>
+			<p>
+				Jeśli korzystamy z interfejsu graficznego, możemy uruchomić emulator terminala (pseudoterminal) lub przejść do interfejsu wiersza poleceń.
+			</p>
+
+			<h4>Jak uruchomić terminal w interfejsie graficznym (GUI)?</h4>
+			<p>
+				W większości dystrybucji kliknij przycisk menu lub naciśnij <kbd><i class = "fab fa-windows"></i></kbd> i wpisz <em>terminal</em>.
+			</p>
+
+			<h4>Jak przejść do interfejsu wiersza poleceń (CLI)?</h4>
+			<p>
+				Wciśnij <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Zamiast <kbd>F2</kbd> może być <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> lub <kbd>F1</kbd>.
+			</p>
+
+			<h4>Jak powrócić go interfejsu graficznego (GUI)?</h4>
+			<p>
+				Wciśnij <kbd>Alt</kbd> + <kbd>F1</kbd>. Zamiast <kbd>F1</kbd> może być <kbd>F6</kbd>, <kbd>F7</kbd> lub inny klawisz funkcyjny. Możemy również szybko przełączać się pomiędzy kolejnymi instancjami wiersza poleceń za pomocą <kbd>Alt</kbd> + <kbd><i class="fas fa-arrow-right"></i></kbd> lub <kbd>Alt</kbd> + <kbd><i class="fas fa-arrow-left"></i></kbd>.
 			</p>
 		<?php } ?>
+
 	</article>
 
 	<article id="keyboard-shortcuts">
