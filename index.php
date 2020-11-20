@@ -21,9 +21,9 @@
 		<h3><i class="fab fa-linux"></i> GNU Linux (BASH)</h3>
 		<h4>
 		<?php if ($lang == "en") { ?>
-			the open source operating system with clear command-line interface
+			the open source operating system with advanced command-line interface
 		<?php } else { ?>
-			system operacyjny o otwartym kodzie źródłowym wraz z podstawowym interfejsem wiersza poleceń
+			system operacyjny o otwartym kodzie źródłowym wraz z zaawansowanym interfejsem wiersza poleceń
 		<?php } ?>
 		</h4>
 
@@ -101,7 +101,7 @@
 		<?php if ($lang == "en") { ?>
 			aged & simple operating system with only command-line interface
 		<?php } else { ?>
-			stary i prosty system operacyjny tylko z interfejsem wiersza poleceń
+			stary & prosty system operacyjny tylko z interfejsem wiersza poleceń
 		<?php } ?>
 		</h4>
 
