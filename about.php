@@ -13,10 +13,13 @@
 		I learned HTML, CSS, Javascript and PHP using <a target="_blank" href="https://www.w3schools.com">W3Schools</a> among others. I was inspired by the simplicity of explaining the issues + examples in each example.
 	</p>
 	<p>
+		Everywhere I looked for commands, they were listed alphabetically. A better way for me is to group commands by category.
+	</p>
+	<p>
 		Combining the interest in the Command-Line Interface (Linux, DOS, Windows command prompt & PowerShell) with the benefits of learning at w3schools, I decided to create a website for learning the CLI.
 	</p>
 	<h3>thanks to authors of the</h3>
-	<ul style="text-align: left; list-style-type: disc;">
+	<ul style="list-style-type: disc;">
 		<li>
 			<a target="_blank" href="https://fontawesome.com">Font Awesome</a> - icons
 		</li>
