@@ -26,6 +26,7 @@
 		<li><a href="linux.php<?=$suffix?>#hardware"><i class="fa fa-microchip fa-fw"></i> <?=$hardware?></a></li>
 		<li><a href="linux.php<?=$suffix?>#network"><i class="fa fa-network-wired fa-fw"></i> <?=$network?></a></li>
 		<li><a href="linux.php<?=$suffix?>#wireless"><i class="fa fa-wifi fa-fw"></i> <?=$wireless?></a></li>
+		<li><a href="linux.php<?=$suffix?>#network-sniffing"><i class="fa fa-user-secret fa-fw"></i> <?=$networkSniffing?></a></li>
 		<li><a href="linux.php<?=$suffix?>#processes"><i class="fa fa-list-ol fa-fw"></i> <?=$processes?></a></li>
 		<li><a href="linux.php<?=$suffix?>#package-managers"><i class="fa fa-cube fa-fw"></i> <?=$packageManagers?></a></li>
 		<li><a href="linux.php<?=$suffix?>#search"><i class="fa fa-search fa-fw"></i> <?=$search?></a></li>

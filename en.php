@@ -52,6 +52,7 @@ $hardware = "hardware";
 $processes = "processes";
 $network = "network";
 $wireless = "wireless";
+$networkSniffing = "network sniffing";
 $packageManagers = "package managers";
 $search = "search";
 $textManipulation = "text manipulation";

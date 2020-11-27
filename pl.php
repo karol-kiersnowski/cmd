@@ -51,6 +51,7 @@ $memory = "pamięć";
 $hardware = "sprzęt";
 $network = "sieć";
 $wireless = "sieć bezprzewodowa";
+$networkSniffing = "nasłuchiwanie sieci";
 $processes = "procesy";
 $packageManagers = "menedżery pakietów";
 $search = "szukanie";

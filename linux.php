@@ -709,6 +709,18 @@ drwxr-xr-x
 	</ul>
 	</article>
 
+	<article id="network-sniffing">
+	<hr>
+	<h3><i class="fa fa-user-secret"></i> <?=$networkSniffing?></h3>
+	<hr>
+	<ul>
+		<li>tcpdump</li>
+		<li>nmap</li>
+		<li>kismet</li>
+		<li>wireshark</li>
+	</ul>
+	</article>
+
 	<article id="processes">
 	<hr>
 	<h3><i class="fa fa-list-ul"></i> <?=$processes?></h3>
