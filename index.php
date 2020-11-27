@@ -99,9 +99,9 @@
 		<h3>DOS</h3>
 		<h4>
 		<?php if ($lang == "en") { ?>
-			aged & simple operating system with only command-line interface
+			simple & text-base operating system for PC
 		<?php } else { ?>
-			stary & prosty system operacyjny tylko z interfejsem wiersza poleceń
+			prosty & tekstowy system operacyjny dla komputerów osobistych (PC)
 		<?php } ?>
 		</h4>
 

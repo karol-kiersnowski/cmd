@@ -15,7 +15,7 @@
 
 		<h4>What is Windows?</h4>
 		<p>
-			Windows is the most popular operating system on x86 PC (Personal Computer with x86 CPU). Unlike GNU Linux, Windows does not have a CLI mode that works without a GUI. But we can use the command interpreter in the GUI.
+			<a target="_blank" href="https://www.microsoft.com/en-us/windows">Windows</a> is the most popular operating system on x86 PC (Personal Computer with x86 CPU). Unlike GNU Linux, Windows does not have a CLI mode that works without a GUI. But we can use the command interpreter in the GUI.
 		</p>
 			
 		</p>
@@ -44,9 +44,14 @@
 			<li>Start > Run > <em>command.com</em></li>
 		</ol>
 
-		<h4>What is DOS?</h4>
+		<h4>What is MS-DOS / PC-DOS?</h4>
 		<p>
-			MS-DOS / PC-DOS (Disk Operating System) is a simple & text-based operating system for PC. It was popular in the 80s and early 90s. It doesn't have GUI, so we can use DOS only in Command-Line Interface. Nowadays, DOS is practically not used as the primary operating system.
+			<a target="_blank" href="https://github.com/microsoft/MS-DOS">MS-DOS</a> / PC-DOS (Disk Operating System) is a simple & text-based operating system on PC with x86 CPU. It was popular in the 80s and early 90s. It doesn't have GUI, so we can use DOS only in Command-Line Interface. Nowadays, DOS is practically not used as the primary operating system.
+		</p>
+
+		<h4>What is FreeDOS?</h4>
+		<p>
+			<a target="_blank" href="http://www.freedos.org">FreeDOS</a> is an open-source operating system compatible with MS-DOS.
 		</p>
 
 		<h4>How to run DOS on modern computer?</h4>

@@ -15,17 +15,17 @@
 		<?php if ($lang == "en") { ?>
 			<h4>What is GNU Linux?</h4>
 			<p>
-				GNU Linux is an open source operating system.
+				<a target="_blank" href="https://www.gnu.org">GNU</a> <a target="_blank" href="https://www.kernel.org">Linux</a> is an open source operating system.
 			</p>
 
 			<h4>What is BASH?</h4>
 			<p>
-				BASH (Bourne Again SHell) is the most popular shell for Linux terminal.
+				<a target="_blank" href="http://www.gnu.org/software/bash">BASH (Bourne Again SHell)</a> is the most popular shell for Linux terminal.
 			</p>
 
 			<h4>What is Debian?</h4>
 			<p>
-				Debian is an important GNU Linux distribution. Many other distros are derived from Debian, such as <a target="_blank" href="https://ubuntu.com">Ubuntu</a> or <a target="_blank" href="https://www.linuxmint.com">Linux Mint</a>.
+				<a target="_blank" href="https://www.debian.org">Debian</a> is an important GNU Linux distribution. Many other distros are derived from Debian, such as <a target="_blank" href="https://ubuntu.com">Ubuntu</a> or <a target="_blank" href="https://www.linuxmint.com">Linux Mint</a>.
 			</p>
 
 			<h4>How can we use GNU Linux?</h4>
@@ -56,17 +56,17 @@
 		<?php } else { ?>
 			<h4>Co to jest GNU Linux?</h4>
 			<p>
-				GNU Linux jest systemem operacyjnym o otwartym kodzie źródłowym.
+				<a target="_blank" href="https://www.gnu.org">GNU</a> <a target="_blank" href="https://www.kernel.org">Linux</a> jest systemem operacyjnym o otwartym kodzie źródłowym.
 			</p>
 
 			<h4>Co to jest BASH?</h4>
 			<p>
-				BASH (Bourne Again SHell) to najpopularniejsza powłoka dla terminala systemu GNU Linux.
+				<a target="_blank" href="http://www.gnu.org/software/bash">BASH (Bourne Again SHell)</a> to najpopularniejsza powłoka dla terminala systemu GNU Linux.
 			</p>
 
 			<h4>Co to jest Debian?</h4>
 			<p>
-				Debian jest ważną dystrybucją GNU Linuksa. Wiele innych dystrybucji pochodzi z Debiana, np. <a target="_blank" href="https://ubuntu.com">Ubuntu</a> lub <a target = "_ blank" href="https://www.linuxmint.com">Linux Mint</a>.
+				<a target="_blank" href="https://www.debian.org">Debian</a> jest ważną dystrybucją GNU Linuksa. Wiele innych dystrybucji pochodzi z Debiana, np. <a target="_blank" href="https://ubuntu.com">Ubuntu</a> lub <a target = "_ blank" href="https://www.linuxmint.com">Linux Mint</a>.
 			</p>
 
 			<h4>Jak możemy używać systemu GNU Linux?</h4>
