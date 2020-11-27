@@ -21,7 +21,7 @@
 		<h3><i class="fab fa-linux"></i> GNU Linux (BASH)</h3>
 		<h4>
 		<?php if ($lang == "en") { ?>
-			the open source operating system with advanced command-line interface
+			open source operating system with advanced command-line interface
 		<?php } else { ?>
 			system operacyjny o otwartym kodzie źródłowym wraz z zaawansowanym interfejsem wiersza poleceń
 		<?php } ?>
@@ -40,9 +40,9 @@
 
 		<h4>
 	<?php if ($lang == "en") { ?>
-		classic command prompt for the most popular operating system
+		command prompt for the most popular PC operating system
 	<?php } else { ?>
-		klasyczny wiersz poleceń dla najpopularniejszego systemu operacyjnego
+		wiersz poleceń dla najpopularniejszego systemu operacyjnego PC
 	<?php } ?>
 		</h4>
 
@@ -99,9 +99,9 @@
 		<h3>DOS</h3>
 		<h4>
 		<?php if ($lang == "en") { ?>
-			simple & text-based operating system for PC
+			text-based & single-tasking operating system for PC
 		<?php } else { ?>
-			prosty & tekstowy system operacyjny dla komputerów osobistych (PC)
+			tekstowy & jednozadaniowy system operacyjny dla PC
 		<?php } ?>
 		</h4>
 
@@ -126,7 +126,7 @@
 		<?php if ($lang == "en") { ?>
 			modern & advanced command-line interpreter
 		<?php } else { ?>
-			nowoczesny i zaawansowany interpreter wiersza poleceń
+			nowoczesny & zaawansowany interpreter wiersza poleceń
 		<?php } ?>
 		</h4>
 

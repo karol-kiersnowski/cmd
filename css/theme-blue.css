@@ -21,6 +21,11 @@ samp div {
 	color: var(--white);
 }
 
+main a,
+main a:visited {
+	color: var(--blue);
+}
+
 header,
 nav {
 	border-width: 5px;

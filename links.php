@@ -40,7 +40,7 @@
 					<img alt="Windows 10" src="img/logo/windows10.png"/>
 					<div class="card-caption">
 						<h3>Windows 10</h3>
-						<p>the most popular OS</p>
+						<p>the most popular PC OS</p>
 					</div>
 				</div>
 			</a>
@@ -52,7 +52,7 @@
 					<img alt="DOSBox" src="img/logo/dosbox.png"/>
 					<div class="card-caption">
 						<h3>DOSBox</h3>
-						<p>an x86 emulator with DOS</p>
+						<p>x86 PC emulator with DOS</p>
 					</div>
 				</div>
 			</a>
@@ -64,7 +64,7 @@
 					<img alt="FreeDOS" src="img/logo/freedos.png"/>
 					<div class="card-caption">
 						<h3>FreeDOS</h3>
-						<p>an open-source OS compatible with MS-DOS</p>
+						<p>open-source OS compatible with MS-DOS</p>
 					</div>
 				</div>
 			</a>
@@ -76,7 +76,7 @@
 					<img alt="MS-DOS" src="img/logo/msdos.png"/>
 					<div class="card-caption">
 						<h3>MS-DOS 1.25 & 2.0</h3>
-						<p>classic PC OS</p>
+						<p>OS for x86 PC</p>
 					</div>
 				</div>
 			</a>
