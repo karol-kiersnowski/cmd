@@ -99,7 +99,7 @@
 		<h3>DOS</h3>
 		<h4>
 		<?php if ($lang == "en") { ?>
-			simple & text-base operating system for PC
+			simple & text-based operating system for PC
 		<?php } else { ?>
 			prosty & tekstowy system operacyjny dla komputerów osobistych (PC)
 		<?php } ?>
