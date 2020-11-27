@@ -35,6 +35,9 @@
 			<p>
 				There are distributions that do not have a GUI installed by default. Typically, these are versions used as server operating systems, such as <a target="_blank" href="https://ubuntu.com/download/server">Ubuntu Server</a>.
 			</p>
+			<p>
+				If we are just using a Graphical User Interface, we can run a terminal emulator (pseudoterminal) or go to the Command Line Interface.
+			</p>
 
 			<h4>How to run the terminal in GUI (Graphical User Interface)?</h4>
 			<p>
@@ -82,7 +85,7 @@
 				W większości dystrybucji kliknij przycisk menu lub naciśnij <kbd><i class = "fab fa-windows"></i></kbd> i wpisz <em>terminal</em>.
 			</p>
 
-			<h4>Jak przejść do interfejsu wiersza poleceń (CLI)?</h4>
+			<h4>Jak przejść z interfejsu graficznego (GUI) do interfejsu wiersza poleceń (CLI)?</h4>
 			<p>
 				Wciśnij <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Zamiast <kbd>F2</kbd> może być <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> lub <kbd>F1</kbd>.
 			</p>
