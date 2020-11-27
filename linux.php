@@ -30,13 +30,10 @@
 
 			<h4>How can we use GNU Linux?</h4>
 			<p>
-				On most distributions (e.g. <a target="_blank" href="https://ubuntu.com">Ubuntu (Desktop)</a>, <a target="_blank" href="https://www.linuxmint.com">Linux Mint</a>), we can use it with CLI (Command-Line Interface) and GUI (Graphical User Interface).
+				On most distributions (e.g. <a target="_blank" href="https://ubuntu.com/download/desktop">Ubuntu (Desktop)</a>, <a target="_blank" href="https://www.linuxmint.com">Linux Mint</a>), we can use it with CLI (Command-Line Interface) and GUI (Graphical User Interface).
 			</p>
 			<p>
-				There are distributions that do not have a GUI installed by default. Typically, these are versions used as server operating systems, such as Ubuntu Server.
-			</p>
-			<p>
-				If we are just using a GUI, we can start a terminal emulator (pseudoterminal) or go to the CLI.
+				There are distributions that do not have a GUI installed by default. Typically, these are versions used as server operating systems, such as <a target="_blank" href="https://ubuntu.com/download/server">Ubuntu Server</a>.
 			</p>
 
 			<h4>How to run the terminal in GUI (Graphical User Interface)?</h4>
@@ -44,7 +41,7 @@
 				On most distributions, click the menu button or press <kbd><i class="fab fa-windows"></i></kbd> and type <em>terminal</em>.
 			</p>
 
-			<h4>How to go to the CLI (Command-Line Interface)?</h4>
+			<h4>How to go to the CLI (Command-Line Interface) from GUI?</h4>
 			<p>
 				Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>. Instead of <kbd>F2</kbd> can be <kbd>F3</kbd>, <kbd>F4</kbd>, <kbd>F5</kbd>, <kbd>F6</kbd> or <kbd>F1</kbd>.
 			</p>
@@ -59,9 +56,22 @@
 				GNU Linux jest systemem operacyjnym o otwartym kodzie źródłowym.
 			</p>
 
+			<h4>Co to jest BASH?</h4>
+			<p>
+				BASH (Bourne Again SHell) to najpopularniejsza powłoka dla terminala systemu GNU Linux.
+			</p>
+
+			<h4>Co to jest Debian?</h4>
+			<p>
+				Debian jest ważną dystrybucją GNU Linuksa. Wiele innych dystrybucji pochodzi z Debiana, np. <a target="_blank" href="https://ubuntu.com">Ubuntu</a> lub <a target = "_ blank" href="https://www.linuxmint.com">Linux Mint</a>.
+			</p>
+
 			<h4>Jak możemy używać systemu GNU Linux?</h4>
 			<p>
-				W większości dystrybucji (np. <a target="_blank" href="https://ubuntu.com">Ubuntu</a>, <a target="_blank" href="https://www.linuxmint.com">Linux Mint</a>), możemy używać go za pomocą interfejsu wiersza poleceń (CLI) oraz w trybie interfejsu graficznego (GUI).
+				W większości dystrybucji (np. <a target="_blank" href="https://ubuntu.com/download/desktop">Ubuntu (Desktop)</a>, <a target="_blank" href="https://www.linuxmint.com">Linux Mint</a>), możemy używać go za pomocą interfejsu wiersza poleceń (CLI) oraz w trybie interfejsu graficznego (GUI).
+			</p>
+			<p>
+				Istnieją dystrybucje, które nie mają domyślnie zainstalowanego GUI. Zazwyczaj są to wersje używane jako systemy operacyjne serwerów, np. <a target="_blank" href="https://ubuntu.com/download/server">Ubuntu Server</a>.
 			</p>
 			<p>
 				Jeśli korzystamy z interfejsu graficznego, możemy uruchomić emulator terminala (pseudoterminal) lub przejść do interfejsu wiersza poleceń.
