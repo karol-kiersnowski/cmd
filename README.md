@@ -4,7 +4,7 @@ cmd.sh is a website for learning the command line interface
 
 Project sites
 -------------
-1. [https://kargol92.github.io/cmd](https://kargol92.github.io/cmd) (static website - without PHP preprocessor)
+1. [https://karol-kiersnowski.github.io/cmd](https://karol-kiersnowski.github.io/cmd) (static website - without PHP preprocessor)
 2. [http://karol-kiersnowski.prv.pl/projects/cmd/index.php](http://karol-kiersnowski.prv.pl/projects/cmd/index.php) (server-side - PHP)
 
 Technologies
@@ -55,5 +55,4 @@ kargol92
 
 License
 -------
-[GNU General Public License v3.0](https://github.com/kargol92/cmd.sh/blob/master/LICENSE)
-
+[GNU General Public License v3.0](https://github.com/karol-kiersnowski/cmd.sh/blob/master/LICENSE)
