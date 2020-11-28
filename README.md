@@ -51,7 +51,7 @@ To do
 
 Author
 ------
-kargol92
+Karol Kiersnowski
 
 License
 -------
