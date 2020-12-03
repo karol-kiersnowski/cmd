@@ -40,9 +40,9 @@
 
 		<h4>
 	<?php if ($lang == "en") { ?>
-		command prompt for the most popular PC operating system
+		classical command prompt for the most popular PC operating system
 	<?php } else { ?>
-		wiersz poleceń dla najpopularniejszego systemu operacyjnego PC
+		klasyczny wiersz poleceń dla najpopularniejszego systemu operacyjnego PC
 	<?php } ?>
 		</h4>
 
