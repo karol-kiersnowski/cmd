@@ -170,10 +170,14 @@ main {
 			}
 
 footer {
-	margin: 20px;
-	margin-left: 250px;
+	margin: 20px 0;
+	margin-left: 300px;
 	text-align: center;
 }
+
+	footer hr {
+		margin: 20px 0;
+	}
 
 ul {
 	list-style-type: none;
@@ -532,7 +536,7 @@ iframe {
 
 @media only screen and (max-width: 1000px) {
 	body { margin: 0; }
-	header span { display: none; }
+	header ul span { display: none; }
 	nav { display: none; }
 	main { padding: 10px; }
 	main, footer { margin-left: 0; }

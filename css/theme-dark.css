@@ -50,6 +50,10 @@ samp div {
 	color: #000;
 }
 
+a.button {
+	border: 1px solid #aaa;
+}
+
 nav {
 	scrollbar-color: #aaa #000;
 }

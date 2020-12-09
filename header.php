@@ -27,7 +27,11 @@
 					<i class="fa fa-list-ul fa-fw"></i>
 				</a>
 			</h1>
-			<h1><a href="index.php">&gt;_cmd.sh</a></h1>
+			<h1>
+				<a href="index.php">
+					<span style="font-family: 'Perfect DOS VGA 437';">&gt;</span>_cmd-line.com
+				</a>
+			</h1>
 			<!-- <i class="fa fa-terminal"></i> -->
 			<ul>
 				<li>
