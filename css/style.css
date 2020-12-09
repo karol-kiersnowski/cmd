@@ -18,6 +18,11 @@
  	src: url("../webfonts/windows_command_prompt.ttf");
 }
 
+/*@keyframes animation {
+	from { content: "_"; }
+	to { content: " "; }
+}*/
+
 
 
 
@@ -71,6 +76,13 @@ header {
 	left: 0;
 	width: 100%;
 }
+	
+	/*header #logo::after {
+		content: "_";
+		animation-name: animation;
+  		animation-duration: 1s;
+  		animation-iteration-count: infinite;
+	}*/
 
 	header ul {
 		float: right;
