@@ -9,8 +9,8 @@
 }
 
 @font-face {
-	font-family: "Perfect DOS VGA 437 Win";
- 	src: url("../webfonts/Perfect DOS VGA 437 Win.ttf");
+	font-family: "DOSEGA";
+ 	src: url("../webfonts/DOSEGA.ttf");
 }
 
 @font-face {
@@ -474,7 +474,7 @@ samp {
 	code.dos {
 		background-color: #000;
 		color: #a8a8a8;
-		font-family: "Perfect DOS VGA 437", monospace;
+		font-family: DOSEGA, monospace;
 	}
 
 	samp.windows-cmd pre,

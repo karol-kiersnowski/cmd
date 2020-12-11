@@ -1,0 +1,17 @@
+This is a TrueType font (TTF), that is an exact copy of the font used by DOS. I made it using the FontForge software, and the *.CPI fonts bundled with FreeDOS as a model.
+DOS/EGA is a Unicode-BMP font, therefore it may be used without troubles on modern, multilingual systems. It supports english, french, polish, german, and probably several other languages. Beside its "retro" value, it's a great replacement to the oldish "fixedsys" font.
+
+DOSEGA have been crafted by Mateusz Viste
+
+Homepage: http://sourceforge.net/projects/dosega/
+
+
+=== License ===
+
+The DOSEGA font is free: you can redistribute it and/or modify it under the terms of the Creative Commons Attribution-ShareAlike 3.0 Public License. This file is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the Creative Commons Attribution-ShareAlike 3.0 Public License for more details.
+
+
+=== History ===
+
+2010-06-05: initial public release
+2015-09-01: implemented U+2018 and U+2019 as apostrophe (U+0027)
