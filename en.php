@@ -50,6 +50,7 @@ $fileSystem = "file system";
 $memory = "memory";
 $hardware = "hardware";
 $processes = "processes";
+$bootManagement = "boot management";
 $network = "network";
 $wireless = "wireless";
 $networkSniffing = "network sniffing";

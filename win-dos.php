@@ -1312,6 +1312,7 @@ C:
 		<h4>TSR (Terminate and Stay Resident) programs</h4>
 		<h4>DPMI - DOS Protected Mode Interface</h4>
 	</article>
+
 	<article id="processes">
 		<hr>
 		<h3><i class="fa fa-list-ul"></i> <?=$processes?></h3>
@@ -1334,6 +1335,30 @@ C:
 				<td><i class="fa fa-check fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
 				<td><i class="fa fa-times fa-fw"></i></td>
+			</tr>
+		</table>
+	</article>
+
+	<article id="boot-management">
+		<hr>
+		<h3><i class="fa fa-plug"></i> <?=$bootManagement?></h3>
+		<hr>
+		<table>
+			<tr>
+				<th></th>
+				<th>Win NT 10<br><em><small>cmd.exe</small></em></th>
+			</tr>
+			<tr>
+				<td>bootrec</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>bootsect</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>bcdedit</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
 			</tr>
 		</table>
 	</article>
