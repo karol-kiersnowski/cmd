@@ -35,15 +35,21 @@
 			<!-- <i class="fa fa-terminal"></i> -->
 			<ul>
 				<li>
+					<a href="how-to.php<?=$suffix?>">
+						<i class="far fa-lightbulb"></i>
+						<span>how to...</span>
+					</a>
+				</li>
+				<li>
 					<a href="linux.php<?=$suffix?>">
 						<i class="fab fa-linux"></i>
-						<span>Linux</span>
+						<span>linux</span>
 					</a>
 				</li>
 				<li>
 					<a href="win-dos.php<?=$suffix?>">
 						<i class="fab fa-windows"></i>
-						<span>Win cmd / DOS</span>
+						<span>win cmd / DOS</span>
 					</a>
 				</li>
 				<li>

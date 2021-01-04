@@ -11,6 +11,17 @@ $guestbook = "guestbook";
 $theme = "theme";
 $about = "about";
 
+// NAV-HOW-TO
+$massRenameOfFiles = "mass rename of files";
+$sortPhotosByDate = "sort photos by date";
+$massResizeOfImages = "mass resize of images";
+$setSystemBootInCLIMode = "set system boot in CLI mode";
+$changeSuperuserPassword = "change superuser password";
+$changeTheTimeoutInGRUB = "change the timeout in GRUB";
+$changeTheFontSizeInCLI = "change the font size in CLI";
+$restoreGRUBAfterInstallingWindows = "restore GRUB after installing Windows";
+$hideTheSystemMenuInFullscreenGamesAndChangeTheResolutionToTheDefault = "hide the system menu in fullscreen games and change the resolution to the default";
+
 // GUESTBOOK
 $guestEntries = "Guest entries";
 

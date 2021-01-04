@@ -2,12 +2,12 @@
 	include "sys.php";
 	$title = $cmd . $howTo;
 	include "header.php";
-	include "nav-main.php";
+	include "nav-how-to.php";
 ?>
 
 <h2><i class="far fa-lightbulb"></i> <?=$howTo?></h2>
 <hr>
-<ul>
+<!-- <ul>
 	<li><a href="#changeRootPassword">mass renaming of files</a></li>
 	<li><a href="#changeRootPassword">sort photos by date - phockup</a></li>
 	<li><a href="#changeRootPassword">resize images - imgp</a></li>
@@ -17,46 +17,44 @@
 	<li><a href="#changeRootPassword">change font size in the command-line interface</a></li>
 	<li><a href="#changeRootPassword">restore the GRUB after installing Windows</a></li>
 	<li><a href="#changeRootPassword">hide the system menu in full-screen games and change the resolution to default</a></li>
-</ul>
-
-
-<article id="renamingOfFiles">
-	<h4>mass renaming of files</h4>
-	<h5><i class="far fa-lightbulb"></i> Solution</h5>
-	<p>
-		Install <var>rename</var> program.
-	</p>
-	<code class="linux">sudo apt install rename</code>
-	<h5>Example</h5>
-	<code class="linux">rename 's/abc/xyz/' *</code><br>
-	<code class="linux">rename -n 's/abc/xyz/' *</code>
-</article>
+</ul> -->
 
 
 
 
-<article id="startSystemInCLI">
-	<h4>set the system start in console / CLI mode</h4>
-	<div class="textToCopy">
-		<input class="code" type="text" readonly value="systemctl set-default multi-user.target"/>
-		<button class="btnCopyToClipboard" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
-		<span class="clear"></span>
-	</div>
-	<code class="linux">systemctl set-default multi-user.target</code>
-	<p>To get the start back system in GUI</p>
-	<code class="linux">systemctl set-default graphical.target</code>
-</article>
 
 
-<article id="changeRootPassword">
-	<h4>change root (superuser) password</h4>
+
+
+
+
+
+
+
+
+
+<article id="change-superuser-password">
+	<h4><i class="fa fa-user-cog fa-fw"></i> <?=$changeSuperuserPassword?></h4>
 	<code class="linux">sudo passwd root</code>
 </article>
 
 
 
-<article>
-	<h4>change timeout to choose operations system in the GRUB</h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article id="change-the-timeout-in-GRUB">
+	<h4><i class="fa fa-stopwatch fa-fw"></i> <?=$changeTheTimeoutInGRUB?></h4>
 
 <samp class="linux">
 <div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
@@ -64,11 +62,6 @@
 <font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>/etc/default</b></font>$ sudo nano grub
 </pre>
 </samp>
-
-
-
-
-
 
 <samp class="linux">
 <div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
@@ -98,42 +91,22 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 <span style="background-color:#FFFFFF"><font color="#3F3F3F">^X</font></span> Wyjdź     <span style="background-color:#FFFFFF"><font color="#3F3F3F">^R</font></span> Wczyt.plik<span style="background-color:#FFFFFF"><font color="#3F3F3F">^\</font></span> Zastąp    <span style="background-color:#FFFFFF"><font color="#3F3F3F">^U</font></span> Odnów Teks<span style="background-color:#FFFFFF"><font color="#3F3F3F">^T</font></span> Pisownia  <span style="background-color:#FFFFFF"><font color="#3F3F3F">^_</font></span> Przejdź do l</pre>
 </samp>
 
-
-
-
 	<ol>
 		<li>Change to <code class="linux">GRUB_TIMEOUT=10</code> - 10 means seconds.</li>
 		<li>Save the file - <kbd>Ctrl</kbd> + <kbd>o</kbd>; exit from nano - <kbd>Ctrl</kbd> + <kbd>x</kbd></li>
 		<li>Update grub <code class="linux">sudo update-grub</code></li>
 	</ol>
-<pre>
-
-</pre>
 </article>
 
 
 
 
 
-<article>
-	<h4>change font size in the command-line interface</h4>
-	<h5><i class="fa fa-question"></i> Issue</h5>
-	<p>
-		In the CLI sometimes font size maybe to small or to big.
-	</p>
-	<h5><i class="far fa-lightbulb"></i> Solution</h5>
-	<code class="linux">sudo dpkg-reconfigure console-setup</code>
-	<p>
-		In the two first steps choose the default options. Next, choose font family and font size.
-	</p>
-</article>
 
 
 
-
-
-<article>
-	<h4>Restore the GRUB after installing Windows</h4>
+<article id="restore-GRUB-after-installing-Windows">
+	<h4><i class="fa fa-wrench fa-fw"></i> <?=$restoreGRUBAfterInstallingWindows?></h4>
 	<h5><i class="fa fa-question"></i> Issue</h5>
 	<p>
 		If we install Windows after installing Linux, we can't run Linux.
@@ -240,8 +213,108 @@ done
 
 
 
-<article>
-	<h4>Hide the system menu in full-screen games and change the resolution to default</h4>
+
+
+<article id="change-the-font-size-in-CLI">
+	<h4><i class="fa fa-text-height fa-fw"></i> <?=$changeTheFontSizeInCLI?></a></h4>
+	<h5><i class="fa fa-question"></i> Issue</h5>
+	<p>
+		In the CLI sometimes font size maybe to small or to big.
+	</p>
+	<h5><i class="far fa-lightbulb"></i> Solution</h5>
+	<code class="linux">sudo dpkg-reconfigure console-setup</code>
+	<p>
+		In the two first steps choose the default options. Next, choose font family and font size.
+	</p>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+<article id="mass-rename-of-files">
+	<h4><i class="fa fa-exchange-alt fa-fw"></i> <?=$massRenameOfFiles?></h4>
+	<h5><i class="far fa-lightbulb"></i> Solution</h5>
+	<p>
+		Install <var>rename</var> program.
+	</p>
+	<code class="linux">sudo apt install rename</code>
+	<h5>Example</h5>
+	<code class="linux">rename 's/abc/xyz/' *</code><br>
+	<code class="linux">rename -n 's/abc/xyz/' *</code>
+</article>
+
+
+
+
+
+
+
+
+
+
+<article id="sort-photos-by-date">
+	<h4><i class="fa fa-sort-numeric-down fa-fw"></i> <?=$sortPhotosByDate?></h4>
+	<h5><i class="far fa-lightbulb"></i> Solution</h5>
+	<p>
+		Install <a href="https://github.com/ivandokov/phockup"><var>phockup</var></a> program.
+	</p>
+</article>
+
+
+
+
+
+
+
+
+<article id="mass-resize-of-images">
+	<h4><i class="fa fa-expand-alt fa-fw"></i> <?=$massResizeOfImages?></h4>
+	<h5><i class="far fa-lightbulb"></i> Solution</h5>
+	<p>
+		Install <a href="https://github.com/jarun/imgp"><var>imgp</var></a> program.
+	</p>
+</article>
+
+
+
+
+
+
+
+
+<article id="set-system-boot-in-CLI-mode">
+	<h4><i class="fa fa-terminal fa-fw"></i> <?=$setSystemBootInCLIMode?></h4>
+	<div class="textToCopy">
+		<input class="code" type="text" readonly value="systemctl set-default multi-user.target"/>
+		<button class="btnCopyToClipboard" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
+		<span class="clear"></span>
+	</div>
+	<code class="linux">systemctl set-default multi-user.target</code>
+	<p>To get the start back system in GUI</p>
+	<code class="linux">systemctl set-default graphical.target</code>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<article id="hide-the-system-menu-in-fullscreen-games-and-change-the-resolution-to-the-default">
+	<h4><i class="fa fa-gamepad fa-fw"></i> <?=$hideTheSystemMenuInFullscreenGamesAndChangeTheResolutionToTheDefault?></h4>
 	<h5><i class="fa fa-question"></i> Issue</h5>
 	<p>
 		We can play on Linux in Windows games thanks to <em>wine</em>. But in the some games in full-screen mode, the system menu is visible. Additionally when we leave the game, the resolution in the system can be change to games resolution.

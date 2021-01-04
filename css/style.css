@@ -115,7 +115,7 @@ nav {
 	padding: 10px 0;
 	width: 300px;
 	height: calc(100% - 53px);
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 	scrollbar-width: thin;
 	overflow-y: auto;
 	overflow-x: hidden;
