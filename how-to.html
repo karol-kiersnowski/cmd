@@ -250,13 +250,75 @@ Device     Boot     Start       End   Sectors Size Id Type
 		My system in installed on <var>/dev/sda2</var>.
 	</p>
 
-<code class="linux">sudo mount /dev/sda2 /mnt</code><br>
-<code class="linux">sudo mount --bind /dev /mnt/dev</code><br>
-<code class="linux">sudo mount --bind /proc /mnt/proc</code><br>
-<code class="linux">sudo chroot /mnt</code><br>
-<code class="linux">sudo grub-install /dev/sda</code><br>
-<code class="linux">sudo update-grub</code>
+	<code class="linux">sudo mount /dev/sda2 /mnt</code><br>
+	<code class="linux">sudo mount --bind /dev /mnt/dev</code><br>
+	<code class="linux">sudo mount --bind /proc /mnt/proc</code><br>
+	<code class="linux">chroot /mnt</code><br>
+	<code class="linux">grub-install /dev/sda</code><br>
+	<code class="linux">update-grub</code>
 
+	<p>
+		After executing <code class="linux">update-grub</code>, it may say: <code>Cannot find list of partitions! (Try mounting / sys.)</code>. Let's do it!
+	</p>
+	<code class="linux">exit</code> (from root)<br>
+	<code class="linux">sudo mount --bind /sys /mnt/sys</code>
+	<p>
+		Repeat prevois commands
+	</p>
+	<code class="linux">chroot /mnt</code><br>
+	<code class="linux">grub-install /dev/sda</code><br>
+	<code class="linux">update-grub</code>
+
+<samp class="linux">
+<div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
+<pre>
+<font color="#8AE234"><b>mint@mint</b></font><font color="#729FCF"><b> ~ </b></font>$ sudo mount /dev/sda2 /mnt
+<font color="#8AE234"><b>mint@mint</b></font><font color="#729FCF"><b> ~ </b></font>$ sudo mount --bind /dev /mnt/dev
+<font color="#8AE234"><b>mint@mint</b></font><font color="#729FCF"><b> ~ </b></font>$ sudo mount --bind /proc /mnt/proc
+<font color="#8AE234"><b>mint@mint</b></font><font color="#729FCF"><b> ~ </b></font>$ sudo chroot /mnt
+<font color="red"><b>root@mint</b></font>:<font color="#729FCF"><b>/</b></font># grub-install /dev/sda
+Installing for i386-pc platform.
+Unknown device "/dev/sda2": No such device
+(...
+...
+...)
+Unknown device "/dev/sda2": No such device
+<font color="red"><b>root@mint</b></font>:<font color="#729FCF"><b>/</b></font># update-grub
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/50_linuxmint.cfg'
+Sourcing file `/etc/default/grub.d/60_mint-theme.cfg'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Unknown device "/dev/sda2": No such device
+(...
+...
+...)
+Cannot find list of partitions!  (Try mounting /sys.)
+done
+<font color="red"><b>root@mint</b></font>:<font color="#729FCF"><b>/</b></font># exit
+exit
+<font color="#8AE234"><b>mint@mint</b></font><font color="#729FCF"><b> ~ </b></font>$ sudo mount --bind /sys /mnt/sys
+<font color="#8AE234"><b>mint@mint</b></font><font color="#729FCF"><b> ~ </b></font>$ sudo chroot /mnt
+<font color="red"><b>root@mint</b></font>:<font color="#729FCF"><b>/</b></font># grub-install /dev/sda
+Installing for i386-pc platform.
+Installation finished. No error reported.
+<font color="red"><b>root@mint</b></font>:<font color="#729FCF"><b>/</b></font># update-grub
+Sourcing file `/etc/default/grub'
+Sourcing file `/etc/default/grub.d/50_linuxmint.cfg'
+Sourcing file `/etc/default/grub.d/60_mint-theme.cfg'
+Sourcing file `/etc/default/grub.d/init-select.cfg'
+Generating grub configuration file ...
+Found theme: /boot/grub/themes/linuxmint/theme.txt
+Found linux image: /boot/vmlinuz-5.4.0-58-generic
+Found initrd image: /boot/initrd.img-5.4.0-58-generic
+Found Windows 10 on /dev/sda1
+Found Microsoft Windows XP Professional on /dev/sdb1
+Found FreeDOS on /dev/sdb2
+Found Windows 10 on /dev/sdc1
+done
+<font color="red"><b>root@mint</b></font>:<font color="#729FCF"><b>/</b></font>#
+</pre>
+</samp>
 
 </article>
 
