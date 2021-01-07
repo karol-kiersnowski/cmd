@@ -1,6 +1,6 @@
-cmd.sh
-======
-cmd.sh is a website for learning the command line interface
+cmd-line.com
+============
+cmd-line.com is a website for learning the Command-Line Interface
 
 Project sites
 -------------
@@ -17,9 +17,9 @@ Technologies
 Features
 --------
 ### CSS webfonts
-* Font Awesome icons
-* Ubuntu Mono font
-* Perfect DOS VGA 437 font
+* [https://fontawesome.com](Font Awesome) icons
+* [https://fonts.google.com/specimen/Ubuntu+Mono](Ubuntu Mono) font
+* [http://sourceforge.net/projects/dosega](DOSEGA) font (crafted by Mateusz Viste)
 
 ### Themes (server-side) - only for server-side version
 * modern (light)
