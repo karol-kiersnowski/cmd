@@ -17,9 +17,9 @@ Technologies
 Features
 --------
 ### CSS webfonts
-* [https://fontawesome.com](Font Awesome) icons
-* [https://fonts.google.com/specimen/Ubuntu+Mono](Ubuntu Mono) font
-* [http://sourceforge.net/projects/dosega](DOSEGA) font (crafted by Mateusz Viste)
+* [Font Awesome](https://fontawesome.com) icons
+* [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono) font
+* [DOSEGA](http://sourceforge.net/projects/dosega) font (crafted by Mateusz Viste)
 
 ### Themes (server-side) - only for server-side version
 * modern (light)
