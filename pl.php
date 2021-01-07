@@ -12,15 +12,15 @@ $theme = "motyw";
 $about = "o stronie";
 
 // NAV-HOW-TO
-$massRenameOfFiles = "mass rename of files";
-$sortPhotosByDate = "sort photos by date";
-$massResizeOfImages = "mass resize of images";
-$setSystemBootInCLIMode = "set system boot in CLI mode";
-$changeSuperuserPassword = "change superuser password";
-$changeTheTimeoutInGRUB = "change the timeout in GRUB";
-$changeTheFontSizeInCLI = "change the font size in CLI";
-$restoreGRUBAfterInstallingWindows = "restore GRUB after installing Windows";
-$hideTheSystemMenuInFullscreenGamesAndChangeTheResolutionToTheDefault = "hide the system menu in fullscreen games and change the resolution to the default";
+$massRenameOfFiles = "zmienić nazwy plików";
+$sortPhotosByDate = "uporządkować zdjęcia wg daty";
+$massResizeOfImages = "zmienić rozmiary obrazów";
+$setSystemBootInCLIMode = "ustawić start systemu w terminalu";
+$changeSuperuserPassword = "zmienić hasło administratora";
+$changeTheTimeoutInGRUB = "zmienić limit czasu w GRUB";
+$changeTheFontSizeInCLI = "zmienić rozmiar czcionki w terminalu";
+$restoreGRUBAfterInstallingWindows = "przywrócić GRUB po instalacji Windows";
+$hideTheSystemMenuInFullscreenGamesAndChangeTheResolutionToTheDefault = "ukryć menu systemowe w grach pełnoekranowych i zmienić rozdzielczość na domyślną";
 
 // GUESTBOOK
 $guestEntries = "Wpisy gości";

@@ -153,12 +153,7 @@
 <article id="change-the-timeout-in-GRUB">
 	<h4><i class="fa fa-stopwatch fa-fw"></i> change the timeout in GRUB</h4>
 
-<samp class="linux">
-<div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
-<pre><font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~</b></font>$ cd /etc/default
-<font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>/etc/default</b></font>$ sudo nano grub
-</pre>
-</samp>
+<code class="linux">sudo nano /etc/default/grub</code>
 
 <samp class="linux">
 <div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
@@ -191,7 +186,7 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 	<ol>
 		<li>Change to <code class="linux">GRUB_TIMEOUT=10</code> - 10 means seconds.</li>
 		<li>Save the file - <kbd>Ctrl</kbd> + <kbd>o</kbd>; exit from nano - <kbd>Ctrl</kbd> + <kbd>x</kbd></li>
-		<li>Update grub <code class="linux">sudo update-grub</code></li>
+		<li>Update GRUB <code class="linux">sudo update-grub</code></li>
 	</ol>
 </article>
 
@@ -215,7 +210,7 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 <samp class="linux">
 <div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
 <pre>
-karol@aspireOne:~$ sudo fdisk -l
+<font color="#8AE234"><b>karol@aspireOne</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo fdisk -l
 [sudo] password for karol: 
 Disk /dev/sda: 55,9 GiB, 60022480896 bytes, 117231408 sectors
 Units: sectors of 1 * 512 = 512 bytes
@@ -246,7 +241,7 @@ Device     Boot     Start       End   Sectors Size Id Type
 	<code class="linux">exit</code> (from root)<br>
 	<code class="linux">sudo mount --bind /sys /mnt/sys</code>
 	<p>
-		Repeat prevois commands
+		Repeat previous commands
 	</p>
 	<code class="linux">chroot /mnt</code><br>
 	<code class="linux">grub-install /dev/sda</code><br>
@@ -297,7 +292,6 @@ Found initrd image: /boot/initrd.img-5.4.0-58-generic
 Found Windows 10 on /dev/sda1
 Found Microsoft Windows XP Professional on /dev/sdb1
 Found FreeDOS on /dev/sdb2
-Found Windows 10 on /dev/sdc1
 done
 <font color="red"><b>root@mint</b></font>:<font color="#729FCF"><b>/</b></font>#
 </pre>
