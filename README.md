@@ -39,7 +39,7 @@ Language
 Requirements
 ------------
 * Web browser
-* XAMPP (PHP interpreter)
+* XAMPP (PHP interpreter) - for local use & development of this project
 
 Screenshots
 -----------
