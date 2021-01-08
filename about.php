@@ -30,7 +30,7 @@
 			<a target="_blank" href="https://fonts.google.com/specimen/Ubuntu+Mono?selection.family=Ubuntu+Mono">Ubunto Mono</a> - font family
 		</li>
 		<li>
-			<a target="_blank" href="https://www.dafont.com/perfect-dos-vga-437.font">Perfect DOS VGA 437</a> - font family
+			<a target="_blank" href="http://sourceforge.net/projects/dosega">DOSEGA</a> - font family
 		</li>
 		<li>
 			<a target="_blank" href="https://www.apachefriends.org/index.html">XAMPP</a> - web server solution stack
