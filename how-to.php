@@ -285,14 +285,15 @@ done
 
 <article id="set-system-boot-in-CLI-mode">
 	<h4><i class="fa fa-terminal fa-fw"></i> <?=$setSystemBootInCLIMode?></h4>
-	<div class="textToCopy">
-		<input class="code" type="text" readonly value="systemctl set-default multi-user.target"/>
-		<button class="btnCopyToClipboard" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
-		<span class="clear"></span>
+	<div class="code">
+		<input class="code linux" type="text" readonly value="systemctl set-default multi-user.target"/><button class="clipboard" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
 	</div>
-	<code class="linux">systemctl set-default multi-user.target</code>
+	<!-- <code class="linux">systemctl set-default multi-user.target</code> -->
 	<p>To get the start back system in GUI</p>
-	<code class="linux">systemctl set-default graphical.target</code>
+	<div class="code">
+		<input class="code linux" type="text" readonly value="systemctl set-default graphical.target"/><button class="clipboard" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
+	</div>
+	<!-- <code class="linux">systemctl set-default graphical.target</code> -->
 </article>
 
 
@@ -342,9 +343,9 @@ gsettings set org.cinnamon panels-autohide "['1:false']"
 <samp class="linux">
 <div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
 <pre>
-karol@core2duo ~/Aplikacje/NFS Underground $ nano script.sh
-karol@core2duo ~/Aplikacje/NFS Underground $ chmod u+x script.sh
-karol@core2duo ~/Aplikacje/NFS Underground $ ./script.sh
+<font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~/Aplikacje/NFS Underground</b></font>$ nano script.sh
+<font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~/Aplikacje/NFS Underground</b></font>$ chmod u+x script.sh
+<font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~/Aplikacje/NFS Underground</b></font>$ ./script.sh
 </pre>
 </samp>
 

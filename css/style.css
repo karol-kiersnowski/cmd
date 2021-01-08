@@ -26,31 +26,7 @@
 
 
 
-div.textToCopy {
-	margin: 10px 0;
-	font-size: 20px;
-}
 
-input.code {
-	width: calc(100% - 51px);
-	height: 24px;
-	background-color: #000;
-	color: #fff;
-	font-family: "Ubuntu Mono", monospace;
-	font-size: 18px;
-}
-
-button.btnCopyToClipboard {
-	//float: right;
-	margin: 0;
-	//padding: 5px;
-	width: 40px;
-	height: 40px;
-	border: none;
-	box-shadow: 0px 0px 5px #aaa;
-	font-size: 20px;
-	cursor: pointer;
-}
 
 
 
@@ -431,6 +407,49 @@ var {
 	font-style: normal;
 }
 
+
+
+
+
+
+
+div.code {
+	margin: 2px 0;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-size: 16px;
+}
+
+	input.code {
+		padding: 3px 5px;
+		//padding-right: 15px;
+		border: none;
+		width: calc(100% - 25px);
+	}
+
+	button.clipboard {
+		margin: 0;
+		padding: 3px;
+		width: 25px;
+		
+		border: none;
+		//box-shadow: 0px 0px 5px #aaa;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	button.clipboard:hover {
+		box-shadow: 0px 0px 5px #aaa;
+	}
+
+
+
+
+
+
+
+
+
 code {
 	display: inline-block;
 	margin: 2px 0;
@@ -464,6 +483,7 @@ samp {
 
 	samp.linux pre,
 	code.linux,
+	input.linux,
 	var.linux {
 		background-color: #2E3436;
 		color: #D3D7CF;
