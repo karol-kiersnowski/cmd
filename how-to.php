@@ -56,7 +56,7 @@
 <article id="change-the-timeout-in-GRUB">
 	<h4><i class="fa fa-stopwatch fa-fw"></i> <?=$changeTheTimeoutInGRUB?></h4>
 
-<code class="linux">sudo nano /etc/default/grub</code>
+	<code class="linux">sudo nano /etc/default/grub</code>
 
 <samp class="linux">
 <div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
@@ -216,7 +216,11 @@ done
 		In the CLI sometimes font size maybe to small or to big.
 	</p>
 	<h5><i class="far fa-lightbulb"></i> Solution</h5>
-	<code class="linux">sudo dpkg-reconfigure console-setup</code>
+	<code class="linux">sudo dpkg-reconfigure console-setup</code
+	><button class="clipboard" onclick="writeToClipboard(this)" onmouseout="hideTooltip(this)">
+		<div class="tooltiptext"><?=$copied?></div>
+		<i class="far fa-copy"></i>
+	</button>
 	<p>
 		In the two first steps choose the default options. Next, choose font family and font size.
 	</p>
@@ -285,15 +289,17 @@ done
 
 <article id="set-system-boot-in-CLI-mode">
 	<h4><i class="fa fa-terminal fa-fw"></i> <?=$setSystemBootInCLIMode?></h4>
-	<div class="code">
-		<input class="code linux" type="text" readonly value="systemctl set-default multi-user.target"/><button class="clipboard" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
-	</div>
-	<!-- <code class="linux">systemctl set-default multi-user.target</code> -->
+	<code class="linux">systemctl set-default multi-user.target</code
+	><button class="clipboard" onclick="writeToClipboard(this)" onmouseout="hideTooltip(this)">
+		<div class="tooltiptext"><?=$copied?></div>
+		<i class="far fa-copy"></i>
+	</button>
 	<p>To get the start back system in GUI</p>
-	<div class="code">
-		<input class="code linux" type="text" readonly value="systemctl set-default graphical.target"/><button class="clipboard" onclick="copyToClipboard(this)"><i class="far fa-copy"></i></button>
-	</div>
-	<!-- <code class="linux">systemctl set-default graphical.target</code> -->
+	<code class="linux">systemctl set-default graphical.target</code
+	><button class="clipboard" onclick="writeToClipboard(this)" onmouseout="hideTooltip(this)">
+		<div class="tooltiptext"><?=$copied?></div>
+		<i class="far fa-copy"></i>
+	</button>
 </article>
 
 

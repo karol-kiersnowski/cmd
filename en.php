@@ -82,4 +82,6 @@ $mountingPartitionsDrives = "mounting partitions & drives";
 
 $notes = "Notes";
 
+$copied = "copied!";
+
 ?>

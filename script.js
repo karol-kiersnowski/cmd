@@ -49,7 +49,20 @@ function markAnchor() {
 
 function copyToClipboard(thisElement) {
 	var text = thisElement.parentElement.children[0];
-	text.focus();
+	//text.focus();
 	text.select();
 	document.execCommand("copy");
+}
+
+async function writeToClipboard(codeElement) {
+	try {
+		await navigator.clipboard.writeText(codeElement.previousSibling.innerHTML);
+		codeElement.firstElementChild.style.display = "block";
+	} catch (error) {
+		console.error(error);
+	}
+}
+
+function hideTooltip(codeElement) {
+	codeElement.firstElementChild.style.display = "none";
 }
