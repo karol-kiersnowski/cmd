@@ -172,6 +172,9 @@ ul {
 }
 
 
+u {
+	text-underline-position: under;
+}
 
 a { text-decoration: none; }
 

@@ -358,24 +358,26 @@ drwxr-xr-x  2 karol karol 4096 sie  2 16:14 <font color="#729FCF"><b>Wideo</b></
 </samp>
 				
 <pre>
+ ┌───────┬─ <u>a</u>ll
 drwxr-xr-x
 │└┬┘└┬┘└┬┘
-│ │  │  └─ <b>o</b>ther
-│ │  └─ <b>g</b>roup
-│ └─ <b>u</b>ser
+│ │  │  └─ <u>o</u>ther
+│ │  └─ <u>g</u>roup
+│ └─ <u>u</u>ser
 └─ type of file / directory
 </pre>
 		<h4>types of files</h4>
 		<ul>
-			<li>d - directory</li>
+			<li>d - <u>d</u>irectory</li>
 			<li>- - usual file</li>
-			<li>l - link</li>
+			<li>l - <u>l</u>ink</li>
 		</ul>
 		<h4>who is who?</h4>
 		<ul>
-			<li>user - the file (directory) owner</li>
-			<li>group - users who are in the same group as the owner of the file</li>
-			<li>other - all other users</li>
+			<li><u>u</u>ser - the file (directory) owner</li>
+			<li><u>g</u>roup - users who are in the same group as the owner of the file</li>
+			<li><u>o</u>ther - other users</li>
+			<li><u>a</u>ll - all users</li>
 		</ul>
 		<h4>what means ...?</h4>
 		<ul>
@@ -407,9 +409,10 @@ drwxr-xr-x
 		</ul>
 		<h5>by assigning</h5>
 		<ul>
-			<li><code class="linux">chmod u+x fileName</code> - add executing right for the file owner</li>
-			<li><code class="linux">chmod o-r fileName</code> - remove reading right for other users</li>
-			<li><code class="linux">chmod g=rx fileName</code> - set reading and executing right for group users (</li>
+			<li><code class="linux">chmod u+x fileName</code> - add executing right for the file owner <u>u</u>ser</li>
+			<li><code class="linux">chmod o-r fileName</code> - remove reading right for <u>o</u>ther users</li>
+			<li><code class="linux">chmod g=rx fileName</code> - set reading and executing right for <u>g</u>roup users</li>
+			<li><code class="linux">chmod a=rw fileName</code> - set reading and writing right for <u>a</u>ll users</li>
 		</ul>
 
 
@@ -431,7 +434,6 @@ drwxr-xr-x
 			<li>apropos</li>
 			<li>man</li>
 			<li>info</li>
-			<p>additional / not in the base packages (to download)</p>
 			<li>tldr</li>
 		</ul>
 	</article>
@@ -447,7 +449,10 @@ drwxr-xr-x
 			<li>tree</li>
 		</ul>
 
-
+		<code class="linux">cd PATH</code> Go to the given directory<br>
+		<code class="linux">cd</code> - Go to home directory of current user<br>
+		<code class="linux">cd ..</code> - Go up to the parent of the current directory<br>
+		<code class="linux">cd -</code> - Go to the previously chosen directory<br>
 		<code class="linux">tree -L 1</code> - display one-level struct<br>
 		<code class="linux">tree -d</code> - display only directories
 
