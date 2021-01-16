@@ -425,10 +425,14 @@ code {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	background-color: #eaeaea;
-	overflow-x: auto;
 	white-space: nowrap;
+	
+}
+
+code.clipboard {
+	overflow-x: auto;
 	vertical-align: top;
-	/*scrollbar-width: thin;*/
+	//border: 10px solid #000;
 }
 
 button.clipboard {
@@ -445,12 +449,12 @@ button.clipboard:hover {
 	box-shadow: 0px 0px 5px #aaa;
 }
 
-	.clipboard {
+	button.clipboard {
 		position: relative;
 		//display: inline-block;
 	}
 
-	.clipboard div {
+	button.clipboard div {
 		display: none;
 		position: absolute;
 		z-index: 1;
@@ -466,7 +470,7 @@ button.clipboard:hover {
 		/*opacity: 1;*/
 	}
 
-	.clipboard div::after {
+	button.clipboard div::after {
 		content: "";
 		position: absolute;
 		top: 100%;

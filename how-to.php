@@ -215,7 +215,7 @@ done
 		In the CLI sometimes font size maybe to small or to big.
 	</p>
 	<h5><i class="far fa-lightbulb"></i> <?=$solution?></h5>
-	<code class="linux">sudo dpkg-reconfigure console-setup</code
+	<code class="linux clipboard">sudo dpkg-reconfigure console-setup</code
 	><button class="clipboard" onclick="writeToClipboard(this)">
 		<div class="tooltiptext"><?=$copied?></div>
 		<i class="far fa-copy"></i>
@@ -288,13 +288,13 @@ done
 
 <article id="set-system-boot-in-CLI-mode">
 	<h4><i class="fa fa-terminal fa-fw"></i> <?=$setSystemBootInCLIMode?></h4>
-	<code class="linux">systemctl set-default multi-user.target</code
+	<code class="linux clipboard">systemctl set-default multi-user.target</code
 	><button class="clipboard" onclick="writeToClipboard(this)">
 		<div class="tooltiptext"><?=$copied?></div>
 		<i class="far fa-copy"></i>
 	</button>
 	<p>To get the start back system in GUI</p>
-	<code class="linux">systemctl set-default graphical.target</code
+	<code class="linux clipboard">systemctl set-default graphical.target</code
 	><button class="clipboard" onclick="writeToClipboard(this)">
 		<div class="tooltiptext"><?=$copied?></div>
 		<i class="far fa-copy"></i>
