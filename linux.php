@@ -659,6 +659,7 @@ drwxr-xr-x
 		<li>uptime</li>
 		<li>uname</li>
 		<li>lsmod</li>
+		<li>modprobe</li>
 	</ul>
 	</article>
 

@@ -12,9 +12,9 @@ $theme = "motyw";
 $about = "o stronie";
 
 // NAV-HOW-TO
-$massRenameOfFiles = "zmienić nazwy plików";
+$bulkRenameFiles = "zbiorczo zmienić nazwy plików";
+$bulkResizeImages = "zbiorczo zmienić rozmiary obrazów";
 $sortPhotosByDate = "uporządkować zdjęcia wg daty";
-$massResizeOfImages = "zmienić rozmiary obrazów";
 $setSystemBootInCLIMode = "ustawić start systemu w terminalu";
 $changeSuperuserPassword = "zmienić hasło administratora";
 $changeTheTimeoutInGRUB = "zmienić limit czasu w GRUB";

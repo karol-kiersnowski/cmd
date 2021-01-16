@@ -421,14 +421,18 @@ code {
 	display: inline-block;
 	margin: 2px 0;
 	padding: 3px 5px;
-	/*width: calc(100% - 25px);*/
+	max-width: calc(100% - 25px);
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	background-color: #eaeaea;
+	overflow-x: auto;
+	white-space: nowrap;
+	vertical-align: top;
+	/*scrollbar-width: thin;*/
 }
 
 button.clipboard {
-	margin: 0;
+	margin: 2px 0;
 	padding: 3px;
 	width: 25px;
 	border: 1px solid #ccc;
@@ -486,18 +490,16 @@ samp {
 		text-align: center;
 	}
 
-	samp pre {
+	samp pre,
+	code pre {
 		margin: 0;
 		padding: 2px;
 		width: 100%;
 		overflow-x: auto;
-		background-color: #000;
-		color: #fff;
 	}
 
 	samp.linux pre,
 	code.linux,
-	input.linux,
 	var.linux {
 		background-color: #2E3436;
 		color: #D3D7CF;

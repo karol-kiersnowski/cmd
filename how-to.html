@@ -29,7 +29,7 @@
 			</h1>
 			<h1>
 				<a href="index.html">
-					<span style="font-family: 'Perfect DOS VGA 437';">&gt;</span>_cmd-line.com
+					<span style="font-family: 'Perfect DOS VGA 437';">&gt;</span>_cmd
 				</a>
 			</h1>
 			<!-- <i class="fa fa-terminal"></i> -->
@@ -86,9 +86,9 @@
 		<li><a href="#change-the-timeout-in-GRUB"><i class="fa fa-stopwatch fa-fw"></i> change the timeout in GRUB</a></li>
 		<li><a href="#restore-GRUB-after-installing-Windows"><i class="fa fa-wrench fa-fw"></i> restore GRUB after installing Windows</a></li>
 		<li><a href="#change-the-font-size-in-CLI"><i class="fa fa-text-height fa-fw"></i> change the font size in CLI</a></li>
-		<li><a href="#mass-rename-of-files"><i class="fa fa-exchange-alt fa-fw"></i> mass rename of files</a></li>
+		<li><a href="#bulk-rename-files"><i class="fa fa-exchange-alt fa-fw"></i> bulk rename files</a></li>
 		<li><a href="#sort-photos-by-date"><i class="fa fa-sort-numeric-down fa-fw"></i> sort photos by date</a></li>
-		<li><a href="#mass-resize-of-images"><i class="fa fa-expand-alt fa-fw"></i> mass resize of images</a></li>
+		<li><a href="#bulk-resize-images"><i class="fa fa-expand-alt fa-fw"></i> bulk resize images</a></li>
 		<li><a href="#set-system-boot-in-CLI-mode"><i class="fa fa-terminal fa-fw"></i> set system boot in CLI mode</a></li>
 		<li><a href="#hide-the-system-menu-in-fullscreen-games-and-change-the-resolution-to-the-default"><i class="fa fa-gamepad fa-fw"></i> hide the system menu in fullscreen games and change the resolution to the default</a></li>
 	</ul>
@@ -293,7 +293,6 @@ Found Windows 10 on /dev/sda1
 Found Microsoft Windows XP Professional on /dev/sdb1
 Found FreeDOS on /dev/sdb2
 done
-<font color="red"><b>root@mint</b></font>:<font color="#729FCF"><b>/</b></font>#
 </pre>
 </samp>
 
@@ -314,7 +313,7 @@ done
 	</p>
 	<h5><i class="far fa-lightbulb"></i> Solution</h5>
 	<code class="linux">sudo dpkg-reconfigure console-setup</code
-	><button class="clipboard" onclick="writeToClipboard(this)" onmouseout="hideTooltip(this)">
+	><button class="clipboard" onclick="writeToClipboard(this)">
 		<div class="tooltiptext">copied!</div>
 		<i class="far fa-copy"></i>
 	</button>
@@ -333,8 +332,8 @@ done
 
 
 
-<article id="mass-rename-of-files">
-	<h4><i class="fa fa-exchange-alt fa-fw"></i> mass rename of files</h4>
+<article id="bulk-rename-files">
+	<h4><i class="fa fa-exchange-alt fa-fw"></i> bulk rename files</h4>
 	<h5><i class="far fa-lightbulb"></i> Solution</h5>
 	<p>
 		Install <var>rename</var> program.
@@ -369,8 +368,8 @@ done
 
 
 
-<article id="mass-resize-of-images">
-	<h4><i class="fa fa-expand-alt fa-fw"></i> mass resize of images</h4>
+<article id="bulk-resize-images">
+	<h4><i class="fa fa-expand-alt fa-fw"></i> bulk resize images</h4>
 	<h5><i class="far fa-lightbulb"></i> Solution</h5>
 	<p>
 		Install <a href="https://github.com/jarun/imgp"><var>imgp</var></a> program.
@@ -387,13 +386,13 @@ done
 <article id="set-system-boot-in-CLI-mode">
 	<h4><i class="fa fa-terminal fa-fw"></i> set system boot in CLI mode</h4>
 	<code class="linux">systemctl set-default multi-user.target</code
-	><button class="clipboard" onclick="writeToClipboard(this)" onmouseout="hideTooltip(this)">
+	><button class="clipboard" onclick="writeToClipboard(this)">
 		<div class="tooltiptext">copied!</div>
 		<i class="far fa-copy"></i>
 	</button>
 	<p>To get the start back system in GUI</p>
 	<code class="linux">systemctl set-default graphical.target</code
-	><button class="clipboard" onclick="writeToClipboard(this)" onmouseout="hideTooltip(this)">
+	><button class="clipboard" onclick="writeToClipboard(this)">
 		<div class="tooltiptext">copied!</div>
 		<i class="far fa-copy"></i>
 	</button>
@@ -428,8 +427,8 @@ done
 	<ol>
 		<li>
 			Make a file<br><code class="linux">nano script.sh</code><br>
-<code class="linux">
-<pre>
+<code class="linux" style="padding: 0;">
+<pre style="padding: 3px 5px;">
 #!/bin/bash
 gsettings set org.cinnamon panels-autohide "['1:true']"
 wine nfs.exe

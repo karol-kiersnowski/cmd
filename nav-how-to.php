@@ -8,9 +8,9 @@
 		<li><a href="#change-the-timeout-in-GRUB"><i class="fa fa-stopwatch fa-fw"></i> <?=$changeTheTimeoutInGRUB?></a></li>
 		<li><a href="#restore-GRUB-after-installing-Windows"><i class="fa fa-wrench fa-fw"></i> <?=$restoreGRUBAfterInstallingWindows?></a></li>
 		<li><a href="#change-the-font-size-in-CLI"><i class="fa fa-text-height fa-fw"></i> <?=$changeTheFontSizeInCLI?></a></li>
-		<li><a href="#mass-rename-of-files"><i class="fa fa-exchange-alt fa-fw"></i> <?=$massRenameOfFiles?></a></li>
+		<li><a href="#bulk-rename-files"><i class="fa fa-exchange-alt fa-fw"></i> <?=$bulkRenameFiles?></a></li>
 		<li><a href="#sort-photos-by-date"><i class="fa fa-sort-numeric-down fa-fw"></i> <?=$sortPhotosByDate?></a></li>
-		<li><a href="#mass-resize-of-images"><i class="fa fa-expand-alt fa-fw"></i> <?=$massResizeOfImages?></a></li>
+		<li><a href="#bulk-resize-images"><i class="fa fa-expand-alt fa-fw"></i> <?=$bulkResizeImages?></a></li>
 		<li><a href="#set-system-boot-in-CLI-mode"><i class="fa fa-terminal fa-fw"></i> <?=$setSystemBootInCLIMode?></a></li>
 		<li><a href="#hide-the-system-menu-in-fullscreen-games-and-change-the-resolution-to-the-default"><i class="fa fa-gamepad fa-fw"></i> <?=$hideTheSystemMenuInFullscreenGamesAndChangeTheResolutionToTheDefault?></a></li>
 	</ul>

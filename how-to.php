@@ -196,7 +196,6 @@ Found Windows 10 on /dev/sda1
 Found Microsoft Windows XP Professional on /dev/sdb1
 Found FreeDOS on /dev/sdb2
 done
-<font color="red"><b>root@mint</b></font>:<font color="#729FCF"><b>/</b></font>#
 </pre>
 </samp>
 
@@ -217,7 +216,7 @@ done
 	</p>
 	<h5><i class="far fa-lightbulb"></i> Solution</h5>
 	<code class="linux">sudo dpkg-reconfigure console-setup</code
-	><button class="clipboard" onclick="writeToClipboard(this)" onmouseout="hideTooltip(this)">
+	><button class="clipboard" onclick="writeToClipboard(this)">
 		<div class="tooltiptext"><?=$copied?></div>
 		<i class="far fa-copy"></i>
 	</button>
@@ -236,8 +235,8 @@ done
 
 
 
-<article id="mass-rename-of-files">
-	<h4><i class="fa fa-exchange-alt fa-fw"></i> <?=$massRenameOfFiles?></h4>
+<article id="bulk-rename-files">
+	<h4><i class="fa fa-exchange-alt fa-fw"></i> <?=$bulkRenameFiles?></h4>
 	<h5><i class="far fa-lightbulb"></i> Solution</h5>
 	<p>
 		Install <var>rename</var> program.
@@ -272,8 +271,8 @@ done
 
 
 
-<article id="mass-resize-of-images">
-	<h4><i class="fa fa-expand-alt fa-fw"></i> <?=$massResizeOfImages?></h4>
+<article id="bulk-resize-images">
+	<h4><i class="fa fa-expand-alt fa-fw"></i> <?=$bulkResizeImages?></h4>
 	<h5><i class="far fa-lightbulb"></i> Solution</h5>
 	<p>
 		Install <a href="https://github.com/jarun/imgp"><var>imgp</var></a> program.
@@ -290,13 +289,13 @@ done
 <article id="set-system-boot-in-CLI-mode">
 	<h4><i class="fa fa-terminal fa-fw"></i> <?=$setSystemBootInCLIMode?></h4>
 	<code class="linux">systemctl set-default multi-user.target</code
-	><button class="clipboard" onclick="writeToClipboard(this)" onmouseout="hideTooltip(this)">
+	><button class="clipboard" onclick="writeToClipboard(this)">
 		<div class="tooltiptext"><?=$copied?></div>
 		<i class="far fa-copy"></i>
 	</button>
 	<p>To get the start back system in GUI</p>
 	<code class="linux">systemctl set-default graphical.target</code
-	><button class="clipboard" onclick="writeToClipboard(this)" onmouseout="hideTooltip(this)">
+	><button class="clipboard" onclick="writeToClipboard(this)">
 		<div class="tooltiptext"><?=$copied?></div>
 		<i class="far fa-copy"></i>
 	</button>
@@ -331,8 +330,8 @@ done
 	<ol>
 		<li>
 			Make a file<br><code class="linux">nano script.sh</code><br>
-<code class="linux">
-<pre>
+<code class="linux" style="padding: 0;">
+<pre style="padding: 3px 5px;">
 #!/bin/bash
 gsettings set org.cinnamon panels-autohide "['1:true']"
 wine nfs.exe

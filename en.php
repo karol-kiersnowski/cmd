@@ -12,9 +12,9 @@ $theme = "theme";
 $about = "about";
 
 // NAV-HOW-TO
-$massRenameOfFiles = "mass rename of files";
+$bulkRenameFiles = "bulk rename files";
+$bulkResizeImages = "bulk resize images";
 $sortPhotosByDate = "sort photos by date";
-$massResizeOfImages = "mass resize of images";
 $setSystemBootInCLIMode = "set system boot in CLI mode";
 $changeSuperuserPassword = "change superuser password";
 $changeTheTimeoutInGRUB = "change the timeout in GRUB";
