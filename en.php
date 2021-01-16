@@ -17,6 +17,7 @@ $bulkResizeImages = "bulk resize images";
 $sortPhotosByDate = "sort photos by date";
 $setSystemBootInCLIMode = "set system boot in CLI mode";
 $changeSuperuserPassword = "change superuser password";
+$changeSuperuserPasswordExtended = "change superuser / root / administrator password";
 $changeTheTimeoutInGRUB = "change the timeout in GRUB";
 $changeTheFontSizeInCLI = "change the font size in CLI";
 $restoreGRUBAfterInstallingWindows = "restore GRUB after installing Windows";
@@ -82,6 +83,8 @@ $mountingPartitionsDrives = "mounting partitions & drives";
 
 $notes = "Notes";
 
+$issue = "Issue";
+$solution = "Solution";
 $copied = "copied!";
 
 ?>

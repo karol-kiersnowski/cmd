@@ -34,7 +34,7 @@
 
 
 <article id="change-superuser-password">
-	<h4><i class="fa fa-user-cog fa-fw"></i> <?=$changeSuperuserPassword?></h4>
+	<h4><i class="fa fa-user-cog fa-fw"></i> <?=$changeSuperuserPasswordExtended?></h4>
 	<code class="linux">sudo passwd root</code>
 </article>
 
@@ -102,11 +102,11 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 
 <article id="restore-GRUB-after-installing-Windows">
 	<h4><i class="fa fa-wrench fa-fw"></i> <?=$restoreGRUBAfterInstallingWindows?></h4>
-	<h5><i class="fa fa-question"></i> Issue</h5>
+	<h5><i class="fa fa-question"></i> <?=$issue?></h5>
 	<p>
 		If we install Windows after installing Linux, we can't run Linux.
 	</p>
-	<h5><i class="far fa-lightbulb"></i> Solution</h5>
+	<h5><i class="far fa-lightbulb"></i> <?=$solution?></h5>
 	<p>
 		Get an ISO (CD, DVD or USB) of Linux distribution. Run Linux as "Live CD" (without installation). Then run a terminal.
 	</p>
@@ -210,11 +210,11 @@ done
 
 <article id="change-the-font-size-in-CLI">
 	<h4><i class="fa fa-text-height fa-fw"></i> <?=$changeTheFontSizeInCLI?></a></h4>
-	<h5><i class="fa fa-question"></i> Issue</h5>
+	<h5><i class="fa fa-question"></i> <?=$issue?></h5>
 	<p>
 		In the CLI sometimes font size maybe to small or to big.
 	</p>
-	<h5><i class="far fa-lightbulb"></i> Solution</h5>
+	<h5><i class="far fa-lightbulb"></i> <?=$solution?></h5>
 	<code class="linux">sudo dpkg-reconfigure console-setup</code
 	><button class="clipboard" onclick="writeToClipboard(this)">
 		<div class="tooltiptext"><?=$copied?></div>
@@ -237,7 +237,7 @@ done
 
 <article id="bulk-rename-files">
 	<h4><i class="fa fa-exchange-alt fa-fw"></i> <?=$bulkRenameFiles?></h4>
-	<h5><i class="far fa-lightbulb"></i> Solution</h5>
+	<h5><i class="far fa-lightbulb"></i> <?=$solution?></h5>
 	<p>
 		Install <var>rename</var> program.
 	</p>
@@ -258,7 +258,7 @@ done
 
 <article id="sort-photos-by-date">
 	<h4><i class="fa fa-sort-numeric-down fa-fw"></i> <?=$sortPhotosByDate?></h4>
-	<h5><i class="far fa-lightbulb"></i> Solution</h5>
+	<h5><i class="far fa-lightbulb"></i> <?=$solution?></h5>
 	<p>
 		Install <a href="https://github.com/ivandokov/phockup"><var>phockup</var></a> program.
 	</p>
@@ -273,7 +273,7 @@ done
 
 <article id="bulk-resize-images">
 	<h4><i class="fa fa-expand-alt fa-fw"></i> <?=$bulkResizeImages?></h4>
-	<h5><i class="far fa-lightbulb"></i> Solution</h5>
+	<h5><i class="far fa-lightbulb"></i> <?=$solution?></h5>
 	<p>
 		Install <a href="https://github.com/jarun/imgp"><var>imgp</var></a> program.
 	</p>
@@ -315,11 +315,11 @@ done
 
 <article id="hide-the-system-menu-in-fullscreen-games-and-change-the-resolution-to-the-default">
 	<h4><i class="fa fa-gamepad fa-fw"></i> <?=$hideTheSystemMenuInFullscreenGamesAndChangeTheResolutionToTheDefault?></h4>
-	<h5><i class="fa fa-question"></i> Issue</h5>
+	<h5><i class="fa fa-question"></i> <?=$issue?></h5>
 	<p>
 		We can play on Linux in Windows games thanks to <em>wine</em>. But in the some games in full-screen mode, the system menu is visible. Additionally when we leave the game, the resolution in the system can be change to games resolution.
 	</p>
-	<h5><i class="far fa-lightbulb"></i> Solution</h5>
+	<h5><i class="far fa-lightbulb"></i> <?=$solution?></h5>
 	<p>
 		Make a BASH script. It will automate hiding system menu moments before start the game and set visible menu moments after leave the game.
 	</p>

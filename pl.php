@@ -17,6 +17,7 @@ $bulkResizeImages = "zbiorczo zmienić rozmiary obrazów";
 $sortPhotosByDate = "uporządkować zdjęcia wg daty";
 $setSystemBootInCLIMode = "ustawić start systemu w terminalu";
 $changeSuperuserPassword = "zmienić hasło administratora";
+$changeSuperuserPasswordExtended = "zmienić hasło administratora / superużytkownika / roota";
 $changeTheTimeoutInGRUB = "zmienić limit czasu w GRUB";
 $changeTheFontSizeInCLI = "zmienić rozmiar czcionki w terminalu";
 $restoreGRUBAfterInstallingWindows = "przywrócić GRUB po instalacji Windows";
@@ -82,6 +83,8 @@ $mountingPartitionsDrives = "montowanie partycji i dysków";
 
 $notes = "Przypisy";
 
+$issue = "Zagadnienie";
+$solution = "Rozwiązanie";
 $copied = "skopiowane!";
 
 ?>
