@@ -11,7 +11,7 @@
 	<h3>where to get ...?</h3>
 	<div class="card-container col-25">
 		<div class="card-content padding-5">
-			<a target="_blank" href="https://www.linuxmint.com/download.php">
+			<a target="_blank" href="https://www.linuxmint.com">
 				<div>
 					<img alt="Linux Mint" src="img/logo/linux-mint.png"/>
 					<div class="card-caption">
@@ -71,7 +71,7 @@
 		</div>
 	</div><div class="card-container col-25">
 		<div class="card-content padding-5">
-			<a target="_blank" href="https://www.freedos.org/download">
+			<a target="_blank" href="https://www.freedos.org">
 				<div>
 					<img alt="FreeDOS" src="img/logo/freedos.png"/>
 					<div class="card-caption">
@@ -95,7 +95,7 @@
 		</div>
 	</div><div class="card-container col-25">
 		<div class="card-content padding-5">
-			<a target="_blank" href="https://www.gog.com/">
+			<a target="_blank" href="https://www.gog.com">
 				<div>
 					<img alt="GOG" src="img/logo/gog.png"/>
 					<div class="card-caption">
