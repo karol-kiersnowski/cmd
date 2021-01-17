@@ -49,7 +49,6 @@ function markAnchor() {
 
 function copyToClipboard(thisElement) {
 	var text = thisElement.parentElement.children[0];
-	//text.focus();
 	text.select();
 	document.execCommand("copy");
 }
