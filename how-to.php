@@ -87,6 +87,13 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 
 
 
+
+
+
+
+
+
+
 <article id="restore-GRUB-after-installing-Windows">
 	<h4><i class="fa fa-wrench fa-fw"></i> <?=$restoreGRUBAfterInstallingWindows?></h4>
 	<h5><i class="fa fa-question"></i> <?=$issue?></h5>
@@ -99,8 +106,8 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 	</p>
 <samp class="linux">
 <div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
-<pre><font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo fdisk -l
-[sudo] password for karol:          
+<pre>
+<font color="#8AE234"><b>mint@mint</b></font><font color="#729FCF"><b> ~ </b></font>$ sudo fdisk -l
 <b>Disk /dev/sda: 223,58 GiB, 240056327680 bytes, 468860015 sectors</b>
 Disk model: SanDisk SSD PLUS
 Units: sectors of 1 * 512 = 512 bytes
@@ -215,6 +222,14 @@ done
 
 
 
+
+
+
+
+
+
+
+
 <article id="change-the-font-size-in-CLI">
 	<h4><i class="fa fa-text-height fa-fw"></i> <?=$changeTheFontSizeInCLI?></a></h4>
 	<h5><i class="fa fa-question"></i> <?=$issue?></h5>
@@ -231,6 +246,10 @@ done
 		In the two first steps choose the default options. Next, choose font family and font size.
 	</p>
 </article>
+
+
+
+
 
 
 
@@ -263,6 +282,10 @@ done
 
 
 
+
+
+
+
 <article id="sort-photos-by-date">
 	<h4><i class="fa fa-sort-numeric-down fa-fw"></i> <?=$sortPhotosByDate?></h4>
 	<h5><i class="far fa-lightbulb"></i> <?=$solution?></h5>
@@ -278,6 +301,10 @@ done
 
 
 
+
+
+
+
 <article id="bulk-resize-images">
 	<h4><i class="fa fa-expand-alt fa-fw"></i> <?=$bulkResizeImages?></h4>
 	<h5><i class="far fa-lightbulb"></i> <?=$solution?></h5>
@@ -285,6 +312,12 @@ done
 		Install <a href="https://github.com/jarun/imgp"><var>imgp</var></a> program.
 	</p>
 </article>
+
+
+
+
+
+
 
 
 
@@ -362,6 +395,12 @@ gsettings set org.cinnamon panels-autohide "['1:false']"
 </samp>
 
 </article>
+
+
+
+
+
+
 
 
 
