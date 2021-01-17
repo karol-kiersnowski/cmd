@@ -11,6 +11,18 @@
 	<h3>where to get ...?</h3>
 	<div class="card-container col-25">
 		<div class="card-content padding-5">
+			<a target="_blank" href="https://www.linuxmint.com/download.php">
+				<div>
+					<img alt="Linux Mint" src="img/logo/linux-mint.png"/>
+					<div class="card-caption">
+						<h3>Linux Mint</h3>
+						<p>distro of GNU Linux</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div><div class="card-container col-25">
+		<div class="card-content padding-5">
 			<a target="_blank" href="https://ubuntu.com/download/desktop">
 				<div>
 					<img alt="Ubuntu" src="img/logo/ubuntu.png"/>
@@ -23,11 +35,11 @@
 		</div>
 	</div><div class="card-container col-25">
 		<div class="card-content padding-5">
-			<a target="_blank" href="https://www.linuxmint.com/download.php">
+			<a target="_blank" href="https://www.debian.org">
 				<div>
-					<img alt="Linux Mint" src="img/logo/linux-mint.png"/>
+					<img alt="Debian" src="img/logo/debian.png"/>
 					<div class="card-caption">
-						<h3>Linux Mint</h3>
+						<h3>Debian</h3>
 						<p>distro of GNU Linux</p>
 					</div>
 				</div>
