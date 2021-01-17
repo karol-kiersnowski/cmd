@@ -220,18 +220,34 @@ sda1
 
 <samp class="linux">
 <div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
-<pre>
-karol@aspireOne:~$ sudo fdisk -l
-Disk /dev/sda: 55,9 GiB, 60022480896 bytes, 117231408 sectors
+<pre><font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo fdisk -l
+[sudo] password for karol:          
+<b>Disk /dev/sda: 223,58 GiB, 240056327680 bytes, 468860015 sectors</b>
+Disk model: SanDisk SSD PLUS
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disklabel type: dos
-Disk identifier: 0x31cafd91
+Disk identifier: 0x9438d1e9
 
-Device     Boot     Start       End   Sectors Size Id Type
-/dev/sda2            2048 113127423 113125376  54G 83 Linux
-/dev/sda3       113127424 117229567   4102144   2G 82 Linux swap / Solaris
+<b>Device</b>     <b>Boot</b> <b>    Start</b> <b>      End</b> <b>  Sectors</b> <b>  Size</b> <b>Id</b> <b>Type</b>
+/dev/sda1  *         2048 296962047 296960000 141,6G  7 HPFS/NTFS/exFAT
+/dev/sda2       296962048 358401501  61439454  29,3G 83 Linux
+/dev/sda3       358402048 464662527 106260480  50,7G 83 Linux
+/dev/sda4       464662528 468858879   4196352     2G 82 Linux swap / Solaris
+
+
+<b>Disk /dev/sdb: 55,92 GiB, 60022480896 bytes, 117231408 sectors</b>
+Disk model: KINGSTON SVP200S
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x781a275d
+
+<b>Device</b>     <b>Boot</b> <b>   Start</b> <b>      End</b> <b> Sectors</b> <b> Size</b> <b>Id</b> <b>Type</b>
+/dev/sdb1  *        2048  96751615 96749568 46,1G  7 HPFS/NTFS/exFAT
+/dev/sdb2       96751616 117229567 20477952  9,8G  b W95 FAT32
 </pre>
 </samp>
 
@@ -241,6 +257,30 @@ Device     Boot     Start       End   Sectors Size Id Type
 		<hr>
 		<h3><i class="fas fa-sitemap"></i> <?=$directoryStructure?></h3>
 		<hr>
+
+<pre>
+├── bin
+├── boot
+├── cdrom
+├── dev
+├── etc
+├── home
+├── lib
+├── lib64
+├── lost+found
+├── media
+├── mnt
+├── opt
+├── proc
+├── root
+├── run
+├── sbin
+├── srv
+├── sys
+├── tmp
+├── usr
+└── var
+</pre>
 
 <samp class="linux">
 <div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
@@ -270,30 +310,6 @@ Device     Boot     Start       End   Sectors Size Id Type
 └── <font color="#729FCF"><b>var</b></font>
 </pre>
 </samp>
-
-<pre>
-├── bin
-├── boot
-├── cdrom
-├── dev
-├── etc
-├── home
-├── lib
-├── lib64
-├── lost+found
-├── media
-├── mnt
-├── opt
-├── proc
-├── root
-├── run
-├── sbin
-├── srv
-├── sys
-├── tmp
-├── usr
-└── var
-</pre>
 
 	</article>
 
