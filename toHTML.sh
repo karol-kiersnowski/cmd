@@ -5,6 +5,7 @@ php screenshots-txt.php > screenshots-txt.html
 php screenshots-img.php > screenshots-img.html
 php links.php > links.html
 php guestbook.php > guestbook.html
+php guestbook-new-entry.php > guestbook-new-entry.html
 php theme.php > theme.html
 php about.php > about.html
 php linux.php > linux.html
@@ -17,6 +18,7 @@ sed -i 's/\.php/\.html/g' screenshots-txt.html
 sed -i 's/\.php/\.html/g' screenshots-img.html
 sed -i 's/\.php/\.html/g' links.html
 sed -i 's/\.php/\.html/g' guestbook.html
+sed -i 's/\.php/\.html/g' guestbook-new-entry.html
 sed -i 's/\.php/\.html/g' theme.html
 sed -i 's/\.php/\.html/g' about.html
 sed -i 's/\.php/\.html/g' linux.html

@@ -7,19 +7,6 @@
 
 <h2><i class="far fa-lightbulb"></i> <?=$howTo?></h2>
 <hr>
-<!-- <ul>
-	<li><a href="#changeRootPassword">mass renaming of files</a></li>
-	<li><a href="#changeRootPassword">sort photos by date - phockup</a></li>
-	<li><a href="#changeRootPassword">resize images - imgp</a></li>
-    <li><a href="#changeRootPassword">set the system start in console / CLI mode</a></li>
-	<li><a href="#changeRootPassword">change root (superuser) password</a></li>
-	<li><a href="#changeRootPassword">change timeout to choose operations system in the GRUB</a></li>
-	<li><a href="#changeRootPassword">change font size in the command-line interface</a></li>
-	<li><a href="#changeRootPassword">restore the GRUB after installing Windows</a></li>
-	<li><a href="#changeRootPassword">hide the system menu in full-screen games and change the resolution to default</a></li>
-</ul> -->
-
-
 
 
 
@@ -112,23 +99,37 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 	</p>
 <samp class="linux">
 <div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
-<pre>
-<font color="#8AE234"><b>karol@aspireOne</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo fdisk -l
-[sudo] password for karol: 
-Disk /dev/sda: 55,9 GiB, 60022480896 bytes, 117231408 sectors
+<pre><font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo fdisk -l
+[sudo] password for karol:          
+<b>Disk /dev/sda: 223,58 GiB, 240056327680 bytes, 468860015 sectors</b>
+Disk model: SanDisk SSD PLUS
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
 I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disklabel type: dos
-Disk identifier: 0x31cafd91
+Disk identifier: 0x9438d1e9
 
-Device     Boot     Start       End   Sectors Size Id Type
-/dev/sda2            2048 113127423 113125376  54G 83 Linux
-/dev/sda3       113127424 117229567   4102144   2G 82 Linux swap / Solaris
-</pre>
+<b>Device</b>     <b>Boot</b> <b>    Start</b> <b>      End</b> <b>  Sectors</b> <b>  Size</b> <b>Id</b> <b>Type</b>
+/dev/sda1  *         2048 296962047 296960000 141,6G  7 HPFS/NTFS/exFAT
+/dev/sda2       296962048 358401501  61439454  29,3G 83 Linux
+/dev/sda3       358402048 464662527 106260480  50,7G 83 Linux
+/dev/sda4       464662528 468858879   4196352     2G 82 Linux swap / Solaris
+
+
+<b>Disk /dev/sdb: 55,92 GiB, 60022480896 bytes, 117231408 sectors</b>
+Disk model: KINGSTON SVP200S
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x781a275d
+
+<b>Device</b>     <b>Boot</b> <b>   Start</b> <b>      End</b> <b> Sectors</b> <b> Size</b> <b>Id</b> <b>Type</b>
+/dev/sdb1  *        2048  96751615 96749568 46,1G  7 HPFS/NTFS/exFAT
+/dev/sdb2       96751616 117229567 20477952  9,8G  b W95 FAT32</pre>
 </samp>
 	<p>
-		My system in installed on <var>/dev/sda2</var>.
+		GNU Linux in installed on <var>/dev/sda2</var> (on <var>/dev/sda3</var> there is a <var>home</var> partition).
 	</p>
 
 	<code class="linux">sudo mount /dev/sda2 /mnt</code><br>
@@ -139,7 +140,13 @@ Device     Boot     Start       End   Sectors Size Id Type
 	<code class="linux">update-grub</code>
 
 	<p>
-		After executing <code class="linux">update-grub</code>, it may say: <code>Cannot find list of partitions! (Try mounting / sys.)</code>. Let's do it!
+		After executing <code class="linux">update-grub</code>, it may say:
+	</p>
+<samp class="linux">
+<pre>Cannot find list of partitions! (Try mounting / sys.)</pre>
+</samp>
+	<p>
+		Let's do it!
 	</p>
 	<code class="linux">exit</code> (from root)<br>
 	<code class="linux">sudo mount --bind /sys /mnt/sys</code>

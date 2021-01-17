@@ -1,4 +1,8 @@
-body {
+body,
+input,
+textarea,
+button,
+samp div.caption {
 	font-family: "Ubuntu Mono", monospace;
 }
 
@@ -13,7 +17,7 @@ nav {
 
 header,
 nav,
-samp {
+samp div {
 	background-color: #eee;
 	color: #000;
 }
@@ -59,6 +63,10 @@ nav a:hover {
 
 main a:hover {
 	text-decoration: underline;
+}
+
+button.clipboard:hover {
+	box-shadow: 0px 0px 5px #aaa;
 }
 
 .card-content {

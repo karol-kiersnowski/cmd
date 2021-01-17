@@ -1,4 +1,8 @@
-* {
+body,
+input,
+textarea,
+button,
+samp div.caption {
 	font-family: DOSEGA, Consolas, monospace;
 }
 

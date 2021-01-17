@@ -96,7 +96,7 @@
 
 	<article>
 
-		<h3>DOS</h3>
+		<h3>MS-DOS / FreeDOS</h3>
 		<h4>
 		<?php if ($lang == "en") { ?>
 			text-based & single-tasking operating system for PC

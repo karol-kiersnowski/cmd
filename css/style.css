@@ -4,13 +4,13 @@
 }
 
 @font-face {
-	font-family: "Perfect DOS VGA 437";
- 	src: url("../webfonts/Perfect DOS VGA 437.ttf");
+	font-family: "DOSEGA";
+ 	src: url("../webfonts/DOSEGA.ttf");
 }
 
 @font-face {
-	font-family: "DOSEGA";
- 	src: url("../webfonts/DOSEGA.ttf");
+	font-family: "Perfect DOS VGA 437";
+ 	src: url("../webfonts/Perfect DOS VGA 437.ttf");
 }
 
 @font-face {
@@ -334,6 +334,7 @@ form {
 .card-container {
 	display: inline-block;
 	padding: 5px;
+	vertical-align: middle;
 }
 
 .padding-5 img  {
@@ -406,39 +407,29 @@ var {
 	border: 1px dashed #777;
 	border-radius: 3px;
 	background-color: #fafafa;
-	//font-size: 14px;
 	font-style: normal;
 }
-
-
-
-
-
-
-
-
-
-
 
 code {
 	display: inline-block;
 	margin: 2px 0;
 	padding: 3px 5px;
-	max-width: calc(100% - 25px);
+	max-width: 100%;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 	background-color: #eaeaea;
 	white-space: nowrap;
-	
 }
 
 code.clipboard {
+	max-width: calc(100% - 25px);
 	overflow-x: auto;
 	vertical-align: top;
-	//border: 10px solid #000;
 }
 
 button.clipboard {
+	display: inline-block;
+	position: relative;
 	margin: 2px 0;
 	padding: 3px;
 	width: 25px;
@@ -447,15 +438,6 @@ button.clipboard {
 	border-radius: 3px;
 	cursor: pointer;
 }
-
-button.clipboard:hover {
-	box-shadow: 0px 0px 5px #aaa;
-}
-
-	button.clipboard {
-		position: relative;
-		//display: inline-block;
-	}
 
 	button.clipboard div {
 		display: none;
@@ -470,7 +452,6 @@ button.clipboard:hover {
 		background-color: #555;
 		color: #fff;
 		text-align: center;
-		/*opacity: 1;*/
 	}
 
 	button.clipboard div::after {
@@ -487,7 +468,7 @@ button.clipboard:hover {
 samp {
 	display: block;
 	margin: 20px auto;
-	max-width: calc(80ch + 4px);
+	max-width: calc(80ch + 6px);
 	border: 1px solid #000;
 	text-align: left;
 }
@@ -506,6 +487,7 @@ samp {
 	}
 
 	samp.linux pre,
+	samp.linux,
 	code.linux,
 	var.linux {
 		background-color: #2E3436;
@@ -514,6 +496,7 @@ samp {
 	}
 
 	samp.dos pre,
+	samp.dos,
 	code.dos {
 		background-color: #000;
 		color: #a8a8a8;
@@ -521,6 +504,7 @@ samp {
 	}
 
 	samp.windows-cmd pre,
+	samp.windows-cmd,
 	code.windows-cmd {
 		background-color: #0c0c0c;
 		color: #ccc;
@@ -528,6 +512,7 @@ samp {
 	}
 
 	samp.powershell pre,
+	samp.powershell,
 	code.powershell {
 		background-color: #012456;
 		color: #eeedf0;
