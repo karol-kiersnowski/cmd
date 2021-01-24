@@ -10,6 +10,8 @@
 		<li><a href="linux.php<?=$suffix?>#keyboard-shortcuts"><i class="far fa-keyboard fa-fw"></i> <?=$keyboardShortcuts?></a></li>
 		<li><a href="linux.php<?=$suffix?>#disks-partitions"><i class="far fa-hdd fa-fw"></i> <?=$disksPartitions?></a></li>
 		<li><a href="linux.php<?=$suffix?>#directory-structure"><i class="fas fa-sitemap fa-fw"></i> <?=$directoryStructure?></a></li>
+		<li><a href="linux.php<?=$suffix?>#system-files"><i class="fa fa-file-invoice fa-fw"></i> <?=$systemFiles?></a></li>
+		<li><a href="linux.php<?=$suffix?>#environment-variables"><i class="fa fa-dollar-sign fa-fw"></i> <?=$environmentVariables?></a></li>
 		<li><a href="linux.php<?=$suffix?>#access-rights"><i class="fas fa-unlock-alt fa-fw"></i> <?=$accessRights?></a></li>
 		<li><a href="linux.php<?=$suffix?>#pipelines-redirections"><i class="fas fa-directions fa-fw"></i> <?=$pipelinesRedirections?></a></li>
 		<li><a href="linux.php<?=$suffix?>#command-information"><i class="fa fa-question fa-fw"></i> <?=$commandInformation?></a></li>

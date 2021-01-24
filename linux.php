@@ -313,6 +313,193 @@ Disk identifier: 0x781a275d
 
 	</article>
 
+	<article id="system-files">
+		<hr>
+		<h3><i class="fas fa-file-invoice"></i> <?=$systemFiles?></h3>
+		<hr>
+		<h4>/dev/</h4>
+		<h4>/etc/</h4>
+	</article>
+
+	<article id="environment-variables">
+		<hr>
+		<h3><i class="fa fa-file-invoice"></i> <?=$environmentVariables?></h3>
+		<hr>
+		<ul>
+			<li>set</li>
+			<li>env</li>
+			<li>export</li>
+		</ul>
+
+<samp class="linux">
+<div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
+<pre><font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~</b></font>$ set | head -96
+BASH=/usr/bin/bash
+BASHOPTS=checkwinsize:cmdhist:complete_fullquote:expand_aliases:extglob:extquote:force_fignore:globasciiranges:histappend:interactive_comments:progcomp:promptvars:sourcepath
+BASH_ALIASES=()
+BASH_ARGC=([0]=&quot;0&quot;)
+BASH_ARGV=()
+BASH_CMDS=()
+BASH_COMPLETION_VERSINFO=([0]=&quot;2&quot; [1]=&quot;10&quot;)
+BASH_LINENO=()
+BASH_REMATCH=()
+BASH_SOURCE=()
+BASH_VERSINFO=([0]=&quot;5&quot; [1]=&quot;0&quot; [2]=&quot;17&quot; [3]=&quot;1&quot; [4]=&quot;release&quot; [5]=&quot;x86_64-pc-linux-gnu&quot;)
+BASH_VERSION=&apos;5.0.17(1)-release&apos;
+COLORTERM=truecolor
+COLUMNS=80
+COMP_WORDBREAKS=$&apos; \t\n&quot;\&apos;&gt;&lt;=;|&amp;(:&apos;
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+DESKTOP_SESSION=cinnamon
+DIRSTACK=()
+DISPLAY=:0
+EUID=1000
+GDMSESSION=cinnamon
+GDM_LANG=en_US
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/b124d479_898d_49c3_945a_f597a820f69a
+GNOME_TERMINAL_SERVICE=:1.1716
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+GROUPS=()
+GTK3_MODULES=xapp-gtk3-module
+GTK_MODULES=gail:atk-bridge
+GTK_OVERLAY_SCROLLING=1
+HISTCONTROL=ignoreboth
+HISTFILE=/home/karol/.bash_history
+HISTFILESIZE=2000
+HISTSIZE=1000
+HOME=/home/karol
+HOSTNAME=core2duo
+HOSTTYPE=x86_64
+IFS=$&apos; \t\n&apos;
+INSIDE_NEMO_PYTHON=
+LANG=en_US.UTF-8
+LANGUAGE=en_US
+LC_ADDRESS=pl_PL.UTF-8
+LC_IDENTIFICATION=pl_PL.UTF-8
+LC_MEASUREMENT=pl_PL.UTF-8
+LC_MONETARY=pl_PL.UTF-8
+LC_NAME=pl_PL.UTF-8
+LC_NUMERIC=pl_PL.UTF-8
+LC_PAPER=pl_PL.UTF-8
+LC_TELEPHONE=pl_PL.UTF-8
+LC_TIME=pl_PL.UTF-8
+LESSCLOSE=&apos;/usr/bin/lesspipe %s %s&apos;
+LESSOPEN=&apos;| /usr/bin/lesspipe %s&apos;
+LINES=24
+LOGNAME=karol
+LS_COLORS=&apos;rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:&apos;
+MACHTYPE=x86_64-pc-linux-gnu
+MAILCHECK=60
+OLDPWD=/home/karol
+OPTERR=1
+OPTIND=1
+OSTYPE=linux-gnu
+PAPERSIZE=a4
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PIPESTATUS=([0]=&quot;0&quot;)
+PPID=10883
+PS1=&apos;\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ &apos;
+PS2=&apos;&gt; &apos;
+PS4=&apos;+ &apos;
+PWD=/home/karol
+QT_ACCESSIBILITY=1
+QT_QPA_PLATFORMTHEME=qt5ct
+SESSION_MANAGER=local/core2duo:@/tmp/.ICE-unix/1161,unix/core2duo:/tmp/.ICE-unix/1161
+SHELL=/bin/bash
+SHELLOPTS=braceexpand:emacs:hashall:histexpand:history:interactive-comments:monitor
+SHLVL=1
+SSH_AGENT_PID=1310
+SSH_AUTH_SOCK=/tmp/ssh-5epUrs6SzHHy/agent.1161
+TERM=xterm-256color
+UID=1000
+USER=karol
+VTE_VERSION=6003
+XAUTHORITY=/home/karol/.Xauthority
+XDG_CONFIG_DIRS=/etc/xdg/xdg-cinnamon:/etc/xdg
+XDG_CURRENT_DESKTOP=X-Cinnamon
+XDG_DATA_DIRS=/usr/share/cinnamon:/usr/share/gnome:/home/karol/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/karol
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_SEAT=seat0
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SESSION_CLASS=user
+XDG_SESSION_DESKTOP=cinnamon
+XDG_SESSION_ID=c1
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+XDG_SESSION_TYPE=x11
+XDG_VTNR=7
+_=--color=auto
+</pre>
+</samp>
+
+<samp class="linux">
+<div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
+<pre><font color="#8AE234"><b>karol@core2duo</b></font>:<font color="#729FCF"><b>~</b></font>$ env
+SHELL=/bin/bash
+SESSION_MANAGER=local/core2duo:@/tmp/.ICE-unix/1161,unix/core2duo:/tmp/.ICE-unix/1161
+QT_ACCESSIBILITY=1
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg/xdg-cinnamon:/etc/xdg
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+LANGUAGE=en_US
+LC_ADDRESS=pl_PL.UTF-8
+LC_NAME=pl_PL.UTF-8
+SSH_AUTH_SOCK=/tmp/ssh-5epUrs6SzHHy/agent.1161
+DESKTOP_SESSION=cinnamon
+LC_MONETARY=pl_PL.UTF-8
+SSH_AGENT_PID=1310
+GTK_MODULES=gail:atk-bridge
+XDG_SEAT=seat0
+PWD=/home/karol
+LOGNAME=karol
+XDG_SESSION_DESKTOP=cinnamon
+QT_QPA_PLATFORMTHEME=qt5ct
+XDG_SESSION_TYPE=x11
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+XAUTHORITY=/home/karol/.Xauthority
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/karol
+GDM_LANG=en_US
+INSIDE_NEMO_PYTHON=
+HOME=/home/karol
+LC_PAPER=pl_PL.UTF-8
+LANG=en_US.UTF-8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_CURRENT_DESKTOP=X-Cinnamon
+VTE_VERSION=6003
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/e5a4ca93_cb6c_4a7b_97b7_e8c8534460a0
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+LC_IDENTIFICATION=pl_PL.UTF-8
+GTK_OVERLAY_SCROLLING=1
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=karol
+GNOME_TERMINAL_SERVICE=:1.2033
+DISPLAY=:0
+SHLVL=1
+LC_TELEPHONE=pl_PL.UTF-8
+LC_MEASUREMENT=pl_PL.UTF-8
+XDG_VTNR=7
+XDG_SESSION_ID=c1
+PAPERSIZE=a4
+XDG_RUNTIME_DIR=/run/user/1000
+LC_TIME=pl_PL.UTF-8
+GTK3_MODULES=xapp-gtk3-module
+XDG_DATA_DIRS=/usr/share/cinnamon:/usr/share/gnome:/home/karol/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+GDMSESSION=cinnamon
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+LC_NUMERIC=pl_PL.UTF-8
+_=/usr/bin/env
+OLDPWD=/home/karol/Documents/cmd
+</pre>
+</samp>
+
+	</article>
+
 	<article id="access-rights">
 		<hr>
 		<h3><i class="fas fa-unlock-alt"></i> <?=$accessRights?></h3>
@@ -481,6 +668,30 @@ drwxr-xr-x
 			<li>info</li>
 			<li>tldr</li>
 		</ul>
+
+		<!-- <table>
+			<tr>
+				<th></th>
+				<th>Unix</th>
+				<th>GNU Core Utilities<br><em><small>coreutils 8.27</small></em></th>
+				<th>Linux Mint 20<br><em><small>installed</small></em></th>
+				<th>Linux Mint 20<br><em><small>to download</small></em></th>
+			</tr>
+			<tr>
+				<td>man</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>man</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+		</table> -->
 	</article>
 
 	<article id="browsing-directories">

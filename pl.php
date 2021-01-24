@@ -44,6 +44,7 @@ $partitionsDrives = "partycje & napędy";
 $directoryStructure = "struktura katalogów";
 $systemFiles = "pliki systemowe";
 $fileExtensions = "rozszerzenia plików";
+$environmentVariables = "zmienne środowiskowe";
 $accessRights = "prawa dostępu";
 $pipelinesRedirections = "potoki & przekierowania";
 

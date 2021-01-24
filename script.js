@@ -47,11 +47,11 @@ function markAnchor() {
 	}
 }
 
-function copyToClipboard(thisElement) {
-	var text = thisElement.parentElement.children[0];
-	text.select();
-	document.execCommand("copy");
-}
+// function copyToClipboard(thisElement) {
+// 	var text = thisElement.parentElement.children[0];
+// 	text.select();
+// 	document.execCommand("copy");
+// }
 
 async function writeToClipboard(codeElement) {
 	try {

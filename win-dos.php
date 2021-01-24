@@ -755,7 +755,7 @@ C:
 
 	<article id="system-files">
 		<hr>
-		<h3><i class="fas fa-tools"></i> <?=$systemFiles?></h3>
+		<h3><i class="fas fa-file-invoice fa-fw"></i> <?=$systemFiles?></h3>
 		<hr>
 		<h4>MS-DOS</h4>
 		<h5>Hidden system files on the startup disk</h5>
@@ -830,6 +830,41 @@ C:
 			<li>DAT (data)</li>
 			<li>LIB (library)</li>
 		</ul>
+	</article>
+
+	<article id="environment-variables">
+		<hr>
+		<h3><i class="fa fa-percent"></i> <?=$environmentVariables?></h3>
+		<hr>
+
+		<table>
+			<tr>
+				<th></th>
+				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
+				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
+				<th>DOSBox</th>
+			</tr>
+			<tr>
+				<td>set</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+			<tr>
+				<td>set VARIABLE</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+			</tr>
+		</table>
+
+		<p>
+			<var>COMSPEC</var>
+			<var>PATH</var>
+			<var>BLASTER</var>
+			<var>TEMP</var>
+		</p>
+		
 	</article>
 
 	<article id="command-information">

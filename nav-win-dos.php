@@ -15,8 +15,9 @@
 		<li><a href="win-dos.php<?=$suffix?>#partitions-drives"><i class="far fa-hdd fa-fw"></i> <?=$partitionsDrives?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#mounting-partitions-drives"><i class="fa fa-eject fa-fw"></i> DOSBox - <?=$mounting?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#directory-structure"><i class="fas fa-sitemap fa-fw"></i> <?=$directoryStructure?></a></li>
-		<li><a href="win-dos.php<?=$suffix?>#system-files"><i class="fas fa-tools fa-fw"></i> <?=$systemFiles?></a></li>
+		<li><a href="win-dos.php<?=$suffix?>#system-files"><i class="fas fa-file-invoice fa-fw"></i> <?=$systemFiles?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#file-extensions"><i class="far fa-file-excel fa-fw"></i> <?=$fileExtensions?></a></li>
+		<li><a href="win-dos.php<?=$suffix?>#environment-variables"><i class="fa fa-percent fa-fw"></i> <?=$environmentVariables?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#command-information"><i class="fa fa-question fa-fw"></i> <?=$commandInformation?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#browsing-directories"><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></a></li>
 		<li><a href="win-dos.php<?=$suffix?>#file-manipulation"><i class="far fa-copy fa-fw"></i> <?=$fileManipulation?></a></li>

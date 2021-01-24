@@ -44,6 +44,7 @@ $partitionsDrives = "partitions & drives";
 $directoryStructure = "directory structure";
 $systemFiles = "system files";
 $fileExtensions = "file extensions";
+$environmentVariables = "environment variables";
 $accessRights = "access rights";
 $pipelinesRedirections = "pipelines & redirections";
 
