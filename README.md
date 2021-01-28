@@ -1,4 +1,4 @@
-![icon](https://karol-kiersnowski.github.io/img/icons/terminal.png) cmd-line.com
+![icon](https://karol-kiersnowski.github.io/img/icons/terminal-32x32.png) cmd-line.com
 ------------
 cmd-line.com is a website for learning the Command-Line Interface
 
@@ -9,7 +9,7 @@ cmd-line.com is a website for learning the Command-Line Interface
 ### Documentation & source code
 1. [https://github.com/karol-kiersnowski/cmd](https://github.com/karol-kiersnowski/cmd)
 2. [http://karol-kiersnowski.github.io/#cmd](http://karol-kiersnowski.github.io/#cmd)
-2. [http://karol-kiersnowski.prv.pl/#cmd](http://karol-kiersnowski.prv.pl/#cmd)
+3. [http://karol-kiersnowski.prv.pl/#cmd](http://karol-kiersnowski.prv.pl/#cmd)
 
 ### Technologies
 * HTML 5
@@ -23,15 +23,15 @@ cmd-line.com is a website for learning the Command-Line Interface
 * [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono) font
 * [DOSEGA](http://sourceforge.net/projects/dosega) font (crafted by Mateusz Viste)
 
+#### Multilingual user interface (server-side) - only for server-side version
+* English
+* Polish
+
 #### Themes (server-side) - only for server-side version
 * modern (light)
 * DOS (blue - gray)
 * DOS (gray - blue)
 * terminal (dark)
-
-#### Multilingual user interface (server-side) - only for server-side version
-* English
-* Polish
 
 ### Language
 * User interface: English / Polish
