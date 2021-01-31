@@ -8,7 +8,7 @@ cmd-line.com is a website for learning the Command-Line Interface
 
 ### Documentation & source code
 1. [https://github.com/karol-kiersnowski/cmd](https://github.com/karol-kiersnowski/cmd)
-2. [http://karol-kiersnowski.github.io/#cmd](http://karol-kiersnowski.github.io/#cmd)
+2. [https://karol-kiersnowski.github.io/#cmd](http://karol-kiersnowski.github.io/#cmd)
 3. [http://karol-kiersnowski.prv.pl/#cmd](http://karol-kiersnowski.prv.pl/#cmd)
 
 ### Technologies

@@ -46,7 +46,7 @@
 
 		<h4>What is MS-DOS / PC-DOS?</h4>
 		<p>
-			<a target="_blank" href="https://github.com/microsoft/MS-DOS">MS-DOS</a> / PC-DOS (Disk Operating System) is a simple & text-based operating system on PC with x86 CPU. It was popular in the 80s and early 90s. It doesn't have GUI, so we can use DOS only in Command-Line Interface. Nowadays, DOS is practically not used as the primary operating system.
+			<a target="_blank" href="https://github.com/microsoft/MS-DOS">MS-DOS</a> / PC-DOS (Disk Operating System) is a text-based & single-tasking operating system for PC with x86 CPU. It was popular in the 80s and early 90s. It doesn't have GUI, so we can use DOS only in Command-Line Interface. Nowadays, DOS is practically not used as the primary operating system.
 		</p>
 
 		<h4>What is FreeDOS?</h4>

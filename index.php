@@ -40,7 +40,7 @@
 
 		<h4>
 	<?php if ($lang == "en") { ?>
-		classical command prompt for the most popular PC operating system
+		classic command prompt for the most popular PC operating system
 	<?php } else { ?>
 		klasyczny wiersz poleceń dla najpopularniejszego systemu operacyjnego PC
 	<?php } ?>
@@ -124,9 +124,9 @@
 
 		<h4>
 		<?php if ($lang == "en") { ?>
-			modern & advanced command-line interpreter
+			object-oriented command interpreter
 		<?php } else { ?>
-			nowoczesny & zaawansowany interpreter wiersza poleceń
+			obiektowy interpreter poleceń
 		<?php } ?>
 		</h4>
 
