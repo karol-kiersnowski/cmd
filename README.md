@@ -18,20 +18,20 @@ cmd-line.com is a website for learning the Command-Line Interface
 * PHP 7.4
 
 ### Features
-#### CSS webfonts
-* [Font Awesome](https://fontawesome.com) icons
-* [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono) font
-* [DOSEGA](http://sourceforge.net/projects/dosega) font (crafted by Mateusz Viste)
+* CSS webfonts
+  * [Font Awesome](https://fontawesome.com) icons
+  * [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono) font
+  * [DOSEGA](http://sourceforge.net/projects/dosega) font (crafted by Mateusz Viste)
 
-#### Multilingual user interface (server-side) - only for server-side version
-* English
-* Polish
+* Multilingual user interface (server-side) - only for server-side version
+  * English
+  * Polish
 
-#### Themes (server-side) - only for server-side version
-* modern (light)
-* DOS (blue - gray)
-* DOS (gray - blue)
-* terminal (dark)
+* Themes (server-side) - only for server-side version
+  * modern (light)
+  * DOS (blue - gray)
+  * DOS (gray - blue)
+  * terminal (dark)
 
 ### Language
 * User interface: English / Polish
