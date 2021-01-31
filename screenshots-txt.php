@@ -13,10 +13,10 @@
 	<?php include "screenshots-txt/linux-mc.html"; ?>
 	<?php include "screenshots-txt/linux-mcedit.html"; ?>
 	<?php include "screenshots-txt/linux-nano.html"; ?>
-	<?php include "screenshots-txt/dos-freedos-start-ver.html"; ?>
-	<?php include "screenshots-txt/dos-dir.html"; ?>
-	<?php include "screenshots-txt/dos-mem.html"; ?>
-	<!-- <?php include "screenshots-txt/dos-dn.html"; ?> -->
+	<?php include "screenshots-txt/freedos-start-ver.html"; ?>
+	<?php include "screenshots-txt/freedos-dir.html"; ?>
+	<?php include "screenshots-txt/freedos-mem.html"; ?>
+	<!-- <?php include "screenshots-txt/freedos-dn.html"; ?> -->
 	<?php include "screenshots-txt/windows-cmd-help-mem.html"; ?>
 	<?php include "screenshots-txt/windows-cmd-dir.html"; ?>
 	<?php include "screenshots-txt/powershell-get-childitem.html"; ?>

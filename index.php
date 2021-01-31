@@ -107,7 +107,7 @@
 
 		
 
-		<?php include "screenshots-txt/dos-freedos-start-ver.html"; ?>
+		<?php include "screenshots-txt/freedos-start-ver.html"; ?>
 
 		<div>
 			<a class="button" href="win-dos.php<?=$suffix?>">Learn DOS</a>

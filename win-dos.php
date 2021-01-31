@@ -866,6 +866,8 @@ C:
 		</p>
 
 		<?php include "screenshots-txt/dosbox-set.html"; ?>
+
+		<?php include "screenshots-txt/freedos-set.html"; ?>
 		
 	</article>
 
