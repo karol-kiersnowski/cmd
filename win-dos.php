@@ -864,6 +864,8 @@ C:
 			<var>BLASTER</var>
 			<var>TEMP</var>
 		</p>
+
+		<?php include "screenshots-txt/dosbox-set.html"; ?>
 		
 	</article>
 
