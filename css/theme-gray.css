@@ -11,6 +11,7 @@ body,
 input,
 textarea,
 button,
+pre,
 samp div.caption {
 	font-family: DOSEGA, Consolas, monospace;
 }
@@ -25,8 +26,7 @@ samp div {
 	color: var(--white);
 }
 
-main a,
-main a:visited {
+main a {
 	color: var(--blue);
 }
 

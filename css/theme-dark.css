@@ -2,6 +2,7 @@ body,
 input,
 textarea,
 button,
+pre,
 samp div.caption {
 	font-family: DOSEGA, Consolas, monospace;
 }
@@ -58,7 +59,7 @@ a.button {
 }
 
 nav {
-	scrollbar-color: #aaa #000;
+	scrollbar-color: #fff #000;
 }
 
 th { background-color: #555; }
