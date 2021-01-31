@@ -87,10 +87,11 @@ nav {
 	position: fixed;
 	z-index: 1;
 	top: 0;
-	margin-top: 53px;
+	bottom: 0;
+	margin-top: 54px;
 	padding: 10px 0;
 	width: 300px;
-	height: calc(100% - 53px);
+	/*height: calc(100% - 53px);*/
 	/*white-space: nowrap;*/
 	scrollbar-width: thin;
 	overflow-y: auto;

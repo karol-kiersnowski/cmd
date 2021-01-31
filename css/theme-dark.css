@@ -14,7 +14,6 @@ header {
 
 nav {
 	margin-top: 45px;
-	height: calc(100% - 45px);
 	border-right-width: 1px;
 	border-right-style: double;
 	text-transform: lowercase;
