@@ -4,7 +4,7 @@
 $language = "język";
 $theme = "motyw";
 	$modernLight = "nowoczesny (jasny)";
-	$dosBlueGray = "DOS (niebieski /szary)";
+	$dosBlueGray = "DOS (niebieski / szary)";
 	$dosGrayBlue = "DOS (szary / niebieski)";
 	$terminalDark= "terminal (ciemny)";
 
