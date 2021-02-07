@@ -18,6 +18,7 @@ samp div.caption {
 
 header,
 header a,
+header ul.dropdown-list,
 nav,
 nav a,
 nav hr,
@@ -31,7 +32,8 @@ main a {
 }
 
 header,
-nav {
+nav,
+ul.dropdown-list {
 	border-width: 5px;
 	border-style: double;
 	text-transform: uppercase;
@@ -96,10 +98,15 @@ nav {
 
 
 header,
+header ul.dropdown-list,
 nav,
 table,
 samp {
 	box-shadow: 10px 10px 0px rgba(85, 85, 85, 0.75);
+}
+
+code {
+	box-shadow: 5px 5px 0px rgba(85, 85, 85, 0.75);
 }
 
 

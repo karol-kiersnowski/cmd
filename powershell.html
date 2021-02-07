@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
 	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png"/>
 	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/theme-light.css"/>
+	<link rel="stylesheet" href="css/theme-dark.css"/>
 	<link rel="stylesheet" href="css/all.css"><!--Font Awesome v.5.12.0-->
 	<script defer src="script.js"></script>
 
@@ -23,7 +23,7 @@
 	<header>
 		<div id="header-content">
 			<h1>
-				<a id="menu" href="javascript:void(0);" title="Menu" onclick="changeMenu()">
+				<a id="menu" title="Menu" onclick="changeMenu()">
 					<i class="fa fa-list-ul fa-fw"></i>
 				</a>
 			</h1>
@@ -35,41 +35,76 @@
 			<!-- <i class="fa fa-terminal"></i> -->
 			<ul>
 				<li>
-					<a href="how-to.html?lang=en&th=light">
+					<a href="how-to.html?lang=en&th=dark">
 						<i class="far fa-lightbulb"></i>
-						<span>how to...</span>
+						<span class="mobile-invisible">how to...</span>
 					</a>
-				</li>
-				<li>
-					<a href="linux.html?lang=en&th=light">
+				</li><li>
+					<a href="linux.html?lang=en&th=dark">
 						<i class="fab fa-linux"></i>
-						<span>linux</span>
+						<span class="mobile-invisible">linux</span>
 					</a>
-				</li>
-				<li>
-					<a href="win-dos.html?lang=en&th=light">
+				</li><li>
+					<a href="win-dos.html?lang=en&th=dark">
 						<i class="fab fa-windows"></i>
-						<span>win cmd / DOS</span>
+						<span class="mobile-invisible">win cmd / DOS</span>
 					</a>
-				</li>
-				<li>
-					<a href="powershell.html?lang=en&th=light">
+				</li><li>
+					<a href="powershell.html?lang=en&th=dark">
 						<i class="fa fa-terminal"></i>
-						<span>PowerShell</span>
+						<span class="mobile-invisible">PowerShell</span>
 					</a>
-				</li>
-				<li>
-					<a href="theme.html?lang=en&th=light">
+				</li><li tabindex="0">
+					<a>
+						<i class="fa fa-globe-americas"></i>
+						<span class="mobile-invisible">language</span>
+					</a>
+					<ul class="dropdown-list" id="language-list">
+						<li>
+							<a href="?lang=en&th=dark">
+								<img src="img/uk.png" alt="UK"/>
+								<span>English</span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=pl&th=dark">
+								<img src="img/polska.png" alt="Polska"/>
+								<span>polski</span>
+							</a>
+						</li>
+					</ul>
+				</li><li tabindex="0">
+					<a>
 						<i class="fa fa-adjust"></i>
-						<span>theme</span>
+						<span class="mobile-invisible">theme</span>
 					</a>
+					<ul class="dropdown-list" id="theme-list">
+						<li>
+							<a href="?lang=en&th=light">
+								<div style="background-color: #eee; color: #000"></div>
+								<span>modern (light)</span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=en&th=blue">
+								<div style="background-color: #00a; color: #fff;"></div>
+								<span>DOS (blue / gray)</span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=en&th=gray">
+								<div style="background-color: #aaa; color: #fff;"></div>
+								<span>DOS (gray / blue)</span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=en&th=dark">
+								<div style="background-color: #000; color: #fff;"></div>
+								<span>terminal (dark)</span>
+							</a>
+						</li>
+					</ul>
 				</li>
-				<li>
-											<a href="?lang=pl&th=light" title="wersja polska">
-							<img src="img/polska.png" alt="Polska"/>
-							<span>wersja polska</span>
-						</a>
-									</li>
 				<div class="clear"></div>
 			</ul>
 			<div class="clear"></div>
@@ -77,26 +112,26 @@
 	</header>
 	<div id="wrapper">
 <nav>
-	<h2><a href="index.html?lang=en&th=light"><i class="fa fa-home fa-fw"></i> home</a></h2>
+	<h2><a href="index.html?lang=en&th=dark"><i class="fa fa-home fa-fw"></i> home</a></h2>
 	<hr>
-	<h2><a href="how-to.html?lang=en&th=light"><i class="far fa-lightbulb fa-fw"></i> how to ...</a></h2>
+	<h2><a href="how-to.html?lang=en&th=dark"><i class="far fa-lightbulb fa-fw"></i> how to ...</a></h2>
 	<hr>
-	<h2><a href="linux.html?lang=en&th=light"><i class="fab fa-linux fa-fw"></i> linux</a></h2>
+	<h2><a href="linux.html?lang=en&th=dark"><i class="fab fa-linux fa-fw"></i> linux</a></h2>
 	<hr>
-	<h2><a href="win-dos.html?lang=en&th=light"><i class="fab fa-windows fa-fw"></i> win cmd / DOS</a></h2>
+	<h2><a href="win-dos.html?lang=en&th=dark"><i class="fab fa-windows fa-fw"></i> win cmd / DOS</a></h2>
 	<hr>
-	<h2><a href="powershell.html?lang=en&th=light"><i class="fa fa-terminal fa-fw"></i> PowerShell</a></h2>
+	<h2><a href="powershell.html?lang=en&th=dark"><i class="fa fa-terminal fa-fw"></i> PowerShell</a></h2>
 	<hr>
 	<ul>
-		<li><a href="powershell.html?lang=en&th=light#introduction"><i class="far fa-play-circle fa-fw"></i> introduction</a></li>
-		<li><a href="powershell.html?lang=en&th=light#command-information"><i class="fa fa-question fa-fw"></i> command information</a></li>
-		<li><a href="powershell.html?lang=en&th=light#browsing-directories"><i class="far fa-folder-open fa-fw"></i> browsing directories</a></li>
-		<li><a href="powershell.html?lang=en&th=light#file-manipulation"><i class="far fa-copy fa-fw"></i> file manipulation</a></li>
-		<li><a href="powershell.html?lang=en&th=light#reading-files"><i class="far fa-file-alt fa-fw"></i> reading files</a></li>
-		<li><a href="powershell.html?lang=en&th=light#console"><i class="fa fa-terminal fa-fw"></i> console</a></li>
-		<li><a href="powershell.html?lang=en&th=light#system"><i class="fa fa-laptop fa-fw"></i> system</a></li>
-		<li><a href="powershell.html?lang=en&th=light#network"><i class="fa fa-globe fa-fw"></i> network</a></li>
-		<li><a href="powershell.html?lang=en&th=light#processes"><i class="fa fa-list-ol fa-fw"></i> processes</a></li>
+		<li><a href="powershell.html?lang=en&th=dark#introduction"><i class="far fa-play-circle fa-fw"></i> introduction</a></li>
+		<li><a href="powershell.html?lang=en&th=dark#command-information"><i class="fa fa-question fa-fw"></i> command information</a></li>
+		<li><a href="powershell.html?lang=en&th=dark#browsing-directories"><i class="far fa-folder-open fa-fw"></i> browsing directories</a></li>
+		<li><a href="powershell.html?lang=en&th=dark#file-manipulation"><i class="far fa-copy fa-fw"></i> file manipulation</a></li>
+		<li><a href="powershell.html?lang=en&th=dark#reading-files"><i class="far fa-file-alt fa-fw"></i> reading files</a></li>
+		<li><a href="powershell.html?lang=en&th=dark#console"><i class="fa fa-terminal fa-fw"></i> console</a></li>
+		<li><a href="powershell.html?lang=en&th=dark#system"><i class="fa fa-laptop fa-fw"></i> system</a></li>
+		<li><a href="powershell.html?lang=en&th=dark#network"><i class="fa fa-globe fa-fw"></i> network</a></li>
+		<li><a href="powershell.html?lang=en&th=dark#processes"><i class="fa fa-list-ol fa-fw"></i> processes</a></li>
 	</ul>
 </nav>
 <main onclick="hideMenuByClickOutsideIt()">

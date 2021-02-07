@@ -1,5 +1,13 @@
 <?php
 
+// HEADER
+$language = "language";
+$theme = "theme";
+	$modernLight = "modern (light)";
+	$dosBlueGray = "DOS (blue / gray)";
+	$dosGrayBlue = "DOS (gray / blue)";
+	$terminalDark= "terminal (dark)";
+
 // NAV-INDEX
 $home = "home";
 $howTo = "how to ...";
@@ -8,7 +16,7 @@ $textScreenshots = "screenshots (txt)";
 $imageScreenshots = "screenshots (img)";
 $links = "links";
 $guestbook = "guestbook";
-$theme = "theme";
+
 $about = "about";
 
 // NAV-HOW-TO

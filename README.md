@@ -19,19 +19,19 @@ cmd-line.com is a website for learning the Command-Line Interface
 
 ### Features
 * CSS webfonts
-  * [Font Awesome](https://fontawesome.com) icons
-  * [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono) font
-  * [DOSEGA](http://sourceforge.net/projects/dosega) font (crafted by Mateusz Viste)
+	* [Font Awesome](https://fontawesome.com) icons
+	* [Ubuntu Mono](https://fonts.google.com/specimen/Ubuntu+Mono) font
+	* [DOSEGA](http://sourceforge.net/projects/dosega) font (crafted by Mateusz Viste)
 
 * Multilingual user interface (server-side) - only for server-side version
-  * English
-  * Polish
+	* English
+	* Polish
 
 * Themes (server-side) - only for server-side version
-  * modern (light)
-  * DOS (blue - gray)
-  * DOS (gray - blue)
-  * terminal (dark)
+	* modern (light)
+	* DOS (blue - gray)
+	* DOS (gray - blue)
+	* terminal (dark)
 
 ### Language
 * User interface: English / Polish
@@ -39,13 +39,12 @@ cmd-line.com is a website for learning the Command-Line Interface
 
 ### Requirements
 * Web browser
-* XAMPP (PHP interpreter) - for local use & development of this project
+* XAMPP (PHP interpreter) - for local use & development
 
 ### Screenshots
 ![cmd](https://karol-kiersnowski.github.io/img/projects/cmd.png)
 
 ### To do
-* change of header style
 * guestbook
 
 ### Initiation

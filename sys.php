@@ -8,7 +8,7 @@
 	if( isset($_GET['th']) ) 
 		$th = $_GET['th'];
 	else
-		$th = "light";
+		$th = "dark";
 
 	$cmd = "cmd:/> ";
 	$suffix = "?lang=$lang&th=$th";

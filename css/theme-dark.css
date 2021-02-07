@@ -54,6 +54,7 @@ samp div {
 	color: #000;
 }
 
+ul.dropdown-list,
 a.button {
 	border: 1px solid #aaa;
 }

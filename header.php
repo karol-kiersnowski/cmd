@@ -23,7 +23,7 @@
 	<header>
 		<div id="header-content">
 			<h1>
-				<a id="menu" href="javascript:void(0);" title="Menu" onclick="changeMenu()">
+				<a id="menu" title="Menu" onclick="changeMenu()">
 					<i class="fa fa-list-ul fa-fw"></i>
 				</a>
 			</h1>
@@ -37,45 +37,73 @@
 				<li>
 					<a href="how-to.php<?=$suffix?>">
 						<i class="far fa-lightbulb"></i>
-						<span>how to...</span>
+						<span class="mobile-invisible">how to...</span>
 					</a>
-				</li>
-				<li>
+				</li><li>
 					<a href="linux.php<?=$suffix?>">
 						<i class="fab fa-linux"></i>
-						<span>linux</span>
+						<span class="mobile-invisible">linux</span>
 					</a>
-				</li>
-				<li>
+				</li><li>
 					<a href="win-dos.php<?=$suffix?>">
 						<i class="fab fa-windows"></i>
-						<span>win cmd / DOS</span>
+						<span class="mobile-invisible">win cmd / DOS</span>
 					</a>
-				</li>
-				<li>
+				</li><li>
 					<a href="powershell.php<?=$suffix?>">
 						<i class="fa fa-terminal"></i>
-						<span>PowerShell</span>
+						<span class="mobile-invisible">PowerShell</span>
 					</a>
-				</li>
-				<li>
-					<a href="theme.php<?=$suffix?>">
+				</li><li tabindex="0">
+					<a>
+						<i class="fa fa-globe-americas"></i>
+						<span class="mobile-invisible"><?=$language?></span>
+					</a>
+					<ul class="dropdown-list" id="language-list">
+						<li>
+							<a href="?lang=en&th=<?=$th?>">
+								<img src="img/uk.png" alt="UK"/>
+								<span>English</span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=pl&th=<?=$th?>">
+								<img src="img/polska.png" alt="Polska"/>
+								<span>polski</span>
+							</a>
+						</li>
+					</ul>
+				</li><li tabindex="0">
+					<a>
 						<i class="fa fa-adjust"></i>
-						<span><?=$theme?></span>
+						<span class="mobile-invisible"><?=$theme?></span>
 					</a>
-				</li>
-				<li>
-					<?php if ($lang == "pl") { ?>
-						<a href="?lang=en&th=<?=$th?>" title="English version">
-							<img src="img/uk.png" alt="UK"/>
-							<span>English version</span>
-						</a>
-					<?php } else { ?>
-						<a href="?lang=pl&th=<?=$th?>" title="wersja polska">
-							<img src="img/polska.png" alt="Polska"/>
-							<span>wersja polska</span>
-						</a>
-					<?php } ?>
+					<ul class="dropdown-list" id="theme-list">
+						<li>
+							<a href="?lang=<?=$lang?>&th=light">
+								<div style="background-color: #eee; color: #000"></div>
+								<span><?=$modernLight?></span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=<?=$lang?>&th=blue">
+								<div style="background-color: #00a; color: #fff;"></div>
+								<span><?=$dosBlueGray?></span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=<?=$lang?>&th=gray">
+								<div style="background-color: #aaa; color: #fff;"></div>
+								<span><?=$dosGrayBlue?></span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=<?=$lang?>&th=dark">
+								<div style="background-color: #000; color: #fff;"></div>
+								<span><?=$terminalDark?></span>
+							</a>
+						</li>
+					</ul>
 				</li>
 				<div class="clear"></div>
 			</ul>

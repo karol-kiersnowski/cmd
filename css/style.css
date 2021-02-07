@@ -38,6 +38,7 @@
 
 
 * { box-sizing: border-box; }
+:focus-within { outline: none; }
 html { scroll-behavior: smooth; }
 
 body {
@@ -52,6 +53,17 @@ header {
 	left: 0;
 	width: 100%;
 }
+
+	h1 {
+		float: left;
+		margin: 0;
+		font-size: 26px;
+	}
+
+	h1 a {
+		display: inline-block;
+		padding: 6px 8px;
+	}
 	
 	/*header #logo::after {
 		content: "_";
@@ -68,13 +80,60 @@ header {
 	}
 
 		header ul li {
-			display: inline;
+			display: inline-block;
+			position: relative;
 		}
 
 			header ul li a {
-				float: left;
+				display: inline-block;
 				padding: 12px 6px;
 			}
+
+			ul.dropdown-list {
+				display: none;
+				position: absolute;
+				right: 0;
+				float: none;
+			}
+
+			ul#theme-list {
+				width: 225px;
+			}
+
+			ul#language-list {
+				width: 120px;
+			}
+
+			li:focus-within ul.dropdown-list {
+				display: block;
+			}
+
+				ul.dropdown-list li {
+					display: block;
+				}
+
+				ul.dropdown-list a {
+					display: block;
+				}
+
+				ul.dropdown-list div {
+					display: inline-block;
+					border: 1px solid #000;
+					width: 20px;
+					height: 20px;
+					vertical-align: middle;
+				}
+
+				ul.dropdown-list img {
+					display: inline-block;
+					border: 1px solid #000;
+					width: 20px;
+					vertical-align: middle;
+				}
+
+				ul.dropdown-list span {
+					vertical-align: middle;
+				}
 
 #header-content,
 #wrapper {
@@ -177,18 +236,12 @@ u {
 	text-underline-position: under;
 }
 
-a { text-decoration: none; }
-
-h1 {
-	float: left;
-	margin: 0;
-	font-size: 27px;
+a {
+	text-decoration: none;
+	cursor: pointer;
 }
 
-h1 a {
-	display: inline-block;
-	padding: 6px 8px;
-}
+
 
 h2, h3, h4, h5 {
 	font-weight: normal;
@@ -261,12 +314,6 @@ table {
 
 main img {
 	width: 100%;
-}
-
-header img {
-	display: inline-block;
-	margin-bottom: -2px;
-	width: 20px;
 }
 
 
@@ -578,9 +625,11 @@ iframe {
 
 
 
+
+
+
 @media only screen and (max-width: 1000px) {
 	body { margin: 0; }
-	header ul span { display: none; }
 	nav { display: none; }
 	main { padding: 10px; }
 	main, footer { margin-left: 0; }
@@ -598,4 +647,8 @@ iframe {
 	.col-33 { width: 100%; }
 	.col-25 { width: 50%; }
 	.col-16 { width: 33.3%; }
+
+	.mobile-invisible {
+		display: none;
+	}
 }

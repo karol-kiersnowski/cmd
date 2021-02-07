@@ -464,7 +464,7 @@
 				<th>name</th>
 				<th>included<br>MS-DOS<sup>[2]</sup></th>
 				<th>FAT32</th>
-				<th>Internet Explorer</th>
+				<th>IE</th>
 				<th>DirectX</th>
 				<th>year</th>
 			</tr>
