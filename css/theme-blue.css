@@ -44,8 +44,9 @@ nav {
 }
 
 header a:hover,
-main a:hover,
-nav a:hover {
+header li.focusable:focus,
+nav a:hover,
+main a:hover {
 	background-color: var(--bright-blue);
 	color: var(--white);
 }

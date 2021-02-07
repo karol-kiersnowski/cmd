@@ -47,8 +47,9 @@ main a {
 }
 
 header a:hover,
-main a:hover,
+header li.focusable:focus,
 nav a:hover,
+main a:hover,
 samp div {
 	background-color: #aaa;
 	color: #000;

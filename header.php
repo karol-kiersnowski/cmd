@@ -54,53 +54,53 @@
 						<i class="fa fa-terminal"></i>
 						<span class="mobile-invisible">PowerShell</span>
 					</a>
-				</li><li tabindex="0">
-					<a>
-						<i class="fa fa-globe-americas"></i>
-						<span class="mobile-invisible"><?=$language?></span>
-					</a>
-					<ul class="dropdown-list" id="language-list">
-						<li>
-							<a href="?lang=en&th=<?=$th?>">
-								<img src="img/uk.png" alt="UK"/>
-								<span>English</span>
-							</a>
-						</li>
-						<li>
-							<a href="?lang=pl&th=<?=$th?>">
-								<img src="img/polska.png" alt="Polska"/>
-								<span>polski</span>
-							</a>
-						</li>
-					</ul>
-				</li><li tabindex="0">
+				</li><li class="focusable" tabindex="0">
 					<a>
 						<i class="fa fa-adjust"></i>
 						<span class="mobile-invisible"><?=$theme?></span>
 					</a>
 					<ul class="dropdown-list" id="theme-list">
 						<li>
-							<a href="?lang=<?=$lang?>&th=light">
-								<div style="background-color: #eee; color: #000"></div>
+							<a href="?lang=<?=$lang?>&theme=light">
+								<div style="background-color: #eee;"></div>
 								<span><?=$modernLight?></span>
 							</a>
 						</li>
 						<li>
-							<a href="?lang=<?=$lang?>&th=blue">
-								<div style="background-color: #00a; color: #fff;"></div>
+							<a href="?lang=<?=$lang?>&theme=blue">
+								<div style="background-color: #00a;"></div>
 								<span><?=$dosBlueGray?></span>
 							</a>
 						</li>
 						<li>
-							<a href="?lang=<?=$lang?>&th=gray">
-								<div style="background-color: #aaa; color: #fff;"></div>
+							<a href="?lang=<?=$lang?>&theme=gray">
+								<div style="background-color: #aaa;"></div>
 								<span><?=$dosGrayBlue?></span>
 							</a>
 						</li>
 						<li>
-							<a href="?lang=<?=$lang?>&th=dark">
-								<div style="background-color: #000; color: #fff;"></div>
+							<a href="?lang=<?=$lang?>&theme=dark">
+								<div style="background-color: #000; border-color: #fff;"></div>
 								<span><?=$terminalDark?></span>
+							</a>
+						</li>
+					</ul>
+				</li><li class="focusable" tabindex="0">
+					<a>
+						<i class="fa fa-globe-americas"></i>
+						<span class="mobile-invisible"><?=$language?></span>
+					</a>
+					<ul class="dropdown-list" id="language-list">
+						<li>
+							<a href="?lang=en&theme=<?=$th?>">
+								<img src="img/uk.png" alt="UK"/>
+								<span>English</span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=pl&theme=<?=$th?>">
+								<img src="img/polska.png" alt="Polska"/>
+								<span>polski</span>
 							</a>
 						</li>
 					</ul>

@@ -7,7 +7,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
 	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png"/>
 	<link rel="stylesheet" href="css/style.css"/>
-	<link rel="stylesheet" href="css/theme-dark.css"/>
+	<link rel="stylesheet" href="css/theme-light.css"/>
 	<link rel="stylesheet" href="css/all.css"><!--Font Awesome v.5.12.0-->
 	<script defer src="script.js"></script>
 
@@ -35,72 +35,72 @@
 			<!-- <i class="fa fa-terminal"></i> -->
 			<ul>
 				<li>
-					<a href="how-to.html?lang=en&th=dark">
+					<a href="how-to.html?lang=en&theme=light">
 						<i class="far fa-lightbulb"></i>
 						<span class="mobile-invisible">how to...</span>
 					</a>
 				</li><li>
-					<a href="linux.html?lang=en&th=dark">
+					<a href="linux.html?lang=en&theme=light">
 						<i class="fab fa-linux"></i>
 						<span class="mobile-invisible">linux</span>
 					</a>
 				</li><li>
-					<a href="win-dos.html?lang=en&th=dark">
+					<a href="win-dos.html?lang=en&theme=light">
 						<i class="fab fa-windows"></i>
 						<span class="mobile-invisible">win cmd / DOS</span>
 					</a>
 				</li><li>
-					<a href="powershell.html?lang=en&th=dark">
+					<a href="powershell.html?lang=en&theme=light">
 						<i class="fa fa-terminal"></i>
 						<span class="mobile-invisible">PowerShell</span>
 					</a>
-				</li><li tabindex="0">
-					<a>
-						<i class="fa fa-globe-americas"></i>
-						<span class="mobile-invisible">language</span>
-					</a>
-					<ul class="dropdown-list" id="language-list">
-						<li>
-							<a href="?lang=en&th=dark">
-								<img src="img/uk.png" alt="UK"/>
-								<span>English</span>
-							</a>
-						</li>
-						<li>
-							<a href="?lang=pl&th=dark">
-								<img src="img/polska.png" alt="Polska"/>
-								<span>polski</span>
-							</a>
-						</li>
-					</ul>
-				</li><li tabindex="0">
+				</li><li class="focusable" tabindex="0">
 					<a>
 						<i class="fa fa-adjust"></i>
 						<span class="mobile-invisible">theme</span>
 					</a>
 					<ul class="dropdown-list" id="theme-list">
 						<li>
-							<a href="?lang=en&th=light">
-								<div style="background-color: #eee; color: #000"></div>
+							<a href="?lang=en&theme=light">
+								<div style="background-color: #eee;"></div>
 								<span>modern (light)</span>
 							</a>
 						</li>
 						<li>
-							<a href="?lang=en&th=blue">
-								<div style="background-color: #00a; color: #fff;"></div>
+							<a href="?lang=en&theme=blue">
+								<div style="background-color: #00a;"></div>
 								<span>DOS (blue / gray)</span>
 							</a>
 						</li>
 						<li>
-							<a href="?lang=en&th=gray">
-								<div style="background-color: #aaa; color: #fff;"></div>
+							<a href="?lang=en&theme=gray">
+								<div style="background-color: #aaa;"></div>
 								<span>DOS (gray / blue)</span>
 							</a>
 						</li>
 						<li>
-							<a href="?lang=en&th=dark">
-								<div style="background-color: #000; color: #fff;"></div>
+							<a href="?lang=en&theme=dark">
+								<div style="background-color: #000; border-color: #fff;"></div>
 								<span>terminal (dark)</span>
+							</a>
+						</li>
+					</ul>
+				</li><li class="focusable" tabindex="0">
+					<a>
+						<i class="fa fa-globe-americas"></i>
+						<span class="mobile-invisible">language</span>
+					</a>
+					<ul class="dropdown-list" id="language-list">
+						<li>
+							<a href="?lang=en&theme=light">
+								<img src="img/uk.png" alt="UK"/>
+								<span>English</span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=pl&theme=light">
+								<img src="img/polska.png" alt="Polska"/>
+								<span>polski</span>
 							</a>
 						</li>
 					</ul>
@@ -112,59 +112,59 @@
 	</header>
 	<div id="wrapper">
 <nav>
-	<h2><a href="index.html?lang=en&th=dark"><i class="fa fa-home fa-fw"></i> home</a></h2>
+	<h2><a href="index.html?lang=en&theme=light"><i class="fa fa-home fa-fw"></i> home</a></h2>
 	<hr>
-	<h2><a href="how-to.html?lang=en&th=dark"><i class="far fa-lightbulb fa-fw"></i> how to ...</a></h2>
+	<h2><a href="how-to.html?lang=en&theme=light"><i class="far fa-lightbulb fa-fw"></i> how to ...</a></h2>
 	<hr>
-	<h2><a href="linux.html?lang=en&th=dark"><i class="fab fa-linux fa-fw"></i> linux</a></h2>
+	<h2><a href="linux.html?lang=en&theme=light"><i class="fab fa-linux fa-fw"></i> linux</a></h2>
 	<hr>
 	<ul>
-		<li><a href="linux.html?lang=en&th=dark#introduction"><i class="far fa-play-circle fa-fw"></i> introduction</a></li>
-		<li><a href="linux.html?lang=en&th=dark#keyboard-shortcuts"><i class="far fa-keyboard fa-fw"></i> keyboard shortcuts</a></li>
-		<li><a href="linux.html?lang=en&th=dark#disks-partitions"><i class="far fa-hdd fa-fw"></i> disks & partitions</a></li>
-		<li><a href="linux.html?lang=en&th=dark#directory-structure"><i class="fas fa-sitemap fa-fw"></i> directory structure</a></li>
-		<li><a href="linux.html?lang=en&th=dark#system-files"><i class="fa fa-file-invoice fa-fw"></i> system files</a></li>
-		<li><a href="linux.html?lang=en&th=dark#environment-variables"><i class="fa fa-dollar-sign fa-fw"></i> environment variables</a></li>
-		<li><a href="linux.html?lang=en&th=dark#access-rights"><i class="fas fa-unlock-alt fa-fw"></i> access rights</a></li>
-		<li><a href="linux.html?lang=en&th=dark#pipelines-redirections"><i class="fas fa-directions fa-fw"></i> pipelines & redirections</a></li>
-		<li><a href="linux.html?lang=en&th=dark#command-information"><i class="fa fa-question fa-fw"></i> command information</a></li>
-		<li><a href="linux.html?lang=en&th=dark#browsing-directories"><i class="far fa-folder-open fa-fw"></i> browsing directories</a></li>
-		<li><a href="linux.html?lang=en&th=dark#file-manipulation"><i class="far fa-copy fa-fw"></i> file manipulation</a></li>
-		<li><a href="linux.html?lang=en&th=dark#file-information"><i class="far fa-file-alt fa-fw"></i> file information</a></li>
-		<li><a href="linux.html?lang=en&th=dark#reading-files"><i class="far fa-file-alt fa-fw"></i> reading files</a></li>
-		<li><a href="linux.html?lang=en&th=dark#console"><i class="fa fa-terminal fa-fw"></i> console</a></li>
-		<li><a href="linux.html?lang=en&th=dark#power-session"><i class="fa fa-power-off fa-fw"></i> power & session</a></li>
-		<li><a href="linux.html?lang=en&th=dark#file-system"><i class="far fa-hdd fa-fw"></i> file system</a></li>
-		<li><a href="linux.html?lang=en&th=dark#administration"><i class="fa fa-shield-alt fa-fw"></i> administration</a></li>
-		<li><a href="linux.html?lang=en&th=dark#users"><i class="far fa-user fa-fw"></i> users</a></li>
-		<li><a href="linux.html?lang=en&th=dark#user-administration"><i class="fa fa-user-shield fa-fw"></i> user administration</a></li>
-		<li><a href="linux.html?lang=en&th=dark#statistics"><i class="fa fa-chart-bar fa-fw"></i> statistics</a></li>
-		<li><a href="linux.html?lang=en&th=dark#system"><i class="fa fa-laptop fa-fw"></i> system</a></li>
-		<li><a href="linux.html?lang=en&th=dark#hardware"><i class="fa fa-microchip fa-fw"></i> hardware</a></li>
-		<li><a href="linux.html?lang=en&th=dark#network"><i class="fa fa-network-wired fa-fw"></i> network</a></li>
-		<li><a href="linux.html?lang=en&th=dark#wireless"><i class="fa fa-wifi fa-fw"></i> wireless</a></li>
-		<li><a href="linux.html?lang=en&th=dark#network-sniffing"><i class="fa fa-user-secret fa-fw"></i> network sniffing</a></li>
-		<li><a href="linux.html?lang=en&th=dark#processes"><i class="fa fa-list-ol fa-fw"></i> processes</a></li>
-		<li><a href="linux.html?lang=en&th=dark#package-managers"><i class="fa fa-cube fa-fw"></i> package managers</a></li>
-		<li><a href="linux.html?lang=en&th=dark#search"><i class="fa fa-search fa-fw"></i> search</a></li>
-		<li><a href="linux.html?lang=en&th=dark#text-manipulation"><i class="fa fa-edit fa-fw"></i> text manipulation</a></li>
-		<li><a href="linux.html?lang=en&th=dark#archive"><i class="far fa-file-archive fa-fw"></i> archives</a></li>
-		<li><a href="linux.html?lang=en&th=dark#compilation"><i class="far fa-file-code fa-fw"></i> compilation</a></li>
-		<li><a href="linux.html?lang=en&th=dark#text-editors"><i class="fa fa-align-left fa-fw"></i> text editors</a></li>
-		<li><a href="linux.html?lang=en&th=dark#file-managers"><i class="far fa-copy fa-fw"></i> file managers</a></li>
-		<li><a href="linux.html?lang=en&th=dark#useful-programs"><i class="far fa-window-maximize fa-fw"></i> useful programs</a></li>
-		<li><a href="linux.html?lang=en&th=dark#ncurses-programs"><i class="far fa-window-maximize fa-fw"></i> ncurses programs</a></li>
-		<li><a href="linux.html?lang=en&th=dark#x-server"><i class="fa fa-desktop fa-fw"></i> x server</a></li>
-		<li><a href="linux.html?lang=en&th=dark#bash-scripts"><i class="fa fa-code fa-fw"></i> bash scripts</a></li>
-		<li><a href="linux.html?lang=en&th=dark#ssh"><i class="fas fa-tty fa-fw"></i> telnet & ssh</a></li>
-		<li><a href="linux.html?lang=en&th=dark#wine"><i class="fas fa-wine-glass-alt fa-fw"></i> wine</a></li>
-		<li><a href="linux.html?lang=en&th=dark#xampp"><i class="fab fa-php fa-fw"></i> xampp</a></li>
-		<li><a href="linux.html?lang=en&th=dark#git"><i class="fab fa-git-alt fa-fw"></i> git</a></li>
+		<li><a href="linux.html?lang=en&theme=light#introduction"><i class="far fa-play-circle fa-fw"></i> introduction</a></li>
+		<li><a href="linux.html?lang=en&theme=light#keyboard-shortcuts"><i class="far fa-keyboard fa-fw"></i> keyboard shortcuts</a></li>
+		<li><a href="linux.html?lang=en&theme=light#disks-partitions"><i class="far fa-hdd fa-fw"></i> disks & partitions</a></li>
+		<li><a href="linux.html?lang=en&theme=light#directory-structure"><i class="fas fa-sitemap fa-fw"></i> directory structure</a></li>
+		<li><a href="linux.html?lang=en&theme=light#system-files"><i class="fa fa-file-invoice fa-fw"></i> system files</a></li>
+		<li><a href="linux.html?lang=en&theme=light#environment-variables"><i class="fa fa-dollar-sign fa-fw"></i> environment variables</a></li>
+		<li><a href="linux.html?lang=en&theme=light#access-rights"><i class="fas fa-unlock-alt fa-fw"></i> access rights</a></li>
+		<li><a href="linux.html?lang=en&theme=light#pipelines-redirections"><i class="fas fa-directions fa-fw"></i> pipelines & redirections</a></li>
+		<li><a href="linux.html?lang=en&theme=light#command-information"><i class="fa fa-question fa-fw"></i> command information</a></li>
+		<li><a href="linux.html?lang=en&theme=light#browsing-directories"><i class="far fa-folder-open fa-fw"></i> browsing directories</a></li>
+		<li><a href="linux.html?lang=en&theme=light#file-manipulation"><i class="far fa-copy fa-fw"></i> file manipulation</a></li>
+		<li><a href="linux.html?lang=en&theme=light#file-information"><i class="far fa-file-alt fa-fw"></i> file information</a></li>
+		<li><a href="linux.html?lang=en&theme=light#reading-files"><i class="far fa-file-alt fa-fw"></i> reading files</a></li>
+		<li><a href="linux.html?lang=en&theme=light#console"><i class="fa fa-terminal fa-fw"></i> console</a></li>
+		<li><a href="linux.html?lang=en&theme=light#power-session"><i class="fa fa-power-off fa-fw"></i> power & session</a></li>
+		<li><a href="linux.html?lang=en&theme=light#file-system"><i class="far fa-hdd fa-fw"></i> file system</a></li>
+		<li><a href="linux.html?lang=en&theme=light#administration"><i class="fa fa-shield-alt fa-fw"></i> administration</a></li>
+		<li><a href="linux.html?lang=en&theme=light#users"><i class="far fa-user fa-fw"></i> users</a></li>
+		<li><a href="linux.html?lang=en&theme=light#user-administration"><i class="fa fa-user-shield fa-fw"></i> user administration</a></li>
+		<li><a href="linux.html?lang=en&theme=light#statistics"><i class="fa fa-chart-bar fa-fw"></i> statistics</a></li>
+		<li><a href="linux.html?lang=en&theme=light#system"><i class="fa fa-laptop fa-fw"></i> system</a></li>
+		<li><a href="linux.html?lang=en&theme=light#hardware"><i class="fa fa-microchip fa-fw"></i> hardware</a></li>
+		<li><a href="linux.html?lang=en&theme=light#network"><i class="fa fa-network-wired fa-fw"></i> network</a></li>
+		<li><a href="linux.html?lang=en&theme=light#wireless"><i class="fa fa-wifi fa-fw"></i> wireless</a></li>
+		<li><a href="linux.html?lang=en&theme=light#network-sniffing"><i class="fa fa-user-secret fa-fw"></i> network sniffing</a></li>
+		<li><a href="linux.html?lang=en&theme=light#processes"><i class="fa fa-list-ol fa-fw"></i> processes</a></li>
+		<li><a href="linux.html?lang=en&theme=light#package-managers"><i class="fa fa-cube fa-fw"></i> package managers</a></li>
+		<li><a href="linux.html?lang=en&theme=light#search"><i class="fa fa-search fa-fw"></i> search</a></li>
+		<li><a href="linux.html?lang=en&theme=light#text-manipulation"><i class="fa fa-edit fa-fw"></i> text manipulation</a></li>
+		<li><a href="linux.html?lang=en&theme=light#archive"><i class="far fa-file-archive fa-fw"></i> archives</a></li>
+		<li><a href="linux.html?lang=en&theme=light#compilation"><i class="far fa-file-code fa-fw"></i> compilation</a></li>
+		<li><a href="linux.html?lang=en&theme=light#text-editors"><i class="fa fa-align-left fa-fw"></i> text editors</a></li>
+		<li><a href="linux.html?lang=en&theme=light#file-managers"><i class="far fa-copy fa-fw"></i> file managers</a></li>
+		<li><a href="linux.html?lang=en&theme=light#useful-programs"><i class="far fa-window-maximize fa-fw"></i> useful programs</a></li>
+		<li><a href="linux.html?lang=en&theme=light#ncurses-programs"><i class="far fa-window-maximize fa-fw"></i> ncurses programs</a></li>
+		<li><a href="linux.html?lang=en&theme=light#x-server"><i class="fa fa-desktop fa-fw"></i> x server</a></li>
+		<li><a href="linux.html?lang=en&theme=light#bash-scripts"><i class="fa fa-code fa-fw"></i> bash scripts</a></li>
+		<li><a href="linux.html?lang=en&theme=light#ssh"><i class="fas fa-tty fa-fw"></i> telnet & ssh</a></li>
+		<li><a href="linux.html?lang=en&theme=light#wine"><i class="fas fa-wine-glass-alt fa-fw"></i> wine</a></li>
+		<li><a href="linux.html?lang=en&theme=light#xampp"><i class="fab fa-php fa-fw"></i> xampp</a></li>
+		<li><a href="linux.html?lang=en&theme=light#git"><i class="fab fa-git-alt fa-fw"></i> git</a></li>
 	</ul>
 	<hr>
-	<h2><a href="win-dos.html?lang=en&th=dark"><i class="fab fa-windows fa-fw"></i> win cmd / DOS</a></h2>
+	<h2><a href="win-dos.html?lang=en&theme=light"><i class="fab fa-windows fa-fw"></i> win cmd / DOS</a></h2>
 	<hr>
-	<h2><a href="powershell.html?lang=en&th=dark"><i class="fa fa-terminal fa-fw"></i> PowerShell</a></h2>
+	<h2><a href="powershell.html?lang=en&theme=light"><i class="fa fa-terminal fa-fw"></i> PowerShell</a></h2>
 </nav>
 <main onclick="hideMenuByClickOutsideIt()">
 
