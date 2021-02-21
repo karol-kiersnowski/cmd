@@ -59,6 +59,14 @@ footer hr {
 	color: var(--black);
 }
 
+body {
+	background-color: var(--dark-gray);
+}
+
+main {
+	outline: 4px double var(--black);
+}
+
 hr {
 	border: none;
 	border-top-width: 5px;
@@ -97,14 +105,19 @@ nav {
 	scrollbar-color: var(--white) var(--blue);
 }
 
+nav {
+	box-shadow: 10px 0px 0px rgba(85, 85, 85, 0.75);
+}
 
 header,
 header ul.dropdown-list,
-nav,
 table,
 samp {
 	box-shadow: 10px 10px 0px rgba(85, 85, 85, 0.75);
 }
+
+
+
 
 code {
 	box-shadow: 5px 5px 0px rgba(85, 85, 85, 0.75);

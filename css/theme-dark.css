@@ -42,6 +42,15 @@ samp {
 	border-color: #aaa;
 }
 
+body {
+
+}
+
+main {
+	background-color: #222;
+	outline: 1px solid #fff;
+}
+
 main a {
 	color: #aaa;
 }
