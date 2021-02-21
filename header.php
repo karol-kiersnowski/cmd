@@ -37,7 +37,7 @@
 				<li>
 					<a href="how-to.php<?=$suffix?>">
 						<i class="far fa-lightbulb"></i>
-						<span class="mobile-invisible">how to...</span>
+						<span class="mobile-invisible"><?=$howTo?></span>
 					</a>
 				</li><li>
 					<a href="linux.php<?=$suffix?>">
