@@ -1,6 +1,6 @@
 ![icon](https://karol-kiersnowski.github.io/img/icons/terminal-32x32.png) cmd-line.com
 ------------
-cmd-line.com is a website for learning the Command-Line Interface
+cmd-line.com is a website for learning the Command-Line Interface.
 
 ### Project sites
 1. [https://karol-kiersnowski.github.io/cmd](https://karol-kiersnowski.github.io/cmd) (static website - without PHP preprocessor)
@@ -8,7 +8,7 @@ cmd-line.com is a website for learning the Command-Line Interface
 
 ### Documentation & source code
 1. [https://github.com/karol-kiersnowski/cmd](https://github.com/karol-kiersnowski/cmd)
-2. [https://karol-kiersnowski.github.io/#cmd](http://karol-kiersnowski.github.io/#cmd)
+2. [https://karol-kiersnowski.github.io/#cmd](https://karol-kiersnowski.github.io/#cmd)
 3. [http://karol-kiersnowski.prv.pl/#cmd](http://karol-kiersnowski.prv.pl/#cmd)
 
 ### Technologies
