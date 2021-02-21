@@ -24,7 +24,7 @@
 		<div id="header-content">
 			<h1>
 				<a id="menu" title="Menu" onclick="changeMenu()">
-					<i class="fa fa-list-ul fa-fw"></i>
+					<i class="fa fa-bars fa-fw"></i>
 				</a>
 			</h1>
 			<h1>
