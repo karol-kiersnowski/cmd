@@ -7,6 +7,10 @@
 	--white: #fff;
 }
 
+nav {
+	z-index: 2;
+}
+
 body,
 input,
 textarea,
@@ -32,7 +36,6 @@ main a {
 }
 
 header,
-nav,
 ul.dropdown-list {
 	border-width: 5px;
 	border-style: double;
@@ -41,6 +44,9 @@ ul.dropdown-list {
 
 nav {
 	border-top: none;
+	border-width: 0 5px;
+	border-style: double;
+	text-transform: uppercase;
 }
 
 header a:hover,
