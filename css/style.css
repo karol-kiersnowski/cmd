@@ -629,10 +629,23 @@ iframe {
 
 
 @media only screen and (max-width: 1000px) {
-	body { margin: 0; }
-	nav { display: none; }
-	main { padding: 20px 10px; }
-	main, footer { margin-left: 0; }
+	body {
+		margin: 0;
+	}
+
+	nav {
+		display: none;
+		z-index: 1;
+	}
+
+	main {
+		z-index: 0;
+		padding: 20px 10px;
+	}
+
+	main, footer {
+		margin-left: 0;
+	}
 
 	input[type="text"],
 	textarea,

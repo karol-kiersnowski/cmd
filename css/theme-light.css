@@ -7,7 +7,7 @@ samp div.caption {
 }
 
 nav {
-	margin-top: 42px;
+	margin-top: 41px;
 }
 
 header,
@@ -96,4 +96,13 @@ button.clipboard:hover {
 ul.dropdown-list {
 	background-color: #eee;
 	box-shadow: 0px 0px 5px #aaa;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	nav {
+		z-index: 1;
+		box-shadow: 0px 0px 10px #aaa;
+	}
+
 }

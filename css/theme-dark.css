@@ -14,7 +14,7 @@ header {
 }
 
 nav {
-	margin-top: 45px;
+	margin-top: 44px;
 	text-transform: lowercase;
 }
 
@@ -64,7 +64,7 @@ samp div {
 
 ul.dropdown-list,
 a.button {
-	border: 1px solid #aaa;
+	border: 1px solid #fff;
 }
 
 nav {
@@ -89,4 +89,12 @@ th { background-color: #555; }
 .card-content:hover {
 	border-style: solid;
 	background-color: #aaa
+}
+
+@media only screen and (max-width: 1000px) {
+
+	nav {
+		outline: 1px solid #fff;
+	}
+
 }
