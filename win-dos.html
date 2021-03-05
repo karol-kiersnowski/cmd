@@ -265,9 +265,11 @@
 				<td>cmd.exe<br>PowerShell<sup>[2]</sup></td>
 			</tr>
 			<tr>
-				<th>DOS programs run</th>
-				<td colspan="3">natively</td>
-				<td>in virtual machine - <a target="_blank" href="https://en.wikipedia.org/wiki/Virtual_DOS_machine#Windows_NTVDM">NTVDM</a></td>
+				<th>DOS programs run in</th>
+				<td>real mode</td>
+				<td>real / virtual mode<sup>[3]</sup></td>
+				<td>virtual mode<sup>[4]</sup></td>
+				<td>virtual machine - <a target="_blank" href="https://en.wikipedia.org/wiki/Virtual_DOS_machine#Windows_NTVDM">NTVDM</a></td>
 				<td>-</td>
 			</tr>
 			<tr>
@@ -280,7 +282,7 @@
 			<tr>
 				<th>file system</th>
 				<td colspan="2">FAT12<br>FAT16</td>
-				<td>FAT16<br>VFAT<br>FAT32<sup>[3]</sup></td>
+				<td>FAT16<br>VFAT<br>FAT32<sup>[5]</sup></td>
 				<td colspan="2">NTFS</td>
 			</tr>
 			<tr>
@@ -299,6 +301,8 @@
 		<ol>
 			<li>Windows 3.1 / 3.11: there is an additional Win32s API which allows to run some 32-bit programs</li>
 			<li>PowerShell: in Windows 7 and later</li>
+			<li>From <em>Windows /386 2.1</em>, DOS programs can run in virtual mode</li>
+			<li>In Windows 95/98 it is possible to run pure DOS in real mode without Windows</li>
 			<li>FAT32: supported in Windows 95 OSR2 and later Win9x</li>
 		</ol>
 
