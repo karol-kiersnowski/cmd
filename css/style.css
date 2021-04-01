@@ -55,6 +55,7 @@ header {
 }
 
 	h1 {
+		display: inline-block;
 		float: left;
 		margin: 0;
 		font-size: 26px;
@@ -63,6 +64,7 @@ header {
 	h1 a {
 		display: inline-block;
 		padding: 6px 8px;
+		height: 42px;
 	}
 	
 	/*header #logo::after {
@@ -72,6 +74,49 @@ header {
   		animation-iteration-count: infinite;
 	}*/
 
+	nav {
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		bottom: 0;
+		margin-top: 53px;
+		width: 300px;
+		/*height: calc(100% - 53px);*/
+		/*white-space: nowrap;*/
+		scrollbar-width: thin;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
+	nav#vertical ul {
+		float: none;
+	}
+
+		nav h2 a {
+			display: block;
+			padding: 15px 10px;
+			font-size: 26px;
+		}
+
+		nav ul {
+			margin: 0;
+			padding-left: 0;
+		}
+
+			nav ul i {
+				vertical-align: sub;
+			}
+
+		nav li a {
+			display: block;
+			padding: 10px 10px;
+		}
+
+			nav a i {
+				margin-right: 5px;
+				font-size: 24px;
+			}
+
 	header ul {
 		float: right;
 		margin: 0;
@@ -79,7 +124,7 @@ header {
 		font-size: 16px;
 	}
 
-		header ul li {
+		#header-content > ul li {
 			display: inline-block;
 			position: relative;
 		}
@@ -87,6 +132,7 @@ header {
 			header ul li a {
 				display: inline-block;
 				padding: 12px 6px;
+				height: 42px;
 			}
 
 			ul.dropdown-list {
@@ -141,45 +187,6 @@ header {
 	margin-right: auto;
 	max-width: 1250px;
 }
-
-nav {
-	position: fixed;
-	z-index: 2;
-	top: 0;
-	bottom: 0;
-	margin-top: 53px;
-	width: 300px;
-	/*height: calc(100% - 53px);*/
-	/*white-space: nowrap;*/
-	scrollbar-width: thin;
-	overflow-y: auto;
-	overflow-x: hidden;
-}
-
-	nav h2 a {
-		display: block;
-		padding: 15px 10px;
-		font-size: 26px;
-	}
-
-	nav ul {
-		margin: 0;
-		padding-left: 0;
-	}
-
-		nav ul i {
-			vertical-align: sub;
-		}
-
-	nav li a {
-		display: block;
-		padding: 10px 10px;
-	}
-
-		nav a i {
-			margin-right: 5px;
-			font-size: 24px;
-		}
 
 main {
 	position: relative;
@@ -642,7 +649,6 @@ iframe {
 
 	nav {
 		display: none;
-		z-index: 1;
 	}
 
 	main {

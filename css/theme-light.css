@@ -6,9 +6,12 @@ samp div.caption {
 	font-family: "Ubuntu Mono", monospace;
 }
 
+header {
+	border-bottom: 1px solid #aaa;
+}
+
 nav {
-	z-index: 1;
-	margin-top: 42px;
+	margin-top: 43px;
 	border-right: 1px solid #aaa;
 }
 
@@ -38,10 +41,6 @@ main {
 
 
 
-
-header {
-	border-bottom: 1px solid #aaa;
-}
 
 
 

@@ -1,4 +1,4 @@
-<nav>
+<!-- <nav>
 	<h2><a href="index.php<?=$suffix?>"><i class="fa fa-home fa-fw"></i> <?=$home?></a></h2>
 	<hr>
 	<ul>
@@ -17,5 +17,5 @@
 	<hr>
 	<h2><a href="powershell.php<?=$suffix?>"><i class="fa fa-terminal fa-fw"></i> PowerShell</a></h2>
 	<hr>
-</nav>
+</nav> -->
 <main onclick="hideMenuByClickOutsideIt()">
