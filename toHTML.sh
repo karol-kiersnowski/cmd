@@ -10,6 +10,7 @@ php theme.php > theme.html
 php about.php > about.html
 php linux.php > linux.html
 php win-dos.php > win-dos.html
+php dos-commands.php > dos-commands.html
 php powershell.php > powershell.html
 #grep '.php' index.html
 sed -i 's/\.php/\.html/g' index.html
