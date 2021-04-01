@@ -144,11 +144,10 @@ header {
 
 nav {
 	position: fixed;
-	z-index: 0;
+	z-index: 2;
 	top: 0;
 	bottom: 0;
 	margin-top: 53px;
-	padding: 10px 0;
 	width: 300px;
 	/*height: calc(100% - 53px);*/
 	/*white-space: nowrap;*/
@@ -157,11 +156,14 @@ nav {
 	overflow-x: hidden;
 }
 
-	nav h2 {
+	nav h2 a {
+		display: block;
+		padding: 15px 10px;
 		font-size: 26px;
 	}
 
 	nav ul {
+		margin: 0;
 		padding-left: 0;
 	}
 
@@ -169,9 +171,9 @@ nav {
 			vertical-align: sub;
 		}
 
-	nav a {
+	nav li a {
 		display: block;
-		padding: 7px 10px;
+		padding: 10px 10px;
 	}
 
 		nav a i {
@@ -181,7 +183,7 @@ nav {
 
 main {
 	position: relative;
-	z-index: 1;
+	z-index: 0;
 	margin-top: 42px;
 	margin-left: 300px;
 	padding: 40px 20px;
@@ -241,7 +243,12 @@ a {
 	cursor: pointer;
 }
 
-
+hr {
+	margin: 0;
+	border: none;
+	border-top-width: 1px;
+	border-top-style: solid;
+}
 
 h2, h3, h4, h5 {
 	font-weight: normal;

@@ -8,20 +8,15 @@ samp div.caption {
 }
 
 header {
-	border-bottom-width: 1px;
-	border-bottom-style: double;
+	border-bottom: 1px solid #fff;
 	text-transform: lowercase;
 }
 
 nav {
+	z-index: 1;
 	margin-top: 44px;
+	border-right: 1px solid #fff;
 	text-transform: lowercase;
-}
-
-hr {
-	border: none;
-	border-top-width: 1px;
-	border-top-style: double;
 }
 
 body,
