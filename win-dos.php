@@ -473,7 +473,7 @@
 				<th>year</th>
 			</tr>
 			<tr>
-				<td>4.00.950</td>
+				<td>4.0<br><small>[950]</small></td>
 				<td>Windows 95</td>
 				<td>7.0</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
@@ -482,7 +482,7 @@
 				<td>1995</td>
 			</tr>
 			<tr>
-				<td>4.00.950a</td>
+				<td>4.0<br><small>[950a]</small></td>
 				<td>Windows 95 SP1</td>
 				<td>7.0</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
@@ -491,7 +491,7 @@
 				<td>1996</td>
 			</tr>
 			<tr>
-				<td>4.00.950A</td>
+				<td>4.0<br><small>[950A]</small></td>
 				<td>Windows 95 OSR1</td>
 				<td>7.0</td>
 				<td><i class="fa fa-times fa-fw"></i></td>
@@ -500,7 +500,7 @@
 				<td>1996</td>
 			</tr>
 			<tr>
-				<td>4.00.950B</td>
+				<td>4.0<br><small>[950B]</small></td>
 				<td>Windows 95 OSR2</td>
 				<td>7.1</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -509,7 +509,7 @@
 				<td>1996</td>
 			</tr>
 			<tr>
-				<td>4.00.950B</td>
+				<td>4.0<br><small>[950B]</small></td>
 				<td>Windows 95 OSR2.1</td>
 				<td>7.1</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -518,7 +518,7 @@
 				<td>1997</td>
 			</tr>
 			<tr>
-				<td>4.00.950C</td>
+				<td>4.0<br><small>[950C]</small></td>
 				<td>Windows 95 OSR2.5</td>
 				<td>7.1</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -527,7 +527,7 @@
 				<td>1997</td>
 			</tr>
 			<tr>
-				<td>4.10.1998</td>
+				<td>4.1<br><small>[1998]</small></td>
 				<td>Windows 98</td>
 				<td>7.1</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -536,7 +536,7 @@
 				<td>1998</td>
 			</tr>
 			<tr>
-				<td>4.10.2222A</td>
+				<td>4.1<br><small>[2222A]</small></td>
 				<td>Windows 98 SE</td>
 				<td>7.1</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -545,7 +545,7 @@
 				<td>1999</td>
 			</tr>
 			<tr>
-				<td>4.90.3000</td>
+				<td>4.9<br><small>[3000]</small></td>
 				<td>Windows Me</td>
 				<td>8.0</td>
 				<td><i class="fa fa-check fa-fw"></i></td>
@@ -577,70 +577,208 @@
 
 		<h4>Windows NT versions</h4>
 		<table class="normal">
-			<tr>
-				<th>version</th>
-				<th>name</th>
-				<th>year</th>
+			<tr rowspan="2">
+				<th rowspan="2">version</th>
+				<th rowspan="2">name</th>
+				<th colspan="3">architecture</th>
+				<th rowspan="2">year</th>
 			</tr>
 			<tr>
-				<td>3.1</td>
+				<th>IA-32<br><small>x86-32</small></th>
+				<th>AMD64<br><small>x86-64</small></th>
+				<th>other</th>
+			</tr>
+			<tr>
+				<td>3.1<br><small>[528]</small></td>
 				<td>Windows NT 3.1</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td>Alpha, MIPS</td>
 				<td>1993</td>
 			</tr>
 			<tr>
-				<td>3.5</td>
+				<td>3.5<br><small>[807]</small></td>
 				<td>Windows NT 3.5</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td>Alpha, MIPS, PowerPC</td>
 				<td>1994</td>
 			</tr>
 			<tr>
-				<td>3.51</td>
+				<td>3.51<br><small>[1057]</small></td>
 				<td>Windows NT 3.51</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td>Alpha, MIPS, PowerPC</td>
 				<td>1995</td>
 			</tr>
 			<tr>
-				<td>4.0</td>
+				<td>4.0<br><small>[1381]</small></td>
 				<td>Windows NT 4.0</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td>Alpha, MIPS, PowerPC</td>
 				<td>1996</td>
 			</tr>
 			<tr>
-				<td>5.0</td>
+				<td>5.0<br><small>[2195]</small></td>
 				<td>Windows 2000</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td></td>
 				<td>2000</td>
 			</tr>
 			<tr>
-				<td>5.1</td>
+				<td>5.1<br><small>[2600]</small></td>
 				<td>Windows XP</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td></td>
 				<td>2001</td>
 			</tr>
 			<tr>
 				<td>5.2</td>
-				<td>Windows XP 64-bit Edition<br>Windows Server 2003<br>Windows Server 2003 R2</td>
-				<td>2005<br>2003<br>2005</td>
+				<td>Windows XP 64-bit Edition</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td>IA-64</td>
+				<td>2005</td>
 			</tr>
 			<tr>
-				<td>6.0</td>
-				<td>Windows Vista<br>Windows Server 2008</td>
-				<td>2006<br>2008</td>
+				<td>5.2<br><small>[3790]</small></td>
+				<td>Windows Server 2003</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td>IA-64</td>
+				<td>2003</td>
 			</tr>
 			<tr>
-				<td>6.1</td>
-				<td>Windows 7<br>Windows Server 2008 R2</td>
+				<td>5.2<br><small>[3790]</small></td>
+				<td>Windows XP Professional x64 Edition</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td></td>
+				<td>2005</td>
+			</tr>
+			<tr>
+				<td>5.2<br><small>[3790]</small></td>
+				<td>Windows Server 2003 R2</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td>IA-64</td>
+				<td>2005</td>
+			</tr>
+			<tr>
+				<td>6.0<br><small>[6002]</small></td>
+				<td>Windows Vista</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td></td>
+				<td>2006</td>
+			</tr>
+			<tr>
+				<td>6.0<br><small>[6003]</small></td>
+				<td>Windows Server 2008</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td>IA-64</td>
+				<td>2008</td>
+			</tr>
+			<tr>
+				<td>6.1<br><small>[7601]</small></td>
+				<td>Windows 7</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td></td>
 				<td>2009</td>
 			</tr>
 			<tr>
-				<td>6.2</td>
-				<td>Windows 8<br>Windows Server 2012</td>
+				<td>6.1<br><small>[7601]</small></td>
+				<td>Windows Server 2008 R2</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td>IA-64</td>
+				<td>2009</td>
+			</tr>
+			<tr>
+				<td>6.2<br><small>[9200]</small></td>
+				<td>Windows 8</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td></td>
 				<td>2012</td>
 			</tr>
 			<tr>
-				<td>6.3</td>
-				<td>Windows 8.1<br>Windows Server 2012 R2</td>
+				<td>6.2<br><small>[9200]</small></td>
+				<td>Windows Server 2012</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td></td>
+				<td>2012</td>
+			</tr>
+			<tr>
+				<td>6.3<br><small>[9600]</small></td>
+				<td>Windows RT</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td>ARMv7 (32-bit)</td>
+				<td>2012</td>
+			</tr>
+			<tr>
+				<td>6.3<br><small>[9600]</small></td>
+				<td>Windows 8.1</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td></td>
 				<td>2013</td>
 			</tr>
 			<tr>
-				<td>10.0</td>
-				<td>Windows 10<br>Windows Server 2016<br>Windows Server 2019</td>
-				<td>2015<br>2016<br>2018</td>
+				<td>6.3<br><small>[9600]</small></td>
+				<td>Windows Server 2012 R2</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td></td>
+				<td>2013</td>
+			</tr>
+			<tr>
+				<td>10.0<br><small>[10240]</small></td>
+				<td>Windows 10</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td></td>
+				<td>2015</td>
+			</tr>
+			<tr>
+				<td>10.0<br><small>[14393]</small></td>
+				<td>Windows 10</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td></td>
+				<td>2016</td>
+			</tr>
+			<tr>
+				<td>10.0<br><small>[14393]</small></td>
+				<td>Windows Server 2016</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td></td>
+				<td>2016</td>
+			</tr>
+			<tr>
+				<td>10.0<br><small>[17763]</small></td>
+				<td>Windows 10</td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td></td>
+				<td>2018</td>
+			</tr>
+			<tr>
+				<td>10.0<br><small>[17763]</small></td>
+				<td>Windows Server 2019</td>
+				<td><i class="fa fa-times fa-fw"></i></td>
+				<td><i class="fa fa-check fa-fw"></i></td>
+				<td></td>
+				<td>2018</td>
 			</tr>
 		</table>
 	</article>
