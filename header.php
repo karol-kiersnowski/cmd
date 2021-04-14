@@ -27,13 +27,19 @@
 <body onscroll="markAnchor()">
 	<div class="wrapper">
 		<header>
-			<h1>C:\&gt;cmd-line.com</h1>
+			<h1>C:\&gt;<a href="index.html">cmd-line.com</a></h1>
+			<p class="mobile-invisible">
+<?php if ($lang == "en") { ?>
+				"Let's learn the Command-Line Interface!"
+<?php } else { ?>
+				"Zacznijmy naukę wiersza poleceń!"
+<?php } ?>
+			</p>
 		</header>
 	</div>
 	<nav>
 		<div id="nav-content">
-			<h2 class="float-left">
+			<h2 class="float-left" style="width: 40px; height: 40px;">
 				<a id="menu" title="Menu" onclick="switchMenu()">
 					<i class="fa fa-bars fa-fw"></i>
 				</a>
-			</h2>

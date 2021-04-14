@@ -3,7 +3,7 @@
 	$title = $cmd . $guestbook;
 	include "header.php";
 	include "nav-main.php";
-	include "header2.php";
+	include "nav-dropdowns.php";
 ?>
 <h2 class="float-left"><i class="fa fa-address-book"></i> <?=$guestbook?></h2>
 <a class="float-right button" href="guestbook.php<?=$suffix?>"><i class="fa fa-arrow-left"></i> <?=$back?></a>

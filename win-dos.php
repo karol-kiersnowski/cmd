@@ -3,7 +3,7 @@
 	$title = $cmd . " windows cmd | dos";
 	include "header.php";
 	include "nav-win-dos.php";
-	include "header2.php";
+	include "nav-dropdowns.php";
 ?>
 
 <h2><i class="fab fa-windows"></i> Windows cmd / DOS</h2>

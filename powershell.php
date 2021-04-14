@@ -3,7 +3,7 @@
 	$title = $cmd . " PowerShell";
 	include "header.php";
 	include "nav-powershell.php";
-	include "header2.php";
+	include "nav-dropdowns.php";
 ?>
 
 <h2><i class="fa fa-terminal"></i> PowerShell</h2>

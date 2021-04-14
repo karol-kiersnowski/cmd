@@ -3,7 +3,7 @@
 	$title = $cmd . " linux";
 	include "header.php";
 	include "nav-linux.php";
-	include "header2.php";
+	include "nav-dropdowns.php";
 ?>
 
 <h2><i class="fab fa-linux"></i> GNU Linux (BASH) [Debian-based distros]</h2>

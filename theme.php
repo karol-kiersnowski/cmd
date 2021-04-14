@@ -3,7 +3,7 @@
 	$title = $cmd . $theme;
 	include "header.php";
 	include "nav-main.php";
-	include "header2.php";
+	include "nav-dropdowns.php";
 ?>
 <h2><i class="fa fa-adjust"></i> <?=$theme?></h2>
 <section>

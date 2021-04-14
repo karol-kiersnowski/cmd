@@ -7,8 +7,9 @@
 	--white: #000;
 }
 
-nav {
-	z-index: 2;
+div#side-menu {
+	top: 5px;
+	height: calc(100vh - 50px);
 }
 
 body,
@@ -20,10 +21,9 @@ samp div.caption {
 	font-family: DOSEGA, Consolas, monospace;
 }
 
-header,
-header a,
 header ul.dropdown-list,
 nav,
+div#side-menu,
 nav a,
 nav hr,
 samp div {
@@ -35,18 +35,23 @@ main a {
 	color: var(--blue);
 }
 
-header,
+header {
+	border-width: 5px 5px 0 5px;
+	border-style: double;
+	text-transform: uppercase;
+}
+
+nav,
 ul.dropdown-list {
 	border-width: 5px;
 	border-style: double;
 	text-transform: uppercase;
 }
 
-nav {
-	border-top: none;
-	border-width: 0 5px;
+div#side-menu {
+	margin-left: -5px;
+	border-width: 0 5px 5px 5px;
 	border-style: double;
-	text-transform: uppercase;
 }
 
 header a:hover,
@@ -58,6 +63,8 @@ main a:hover {
 }
 
 body,
+header,
+header a,
 main,
 main hr,
 footer hr {
@@ -70,7 +77,8 @@ body {
 }
 
 main {
-	outline: 4px double var(--black);
+	border-width: 0 5px 5px 5px;
+	border-style: double;
 }
 
 hr {
@@ -111,12 +119,9 @@ nav {
 	scrollbar-color: var(--white) var(--blue);
 }
 
-nav {
-	box-shadow: 10px 0px 0px rgba(85, 85, 85, 0.75);
-}
-
-header,
-header ul.dropdown-list,
+nav,
+#side-menu,
+nav ul.dropdown-list,
 table,
 samp {
 	box-shadow: 10px 10px 0px rgba(85, 85, 85, 0.75);

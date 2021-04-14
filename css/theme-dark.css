@@ -2,94 +2,116 @@ body,
 input,
 textarea,
 button,
-pre,
 samp div.caption {
-	font-family: DOSEGA, Consolas, monospace;
+	font-family: DOSEGA, Console, monospace;
 }
 
-header {
-	border-bottom: 1px solid #fff;
-	text-transform: lowercase;
+:root {
+	--white: #000;
+	--blue: #fff;
+	--light-gray: #111;
+	--gray: #aaa;
+	--dark-gray: #aaa;
+	--black: #fff;
 }
 
 nav {
-	z-index: 1;
-	margin-top: 42px;
-	border-right: 1px solid #fff;
-	text-transform: lowercase;
+	outline: 1px solid var(--dark-gray);
+	scrollbar-color: #fff #111;
 }
 
-body,
 header,
-header a,
 nav,
-nav a,
-nav hr,
-main,
-hr {
-	background-color: #000;
-	color: #fff;
+div#side-menu {
+	background-color: var(--light-gray);
+	color: var(--black);
 }
 
-samp {
-	border-color: #aaa;
-}
-
-body {
-
-}
-
-main {
-	background-color: #222;
-	outline: 1px solid #fff;
-}
-
-main a {
-	color: #aaa;
-}
-
-header a:hover,
-header li.focusable:focus,
-nav a:hover,
-main a:hover,
 samp div {
 	background-color: #aaa;
 	color: #000;
 }
 
-ul.dropdown-list,
-a.button {
-	border: 1px solid #fff;
+hr,
+samp {
+	border-color: var(--dark-gray);
 }
 
-nav {
-	scrollbar-color: #fff #000;
+body {
+	background-color: var(--light-gray);
+	color: var(--black);
 }
 
-th { background-color: #555; }
-
-
-.card-content {
-	
+header {
+	outline: 1px solid  var(--dark-gray);
+	background-color: var(--white);
 }
 
-.card-content:hover {
-	
-}
-
-.card-content {
-	border: 5px double #aaa;
-}
-
-.card-content:hover {
+main {
+	background-color: var(--white);
+	color: var(--black);
+	border-width: 0 1px 1px 1px;
 	border-style: solid;
-	background-color: #aaa
+	border-color: var(--dark-gray);
 }
 
-@media only screen and (max-width: 1000px) {
 
-	nav {
-		outline: 1px solid #fff;
+
+
+
+
+
+
+
+
+
+
+
+
+
+a {
+	color: var(--blue);
+}
+
+nav a:hover,
+nav li.focusable:focus,
+nav a:hover {
+	background-color: var(--gray);
+	color: #000;
+}
+
+main a:hover {
+	text-decoration: underline;
+}
+
+button.clipboard:hover {
+	box-shadow: 0px 0px 5px var(--dark-gray);
+}
+
+.card-content {
+	border: 1px solid var(--dark-gray);
+}
+
+.card-content:hover {
+	box-shadow: 0px 0px 3px var(--dark-gray);
+}
+
+	.card-caption {
+		background-color: var(--light-gray);
 	}
 
+.button {
+	background-color: --var(--black);
+	border: 1px solid var(--dark-gray);
+}
+
+.button:hover {
+	background-color: #aaa;
+	color: #000;
+	box-shadow: 0px 0px 2px var(--dark-gray);
+}
+
+ul.dropdown-list {
+	background-color: var(--light-gray);
+	outline: 1px solid var(--dark-gray);
 }

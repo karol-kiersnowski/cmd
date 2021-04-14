@@ -1,9 +1,4 @@
 @font-face {
-	font-family: "Ubuntu Mono";
- 	src: url("../webfonts/UbuntuMono-Regular.ttf");
-}
-
-@font-face {
 	font-family: "DOSEGA";
  	src: url("../webfonts/DOSEGA.ttf");
 }
@@ -14,25 +9,8 @@
 }
 
 @font-face {
-	font-family: "VT323";
- 	src: url("../webfonts/VT323-Regular.ttf");
-}
-
-@font-face {
 	font-family: "SyneMono";
  	src: url("../webfonts/SyneMono-Regular.ttf");
-}
-
-@font-face {
-	font-family: "MajorMonoDisplay";
- 	src: url("../webfonts/MajorMonoDisplay-Regular.ttf");
-}
-
-SyneMono
-
-@font-face {
-	font-family: "Windows command prompt";
- 	src: url("../webfonts/windows_command_prompt.ttf");
 }
 
 @keyframes animation {
@@ -55,7 +33,7 @@ SyneMono
 
 
 * { box-sizing: border-box; }
-:focus-within { outline: none; }
+:focus { outline: none; }
 html { scroll-behavior: smooth; }
 
 body {
@@ -67,20 +45,21 @@ div#nav-content,
 .wrapper {
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 1250px;
+	max-width: 1350px;
 }
 
 header {
-	/*margin-top: 5px;
-	margin-left: 5px;
-	margin-right: 5px;*/
-	padding: 5px 20px;
-	max-width: 1250px;
-	height: 50px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 20px 20px;
+	max-width: 1350px;
+	height: 75px;
 }
 
-	h1 {
-		margin: 0px;
+	header h1 {
+		float: left;
+		margin: 0;
 		font-size: 34px;
 	}
 
@@ -91,11 +70,17 @@ header {
   		animation-iteration-count: infinite;
 	}
 
+	header p {
+		float: right;
+		margin: 10px;
+		margin-right: 25px;
+		font-style: italic;
+	}
+
 nav {
-	position: sticky;
+	position: fixed;
 	z-index: 2;
 	top: 0;
-	left: 0;
 	width: 100%;
 }
 
@@ -110,11 +95,9 @@ nav {
 		}
 
 	div#side-menu {
-		position: absolute;
+		position: relative;
 		z-index: 2;
-		top: 0;
-		bottom: 0;
-		margin-top: 53px;
+		top: 2px;
 		width: 300px;
 		height: calc(100vh - 42px);
 		background-color: inherit;
@@ -166,7 +149,7 @@ nav {
 
 		ul#theme-list {
 			right: 0;
-			width: 240px;
+			width: 260px;
 		}
 
 		ul#language-list {
@@ -209,7 +192,8 @@ main {
 	position: relative;
 	z-index: 0;
 	margin-left: 300px;
-	padding: 40px 20px;
+	margin-right: 10px;
+	padding: 20px 20px;
 }
 
 	main ul {
@@ -227,7 +211,7 @@ main {
 
 		section#index article {
 			padding-top: 0;
-			padding: 10px 0;
+			padding-bottom: 10px;
 		}
 
 			section#index h2 {
@@ -659,21 +643,17 @@ iframe {
 
 
 @media only screen and (max-width: 1000px) {
-	body {
-		margin: 0;
-	}
-
 	div#side-menu {
 		display: none;
+		border-right: 1px solid #aaa;
 	}
 
 	main {
-		z-index: 0;
-		padding: 20px 10px;
+		padding: 10px;
 	}
 
 	main, footer {
-		margin-left: 0;
+		margin-left: 10px;
 	}
 
 	input[type="text"],

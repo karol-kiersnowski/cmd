@@ -3,7 +3,7 @@
 	$title = $cmd . $howTo;
 	include "header.php";
 	include "nav-how-to.php";
-	include "header2.php";
+	include "nav-dropdowns.php";
 ?>
 
 <h2><i class="far fa-lightbulb"></i> <?=$howTo?></h2>

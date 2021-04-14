@@ -3,7 +3,7 @@
 	$title = $cmd . $home;
 	include "header.php";
 	include "nav-main.php";
-	include "header2.php";
+	include "nav-dropdowns.php";
 ?>
 
 <!-- <h2><i class="fa fa-home"></i> <?=$home?></h2>
@@ -11,13 +11,6 @@
 -->
 
 <section id="index" class="text-center">
-	<h2>
-	<?php if ($lang == "en") { ?>
-		Let's learn the Command-Line Interface!
-	<?php } else { ?>
-		Zacznijmy naukę wiersza poleceń!
-	<?php } ?>
-	</h2>
 	<article>
 		<h3><i class="fab fa-linux"></i> GNU Linux (BASH)</h3>
 		<h4>
@@ -97,7 +90,7 @@
 
 	<article>
 
-		<h3>MS-DOS / FreeDOS</h3>
+		<h3>MS-DOS / PC-DOS & FreeDOS</h3>
 		<h4>
 		<?php if ($lang == "en") { ?>
 			text-based & single-tasking operating system for PC

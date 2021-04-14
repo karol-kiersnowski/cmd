@@ -3,7 +3,7 @@
 	$title = $cmd . $about;
 	include "header.php";
 	include "nav-main.php";
-	include "header2.php";
+	include "nav-dropdowns.php";
 ?>
 
 <h2><i class="fa fa-info-circle"></i> <?=$about?></h2>

@@ -4,7 +4,7 @@
 $mainMenu = "main menu";
 $language = "language";
 $theme = "theme";
-	$modernLight = "modern (light)";
+	$typescriptLight = "typescript (light)";
 	$dosBlueGray = "DOS (blue / gray)";
 	$dosGrayBlue = "DOS (gray / blue)";
 	$terminalDark= "terminal (dark)";

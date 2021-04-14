@@ -27,16 +27,18 @@
 <body onscroll="markAnchor()">
 	<div class="wrapper">
 		<header>
-			<h1>C:\&gt;cmd-line.com</h1>
+			<h1>C:\&gt;<a href="index.html">cmd-line.com</a></h1>
+			<p class="mobile-invisible">
+				"Let's learn the Command-Line Interface!"
+			</p>
 		</header>
 	</div>
 	<nav>
 		<div id="nav-content">
-			<h2 class="float-left">
+			<h2 class="float-left" style="width: 40px; height: 40px;">
 				<a id="menu" title="Menu" onclick="switchMenu()">
 					<i class="fa fa-bars fa-fw"></i>
 				</a>
-			</h2>
 				<div id="side-menu">
 					<h2><a href="index.html?lang=en&theme=light"><i class="fa fa-home fa-fw"></i> home</a></h2>
 					<hr>
@@ -57,106 +59,105 @@
 					<h2><a href="powershell.html?lang=en&theme=light"><i class="fa fa-terminal fa-fw"></i> PowerShell</a></h2>
 					<hr>
 				</div>
-			<div id="dropdown-menus">
-				<h2 class="float-left focusable" tabindex="0">
-					<a>
-						<i class="fa fa-asterisk"></i>
-						<span class="mobile-invisible">main menu</span>
-					</a>
-					<ul class="dropdown-list" id="main-menu-list">
-						<li>
-							<a href="index.html?lang=en&theme=light"><i class="fa fa-home fa-fw"></i> home</a>
-						</li>
-						<li><a href="screenshots-txt.html?lang=en&theme=light"><i class="fa fa-terminal fa-fw"></i> screenshots (txt)</a></li>
-						<li><a href="screenshots-img.html?lang=en&theme=light"><i class="far fa-image fa-fw"></i> screenshots (img)</a></li>
-						<li><a href="links.html?lang=en&theme=light"><i class="fa fa-link fa-fw"></i> links</a></li>
-						<li><a href="guestbook.html?lang=en&theme=light"><i class="fa fa-address-book fa-fw"></i> guestbook</a></li>
-						<li><a href="about.html?lang=en&theme=light"><i class="fa fa-info-circle fa-fw"></i> about</a></li>
-					</ul>
-				</h2>
-				<h2 class="float-left">
-					<a href="how-to.html?lang=en&theme=light">
-						<i class="far fa-lightbulb"></i>
-						<span class="mobile-invisible">how to ...</span>
-					</a>
-				</h2>
-				<h2 class="float-left">
-					<a href="linux.html?lang=en&theme=light">
-						<i class="fab fa-linux"></i>
-						<span class="mobile-invisible">linux</span>
-					</a>
-				</h2>
-				<h2 class="float-left">
-					<a href="win-dos.html?lang=en&theme=light">
-						<i class="fab fa-windows"></i>
-						<span class="mobile-invisible">win cmd / DOS</span>
-					</a>
-				</h2>
-				<h2 class="float-left">
-					<a href="powershell.html?lang=en&theme=light">
-						<i class="fa fa-terminal"></i>
-						<span class="mobile-invisible">PowerShell</span>
-					</a>
-				</h2>
-				<h2 class="float-left focusable" tabindex="0">
-					<a>
-						<i class="fa fa-adjust"></i>
-						<span class="mobile-invisible">theme</span>
-					</a>
-					<ul class="dropdown-list" id="theme-list">
-						<li>
-							<a href="?lang=en&theme=light">
-								<div style="background-color: #eee;"></div>
-								<span>modern (light)</span>
-							</a>
-						</li>
-						<li>
-							<a href="?lang=en&theme=blue">
-								<div style="background-color: #00a;"></div>
-								<span>DOS (blue / gray)</span>
-							</a>
-						</li>
-						<li>
-							<a href="?lang=en&theme=gray">
-								<div style="background-color: #aaa;"></div>
-								<span>DOS (gray / blue)</span>
-							</a>
-						</li>
-						<li>
-							<a href="?lang=en&theme=dark">
-								<div style="background-color: #000; border-color: #fff;"></div>
-								<span>terminal (dark)</span>
-							</a>
-						</li>
-					</ul>
-				</h2>
-				<h2 class="float-left focusable" tabindex="0">
-					<a>
-						<i class="fa fa-globe-americas"></i>
-						<span class="mobile-invisible">language</span>
-					</a>
-					<ul class="dropdown-list" id="language-list">
-						<li>
-							<a href="?lang=en&theme=light">
-								<img src="img/uk.png" alt="UK"/>
-								<span>English</span>
-							</a>
-						</li>
-						<li>
-							<a href="?lang=pl&theme=light">
-								<img src="img/polska.png" alt="Polska"/>
-								<span>polski</span>
-							</a>
-						</li>
-					</ul>
-				</h2>
-				<h2 class="float-right">
-					<a>
-						<i class="fa fa-expand-alt"></i>
-					</a>
-				</h2>
-				<div class="clear"></div>
-			</div>
+			</h2>
+			<h2 class="float-left focusable" tabindex="0">
+				<a>
+					<i class="fa fa-home"></i>
+					<span class="mobile-invisible">main menu</span>
+				</a>
+				<ul class="dropdown-list" id="main-menu-list">
+					<li>
+						<a href="index.html?lang=en&theme=light"><i class="fa fa-home fa-fw"></i> home</a>
+					</li>
+					<li><a href="screenshots-txt.html?lang=en&theme=light"><i class="fa fa-terminal fa-fw"></i> screenshots (txt)</a></li>
+					<li><a href="screenshots-img.html?lang=en&theme=light"><i class="far fa-image fa-fw"></i> screenshots (img)</a></li>
+					<li><a href="links.html?lang=en&theme=light"><i class="fa fa-link fa-fw"></i> links</a></li>
+					<li><a href="guestbook.html?lang=en&theme=light"><i class="fa fa-address-book fa-fw"></i> guestbook</a></li>
+					<li><a href="about.html?lang=en&theme=light"><i class="fa fa-info-circle fa-fw"></i> about</a></li>
+				</ul>
+			</h2>
+			<h2 class="float-left">
+				<a href="how-to.html?lang=en&theme=light">
+					<i class="far fa-lightbulb"></i>
+					<span class="mobile-invisible">how to ...</span>
+				</a>
+			</h2>
+			<h2 class="float-left">
+				<a href="linux.html?lang=en&theme=light">
+					<i class="fab fa-linux"></i>
+					<span class="mobile-invisible">linux</span>
+				</a>
+			</h2>
+			<h2 class="float-left">
+				<a href="win-dos.html?lang=en&theme=light">
+					<i class="fab fa-windows"></i>
+					<span class="mobile-invisible">win cmd / DOS</span>
+				</a>
+			</h2>
+			<h2 class="float-left">
+				<a href="powershell.html?lang=en&theme=light">
+					<i class="fa fa-terminal"></i>
+					<span class="mobile-invisible">PowerShell</span>
+				</a>
+			</h2>
+			<h2 class="float-left focusable" tabindex="0">
+				<a>
+					<i class="fa fa-adjust"></i>
+					<span class="mobile-invisible">theme</span>
+				</a>
+				<ul class="dropdown-list" id="theme-list">
+					<li>
+						<a href="?lang=en&theme=light">
+							<div style="background-color: #eee;"></div>
+							<span>typescript (light)</span>
+						</a>
+					</li>
+					<li>
+						<a href="?lang=en&theme=dark">
+							<div style="background-color: #000; border-color: #fff;"></div>
+							<span>terminal (dark)</span>
+						</a>
+					</li>
+					<li>
+						<a href="?lang=en&theme=blue">
+							<div style="background-color: #00a;"></div>
+							<span>DOS (blue / gray)</span>
+						</a>
+					</li>
+					<li>
+						<a href="?lang=en&theme=gray">
+							<div style="background-color: #aaa;"></div>
+							<span>DOS (gray / blue)</span>
+						</a>
+					</li>
+				</ul>
+			</h2>
+			<h2 class="float-left focusable" tabindex="0">
+				<a>
+					<i class="fa fa-globe-americas"></i>
+					<span class="mobile-invisible">language</span>
+				</a>
+				<ul class="dropdown-list" id="language-list">
+					<li>
+						<a href="?lang=en&theme=light">
+							<img src="img/uk.png" alt="UK"/>
+							<span>English</span>
+						</a>
+					</li>
+					<li>
+						<a href="?lang=pl&theme=light">
+							<img src="img/polska.png" alt="Polska"/>
+							<span>polski</span>
+						</a>
+					</li>
+				</ul>
+			</h2>
+			<h2 class="float-right" onclick="switchScreenMode(this)">
+				<a>
+					<i class="fa fa-expand-alt"></i>
+				</a>
+			</h2>
+			<div class="clear"></div>
 		</div>
 	</nav>
 	<div class="wrapper">
@@ -167,9 +168,6 @@
 -->
 
 <section id="index" class="text-center">
-	<h2>
-			Let's learn the Command-Line Interface!
-		</h2>
 	<article>
 		<h3><i class="fab fa-linux"></i> GNU Linux (BASH)</h3>
 		<h4>
@@ -273,7 +271,7 @@ C:\Users\Karol>
 
 	<article>
 
-		<h3>MS-DOS / FreeDOS</h3>
+		<h3>MS-DOS / PC-DOS & FreeDOS</h3>
 		<h4>
 					text-based & single-tasking operating system for PC
 				</h4>
