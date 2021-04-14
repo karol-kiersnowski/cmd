@@ -29,8 +29,14 @@
 			</h2>
 			<h2 class="float-left">
 				<a href="win-dos.php<?=$suffix?>">
+					<i class="fa fa-terminal"></i>
+					<span class="mobile-invisible">DOS</span>
+				</a>
+			</h2>
+			<h2 class="float-left">
+				<a href="win-dos.php<?=$suffix?>">
 					<i class="fab fa-windows"></i>
-					<span class="mobile-invisible">win cmd / DOS</span>
+					<span class="mobile-invisible">win cmd</span>
 				</a>
 			</h2>
 			<h2 class="float-left">

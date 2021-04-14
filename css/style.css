@@ -60,7 +60,7 @@ header {
 	header h1 {
 		float: left;
 		margin: 0;
-		font-size: 34px;
+		font-size: 30px;
 	}
 
 	header h1::after {
@@ -90,7 +90,7 @@ nav {
 
 		nav h2 a {
 			display: block;
-			padding: 10px;
+			padding: 10px 8px;
 			font-size: 16px;
 		}
 
