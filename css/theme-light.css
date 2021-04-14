@@ -3,7 +3,7 @@ input,
 textarea,
 button,
 samp div.caption {
-	font-family: "Lucida Console", Console, monospace;
+	font-family: SyneMono, Console, monospace;
 }
 
 nav {
@@ -37,6 +37,8 @@ body {
 header {
 	outline: 1px solid  #aaa;
 	background-color: #fff;
+	/*background-color: #000;
+	color: #fff;*/
 }
 
 main {

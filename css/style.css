@@ -9,19 +9,36 @@
 }
 
 @font-face {
-	font-family: "Perfect DOS VGA 437";
- 	src: url("../webfonts/Perfect DOS VGA 437.ttf");
+	font-family: "DMMono";
+ 	src: url("../webfonts/DMMono-Regular.ttf");
 }
+
+@font-face {
+	font-family: "VT323";
+ 	src: url("../webfonts/VT323-Regular.ttf");
+}
+
+@font-face {
+	font-family: "SyneMono";
+ 	src: url("../webfonts/SyneMono-Regular.ttf");
+}
+
+@font-face {
+	font-family: "MajorMonoDisplay";
+ 	src: url("../webfonts/MajorMonoDisplay-Regular.ttf");
+}
+
+SyneMono
 
 @font-face {
 	font-family: "Windows command prompt";
  	src: url("../webfonts/windows_command_prompt.ttf");
 }
 
-/*@keyframes animation {
+@keyframes animation {
 	from { content: "_"; }
 	to { content: " "; }
-}*/
+}
 
 
 
@@ -57,9 +74,9 @@ header {
 	/*margin-top: 5px;
 	margin-left: 5px;
 	margin-right: 5px;*/
-	padding: 15px;
+	padding: 5px 20px;
 	max-width: 1250px;
-	height: 75px;
+	height: 50px;
 }
 
 	h1 {
@@ -67,12 +84,12 @@ header {
 		font-size: 34px;
 	}
 
-	/*header #logo::after {
+	header h1::after {
 		content: "_";
 		animation-name: animation;
-  		animation-duration: 1s;
+  		animation-duration: 2s;
   		animation-iteration-count: infinite;
-	}*/
+	}
 
 nav {
 	position: sticky;
