@@ -1,9 +1,9 @@
-var nav = document.getElementsByTagName("nav")[0];
+var sideMenu = document.getElementById("side-menu");
 var main = document.getElementsByTagName("main")[0];
 var footer = document.getElementsByTagName("footer")[0];
 
-function changeMenu() {
-	if (nav.offsetWidth == "0")
+function switchMenu() {
+	if (sideMenu.offsetWidth == "0")
 		showMenu();
 	else
 		hideMenu();
@@ -15,13 +15,13 @@ function hideMenuByClickOutsideIt() {
 }
 
 function hideMenu() {
-	nav.style.display = "none";
+	sideMenu.style.display = "none";
 	main.style.marginLeft = "0px";
 	footer.style.marginLeft = "0px";
 }
 
 function showMenu() {
-	nav.style.display = "block";
+	sideMenu.style.display = "block";
 	if (window.innerWidth > "1000") {
 		main.style.marginLeft = "300px";
 		footer.style.marginLeft = "300px";

@@ -1,4 +1,4 @@
-<nav>
+<nav id="vertical">
 	<h2><a href="index.php<?=$suffix?>"><i class="fa fa-home fa-fw"></i> <?=$home?></a></h2>
 	<hr>
 	<h2><a href="how-to.php<?=$suffix?>"><i class="far fa-lightbulb fa-fw"></i> <?=$howTo?></a></h2>
@@ -22,4 +22,3 @@
 	<h2><a href="powershell.php<?=$suffix?>"><i class="fa fa-terminal fa-fw"></i> PowerShell</a></h2>
 	<hr>
 </nav>
-<main onclick="hideMenuByClickOutsideIt()">

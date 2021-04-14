@@ -25,98 +25,22 @@
 	<meta name="author" content="Karol Kiersnowski"/>
 </head>
 <body onscroll="markAnchor()">
-	<header>
-		<div id="header-content">
+	<div class="wrapper">
+		<header>
 			<h1>
-				<a id="menu" title="Menu" onclick="changeMenu()">
-					<i class="fa fa-bars fa-fw"></i>
-				</a>
-			</h1>
-			<h1>
-				<a href="index.php">
-					<span style="font-family: 'Perfect DOS VGA 437'">&gt;</span>_cmd<span class="mobile-invisible">-line.com</span>
-				</a>
+				<a href="index.php">&gt;_cmd-line.com</a>
 			</h1>
 			<!-- <i class="fa fa-terminal"></i> -->
-			<ul>
-				<li>
-					<a href="how-to.php?lang=en&theme=light">
-						<i class="far fa-lightbulb"></i>
-						<span class="mobile-invisible">how to ...</span>
-					</a>
-				</li><li>
-					<a href="linux.php?lang=en&theme=light">
-						<i class="fab fa-linux"></i>
-						<span class="mobile-invisible">linux</span>
-					</a>
-				</li><li>
-					<a href="win-dos.php?lang=en&theme=light">
-						<i class="fab fa-windows"></i>
-						<span class="mobile-invisible">win cmd / DOS</span>
-					</a>
-				</li><li>
-					<a href="powershell.php?lang=en&theme=light">
-						<i class="fa fa-terminal"></i>
-						<span class="mobile-invisible">PowerShell</span>
-					</a>
-				</li><li class="focusable" tabindex="0">
-					<a>
-						<i class="fa fa-adjust"></i>
-						<span class="mobile-invisible">theme</span>
-					</a>
-					<ul class="dropdown-list" id="theme-list">
-						<li>
-							<a href="?lang=en&theme=light">
-								<div style="background-color: #eee;"></div>
-								<span>modern (light)</span>
-							</a>
-						</li>
-						<li>
-							<a href="?lang=en&theme=blue">
-								<div style="background-color: #00a;"></div>
-								<span>DOS (blue / gray)</span>
-							</a>
-						</li>
-						<li>
-							<a href="?lang=en&theme=gray">
-								<div style="background-color: #aaa;"></div>
-								<span>DOS (gray / blue)</span>
-							</a>
-						</li>
-						<li>
-							<a href="?lang=en&theme=dark">
-								<div style="background-color: #000; border-color: #fff;"></div>
-								<span>terminal (dark)</span>
-							</a>
-						</li>
-					</ul>
-				</li><li class="focusable" tabindex="0">
-					<a>
-						<i class="fa fa-globe-americas"></i>
-						<span class="mobile-invisible">language</span>
-					</a>
-					<ul class="dropdown-list" id="language-list">
-						<li>
-							<a href="?lang=en&theme=light">
-								<img src="img/uk.png" alt="UK"/>
-								<span>English</span>
-							</a>
-						</li>
-						<li>
-							<a href="?lang=pl&theme=light">
-								<img src="img/polska.png" alt="Polska"/>
-								<span>polski</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<div class="clear"></div>
-			</ul>
-			<div class="clear"></div>
-		</div>
-	</header>
-	<div id="wrapper">
-<nav>
+		</header>
+	</div>
+	<nav>
+		<div id="nav-content">
+			<h2 class="float-left">
+				<a id="menu" title="Menu" onclick="switchMenu()">
+					<i class="fa fa-bars fa-fw"></i>
+				</a>
+			</h2>
+<nav id="vertical">
 	<h2><a href="index.php?lang=en&theme=light"><i class="fa fa-home fa-fw"></i> home</a></h2>
 	<hr>
 	<h2><a href="how-to.php?lang=en&theme=light"><i class="far fa-lightbulb fa-fw"></i> how to ...</a></h2>
@@ -156,7 +80,110 @@
 	<hr>
 	<h2><a href="powershell.php?lang=en&theme=light"><i class="fa fa-terminal fa-fw"></i> PowerShell</a></h2>
 </nav>
-<main onclick="hideMenuByClickOutsideIt()">
+			<div id="dropdown-menus">
+				<h2 class="float-left focusable" tabindex="0">
+					<a>
+						<i class="fa fa-asterisk"></i>
+						<span class="mobile-invisible">main menu</span>
+					</a>
+					<ul class="dropdown-list" id="main-menu-list">
+						<li>
+							<a href="index.php?lang=en&theme=light"><i class="fa fa-home fa-fw"></i> home</a>
+						</li>
+						<li><a href="screenshots-txt.php?lang=en&theme=light"><i class="fa fa-terminal fa-fw"></i> screenshots (txt)</a></li>
+						<li><a href="screenshots-img.php?lang=en&theme=light"><i class="far fa-image fa-fw"></i> screenshots (img)</a></li>
+						<li><a href="links.php?lang=en&theme=light"><i class="fa fa-link fa-fw"></i> links</a></li>
+						<li><a href="guestbook.php?lang=en&theme=light"><i class="fa fa-address-book fa-fw"></i> guestbook</a></li>
+						<li><a href="about.php?lang=en&theme=light"><i class="fa fa-info-circle fa-fw"></i> about</a></li>
+					</ul>
+				</h2>
+				<h2 class="float-left">
+					<a href="how-to.php?lang=en&theme=light">
+						<i class="far fa-lightbulb"></i>
+						<span class="mobile-invisible">how to ...</span>
+					</a>
+				</h2>
+				<h2 class="float-left">
+					<a href="linux.php?lang=en&theme=light">
+						<i class="fab fa-linux"></i>
+						<span class="mobile-invisible">linux</span>
+					</a>
+				</h2>
+				<h2 class="float-left">
+					<a href="win-dos.php?lang=en&theme=light">
+						<i class="fab fa-windows"></i>
+						<span class="mobile-invisible">win cmd / DOS</span>
+					</a>
+				</h2>
+				<h2 class="float-left">
+					<a href="powershell.php?lang=en&theme=light">
+						<i class="fa fa-terminal"></i>
+						<span class="mobile-invisible">PowerShell</span>
+					</a>
+				</h2>
+				<h2 class="float-left focusable" tabindex="0">
+					<a>
+						<i class="fa fa-adjust"></i>
+						<span class="mobile-invisible">theme</span>
+					</a>
+					<ul class="dropdown-list" id="theme-list">
+						<li>
+							<a href="?lang=en&theme=light">
+								<div style="background-color: #eee;"></div>
+								<span>modern (light)</span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=en&theme=blue">
+								<div style="background-color: #00a;"></div>
+								<span>DOS (blue / gray)</span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=en&theme=gray">
+								<div style="background-color: #aaa;"></div>
+								<span>DOS (gray / blue)</span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=en&theme=dark">
+								<div style="background-color: #000; border-color: #fff;"></div>
+								<span>terminal (dark)</span>
+							</a>
+						</li>
+					</ul>
+				</h2>
+				<h2 class="float-left focusable" tabindex="0">
+					<a>
+						<i class="fa fa-globe-americas"></i>
+						<span class="mobile-invisible">language</span>
+					</a>
+					<ul class="dropdown-list" id="language-list">
+						<li>
+							<a href="?lang=en&theme=light">
+								<img src="img/uk.png" alt="UK"/>
+								<span>English</span>
+							</a>
+						</li>
+						<li>
+							<a href="?lang=pl&theme=light">
+								<img src="img/polska.png" alt="Polska"/>
+								<span>polski</span>
+							</a>
+						</li>
+					</ul>
+				</h2>
+				<h2 class="float-right">
+					<a>
+						<i class="fa fa-expand-alt"></i>
+					</a>
+				</h2>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</nav>
+	<div class="wrapper">
+		<main onclick="hideMenuByClickOutsideIt()">
 
 <h2><i class="fa fa-terminal"></i> DOS</h2>
 <section>
@@ -170,40 +197,40 @@
 				<th>category</th>
 				<th>command</th>
 				<th>MS-DOS version</th>
-				<th>internal / external</th>
+				<th>type</th>
 			</tr>
 			<tr>
-				<td><i class="fa fa-question fa-fw"></i> command information</td>
+				<td>command information</td>
 				<td>help</td>
 				<td>6.0</td>
 				<td>external</td>
 			</tr>
 			<tr>
-				<td><i class="fa fa-question fa-fw"></i> command information</td>
+				<td>command information</td>
 				<td>&lt;command&gt; /?</td>
-				<td>n / a</td>
-				<td>n / a</td>
+				<td>n/a</td>
+				<td>n/a</td>
 			</tr>
 			<tr>
-				<td><i class="far fa-folder-open fa-fw"></i> browsing directories</td>
+				<td>browsing directories</td>
 				<td>&lt;letter&gt;:</td>
 				<td>1.0</td>
 				<td>internal</td>
 			</tr>
 			<tr>
-				<td><i class="far fa-folder-open fa-fw"></i> browsing directories</td>
+				<td>browsing directories</td>
 				<td>dir</td>
 				<td>1.0</td>
 				<td>internal</td>
 			</tr>
 			<tr>
-				<td><i class="far fa-folder-open fa-fw"></i> browsing directories</td>
+				<td>browsing directories</td>
 				<td>cd / chdir</td>
 				<td>2.0?</td>
 				<td>internal</td>
 			</tr>
 			<tr>
-				<td><i class="far fa-folder-open fa-fw"></i> browsing directories</td>
+				<td>browsing directories</td>
 				<td>tree</td>
 				<td>?</td>
 				<td>external</td>

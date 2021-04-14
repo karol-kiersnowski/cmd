@@ -3,6 +3,7 @@
 	$title = $cmd . $home;
 	include "header.php";
 	include "nav-main.php";
+	include "header2.php";
 ?>
 
 <!-- <h2><i class="fa fa-home"></i> <?=$home?></h2>

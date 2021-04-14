@@ -3,20 +3,22 @@ input,
 textarea,
 button,
 samp div.caption {
-	font-family: "Ubuntu Mono", monospace;
-}
-
-header {
-	border-bottom: 1px solid #aaa;
+	font-family: "Lucida Console", Console, monospace;
 }
 
 nav {
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+}
+
+div#side-menu {
 	margin-top: 43px;
 	border-right: 1px solid #aaa;
 }
 
 header,
 nav,
+div#side-menu,
 samp div {
 	background-color: #eee;
 	color: #000;
@@ -30,6 +32,11 @@ samp {
 body {
 	background-color: #eee;
 	color: #000;
+}
+
+header {
+	outline: 1px solid  #aaa;
+	background-color: #fff;
 }
 
 main {
@@ -56,8 +63,8 @@ a {
 	color: #1a3665;
 }
 
-header a:hover,
-header li.focusable:focus,
+nav a:hover,
+nav li.focusable:focus,
 nav a:hover {
 	background-color: #ddd;
 }

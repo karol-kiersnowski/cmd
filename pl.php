@@ -1,6 +1,7 @@
 <?php
 
-// HEADER
+// NAV
+$mainMenu = "menu główne";
 $language = "język";
 $theme = "motyw";
 	$modernLight = "nowoczesny (jasny)";

@@ -3,6 +3,7 @@
 	$title = $cmd . " dos / commands";
 	include "header.php";
 	include "nav-win-dos.php";
+	include "header2.php";
 ?>
 
 <h2><i class="fa fa-terminal"></i> DOS</h2>
@@ -17,40 +18,40 @@
 				<th>category</th>
 				<th>command</th>
 				<th>MS-DOS version</th>
-				<th>internal / external</th>
+				<th>type</th>
 			</tr>
 			<tr>
-				<td><i class="fa fa-question fa-fw"></i> <?=$commandInformation?></td>
+				<td><?=$commandInformation?></td>
 				<td>help</td>
 				<td>6.0</td>
 				<td>external</td>
 			</tr>
 			<tr>
-				<td><i class="fa fa-question fa-fw"></i> <?=$commandInformation?></td>
+				<td><?=$commandInformation?></td>
 				<td>&lt;command&gt; /?</td>
-				<td>n / a</td>
-				<td>n / a</td>
+				<td>n/a</td>
+				<td>n/a</td>
 			</tr>
 			<tr>
-				<td><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></td>
+				<td><?=$browsingDirectories?></td>
 				<td>&lt;letter&gt;:</td>
 				<td>1.0</td>
 				<td>internal</td>
 			</tr>
 			<tr>
-				<td><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></td>
+				<td><?=$browsingDirectories?></td>
 				<td>dir</td>
 				<td>1.0</td>
 				<td>internal</td>
 			</tr>
 			<tr>
-				<td><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></td>
+				<td><?=$browsingDirectories?></td>
 				<td>cd / chdir</td>
 				<td>2.0?</td>
 				<td>internal</td>
 			</tr>
 			<tr>
-				<td><i class="far fa-folder-open fa-fw"></i> <?=$browsingDirectories?></td>
+				<td><?=$browsingDirectories?></td>
 				<td>tree</td>
 				<td>?</td>
 				<td>external</td>

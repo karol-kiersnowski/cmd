@@ -1,6 +1,7 @@
 <?php
 
-// HEADER
+// NAV
+$mainMenu = "main menu";
 $language = "language";
 $theme = "theme";
 	$modernLight = "modern (light)";
