@@ -20,6 +20,10 @@ nav {
 	scrollbar-color: #fff #111;
 }
 
+div#side-menu {
+	border-right: 1px solid #aaa;
+}
+
 header,
 nav,
 div#side-menu {
@@ -42,17 +46,12 @@ body {
 	color: var(--black);
 }
 
-header {
-	outline: 1px solid  var(--dark-gray);
-	background-color: var(--white);
-}
-
 main {
 	background-color: var(--white);
 	color: var(--black);
-	border-width: 0 1px 1px 1px;
-	border-style: solid;
-	border-color: var(--dark-gray);
+	outline-width: 1px;
+	outline-style: solid;
+	outline-color: var(--dark-gray);
 }
 
 

@@ -17,7 +17,7 @@ function hideMenuByClickOutsideIt() {
 
 function hideMenu() {
 	sideMenu.style.display = "none";
-	main.style.marginLeft = "10px";
+	main.style.marginLeft = "0px";
 	footer.style.marginLeft = "0px";
 }
 

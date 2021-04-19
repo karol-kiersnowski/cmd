@@ -8,7 +8,7 @@
 }
 
 div#side-menu {
-	top: 5px;
+	top: 6px;
 	height: calc(100vh - 50px);
 }
 
@@ -43,6 +43,7 @@ header {
 
 nav,
 ul.dropdown-list {
+	background-color:  var(--blue);
 	border-width: 5px;
 	border-style: double;
 	text-transform: uppercase;

@@ -19,6 +19,10 @@ nav {
 	outline: 1px solid var(--dark-gray);
 }
 
+div#side-menu {
+	border-right: 1px solid var(--dark-gray);
+}
+
 header,
 nav,
 div#side-menu,
@@ -27,9 +31,7 @@ samp div {
 	color: var(--black);
 }
 
-div#side-menu {
-	background-color: #fafafa;
-}
+
 
 hr,
 samp {
@@ -37,7 +39,7 @@ samp {
 }
 
 body {
-	background-color: #fafafa;
+	background-color: #eee;
 	color: var(--black);
 }
 
@@ -49,9 +51,9 @@ header {
 main {
 	background-color: var(--white);
 	color: var(--black);
-	border-width: 0 1px 1px 1px;
-	border-style: solid;
-	border-color: var(--dark-gray);
+	outline-width: 1px;
+	outline-style: solid;
+	outline-color: var(--dark-gray);
 }
 
 

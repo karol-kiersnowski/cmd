@@ -49,9 +49,6 @@ div#nav-content,
 }
 
 header {
-	margin-top: 10px;
-	margin-left: 10px;
-	margin-right: 10px;
 	padding: 20px 20px;
 	max-width: 1350px;
 	height: 75px;
@@ -192,7 +189,6 @@ main {
 	position: relative;
 	z-index: 0;
 	margin-left: 300px;
-	margin-right: 10px;
 	padding: 20px 20px;
 }
 
@@ -640,7 +636,11 @@ iframe {
 
 
 
-
+@media only screen and (min-width: 1350px) {
+	header {
+		margin-top: 10px;
+	}
+}
 
 @media only screen and (max-width: 1000px) {
 	div#side-menu {
@@ -652,8 +652,9 @@ iframe {
 		padding: 10px;
 	}
 
-	main, footer {
-		margin-left: 10px;
+	main,
+	footer {
+		margin-left: 0;
 	}
 
 	input[type="text"],
