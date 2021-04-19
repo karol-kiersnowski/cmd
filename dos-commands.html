@@ -87,8 +87,10 @@
 				</a>
 				<ul class="dropdown-list" id="main-menu-list">
 					<li>
-						<a href="index.php?lang=en&theme=light"><i class="fa fa-home fa-fw"></i> home</a>
+						<a href="index.php?lang=en&theme=light">
+							<i class="fa fa-home fa-fw"></i> home						</a>
 					</li>
+					<li><a href="how-to.php?lang=en&theme=light"><i class="far fa-lightbulb fa-fw"></i> how to ...</a></li>
 					<li><a href="screenshots-txt.php?lang=en&theme=light"><i class="fa fa-terminal fa-fw"></i> screenshots (txt)</a></li>
 					<li><a href="screenshots-img.php?lang=en&theme=light"><i class="far fa-image fa-fw"></i> screenshots (img)</a></li>
 					<li><a href="links.php?lang=en&theme=light"><i class="fa fa-link fa-fw"></i> links</a></li>
@@ -97,22 +99,22 @@
 				</ul>
 			</h2>
 			<h2 class="float-left">
-				<a href="how-to.php?lang=en&theme=light">
-					<i class="far fa-lightbulb"></i>
-					<span class="mobile-invisible">how to ...</span>
-				</a>
-			</h2>
-			<h2 class="float-left">
 				<a href="linux.php?lang=en&theme=light">
 					<i class="fab fa-linux"></i>
 					<span class="mobile-invisible">linux</span>
 				</a>
 			</h2>
-			<h2 class="float-left">
-				<a href="win-dos.php?lang=en&theme=light">
+			<h2 class="float-left focusable" tabindex="0">
+				<a>
 					<i class="fa fa-terminal"></i>
 					<span class="mobile-invisible">DOS</span>
 				</a>
+				<ul class="dropdown-list" id="dos-list">
+					<li>
+						<a href="dos-commands.php?lang=en&theme=light">
+							<i class="fa fa-terminal fa-fw"></i> commands						</a>
+					</li>
+				</ul>
 			</h2>
 			<h2 class="float-left">
 				<a href="win-dos.php?lang=en&theme=light">
@@ -125,6 +127,26 @@
 					<i class="fa fa-terminal"></i>
 					<span class="mobile-invisible">PowerShell</span>
 				</a>
+			</h2>
+			<h2 class="float-left focusable" tabindex="0">
+				<a>
+					<i class="fa fa-globe-americas"></i>
+					<span class="mobile-invisible">language</span>
+				</a>
+				<ul class="dropdown-list" id="language-list">
+					<li>
+						<a href="?lang=en&theme=light">
+							<img src="img/uk.png" alt="UK"/>
+							<span>English</span>
+						</a>
+					</li>
+					<li>
+						<a href="?lang=pl&theme=light">
+							<img src="img/polska.png" alt="Polska"/>
+							<span>polski</span>
+						</a>
+					</li>
+				</ul>
 			</h2>
 			<h2 class="float-left focusable" tabindex="0">
 				<a>
@@ -158,26 +180,6 @@
 					</li>
 				</ul>
 			</h2>
-			<h2 class="float-left focusable" tabindex="0">
-				<a>
-					<i class="fa fa-globe-americas"></i>
-					<span class="mobile-invisible">language</span>
-				</a>
-				<ul class="dropdown-list" id="language-list">
-					<li>
-						<a href="?lang=en&theme=light">
-							<img src="img/uk.png" alt="UK"/>
-							<span>English</span>
-						</a>
-					</li>
-					<li>
-						<a href="?lang=pl&theme=light">
-							<img src="img/polska.png" alt="Polska"/>
-							<span>polski</span>
-						</a>
-					</li>
-				</ul>
-			</h2>
 			<h2 class="float-right" onclick="switchScreenMode(this)">
 				<a>
 					<i class="fa fa-expand-alt"></i>
@@ -192,23 +194,24 @@
 <h2>MS-DOS / PC-DOS & FreeDOS & DOSBox</h2>
 <section>
 	<h3>list of commands</h3>
+	<p><em>Internal</em> commands are related to <em>COMMAND.COM</em> & don't need other files to work</p>
+	<p><em>External</em> commands require existing files to work</p>
 
-	<table style="text-align: left;">
+	<table id="dos-commands">
 		<tr>
-			<th rowspan="2">category</th>
-			<th rowspan="2">command</th>
-			<th colspan="2">MS-DOS</th>
-			<th rowspan="2">FreeDOS</th>
-			<th rowspan="2">DOSBox</th>
-		</tr>
-		<tr>
-			<th>version</th>
+			<th>category</th>
+			<th>command</th>
+			<th>MS-DOS<br>version</th>
+			<th>FreeDOS</th>
+			<th>DOSBox</th>
 			<th>type</th>
 		</tr>
 		<tr>
 			<td>command information</td>
 			<td><a href="dos/help.php">help</a></td>
 			<td>6.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
 			<td>external</td>
 		</tr>
 		<tr>
@@ -216,290 +219,266 @@
 			<td>&lt;command&gt; /?</td>
 			<td>n/a</td>
 			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
 		</tr>
 		<tr>
 			<td>browsing directories</td>
 			<td>&lt;letter&gt;:</td>
 			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
 			<td>internal</td>
 		</tr>
 		<tr>
 			<td>browsing directories</td>
 			<td>dir</td>
 			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
 			<td>internal</td>
 		</tr>
 		<tr>
 			<td>browsing directories</td>
 			<td>cd / chdir</td>
 			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
 			<td>internal</td>
 		</tr>
 		<tr>
 			<td>browsing directories</td>
 			<td>tree</td>
 			<td>3.2</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
 			<td>external</td>
 		</tr>
 		<tr>
 			<td>file manipulation</td>
 			<td>copy</td>
 			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
 			<td>internal</td>
 		</tr>
 		<tr>
 			<td>file manipulation</td>
 			<td>diskcopy</td>
 			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
 			<td>external</td>
 		</tr>
 		<tr>
 			<td>file manipulation</td>
 			<td>xcopy</td>
 			<td>3.2</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
 			<td>external</td>
 		</tr>
 		<tr>
 			<td>file manipulation</td>
 			<td>move</td>
 			<td>6.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
 			<td>external</td>
 		</tr>
 		<tr>
 			<td>file manipulation</td>
 			<td>ren</td>
 			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
 			<td>internal</td>
 		</tr>
 		<tr>
 			<td>file manipulation</td>
 			<td>del / erase</td>
 			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
 			<td>internal</td>
 		</tr>
 		<tr>
 			<td>file manipulation</td>
 			<td>deltree</td>
 			<td>6.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
 			<td>external</td>
 		</tr>
 		<tr>
 			<td>file manipulation</td>
 			<td>undelete</td>
 			<td>5.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
 			<td>external</td>
 		</tr>
 		<tr>
 			<td>file manipulation</td>
 			<td>md / mkdir</td>
 			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
 			<td>internal</td>
 		</tr>
 		<tr>
 			<td>file manipulation</td>
 			<td>rm / rmdir</td>
 			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>reading files</td>
+			<td>type</td>
+			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>reading files</td>
+			<td>more</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td>console</td>
+			<td>cls</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>console</td>
+			<td>prompt</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>console</td>
+			<td>mode</td>
+			<td>3.2</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td>console</td>
+			<td>history</td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>console</td>
+			<td>alias</td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>power & session</td>
+			<td>exit</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i><sup>[1]</sup></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>power & session</td>
+			<td>shutdown</td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>power & session</td>
+			<td>poweroff</td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>alias</td>
+		</tr>
+		<tr>
+			<td>power & session</td>
+			<td>reset</td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>alias</td>
+		</tr>
+		<tr>
+			<td>power & session</td>
+			<td>reboot</td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>alias</td>
+		</tr>
+		<tr>
+			<td>system</td>
+			<td>ver</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>system</td>
+			<td>date</td>
+			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i><sup>[2]</sup></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>system</td>
+			<td>time</td>
+			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i><sup>[2]</sup></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>system</td>
+			<td>set</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>system</td>
+			<td>path</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>file system</td>
+			<td>attrib</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
 			<td>internal</td>
 		</tr>
 	</table>
-
-	<article id="reading-files">
-		<hr>
-		<h3><i class="far fa-file-alt"></i> reading files</h3>
-		<hr>
-		<!--<ul>
-			<li>type</li>
-			<li>more</li>
-		</ul>-->
-		<table>
-			<tr>
-				<th></th>
-				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
-				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
-				<th>DOSBox</th>
-			</tr>
-			<tr>
-				<td>type</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>more</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-		</table>
-	</article>
-
-	<article id="console">
-		<hr>
-		<h3><i class="fa fa-terminal fa-fw"></i> console</h3>
-		<hr>
-		<!--<ul>
-			<li>cls</li>
-			<li>prompt</li>
-			<li>mode</li>
-		</ul>-->
-		<table>
-			<tr>
-				<th></th>
-				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
-				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
-				<th>FreeDOS<br><em><small>FREECOM.COM</small></em></th>
-				<th>DOSBox</th>
-			</tr>
-			<tr>
-				<td>cls</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>prompt</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>mode</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>alias</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-		</table>
-
-		<code class="dos">mode 80</code><br>
-		<code class="dos">mode 40</code><br>
-		<code class="dos">mode con cols=80</code><br>
-		<code class="dos">mode con cols=40</code><br>
-		<code class="dos">mode con lines=25</code><br>
-		<code class="dos">mode con lines=28</code><br>
-		<code class="dos">mode con lines=43</code><br>
-		<code class="dos">mode con lines=50</code>
-
-	</article>
-
-	<article id="power-session">
-		<hr>
-		<h3><i class="fa fa-power-off"></i> power & session</h3>
-		<hr>
-		<!--<ul>
-			<li>exit</li>
-			<li>reset</li>
-			<li>reboot</li>
-			<li>poweroff</li>
-			<li>halt</li>
-			<li>shutdown</li>
-		</ul>-->
-		<table>
-			<tr>
-				<th></th>
-				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
-				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
-				<th>FreeDOS<br><em><small>FREECOM.COM</small></em></th>
-				<th>DOSBox</th>
-			</tr>
-			<tr>
-				<td>exit</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>shutdown</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>halt</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>reboot</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>reset</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>	
-		</table>
-	</article>
-
-	<article id="system">
-		<hr>
-		<h3><i class="fa fa-laptop"></i> system</h3>
-		<hr>
-		<!--<ul>
-			<li>ver</li>
-			<li>date</li>
-			<li>time</li>
-			<li>mem</li>
-			<li>path</li>
-			<li>set</li>
-		</ul>-->
-		<table>
-			<tr>
-				<th></th>
-				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
-				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
-				<th>DOSBox</th>
-			</tr>
-			<tr>
-				<td>ver</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>date</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>time</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>path</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>set</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-		</table>
-	</article>
 
 	<article id="file-system">
 		<hr>

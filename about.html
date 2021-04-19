@@ -67,8 +67,10 @@
 				</a>
 				<ul class="dropdown-list" id="main-menu-list">
 					<li>
-						<a href="index.html?lang=en&theme=light"><i class="fa fa-home fa-fw"></i> home</a>
+						<a href="index.html?lang=en&theme=light">
+							<i class="fa fa-home fa-fw"></i> home						</a>
 					</li>
+					<li><a href="how-to.html?lang=en&theme=light"><i class="far fa-lightbulb fa-fw"></i> how to ...</a></li>
 					<li><a href="screenshots-txt.html?lang=en&theme=light"><i class="fa fa-terminal fa-fw"></i> screenshots (txt)</a></li>
 					<li><a href="screenshots-img.html?lang=en&theme=light"><i class="far fa-image fa-fw"></i> screenshots (img)</a></li>
 					<li><a href="links.html?lang=en&theme=light"><i class="fa fa-link fa-fw"></i> links</a></li>
@@ -77,22 +79,22 @@
 				</ul>
 			</h2>
 			<h2 class="float-left">
-				<a href="how-to.html?lang=en&theme=light">
-					<i class="far fa-lightbulb"></i>
-					<span class="mobile-invisible">how to ...</span>
-				</a>
-			</h2>
-			<h2 class="float-left">
 				<a href="linux.html?lang=en&theme=light">
 					<i class="fab fa-linux"></i>
 					<span class="mobile-invisible">linux</span>
 				</a>
 			</h2>
-			<h2 class="float-left">
-				<a href="win-dos.html?lang=en&theme=light">
+			<h2 class="float-left focusable" tabindex="0">
+				<a>
 					<i class="fa fa-terminal"></i>
 					<span class="mobile-invisible">DOS</span>
 				</a>
+				<ul class="dropdown-list" id="dos-list">
+					<li>
+						<a href="dos-commands.html?lang=en&theme=light">
+							<i class="fa fa-terminal fa-fw"></i> commands						</a>
+					</li>
+				</ul>
 			</h2>
 			<h2 class="float-left">
 				<a href="win-dos.html?lang=en&theme=light">
@@ -105,6 +107,26 @@
 					<i class="fa fa-terminal"></i>
 					<span class="mobile-invisible">PowerShell</span>
 				</a>
+			</h2>
+			<h2 class="float-left focusable" tabindex="0">
+				<a>
+					<i class="fa fa-globe-americas"></i>
+					<span class="mobile-invisible">language</span>
+				</a>
+				<ul class="dropdown-list" id="language-list">
+					<li>
+						<a href="?lang=en&theme=light">
+							<img src="img/uk.png" alt="UK"/>
+							<span>English</span>
+						</a>
+					</li>
+					<li>
+						<a href="?lang=pl&theme=light">
+							<img src="img/polska.png" alt="Polska"/>
+							<span>polski</span>
+						</a>
+					</li>
+				</ul>
 			</h2>
 			<h2 class="float-left focusable" tabindex="0">
 				<a>
@@ -138,26 +160,6 @@
 					</li>
 				</ul>
 			</h2>
-			<h2 class="float-left focusable" tabindex="0">
-				<a>
-					<i class="fa fa-globe-americas"></i>
-					<span class="mobile-invisible">language</span>
-				</a>
-				<ul class="dropdown-list" id="language-list">
-					<li>
-						<a href="?lang=en&theme=light">
-							<img src="img/uk.png" alt="UK"/>
-							<span>English</span>
-						</a>
-					</li>
-					<li>
-						<a href="?lang=pl&theme=light">
-							<img src="img/polska.png" alt="Polska"/>
-							<span>polski</span>
-						</a>
-					</li>
-				</ul>
-			</h2>
 			<h2 class="float-right" onclick="switchScreenMode(this)">
 				<a>
 					<i class="fa fa-expand-alt"></i>
@@ -172,7 +174,7 @@
 <h2><i class="fa fa-info-circle"></i> about</h2>
 <hr>
 <section>
-	<h3>inspiration by the form of the website</h3>
+	<h3><i class="far fa-lightbulb"></i> inspiration by the form of the website</h3>
 	<p>
 		I learned HTML, CSS, Javascript and PHP using <a target="_blank" href="https://www.w3schools.com">W3Schools</a> among others. I was inspired by the simplicity of explaining the issues + examples in each example.
 	</p>
@@ -182,7 +184,8 @@
 	<p>
 		Combining the interest in the Command-Line Interface (Linux, DOS, Windows command prompt & PowerShell) with the benefits of learning at w3schools, I decided to create a website for learning the CLI.
 	</p>
-	<h3>thanks to authors of the</h3>
+
+	<h3><i class="far fa-thumbs-up"></i> thanks to authors of the</h3>
 	<ul style="list-style-type: disc;">
 		<li>
 			<a target="_blank" href="https://fontawesome.com">Font Awesome</a> - icons
@@ -212,6 +215,22 @@
 			<a target="_blank" href="https://www.w3schools.com">W3Schools</a> - web tutorials
 		</li>
 	</ul>
+
+	<h3><i class="fa fa-code-branch"></i> fork me</h3>
+	<p>
+		It is an open source project with the GNU GPL license. If you want you can fork this website.
+	</p>
+	<p>Fork me on <a target="_blank" href="https://github.com/karol-kiersnowski/cmd">GitHub</a></p>
+
+	<h3><i class="fa fa-user-edit"></i> author</h3>
+	<p>kargol92</p>
+
+	<h3><i class="far fa-sticky-note"></i> license</h3>
+	<p>
+		<a target="_blank" href="https://github.com/karol-kiersnowski/cmd/blob/master/LICENSE">
+			GNU General Public License v3.0
+		</a>
+	</p>
 </section>
 
 		</main>
