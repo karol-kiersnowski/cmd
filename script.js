@@ -78,3 +78,70 @@ async function writeToClipboard(codeElement) {
 		console.error(error);
 	}
 }
+
+function sortTable(n, thisElement) {
+	var table = document.getElementsById("dos-commands");
+	var rows = document.getElementsTagName("TR");
+	var switching = true;
+	var i;
+	var x;
+	var y;
+	var shouldSwitch;
+	var direction = "asc"; 
+	var switchCount = 0; 
+	
+	/*Make a loop that will continue until
+	no switching has been done:*/
+	while (switching) {
+		//start by saying: no switching is done:
+		switching = false;
+		
+		/*Loop through all table rows (except the
+		first, which contains table headers):*/
+		for (i = 1; i < (rows.length - 1); i++) {
+			//start by saying there should be no switching:
+			shouldSwitch = false;
+			/*Get the two elements you want to compare,
+			one from current row and one from the next:*/
+			//alert(rows[i].getElementsByTagName("div")[1].innerHTML);
+			x = rows[i].getElementsByTagName("div")[n];
+			y = rows[i + 1].getElementsByTagName("div")[n];
+			/*check if the two rows should switch place,
+			based on the direction, asc or desc:*/
+			if (direction == "asc") {
+				if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+					//if so, mark as a switch and break the loop:
+					shouldSwitch= true;
+					break;
+				}
+			} else if (direction == "desc") {
+				if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+					//if so, mark as a switch and break the loop:
+					shouldSwitch = true;
+					break;
+				}
+			}
+		}
+		if (shouldSwitch) {
+			/*If a switch has been marked, make the switch
+			and mark that a switch has been done:*/
+			rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+			switching = true;
+			//Each time a switch is done, increase this count by 1:
+			switchCount++;      
+		} else {
+			/*If no switching has been done AND the direction is "asc",
+			set the direction to "desc" and run the while loop again.*/
+			if (switchCount == 0 && direction == "asc") {
+				direction = "desc";
+				switching = true;
+			}
+		}
+	}
+
+	if (thisElement != null) {
+		translateText(document.documentElement.lang);
+		if (direction == "asc") thisElement.innerHTML += ' <i class="fa fa-sort-down"></i>';
+		else if (direction == "desc") thisElement.innerHTML += ' <i class="fa fa-sort-up"></i>';
+	}
+}

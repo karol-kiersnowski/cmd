@@ -144,6 +144,11 @@ nav {
 			width: 240px;
 		}
 
+		ul#dos-list {
+			left: 0;
+			width: 150px;
+		}
+
 		ul#theme-list {
 			right: 0;
 			width: 260px;
@@ -301,6 +306,13 @@ table {
 		border: 1px solid #bbb;
 		text-align: center;
 	}
+
+	/*table th:nth-child(1), 
+	table th:nth-child(2),
+	table td:nth-child(1),
+	table td:nth-child(2) {
+		text-align: left;
+	}*/
 
 	th {
 		background-color: #444;

@@ -1,4 +1,6 @@
 <?php
+	$currentDirectory = "dos";
+	$mainDirectory = "";
 	include "sys.php";
 	$title = $cmd . " dos / commands";
 	include "header.php";
@@ -6,342 +8,294 @@
 	include "nav-dropdowns.php";
 ?>
 
-<h2><i class="fa fa-terminal"></i> DOS</h2>
+<h2>MS-DOS / PC-DOS & FreeDOS & DOSBox</h2>
 <section>
-	<article id="command-information">
-		<hr>
-		<h3><i class="fa fa-question fa-fw"></i> commands</h3>
-		<hr>
+	<h3>list of commands</h3>
+	<p><em>Internal</em> commands are related to <em>COMMAND.COM</em> & don't need other files to work</p>
+	<p><em>External</em> commands require existing files to work</p>
 
-		<table>
-			<tr>
-				<th>category</th>
-				<th>command</th>
-				<th>MS-DOS version</th>
-				<th>type</th>
-			</tr>
-			<tr>
-				<td><?=$commandInformation?></td>
-				<td>help</td>
-				<td>6.0</td>
-				<td>external</td>
-			</tr>
-			<tr>
-				<td><?=$commandInformation?></td>
-				<td>&lt;command&gt; /?</td>
-				<td>n/a</td>
-				<td>n/a</td>
-			</tr>
-			<tr>
-				<td><?=$browsingDirectories?></td>
-				<td>&lt;letter&gt;:</td>
-				<td>1.0</td>
-				<td>internal</td>
-			</tr>
-			<tr>
-				<td><?=$browsingDirectories?></td>
-				<td>dir</td>
-				<td>1.0</td>
-				<td>internal</td>
-			</tr>
-			<tr>
-				<td><?=$browsingDirectories?></td>
-				<td>cd / chdir</td>
-				<td>2.0?</td>
-				<td>internal</td>
-			</tr>
-			<tr>
-				<td><?=$browsingDirectories?></td>
-				<td>tree</td>
-				<td>?</td>
-				<td>external</td>
-			</tr>
-		</table>
-	</article>
-
-	<article id="file-manipulation">
-		<hr>
-		<h3><i class="far fa-copy fa-fw"></i> <?=$fileManipulation?></h3>
-		<hr>
-		<!--<ul>
-			<li>copy</li>
-			<li>diskcopy</li>
-			<li>xcopy</li>
-			<li>move</li>
-			<li>ren</li>
-			<li>del</li>
-			<li>deltree</li>
-			<li>undelete</li>
-			<li>md / mkdir</li>
-			<li>rd / rmdir</li>
-		</ul>-->
-		<table>
-			<tr>
-				<th></th>
-				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
-				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
-				<th>DOSBox</th>
-			</tr>
-			<tr>
-				<td>copy</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>diskcopy</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>xcopy</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>move</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>ren / rename</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>del / erase</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>deltree</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>undelete</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>md / mkdir</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>rd / rmdir</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-		</table>
-	</article>
-
-	<article id="reading-files">
-		<hr>
-		<h3><i class="far fa-file-alt"></i> <?=$readingFiles?></h3>
-		<hr>
-		<!--<ul>
-			<li>type</li>
-			<li>more</li>
-		</ul>-->
-		<table>
-			<tr>
-				<th></th>
-				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
-				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
-				<th>DOSBox</th>
-			</tr>
-			<tr>
-				<td>type</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>more</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-		</table>
-	</article>
-
-	<article id="console">
-		<hr>
-		<h3><i class="fa fa-terminal fa-fw"></i> <?=$console?></h3>
-		<hr>
-		<!--<ul>
-			<li>cls</li>
-			<li>prompt</li>
-			<li>mode</li>
-		</ul>-->
-		<table>
-			<tr>
-				<th></th>
-				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
-				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
-				<th>FreeDOS<br><em><small>FREECOM.COM</small></em></th>
-				<th>DOSBox</th>
-			</tr>
-			<tr>
-				<td>cls</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>prompt</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>mode</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>alias</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-		</table>
-
-		<code class="dos">mode 80</code><br>
-		<code class="dos">mode 40</code><br>
-		<code class="dos">mode con cols=80</code><br>
-		<code class="dos">mode con cols=40</code><br>
-		<code class="dos">mode con lines=25</code><br>
-		<code class="dos">mode con lines=28</code><br>
-		<code class="dos">mode con lines=43</code><br>
-		<code class="dos">mode con lines=50</code>
-
-	</article>
-
-	<article id="power-session">
-		<hr>
-		<h3><i class="fa fa-power-off"></i> <?=$powerSession?></h3>
-		<hr>
-		<!--<ul>
-			<li>exit</li>
-			<li>reset</li>
-			<li>reboot</li>
-			<li>poweroff</li>
-			<li>halt</li>
-			<li>shutdown</li>
-		</ul>-->
-		<table>
-			<tr>
-				<th></th>
-				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
-				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
-				<th>FreeDOS<br><em><small>FREECOM.COM</small></em></th>
-				<th>DOSBox</th>
-			</tr>
-			<tr>
-				<td>exit</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>shutdown</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>halt</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>reboot</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>reset</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>	
-		</table>
-	</article>
-
-	<article id="system">
-		<hr>
-		<h3><i class="fa fa-laptop"></i> system</h3>
-		<hr>
-		<!--<ul>
-			<li>ver</li>
-			<li>date</li>
-			<li>time</li>
-			<li>mem</li>
-			<li>path</li>
-			<li>set</li>
-		</ul>-->
-		<table>
-			<tr>
-				<th></th>
-				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
-				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
-				<th>DOSBox</th>
-			</tr>
-			<tr>
-				<td>ver</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>date</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>time</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>path</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>set</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-		</table>
-	</article>
+	<table id="dos-commands">
+		<tr>
+			<th>category</th>
+			<th>command</th>
+			<th>MS-DOS<br>version</th>
+			<th>FreeDOS</th>
+			<th>DOSBox</th>
+			<th>type</th>
+		</tr>
+		<tr>
+			<td><?=$commandInformation?></td>
+			<td><a href="dos/help.php">help</a></td>
+			<td>6.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td><?=$commandInformation?></td>
+			<td>&lt;command&gt; /?</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+			<td>n/a</td>
+		</tr>
+		<tr>
+			<td><?=$browsingDirectories?></td>
+			<td>&lt;letter&gt;:</td>
+			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$browsingDirectories?></td>
+			<td>dir</td>
+			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$browsingDirectories?></td>
+			<td>cd / chdir</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$browsingDirectories?></td>
+			<td>tree</td>
+			<td>3.2</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td><?=$fileManipulation?></td>
+			<td>copy</td>
+			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$fileManipulation?></td>
+			<td>diskcopy</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td><?=$fileManipulation?></td>
+			<td>xcopy</td>
+			<td>3.2</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td><?=$fileManipulation?></td>
+			<td>move</td>
+			<td>6.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td><?=$fileManipulation?></td>
+			<td>ren</td>
+			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$fileManipulation?></td>
+			<td>del / erase</td>
+			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$fileManipulation?></td>
+			<td>deltree</td>
+			<td>6.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td><?=$fileManipulation?></td>
+			<td>undelete</td>
+			<td>5.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td><?=$fileManipulation?></td>
+			<td>md / mkdir</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$fileManipulation?></td>
+			<td>rm / rmdir</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$readingFiles?></td>
+			<td>type</td>
+			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$readingFiles?></td>
+			<td>more</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td><?=$console?></td>
+			<td>cls</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$console?></td>
+			<td>prompt</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$console?></td>
+			<td>mode</td>
+			<td>3.2</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td><?=$console?></td>
+			<td>history</td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$console?></td>
+			<td>alias</td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$powerSession?></td>
+			<td>exit</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i><sup>[1]</sup></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$powerSession?></td>
+			<td>shutdown</td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><?=$powerSession?></td>
+			<td>poweroff</td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>alias</td>
+		</tr>
+		<tr>
+			<td><?=$powerSession?></td>
+			<td>reset</td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>alias</td>
+		</tr>
+		<tr>
+			<td><?=$powerSession?></td>
+			<td>reboot</td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>alias</td>
+		</tr>
+		<tr>
+			<td>system</td>
+			<td>ver</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>system</td>
+			<td>date</td>
+			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i><sup>[2]</sup></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>system</td>
+			<td>time</td>
+			<td>1.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i><sup>[2]</sup></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>system</td>
+			<td>set</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>system</td>
+			<td>path</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td><?=$fileSystem?></td>
+			<td>attrib</td>
+			<td>2.0</td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>internal</td>
+		</tr>
+	</table>
 
 	<article id="file-system">
 		<hr>

@@ -2,6 +2,8 @@
 
 // NAV
 $mainMenu = "main menu";
+	
+	$commands = "commands";
 $language = "language";
 $theme = "theme";
 	$typescriptLight = "typescript (light)";

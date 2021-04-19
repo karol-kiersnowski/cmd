@@ -189,144 +189,119 @@
 	<div class="wrapper">
 		<main onclick="hideMenuByClickOutsideIt()">
 
-<h2><i class="fa fa-terminal"></i> DOS</h2>
+<h2>MS-DOS / PC-DOS & FreeDOS & DOSBox</h2>
 <section>
-	<article id="command-information">
-		<hr>
-		<h3><i class="fa fa-question fa-fw"></i> commands</h3>
-		<hr>
+	<h3>list of commands</h3>
 
-		<table>
-			<tr>
-				<th>category</th>
-				<th>command</th>
-				<th>MS-DOS version</th>
-				<th>type</th>
-			</tr>
-			<tr>
-				<td>command information</td>
-				<td>help</td>
-				<td>6.0</td>
-				<td>external</td>
-			</tr>
-			<tr>
-				<td>command information</td>
-				<td>&lt;command&gt; /?</td>
-				<td>n/a</td>
-				<td>n/a</td>
-			</tr>
-			<tr>
-				<td>browsing directories</td>
-				<td>&lt;letter&gt;:</td>
-				<td>1.0</td>
-				<td>internal</td>
-			</tr>
-			<tr>
-				<td>browsing directories</td>
-				<td>dir</td>
-				<td>1.0</td>
-				<td>internal</td>
-			</tr>
-			<tr>
-				<td>browsing directories</td>
-				<td>cd / chdir</td>
-				<td>2.0?</td>
-				<td>internal</td>
-			</tr>
-			<tr>
-				<td>browsing directories</td>
-				<td>tree</td>
-				<td>?</td>
-				<td>external</td>
-			</tr>
-		</table>
-	</article>
-
-	<article id="file-manipulation">
-		<hr>
-		<h3><i class="far fa-copy fa-fw"></i> file manipulation</h3>
-		<hr>
-		<!--<ul>
-			<li>copy</li>
-			<li>diskcopy</li>
-			<li>xcopy</li>
-			<li>move</li>
-			<li>ren</li>
-			<li>del</li>
-			<li>deltree</li>
-			<li>undelete</li>
-			<li>md / mkdir</li>
-			<li>rd / rmdir</li>
-		</ul>-->
-		<table>
-			<tr>
-				<th></th>
-				<th>Win NT 5.1<br><em><small>cmd.exe</small></em></th>
-				<th>MS-DOS<br><em><small>COMMAND.COM</small></em></th>
-				<th>DOSBox</th>
-			</tr>
-			<tr>
-				<td>copy</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>diskcopy</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>xcopy</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>move</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>ren / rename</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>del / erase</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>deltree</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>undelete</td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-times fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>md / mkdir</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-			<tr>
-				<td>rd / rmdir</td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-				<td><i class="fa fa-check fa-fw"></i></td>
-			</tr>
-		</table>
-	</article>
+	<table style="text-align: left;">
+		<tr>
+			<th rowspan="2">category</th>
+			<th rowspan="2">command</th>
+			<th colspan="2">MS-DOS</th>
+			<th rowspan="2">FreeDOS</th>
+			<th rowspan="2">DOSBox</th>
+		</tr>
+		<tr>
+			<th>version</th>
+			<th>type</th>
+		</tr>
+		<tr>
+			<td>command information</td>
+			<td><a href="dos/help.php">help</a></td>
+			<td>6.0</td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td>command information</td>
+			<td>&lt;command&gt; /?</td>
+			<td>n/a</td>
+			<td>n/a</td>
+		</tr>
+		<tr>
+			<td>browsing directories</td>
+			<td>&lt;letter&gt;:</td>
+			<td>1.0</td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>browsing directories</td>
+			<td>dir</td>
+			<td>1.0</td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>browsing directories</td>
+			<td>cd / chdir</td>
+			<td>2.0</td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>browsing directories</td>
+			<td>tree</td>
+			<td>3.2</td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td>file manipulation</td>
+			<td>copy</td>
+			<td>1.0</td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>file manipulation</td>
+			<td>diskcopy</td>
+			<td>2.0</td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td>file manipulation</td>
+			<td>xcopy</td>
+			<td>3.2</td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td>file manipulation</td>
+			<td>move</td>
+			<td>6.0</td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td>file manipulation</td>
+			<td>ren</td>
+			<td>1.0</td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>file manipulation</td>
+			<td>del / erase</td>
+			<td>1.0</td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>file manipulation</td>
+			<td>deltree</td>
+			<td>6.0</td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td>file manipulation</td>
+			<td>undelete</td>
+			<td>5.0</td>
+			<td>external</td>
+		</tr>
+		<tr>
+			<td>file manipulation</td>
+			<td>md / mkdir</td>
+			<td>2.0</td>
+			<td>internal</td>
+		</tr>
+		<tr>
+			<td>file manipulation</td>
+			<td>rm / rmdir</td>
+			<td>2.0</td>
+			<td>internal</td>
+		</tr>
+	</table>
 
 	<article id="reading-files">
 		<hr>

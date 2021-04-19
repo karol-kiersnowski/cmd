@@ -2,6 +2,8 @@
 
 // NAV
 $mainMenu = "menu główne";
+
+	$commands = "polecenia";
 $language = "język";
 $theme = "motyw";
 	$typescriptLight = "maszynopis (jasny)";
