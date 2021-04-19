@@ -24,4 +24,5 @@ sed -i 's/\.php/\.html/g' theme.html
 sed -i 's/\.php/\.html/g' about.html
 sed -i 's/\.php/\.html/g' linux.html
 sed -i 's/\.php/\.html/g' win-dos.html
+sed -i 's/\.php/\.html/g' dos-commands.html
 sed -i 's/\.php/\.html/g' powershell.html
