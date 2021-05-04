@@ -94,6 +94,31 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 
 
 
+<article id="change-the-GRUB-theme">
+	<h4><i class="fa fa-fill-drip fa-fw"></i> <?=$changeTheGRUBTheme?> (Linux Mint)</a></h4>
+	<code class="linux clipboard">apt install --reinstall -o Dpkg::Options::="--force-confmiss" grub2-theme-mint</code
+	><button class="clipboard" onclick="writeToClipboard(this)">
+		<div class="tooltiptext"><?=$copied?></div>
+		<i class="far fa-copy"></i>
+	</button>
+	<p>
+		Source: <a target="_blank" href="https://linuxmint-user-guide.readthedocs.io/en/latest/grub.html#how-to-theme-the-grub-menu">https://linuxmint-user-guide.readthedocs.io/en/latest/grub.html#how-to-theme-the-grub-menu</a>
+	</p>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <article id="restore-GRUB-after-installing-Windows">
 	<h4><i class="fa fa-wrench fa-fw"></i> <?=$restoreGRUBAfterInstallingWindows?></h4>
@@ -215,6 +240,19 @@ done
 </samp>
 
 </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

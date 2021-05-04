@@ -30,6 +30,7 @@ $setSystemBootInCLIMode = "set system boot in CLI mode";
 $changeSuperuserPassword = "change superuser password";
 $changeSuperuserPasswordExtended = "change superuser / root / administrator password";
 $changeTheTimeoutInGRUB = "change the timeout in GRUB";
+$changeTheGRUBTheme = "change the GRUB theme";
 $changeTheFontSizeInCLI = "change the font size in CLI";
 $restoreGRUBAfterInstallingWindows = "restore GRUB after installing Windows";
 $hideTheSystemMenuInFullscreenGamesAndChangeTheResolutionToTheDefault = "hide the system menu in fullscreen games and change the resolution to the default";

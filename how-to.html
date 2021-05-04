@@ -45,15 +45,56 @@
 					<h2><a href="how-to.html?lang=en&theme=light"><i class="far fa-lightbulb fa-fw"></i> how to ...</a></h2>
 					<hr>
 					<ul>
-						<li><a href="#change-superuser-password"><i class="fa fa-user-cog fa-fw"></i> change superuser password</a></li>
-						<li><a href="#change-the-timeout-in-GRUB"><i class="fa fa-stopwatch fa-fw"></i> change the timeout in GRUB</a></li>
-						<li><a href="#restore-GRUB-after-installing-Windows"><i class="fa fa-wrench fa-fw"></i> restore GRUB after installing Windows</a></li>
-						<li><a href="#change-the-font-size-in-CLI"><i class="fa fa-text-height fa-fw"></i> change the font size in CLI</a></li>
-						<li><a href="#bulk-rename-files"><i class="fa fa-exchange-alt fa-fw"></i> bulk rename files</a></li>
-						<li><a href="#sort-photos-by-date"><i class="fa fa-sort-numeric-down fa-fw"></i> sort photos by date</a></li>
-						<li><a href="#bulk-resize-images"><i class="fa fa-expand-alt fa-fw"></i> bulk resize images</a></li>
-						<li><a href="#set-system-boot-in-CLI-mode"><i class="fa fa-terminal fa-fw"></i> set system boot in CLI mode</a></li>
-						<li><a href="#hide-the-system-menu-in-fullscreen-games-and-change-the-resolution-to-the-default"><i class="fa fa-gamepad fa-fw"></i> hide the system menu in fullscreen games and change the resolution to the default</a></li>
+						<li>
+							<a href="#change-superuser-password">
+								<i class="fa fa-user-cog fa-fw"></i>
+								change superuser password							</a>
+						</li>
+						<li>
+							<a href="#change-the-timeout-in-GRUB">
+								<i class="fa fa-stopwatch fa-fw"></i>
+								change the timeout in GRUB							</a>
+						</li>
+						<li>
+							<a href="#change-the-GRUB-theme">
+								<i class="fa fa-fill-drip fa-fw"></i>
+								change the GRUB theme							</a>
+						</li>
+						<li>
+							<a href="#restore-GRUB-after-installing-Windows">
+								<i class="fa fa-wrench fa-fw"></i>
+								restore GRUB after installing Windows							</a>
+							</li>
+						<li>
+							<a href="#change-the-font-size-in-CLI">
+								<i class="fa fa-text-height fa-fw"></i>
+								change the font size in CLI							</a>
+						</li>
+						<li>
+							<a href="#bulk-rename-files">
+								<i class="fa fa-exchange-alt fa-fw"></i>
+								bulk rename files							</a>
+						</li>
+						<li>
+							<a href="#sort-photos-by-date">
+								<i class="fa fa-sort-numeric-down fa-fw"></i>
+								sort photos by date							</a>
+						</li>
+						<li>
+							<a href="#bulk-resize-images">
+								<i class="fa fa-expand-alt fa-fw"></i>
+								bulk resize images							</a>
+						</li>
+						<li>
+							<a href="#set-system-boot-in-CLI-mode">
+								<i class="fa fa-terminal fa-fw"></i>
+								set system boot in CLI mode							</a>
+						</li>
+						<li>
+							<a href="#hide-the-system-menu-in-fullscreen-games-and-change-the-resolution-to-the-default">
+								<i class="fa fa-gamepad fa-fw"></i>
+								hide the system menu in fullscreen games and change the resolution to the default							</a>
+						</li>
 					</ul>
 					<hr>
 					<h2><a href="linux.html?lang=en&theme=light"><i class="fab fa-linux fa-fw"></i> linux</a></h2>
@@ -263,6 +304,31 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 
 
 
+<article id="change-the-GRUB-theme">
+	<h4><i class="fa fa-fill-drip fa-fw"></i> change the GRUB theme (Linux Mint)</a></h4>
+	<code class="linux clipboard">apt install --reinstall -o Dpkg::Options::="--force-confmiss" grub2-theme-mint</code
+	><button class="clipboard" onclick="writeToClipboard(this)">
+		<div class="tooltiptext">copied!</div>
+		<i class="far fa-copy"></i>
+	</button>
+	<p>
+		Source: <a target="_blank" href="https://linuxmint-user-guide.readthedocs.io/en/latest/grub.html#how-to-theme-the-grub-menu">https://linuxmint-user-guide.readthedocs.io/en/latest/grub.html#how-to-theme-the-grub-menu</a>
+	</p>
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <article id="restore-GRUB-after-installing-Windows">
 	<h4><i class="fa fa-wrench fa-fw"></i> restore GRUB after installing Windows</h4>
@@ -384,6 +450,19 @@ done
 </samp>
 
 </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

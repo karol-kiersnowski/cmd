@@ -29,6 +29,7 @@ $setSystemBootInCLIMode = "ustawić start systemu w terminalu";
 $changeSuperuserPassword = "zmienić hasło administratora";
 $changeSuperuserPasswordExtended = "zmienić hasło administratora / superużytkownika / roota";
 $changeTheTimeoutInGRUB = "zmienić limit czasu w GRUB";
+$changeTheGRUBTheme = "zmienić motyw w GRUB";
 $changeTheFontSizeInCLI = "zmienić rozmiar czcionki w terminalu";
 $restoreGRUBAfterInstallingWindows = "przywrócić GRUB po instalacji Windows";
 $hideTheSystemMenuInFullscreenGamesAndChangeTheResolutionToTheDefault = "ukryć menu systemowe w grach pełnoekranowych i zmienić rozdzielczość na domyślną";
