@@ -824,6 +824,8 @@ drwxr-xr-x
 			<li>fdisk</li>
 			<li>mkfs</li>
 			<li>fsck</li>
+			<li>ccd2iso</li>
+			<li>mdf2iso</li>
 		</ul>
 	</article>
 

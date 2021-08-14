@@ -19,7 +19,7 @@ $textScreenshots = "screenshots (txt)";
 $imageScreenshots = "screenshots (img)";
 $links = "links";
 $guestbook = "guestbook";
-
+$board = "board";
 $about = "about";
 
 // NAV-HOW-TO
@@ -35,11 +35,11 @@ $changeTheFontSizeInCLI = "change the font size in CLI";
 $restoreGRUBAfterInstallingWindows = "restore GRUB after installing Windows";
 $hideTheSystemMenuInFullscreenGamesAndChangeTheResolutionToTheDefault = "hide the system menu in fullscreen games and change the resolution to the default";
 
-// GUESTBOOK
+// GUESTBOOK & BOARD
 $guestEntries = "Guest entries";
 
-// GUESTBOOK-NEW-ENTRY
 $addEntry = "add entry";
+$addTopic = "new topic";
 $back = "back";
 $form = "Form";
 $name = "Your name";

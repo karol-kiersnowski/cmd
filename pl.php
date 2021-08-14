@@ -19,6 +19,7 @@ $textScreenshots = "screenshot'y (tekst)";
 $imageScreenshots = "screenshot'y (obraz)";
 $links = "linki";
 $guestbook = "księga gości";
+$board = "tablica";
 $about = "o stronie";
 
 // NAV-HOW-TO
@@ -34,11 +35,11 @@ $changeTheFontSizeInCLI = "zmienić rozmiar czcionki w terminalu";
 $restoreGRUBAfterInstallingWindows = "przywrócić GRUB po instalacji Windows";
 $hideTheSystemMenuInFullscreenGamesAndChangeTheResolutionToTheDefault = "ukryć menu systemowe w grach pełnoekranowych i zmienić rozdzielczość na domyślną";
 
-// GUESTBOOK
+// GUESTBOOK & BOARD
 $guestEntries = "Wpisy gości";
 
-// GUESTBOOK-NEW-ENTRY
 $addEntry = "dodaj wpis";
+$addTopic = "nowy temat";
 $back = "powrót";
 $form = "Formularz";
 $name = "Twoje imię";
