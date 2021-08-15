@@ -101,12 +101,35 @@
 					<img alt="GOG" src="img/logo/gog.png"/>
 					<div class="card-caption">
 						<h3>GOG.com</h3>
-						<p>DOS games</p>
+						<p>Good Old Games</p>
 					</div>
 				</div>
 			</a>
 		</div>
-	</div>
+	</div><div class="card-container col-25">
+		<div class="card-content">
+			<a target="_blank" href="https://www.myabandonware.com">
+				<div>
+					<img alt="GOG" src="img/logo/myabandonware.png"/>
+					<div class="card-caption">
+						<h3>my abandonware</h3>
+						<p>abandonware games</p>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div><div class="card-container col-25">
+		<div class="card-content padding-10">
+			<a target="_blank" href="https://winworldpc.com">
+				<div>
+					<img alt="GOG" src="img/logo/winworldpc.png"/>
+					<div class="card-caption">
+						<h3>WinWorld</h3>
+						<p>old Windows & DOS - OS & apps</p>
+					</div>
+				</div>
+			</a>
+		</div>
 	<div class="clear"></div>
 	<!--<ul>
 		<li><a target="_blank" href="https://ubuntu.com/download/desktop">Ubuntu</a></li>

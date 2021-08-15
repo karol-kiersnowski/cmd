@@ -411,6 +411,10 @@ form {
 	padding: 5px;
 }
 
+.padding-10 img  {
+	padding: 10px;
+}
+
 	.card-container a:hover {
 		text-decoration: none;
 	}

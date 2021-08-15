@@ -17,6 +17,7 @@ samp div.caption {
 
 nav {
 	outline: 1px solid var(--dark-gray);
+	scrollbar-color: #aaa #eee;
 }
 
 div#side-menu {
