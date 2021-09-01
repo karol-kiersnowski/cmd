@@ -32,7 +32,9 @@
 
 
 
-* { box-sizing: border-box; }
+* {
+	box-sizing: border-box;
+}
 :focus { outline: none; }
 html { scroll-behavior: smooth; }
 
@@ -656,6 +658,16 @@ table#dos-commands td:nth-child(1) {
 	text-align: left;
 	//background-color: yellow;
 }
+
+/*body,
+a,
+a:link,
+button {
+	//cursor: url('/images/droplet.svg'), url('/images/droplet.cur');
+	//cursor: url('/images/droplet.svg') 10 12;
+	//cursor: url('/images/droplet.svg'), move;
+	cursor: url(../img/cursor.png), auto;
+}*/
 
 
 

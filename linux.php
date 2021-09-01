@@ -794,6 +794,7 @@ drwxr-xr-x
 			<li>reset</li>
 			<li>history</li>
 			<li>alias</li>
+			<li>source</li>
 		</ul>
 	</article>
 
