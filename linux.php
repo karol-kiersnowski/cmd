@@ -899,6 +899,9 @@ drwxr-xr-x
 		<li>uname</li>
 		<li>lsmod</li>
 		<li>modprobe</li>
+		<li>inxi</li>
+		<li>screenfetch</li>
+		<li>neofetch</li>
 	</ul>
 	</article>
 

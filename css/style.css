@@ -659,14 +659,14 @@ table#dos-commands td:nth-child(1) {
 	//background-color: yellow;
 }
 
-/*body,
+/*body {
+	cursor: url("../img/cursor-white.png"), auto;
+}
+
+nav,
 a,
-a:link,
 button {
-	//cursor: url('/images/droplet.svg'), url('/images/droplet.cur');
-	//cursor: url('/images/droplet.svg') 10 12;
-	//cursor: url('/images/droplet.svg'), move;
-	cursor: url(../img/cursor.png), auto;
+	cursor: url("../img/cursor-white.png"), auto;
 }*/
 
 

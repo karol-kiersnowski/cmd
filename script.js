@@ -145,3 +145,7 @@ function sortTable(n, thisElement) {
 		else if (direction == "desc") thisElement.innerHTML += ' <i class="fa fa-sort-up"></i>';
 	}
 }
+
+// function getMousePosition(e) {
+// 	console.log(e.clientX, " ", e.clientY);
+// }
