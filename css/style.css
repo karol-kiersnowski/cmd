@@ -653,10 +653,17 @@ iframe {
 
 
 
-table#dos-commands th:nth-child(1),
-table#dos-commands td:nth-child(1) {
+table.sortable th:nth-child(1),
+table.sortable td:nth-child(1) {
 	text-align: left;
 	//background-color: yellow;
+}
+
+table.sortable th:hover {
+	cursor: pointer;
+	//font-style: italic;
+	//text-decoration: underline;
+	color: #aaa;
 }
 
 /*body {

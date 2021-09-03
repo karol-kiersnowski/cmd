@@ -318,8 +318,40 @@ Disk identifier: 0x781a275d
 		<hr>
 		<h3><i class="fas fa-file-invoice"></i> <?=$systemFiles?></h3>
 		<hr>
-		<h4>/dev/</h4>
-		<h4>/etc/</h4>
+		<ul>
+			<li>dev/</li>
+			<ul>
+				<li>random</li>
+				<li>sda</li>
+				<li>sda1</li>
+				<li>sda2</li>
+				<li>sda3</li>
+				<li>sda4</li>
+				<li>sdb</li>
+				<li>sdb1</li>
+				<li>sdb2</li>
+				<li>sdb3</li>
+				<li>sr0</li>
+				<li>urandom</li>
+			</ul>
+			<li>etc/</li>
+			<ul>
+				<li>crontab</li>
+				<li>default/</li>
+				<ul>
+					<li>grub</li>
+				</ul>
+				<li>fstab</li>
+				<li>groups</li>
+				<li>hostname</li>
+				<li>passwd</li>
+				<li>timezone</li>
+			</ul>
+			<li>proc/</li>
+			<ul>
+				<li>cpuinfo</li>
+			</ul>
+		</ul>
 	</article>
 
 	<article id="environment-variables">
@@ -331,6 +363,9 @@ Disk identifier: 0x781a275d
 			<li>env</li>
 			<li>export</li>
 		</ul>
+
+		$PWD
+		$OLDPWD
 
 <samp class="linux">
 <div class="caption">GNU Linux (BASH) - Linux Mint [Debian-based distro]</div>
@@ -841,6 +876,7 @@ drwxr-xr-x
 			<li>chown</li>
 			<li>umask</li>
 			<li>update-grub</li>
+			<li>select-editor</li>
 		</ul>
 	</article>
 
@@ -886,6 +922,7 @@ drwxr-xr-x
 			<li>time</li>
 			<li>date</li>
 			<li>cal</li>
+			<li>ncal</li>
 		</ul>
 	</article>
 
@@ -928,6 +965,7 @@ drwxr-xr-x
 		<li>ifconfig</li>
 		<li>ping</li>
 		<li>traceroute</li>
+		<li>mtr</li>
 		<li>host</li>
 		<li>whois</li>
 		<li>arp</li>
@@ -978,11 +1016,15 @@ drwxr-xr-x
 		<li>killall -KILL</li>
 		<li>pidof</li>
 		<li>pstree</li>
+		<li>pgrep</li>
+		<li>pkill</li>
 		<li>jobs</li>
 		<li>fg</li>
 		<li>bg</li>
 		<li>nice</li>
 		<li>renice</li>
+		<li>disown</li>
+		<li>nohup</li>
 	</ul>
 	</article>
 

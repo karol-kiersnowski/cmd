@@ -80,8 +80,8 @@ async function writeToClipboard(codeElement) {
 }
 
 function sortTable(n, thisElement) {
-	var table = document.getElementsById("dos-commands");
-	var rows = document.getElementsTagName("TR");
+	//var table = thisElement.parentElement;
+	var rows = document.getElementsByTagName("TR");
 	var switching = true;
 	var i;
 	var x;
@@ -104,8 +104,8 @@ function sortTable(n, thisElement) {
 			/*Get the two elements you want to compare,
 			one from current row and one from the next:*/
 			//alert(rows[i].getElementsByTagName("div")[1].innerHTML);
-			x = rows[i].getElementsByTagName("div")[n];
-			y = rows[i + 1].getElementsByTagName("div")[n];
+			x = rows[i].getElementsByTagName("TD")[n];
+			y = rows[i + 1].getElementsByTagName("TD")[n];
 			/*check if the two rows should switch place,
 			based on the direction, asc or desc:*/
 			if (direction == "asc") {
@@ -139,13 +139,14 @@ function sortTable(n, thisElement) {
 		}
 	}
 
-	if (thisElement != null) {
-		translateText(document.documentElement.lang);
-		if (direction == "asc") thisElement.innerHTML += ' <i class="fa fa-sort-down"></i>';
-		else if (direction == "desc") thisElement.innerHTML += ' <i class="fa fa-sort-up"></i>';
-	}
+	// if (thisElement != null) {
+	// 	if (direction == "asc") {
+	// 		if (thisElement.innerHTML == "command")
+	// 		thisElement.innerHTML = 'command <i class="fa fa-sort-down"></i>';
+	// 	}
+	// 	else if (direction == "desc") {
+	// 		if (thisElement.innerHTML == "command")
+	// 		thisElement.innerHTML = 'command <i class="fa fa-sort-up"></i>';
+	// 	}
+	// }
 }
-
-// function getMousePosition(e) {
-// 	console.log(e.clientX, " ", e.clientY);
-// }

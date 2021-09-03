@@ -14,17 +14,17 @@
 	<p><em>Internal</em> commands are related to <em>COMMAND.COM</em> & don't need other files to work.</p>
 	<p><em>External</em> commands require existing files to work.</p>
 
-	<table id="dos-commands">
+	<table class="sortable" id="dos-commands">
 		<tr>
-			<th>command</th>
-			<th>category <i class="fa fa-caret-down"></i></th>
-			<th>MS-DOS<br>version</th>
-			<th>FreeDOS</th>
-			<th>DOSBox</th>
-			<th>type</th>
+			<th onclick="sortTable(0, this)">command</th>
+			<th onclick="sortTable(1, this)">category</i></th>
+			<th onclick="sortTable(2, this)">MS-DOS<br>version</th>
+			<th onclick="sortTable(3, this)">FreeDOS</th>
+			<th onclick="sortTable(4, this)">DOSBox</th>
+			<th onclick="sortTable(5, this)">type</th>
 		</tr>
 		<tr>
-			<td><a href="dos/help.php">help</a></td>
+			<td>help</td>
 			<td><?=$commandInformation?></td>
 			<td>6.0</td>
 			<td><i class="fa fa-check fa-fw"></i></td>
