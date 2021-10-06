@@ -154,6 +154,17 @@
 		</div>
 	</div><div class="card-container col-50">
 		<div class="card-content">
+			<a target="_blank" href="screenshots-img/windows-1.01.png">
+				<div>
+					<img alt="Windows 1.01" src="screenshots-img/windows-1.01.png"/>
+					<div class="card-caption">
+						<h3>Windows 1.01</h3>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div><div class="card-container col-50">
+		<div class="card-content">
 			<a target="_blank" href="screenshots-img/windows-2.03.png">
 				<div>
 					<img alt="Windows 2.03" src="screenshots-img/windows-2.03.png"/>
@@ -165,9 +176,20 @@
 		</div>
 	</div><div class="card-container col-50">
 		<div class="card-content">
+			<a target="_blank" href="screenshots-img/windows-3.0-mm.png">
+				<div>
+					<img alt="Windows 3.0 Multimedia Extensions - start screen" src="screenshots-img/windows-3.0-mm.png"/>
+					<div class="card-caption">
+						<h3>Windows 3.0 Multimedia Extensions</h3>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div><div class="card-container col-50">
+		<div class="card-content">
 			<a target="_blank" href="screenshots-img/windows-3.1-start.png">
 				<div>
-					<img alt="Windows 3.1 start screen" src="screenshots-img/windows-3.1-start.png"/>
+					<img alt="Windows 3.1 - start screen" src="screenshots-img/windows-3.1-start.png"/>
 					<div class="card-caption">
 						<h3>Windows 3.1 - start screen</h3>
 					</div>

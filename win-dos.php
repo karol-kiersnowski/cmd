@@ -76,7 +76,7 @@
 		<table class="normal">
 			<tr>
 				<th>class</th>
-				<td rowspan="3">DOS</td>
+				<td rowspan="2">DOS</td>
 				<td colspan="2">DOS-based Windows</td>
 				<td rowspan="3" colspan="2">Windows NT family</td>
 			</tr>
@@ -86,7 +86,8 @@
 				<td>DOS / Windows 9x</td>
 			</tr>
 			<tr>
-				<th>operating environment</th>
+				<th>graphical environment</th>
+				<td>-</td>
 				<td>Windows 1-3</td>
 				<td>Windows 9x</td>
 			</tr>

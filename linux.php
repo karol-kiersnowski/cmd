@@ -104,24 +104,75 @@
 		<h3><i class="far fa-keyboard"></i> <?=$keyboardShortcuts?></h3>
 		<hr>
 		<ul>
-			<li><kbd>ctrl</kbd> + <kbd>l</kbd> - clear the terminal screen; same as the command <var>clear</var></li>
-			<li><kbd>ctrl</kbd> + <kbd>c</kbd> - terminate the current task</li>
-			<li><kbd>ctrl</kbd> + <kbd>z</kbd> - freeze the current task and move it to the background (see commands: <var>jobs</var>, <var>fg</var>, <var>bg</var> and operator <var>&</var></li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>del</kbd> - reboot the system (only in CLI)</li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F1</kbd> - TTY1 (from GUI)</li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F2</kbd> - TTY2 (from GUI)</li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F3</kbd> - TTY3 (from GUI)</li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F4</kbd> - TTY4 (from GUI)</li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F5</kbd> - TTY5 (from GUI)</li>
-			<li><kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F6</kbd> - TTY6 (from GUI)</li>
-			<li><kbd>alt</kbd> + <kbd>F1</kbd> - TTY1 (from other TTY)</li>
-			<li><kbd>alt</kbd> + <kbd>F2</kbd> - TTY2 (from other TTY)</li>
-			<li><kbd>alt</kbd> + <kbd>F3</kbd> - TTY3 (from other TTY)</li>
-			<li><kbd>alt</kbd> + <kbd>F4</kbd> - TTY4 (from other TTY)</li>
-			<li><kbd>alt</kbd> + <kbd>F5</kbd> - TTY5 (from other TTY)</li>
-			<li><kbd>alt</kbd> + <kbd>F6</kbd> - TTY6 (from other TTY)</li>
-			<li><kbd>alt</kbd> + <kbd><i class="fas fa-arrow-right"></i></kbd> - next TTY (from other TTY)</li>
-			<li><kbd>alt</kbd> + <kbd><i class="fas fa-arrow-left"></i></kbd> - previous TTY (from other TTY)</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>l</kbd> - clear the terminal screen; same as the command <var>clear</var>
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>c</kbd> - terminate the current task - SIGINT
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>\</kbd> - terminate the current task - SIGQUIT (if <kbd>ctrl</kbd> + <kbd>c</kbd> doesn't work)
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>z</kbd> - stop the current task and move it to the background (see commands: <var>jobs</var>, <var>fg</var>, <var>bg</var> and operator <var>&</var>
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>s</kbd> - stop the terminal output
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>q</kbd> - resume the terminal output
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>d</kbd> - exit the terminal; same as the command <var>exit</var>
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>shift</kbd> + <kbd>v</kbd> - paste from the clipboard
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>del</kbd> - reboot the system - only in CLI (TTY)
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F1</kbd> - TTY1 (from GUI)
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F2</kbd> - TTY2 (from GUI)
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F3</kbd> - TTY3 (from GUI)
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F4</kbd> - TTY4 (from GUI)
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F5</kbd> - TTY5 (from GUI)
+			</li>
+			<li>
+				<kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>F6</kbd> - TTY6 (from GUI)
+			</li>
+			<li>
+				<kbd>alt</kbd> + <kbd>F1</kbd> - TTY1 (from other TTY)
+			</li>
+			<li>
+				<kbd>alt</kbd> + <kbd>F2</kbd> - TTY2 (from other TTY)
+			</li>
+			<li>
+				<kbd>alt</kbd> + <kbd>F3</kbd> - TTY3 (from other TTY)
+			</li>
+			<li>
+				<kbd>alt</kbd> + <kbd>F4</kbd> - TTY4 (from other TTY)
+			</li>
+			<li>
+				<kbd>alt</kbd> + <kbd>F5</kbd> - TTY5 (from other TTY)
+			</li>
+			<li>
+				<kbd>alt</kbd> + <kbd>F6</kbd> - TTY6 (from other TTY)
+			</li>
+			<li>
+				<kbd>alt</kbd> + <kbd><i class="fas fa-arrow-right"></i></kbd> - next TTY (from other TTY)
+			</li>
+			<li>
+				<kbd>alt</kbd> + <kbd><i class="fas fa-arrow-left"></i></kbd> - previous TTY (from other TTY)
+			</li>
 		</ul>
 	</article>
 
@@ -854,6 +905,7 @@ drwxr-xr-x
 		<ul>
 			<li>df</li>
 			<li>du</li>
+			<li>lsblk</li>
 			<li>fstab</li>
 			<li>mount</li>
 			<li>umount</li>
@@ -862,6 +914,7 @@ drwxr-xr-x
 			<li>fsck</li>
 			<li>ccd2iso</li>
 			<li>mdf2iso</li>
+			<li>nrg2iso</li>
 		</ul>
 	</article>
 
@@ -976,6 +1029,7 @@ drwxr-xr-x
 		<li>curl</li>
 		<li>iptables</li>
 		<li>ufw</li>
+		<li>nethogs</li>
 	</ul>
 	</article>
 
@@ -1291,6 +1345,19 @@ drwxr-xr-x
 			<li>git pull</li>
 			<li>git fetch</li>
 		</ul>
+	</article>
+
+	<article id="games & trash">
+	<hr>
+	<h3><i class="fa fa-trash-alt"></i> funny & miscellaneous</h3>
+	<hr>
+	<ul>
+		<li>cowsay</li>
+		<li>cowthink</li>
+		<li>sl</li>
+		<li>tty-clock</li>
+		<li>cmatrix</li>
+	</ul>
 	</article>
 
 </section>
