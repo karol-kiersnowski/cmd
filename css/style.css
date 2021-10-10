@@ -146,9 +146,14 @@ nav {
 			width: 240px;
 		}
 
+		ul#linux-list {
+			left: 0;
+			width: 170px;
+		}
+
 		ul#dos-list {
 			left: 0;
-			width: 150px;
+			width: 170px;
 		}
 
 		ul#theme-list {

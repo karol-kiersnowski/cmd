@@ -20,11 +20,34 @@
 					<li><a href="about.php<?=$suffix?>"><i class="fa fa-info-circle fa-fw"></i> <?=$about?></a></li>
 				</ul>
 			</h2>
-			<h2 class="float-left">
-				<a href="linux.php<?=$suffix?>">
+			<h2 class="float-left" tabindex="0">
+				<a>
 					<i class="fab fa-linux"></i>
 					<span class="mobile-invisible">linux</span>
 				</a>
+				<ul class="dropdown-list" id="linux-list">
+					<li>
+						<a href="linux.php<?=$suffix?>">
+							<i class="fa fa-graduation-cap fa-fw"></i> tutorial
+						</a>
+					</li>
+					<hr>
+					<li>
+						<a href="linux-commands.php<?=$suffix?>">
+							<i class="fa fa-terminal fa-fw"></i> <?=$commands?>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="fa fa-file-invoice fa-fw"></i> <?=$systemFiles?>
+						</a>
+						</li>
+					<li>
+						<a>
+							<i class="fa fa-dollar-sign fa-fw"></i> <?=$environmentVariables?>
+						</a>
+					</li>
+				</ul>
 			</h2>
 			<h2 class="float-left focusable" tabindex="0">
 				<a>
@@ -35,6 +58,16 @@
 					<li>
 						<a href="dos-commands.php<?=$suffix?>">
 							<i class="fa fa-terminal fa-fw"></i> <?=$commands?>
+						</a>
+					</li>
+					<li>
+						<a>
+							<i class="fa fa-file-invoice fa-fw"></i> <?=$systemFiles?>
+						</a>
+						</li>
+					<li>
+						<a>
+							<i class="fa fa-percent fa-fw"></i> <?=$environmentVariables?>
 						</a>
 					</li>
 				</ul>

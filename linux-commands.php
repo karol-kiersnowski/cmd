@@ -15,6 +15,11 @@
 	<p><em>TUI</em> - Text-based User Interface</p>
 	<p><em>GUI</em> - Graphical User Interface</p>
 
+	<p><em>CLI+</em> - not TUI yet, but also not CLI</p>
+	<p><em>TUI+</em> - TUI with mouse support</p>
+
+	<p><em>GUI</em> requires display server running (<em>Xorg</em> or <em>Wayland</em>)</p>
+
 	<table id="linux-commands">
 		<tr>
 			<th onclick="sortTable(0, this)">command</th>
@@ -46,7 +51,7 @@
 			<td><i class="fa fa-check fa-fw"></i></td>
 			<td><i class="fa fa-check fa-fw"></i></td>
 			<td><i class="fa fa-check fa-fw"></i></td>
-			<td>TUI</td>
+			<td>CLI+</td>
 		</tr>
 		<tr>
 			<td>info</td>
@@ -54,7 +59,7 @@
 			<td><i class="fa fa-check fa-fw"></i></td>
 			<td><i class="fa fa-check fa-fw"></i></td>
 			<td><i class="fa fa-check fa-fw"></i></td>
-			<td>TUI</td>
+			<td>CLI+</td>
 		</tr>
 		<tr>
 			<td>tldr</td>
@@ -70,7 +75,7 @@
 			<td>n/a</td>
 			<td>n/a</td>
 			<td>n/a</td>
-			<td>n/a</td>
+			<td>CLI</td>
 		</tr>
 		<tr>
 			<td>&lt;command&gt; --help</td>
@@ -78,7 +83,7 @@
 			<td>n/a</td>
 			<td>n/a</td>
 			<td>n/a</td>
-			<td>n/a</td>
+			<td>CLI</td>
 		</tr>
 		<tr>
 			<td>pwd</td>
@@ -115,8 +120,8 @@
 		<tr>
 			<td>tree</td>
 			<td><?=$browsingDirectories?></td>
-			<td><i class="fa fa-check fa-fw"></i></td>
-			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
 			<td><i class="fa fa-check fa-fw"></i></td>
 			<td>CLI</td>
 		</tr>
@@ -190,7 +195,7 @@
 			<td><i class="fa fa-check fa-fw"></i></td>
 			<td><i class="fa fa-check fa-fw"></i></td>
 			<td><i class="fa fa-check fa-fw"></i></td>
-			<td>CLI</td>
+			<td>CLI+</td>
 		</tr>
 		<tr>
 			<td>less</td>
@@ -198,7 +203,7 @@
 			<td><i class="fa fa-check fa-fw"></i></td>
 			<td><i class="fa fa-check fa-fw"></i></td>
 			<td><i class="fa fa-check fa-fw"></i></td>
-			<td>TUI</td>
+			<td>CLI+</td>
 		</tr>
 		<tr>
 			<td>head</td>
@@ -215,6 +220,166 @@
 			<td><i class="fa fa-check fa-fw"></i></td>
 			<td><i class="fa fa-check fa-fw"></i></td>
 			<td>CLI</td>
+		</tr>
+		<tr>
+			<td>ufw</td>
+			<td><?=$network?></td>
+			<td><i class="fa fa-question fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>CLI</td>
+		</tr>
+		<tr>
+			<td>gufw</td>
+			<td><?=$network?></td>
+			<td><i class="fa fa-question fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>GUI</td>
+		</tr>
+		<tr>
+			<td>vim (vi)</td>
+			<td><?=$textEditors?></td>
+			<td><i class="fa fa-question fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>CLI+</td>
+		</tr>
+		<tr>
+			<td>nano (pico)</td>
+			<td><?=$textEditors?></td>
+			<td><i class="fa fa-question fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>TUI</td>
+		</tr>
+		<tr>
+			<td>mcedit</td>
+			<td><?=$textEditors?></td>
+			<td><i class="fa fa-question fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>TUI+</td>
+		</tr>
+		<tr>
+			<td>sublime-text (subl)</td>
+			<td><?=$textEditors?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>GUI</td>
+		</tr>
+		<tr>
+			<td>mc</td>
+			<td><?=$fileManagers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>TUI+</td>
+		</tr>
+		<tr>
+			<td>ranger</td>
+			<td><?=$fileManagers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>TUI</td>
+		</tr>
+		<tr>
+			<td>filezilla</td>
+			<td><?=$fileManagers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>GUI</td>
+		</tr>
+		<tr>
+			<td>doublecmd</td>
+			<td><?=$fileManagers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>GUI</td>
+		</tr>
+		<tr>
+			<td>moc (mocp)</td>
+			<td><?=$musicPlayers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>TUI</td>
+		</tr>
+		<tr>
+			<td>lynx</td>
+			<td><?=$webBrowsers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>TUI</td>
+		</tr>
+		<tr>
+			<td>links</td>
+			<td><?=$webBrowsers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>TUI+</td>
+		</tr>
+		<tr>
+			<td>links2</td>
+			<td><?=$webBrowsers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>TUI+</td>
+		</tr>
+		<tr>
+			<td>xlinks2 (from package elinks2)</td>
+			<td><?=$webBrowsers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>GUI</td>
+		</tr>
+		<tr>
+			<td>elinks</td>
+			<td><?=$webBrowsers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>TUI+</td>
+		</tr>
+		<tr>
+			<td>firefox</td>
+			<td><?=$webBrowsers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>GUI</td>
+		</tr>
+		<tr>
+			<td>chromium</td>
+			<td><?=$webBrowsers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>GUI</td>
+		</tr>
+		<tr>
+			<td>midori</td>
+			<td><?=$webBrowsers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-check fa-fw"></i></td>
+			<td>GUI</td>
+		</tr>
+		<tr>
+			<td>opera</td>
+			<td><?=$webBrowsers?></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td><i class="fa fa-times fa-fw"></i></td>
+			<td>GUI</td>
 		</tr>
 	</table>
 	

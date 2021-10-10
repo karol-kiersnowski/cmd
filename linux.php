@@ -407,7 +407,7 @@ Disk identifier: 0x781a275d
 
 	<article id="environment-variables">
 		<hr>
-		<h3><i class="fa fa-file-invoice"></i> <?=$environmentVariables?></h3>
+		<h3><i class="fa fa-dollar-sign"></i> <?=$environmentVariables?></h3>
 		<hr>
 		<ul>
 			<li>set</li>
@@ -992,6 +992,8 @@ drwxr-xr-x
 		<li>inxi</li>
 		<li>screenfetch</li>
 		<li>neofetch</li>
+		<li>service</li>
+		<li>systemctl</li>
 	</ul>
 	</article>
 
@@ -1029,6 +1031,7 @@ drwxr-xr-x
 		<li>curl</li>
 		<li>iptables</li>
 		<li>ufw</li>
+		<li>gufw</li>
 		<li>nethogs</li>
 	</ul>
 	</article>
