@@ -26,25 +26,22 @@
 			<a target="_blank" href="https://fontawesome.com">Font Awesome</a> - icons
 		</li>
 		<li>
-			<a target="_blank" href="https://fonts.google.com">Google Fonts</a> - font family library
+			<a target="_blank" href="https://fonts.google.com/specimen/Syne+Mono#standard-styles">Syne Mono</a> - a font family
 		</li>
 		<li>
-			<a target="_blank" href="https://fonts.google.com/specimen/Ubuntu+Mono?selection.family=Ubuntu+Mono">Ubunto Mono</a> - font family
+			<a target="_blank" href="http://sourceforge.net/projects/dosega">DOSEGA</a> - a font family
 		</li>
 		<li>
-			<a target="_blank" href="http://sourceforge.net/projects/dosega">DOSEGA</a> - font family
+			<a target="_blank" href="https://www.apachefriends.org/index.html">XAMPP</a> - a web server solution stack
 		</li>
 		<li>
-			<a target="_blank" href="https://www.apachefriends.org/index.html">XAMPP</a> - web server solution stack
+			<a target="_blank" href="https://www.sublimetext.com">Sublime Text</a> - a text editor
 		</li>
 		<li>
-			<a target="_blank" href="https://www.sublimetext.com">Sublime Text</a> - text editor
+			<a target="_blank" href="https://www.dosbox.com">DOSBox</a> - an x86 emulator with DOS
 		</li>
 		<li>
-			<a target="_blank" href="https://www.dosbox.com">DOSBox</a> - x86 emulator with DOS
-		</li>
-		<li>
-			<a target="_blank" href="https://js-dos.com">JS-DOS</a> - DOSBox port for websites
+			<a target="_blank" href="https://js-dos.com">JS-DOS</a> - a DOSBox port for websites
 		</li>
 		<li>
 			<a target="_blank" href="https://www.w3schools.com">W3Schools</a> - web tutorials
