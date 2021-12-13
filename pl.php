@@ -24,6 +24,7 @@ $download = "pobieralnia";
 $links = "linki";
 $guestbook = "księga gości";
 $board = "tablica";
+$contact = "kontakt";
 $about = "o stronie";
 
 // NAV-HOW-TO
@@ -39,17 +40,27 @@ $changeTheFontSizeInCLI = "zmienić rozmiar czcionki w terminalu";
 $restoreGRUBAfterInstallingWindows = "przywrócić GRUB po instalacji Windows";
 $hideTheSystemMenuInFullscreenGamesAndChangeTheResolutionToTheDefault = "ukryć menu systemowe w grach pełnoekranowych i zmienić rozdzielczość na domyślną";
 
-// GUESTBOOK & BOARD
-$guestEntries = "Wpisy gości";
-
-$addEntry = "dodaj wpis";
-$addTopic = "nowy temat";
+// GUESTBOOK & BOARD & CONTACT
 $back = "powrót";
-$form = "Formularz";
 $name = "Twoje imię";
-$comment = "Twój komentarz";
-$website = "Twoja strona internetowa";
+$subject = "Temat";
+$content = "Treść";
+$yourName = "Twoje imię";
+$yourEmail = "Twój e-mail";
+$yourWebsite = "Twoja strona internetowa";
+$required = "*wymagane";
 $submit = "Wyślij";
+
+// GUESTBOOK
+$guestEntries = "Wpisy gości";
+$newEntry = "nowy wpis";
+$yourEntry = "Twój wpis";
+
+// BOARD
+$newThread = "nowy wątek";
+
+// CONTACT
+$form = "formularz";
 
 // NAV
 $introduction = "wprowadzenie";

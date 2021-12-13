@@ -10,6 +10,7 @@ php guestbook-new-entry.php > guestbook-new-entry.html
 php board.php > board.html
 php board-new-topic.php > board-new-topic.html
 php theme.php > theme.html
+php contact.php > contact.html
 php about.php > about.html
 php linux.php > linux.html
 php linux-commands.php > linux-commands.html
@@ -26,7 +27,8 @@ sed -i 's/\.php/\.html/g' links.html
 sed -i 's/\.php/\.html/g' guestbook.html
 sed -i 's/\.php/\.html/g' guestbook-new-entry.html
 sed -i 's/\.php/\.html/g' board.html
-sed -i 's/\.php/\.html/g' board-new-topic.html
+sed -i 's/\.php/\.html/g' board-new-thread.html
+sed -i 's/\.php/\.html/g' contact.html
 sed -i 's/\.php/\.html/g' theme.html
 sed -i 's/\.php/\.html/g' about.html
 sed -i 's/\.php/\.html/g' linux.html

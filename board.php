@@ -6,7 +6,7 @@
 	include "nav-dropdowns.php";
 ?>
 <h2 class="float-left"><i class="fa fa-thumbtack fa-fw"></i> <?=$board?></h2>
-<a class="float-right button" href="board-new-topic.php<?=$suffix?>"><i class="fa fa-plus"></i> <?=$addTopic?></a>
+<a class="float-right button" href="board-new-thread.php<?=$suffix?>"><i class="fa fa-plus"></i> <?=$newThread?></a>
 <div class="clear"></div>
 <hr>
 <section>

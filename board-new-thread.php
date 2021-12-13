@@ -1,6 +1,6 @@
 <?php
 	include "sys.php";
-	$title = $cmd . $board;
+	$title = $cmd . $board . " / " . $newThread;
 	include "header.php";
 	include "nav-main.php";
 	include "nav-dropdowns.php";
@@ -10,13 +10,19 @@
 <div class="clear"></div>
 <hr>
 <section>
-	<h3><?=$form?></h3>
+	<h3><?=$newThread?></h3>
 	<form action="board.php<?=$suffix?>" method="post">
 		<p>
-			<label><?=$name?></label><input type="text"/>
+			<label><?=$subject?>*</label><input type="text"/>
 		</p>
 		<p>
-			<label><?=$comment?></label><textarea></textarea>
+			<label><?=$content?>*</label><textarea></textarea>
+		</p>
+		<p>
+			<label><?=$yourName?>*</label><input type="text"/>
+		</p>
+		<p>
+			<label><?=$yourEmail?></label><input type="text"/>
 		</p>
 		<p>
 			<button type="submit"><?=$submit?></button>

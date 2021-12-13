@@ -1,6 +1,6 @@
 <?php
 	include "sys.php";
-	$title = $cmd . $guestbook;
+	$title = $cmd . $guestbook . " / " . $newEntry;
 	include "header.php";
 	include "nav-main.php";
 	include "nav-dropdowns.php";
@@ -10,16 +10,19 @@
 <div class="clear"></div>
 <hr>
 <section>
-	<h3><?=$form?></h3>
+	<h3><?=$newEntry?></h3>
 	<form action="guestbook.php<?=$suffix?>" method="post">
 		<p>
-			<label><?=$name?></label><input type="text"/>
+			<label><?=$content?>*</label><textarea></textarea>
 		</p>
 		<p>
-			<label><?=$comment?></label><textarea></textarea>
+			<label><?=$yourName?>*</label><input type="text"/>
 		</p>
 		<p>
-			<label><?=$website?></label><input type="url"/>
+			<label><?=$yourEmail?></label><input type="text"/>
+		</p>
+		<p>
+			<label><?=$yourWebsite?></label><input type="url"/>
 		</p>
 		<p>
 			<button type="submit"><?=$submit?></button>

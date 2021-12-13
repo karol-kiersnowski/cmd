@@ -6,7 +6,7 @@
 	include "nav-dropdowns.php";
 ?>
 <h2 class="float-left"><i class="fa fa-address-book"></i> <?=$guestbook?></h2>
-<a class="float-right button" href="guestbook-new-entry.php<?=$suffix?>"><i class="fa fa-plus"></i> <?=$addEntry?></a>
+<a class="float-right button" href="guestbook-new-entry.php<?=$suffix?>"><i class="fa fa-plus"></i> <?=$newEntry?></a>
 <div class="clear"></div>
 <hr>
 <section>

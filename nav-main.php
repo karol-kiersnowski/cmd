@@ -8,6 +8,7 @@
 						<li><a href="links.php<?=$suffix?>"><i class="fa fa-link fa-fw"></i> <?=$links?></a></li>
 						<li><a href="guestbook.php<?=$suffix?>"><i class="fa fa-address-book fa-fw"></i> <?=$guestbook?></a></li>
 						<li><a href="board.php<?=$suffix?>"><i class="fa fa-thumbtack fa-fw"></i> <?=$board?></a></li>
+						<li><a href="contact.php<?=$suffix?>"><i class="far fa-envelope fa-fw"></i> <?=$contact?></a></li>
 						<li><a href="about.php<?=$suffix?>"><i class="fa fa-info-circle fa-fw"></i> <?=$about?></a></li>
 					</ul>
 					<hr>
