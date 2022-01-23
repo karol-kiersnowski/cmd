@@ -912,6 +912,7 @@ drwxr-xr-x
 			<li>fdisk</li>
 			<li>mkfs</li>
 			<li>fsck</li>
+			<li>dd</li>
 			<li>ccd2iso</li>
 			<li>mdf2iso</li>
 			<li>nrg2iso</li>
@@ -989,6 +990,7 @@ drwxr-xr-x
 		<li>uname</li>
 		<li>lsmod</li>
 		<li>modprobe</li>
+		<li>dmesg</li>
 		<li>inxi</li>
 		<li>screenfetch</li>
 		<li>neofetch</li>
